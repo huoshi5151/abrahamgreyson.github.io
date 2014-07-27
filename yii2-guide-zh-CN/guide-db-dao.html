@@ -4,278 +4,330 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/48a2e71d/style.css" rel="stylesheet">
-<script src="./assets/26f1d6e6/jquery.js"></script>
-<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/c6866355/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/2a503da9/style.css" rel="stylesheet">
+<script src="./assets/a25e4490/jquery.js"></script>
+<script src="./assets/c6866355/js/bootstrap.js"></script>
+<script src="./assets/c4fa220/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w30" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w30-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w302" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w302-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w30-collapse" class="collapse navbar-collapse"><ul id="w31" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w302-collapse" class="collapse navbar-collapse"><ul id="w303" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
     
 <div class="row">
     <div class="col-md-2">
-                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
-<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
-<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
-<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
-<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
-<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
-<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
-<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
-<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
-<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
-<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
-<a class="list-group-item" href="./guide-concept-components.html">Components</a>
-<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
-<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
-<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
-<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
-<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
-<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
-<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
-<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
-<a class="list-group-item active" href="./guide-db-dao.html">Database basics</a>
-<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
-<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
-<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
-<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
-<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
-<a class="list-group-item" href="./guide-concept-events.html">Events</a>
-<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
-<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
-<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
-<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
-<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
-<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
-<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
-<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
-<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
-<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
-<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
-<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
-<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
-<a class="list-group-item" href="./guide-structure-assets.html">Managing assets</a>
-<a class="list-group-item" href="./guide-structure-models.html">Models</a>
-<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
-<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
-<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
-<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
-<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
-<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
-<a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
-<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
-<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
-<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
-<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
-<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
-<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
-<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
-<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
-<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
-<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
-<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
-<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
-<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
-<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
-<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
-<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
-<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
-<a class="list-group-item" href="./guide-structure-views.html">Views</a>
-<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
-<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
-<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
-<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
-<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
-<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-285" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-285" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-286" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-286" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-287" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-287" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-288" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-288" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-289" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-289" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item active" href="#navigation-290" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-290" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-291" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-291" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-292" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-292" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-293" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-293" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-294" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-294" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-295" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-295" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-296" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-296" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-297" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-297" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-298" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-298" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-299" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-299" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-300" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-300" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-301" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-301" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Database basics <a href="#database-basics" name="database-basics">&para;</a></h1>
-<blockquote><p>Note: This section is under development.</p>
-</blockquote>
-<p>Yii has a database access layer built on top of PHP's <a href="http://www.php.net/manual/en/book.pdo.php">PDO</a>. It provides
-uniform API and solves some inconsistencies between different DBMS. By default Yii supports the following DBMS:</p>
-<ul>
-<li><a href="http://www.mysql.com/">MySQL</a></li>
-<li><a href="https://mariadb.com/">MariaDB</a></li>
-<li><a href="http://sqlite.org/">SQLite</a></li>
-<li><a href="http://www.postgresql.org/">PostgreSQL</a></li>
-<li><a href="http://www.cubrid.org/">CUBRID</a>: version 9.1.0 or higher.</li>
-<li><a href="http://www.oracle.com/us/products/database/overview/index.html">Oracle</a></li>
-<li><a href="https://www.microsoft.com/en-us/sqlserver/default.aspx">MSSQL</a>: version 2012 or above is required if you
-want to use LIMIT/OFFSET.</li>
-</ul>
-<h2>Configuration <a href="#configuration" name="configuration">&para;</a></h2>
-<p>In order to start using database you need to configure database connection component first by adding <code>db</code> component
-to application configuration (for "basic" web application it's <code>config/web.php</code>) like the following:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'mysql:host=localhost;dbname=mydatabase'</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">//&nbsp;MySQL,&nbsp;MariaDB<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'sqlite:/path/to/database/file',&nbsp;//&nbsp;SQLite<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'pgsql:host=localhost;port=5432;dbname=mydatabase',&nbsp;//&nbsp;PostgreSQL<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'cubrid:dbname=demodb;host=localhost;port=33000',&nbsp;//&nbsp;CUBRID<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'sqlsrv:Server=localhost;Database=mydatabase',&nbsp;//&nbsp;MS&nbsp;SQL&nbsp;Server,&nbsp;sqlsrv&nbsp;driver<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'dblib:host=localhost;dbname=mydatabase',&nbsp;//&nbsp;MS&nbsp;SQL&nbsp;Server,&nbsp;dblib&nbsp;driver<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'mssql:host=localhost;dbname=mydatabase',&nbsp;//&nbsp;MS&nbsp;SQL&nbsp;Server,&nbsp;mssql&nbsp;driver<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//'dsn'&nbsp;=&gt;&nbsp;'oci:dbname=//localhost:1521/mydatabase',&nbsp;//&nbsp;Oracle<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'charset'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'utf8'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br /></span><span style="color: #007700">];</span></code></pre>
-<p>There is a peculiarity when you want to work with the database through the <code>ODBC</code> layer. When using <code>ODBC</code>,
-connection <code>DSN</code> doesn't indicate uniquely what database type is being used. That's why you have to override
-<code>driverName</code> property of <span style="background: #f00;">yii\db\Connection</span> class to disambiguate that:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'driverName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'mysql'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'odbc:Driver={MySQL};Server=localhost;Database=test'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />],</span></code></pre>
-<p>Please refer to the <a href="http://www.php.net/manual/en/function.PDO-construct.php">PHP manual</a> for more details
-on the format of the DSN string.</p>
-<p>After the connection component is configured you can access it using the following syntax:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$connection&nbsp;</span><span style="color: #007700">=&nbsp;\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">;</span></code></pre>
-<p>You can refer to <span style="background: #f00;">yii\db\Connection</span> for a list of properties you can configure. Also note that you can define more
-than one connection component and use both at the same time if needed:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$primaryConnection&nbsp;</span><span style="color: #007700">=&nbsp;\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$secondaryConnection&nbsp;</span><span style="color: #007700">=&nbsp;\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">secondDb</span><span style="color: #007700">;</span></code></pre>
-<p>If you don't want to define the connection as an application component you can instantiate it directly:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$connection&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">db</span><span style="color: #007700">\</span><span style="color: #0000BB">Connection</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$dsn</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$username</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$password</span><span style="color: #007700">,<br />]);<br /></span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">open</span><span style="color: #007700">();</span></code></pre>
-<blockquote><p><strong>Tip</strong>: if you need to execute additional SQL queries right after establishing a connection you can add the
-following to your application configuration file:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'on&nbsp;afterOpen'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;function(</span><span style="color: #0000BB">$event</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$event</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sender</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">"SET&nbsp;time_zone&nbsp;=&nbsp;'UTC'"</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br /></span><span style="color: #007700">];</span></code></pre>
-</blockquote>
-<h2>Basic SQL queries <a href="#basic-sql-queries" name="basic-sql-queries">&para;</a></h2>
-<p>Once you have a connection instance you can execute SQL queries using <span style="background: #f00;">yii\db\Command</span>.</p>
-<h3>SELECT <a href="#select" name="select">&para;</a></h3>
-<p>When query returns a set of rows:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;post'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$posts&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">queryAll</span><span style="color: #007700">();</span></code></pre>
-<p>When only a single row is returned:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;post&nbsp;WHERE&nbsp;id=1'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$post&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">queryOne</span><span style="color: #007700">();</span></code></pre>
-<p>When there are multiple values from the same column:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;title&nbsp;FROM&nbsp;post'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$titles&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">queryColumn</span><span style="color: #007700">();</span></code></pre>
-<p>When there's a scalar value:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;post'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$postCount&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();</span></code></pre>
-<h3>UPDATE, INSERT, DELETE etc. <a href="#update-insert-delete-etc" name="update-insert-delete-etc">&para;</a></h3>
-<p>If SQL executed doesn't return any data you can use command's <code>execute</code> method:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'UPDATE&nbsp;post&nbsp;SET&nbsp;status=1&nbsp;WHERE&nbsp;id=1'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();</span></code></pre>
-<p>Alternatively the following syntax that takes care of proper table and column names quoting is possible:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;INSERT<br /></span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">insert</span><span style="color: #007700">(</span><span style="color: #DD0000">'user'</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Sam'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'age'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">30</span><span style="color: #007700">,<br />])-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br /><br /></span><span style="color: #FF8000">//&nbsp;INSERT&nbsp;multiple&nbsp;rows&nbsp;at&nbsp;once<br /></span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">batchInsert</span><span style="color: #007700">(</span><span style="color: #DD0000">'user'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'name'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'age'</span><span style="color: #007700">],&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'Tom'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">30</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'Jane'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">20</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'Linda'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">25</span><span style="color: #007700">],<br />])-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br /><br /></span><span style="color: #FF8000">//&nbsp;UPDATE<br /></span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">update</span><span style="color: #007700">(</span><span style="color: #DD0000">'user'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'status'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">],&nbsp;</span><span style="color: #DD0000">'age&nbsp;&gt;&nbsp;30'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br /><br /></span><span style="color: #FF8000">//&nbsp;DELETE<br /></span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">delete</span><span style="color: #007700">(</span><span style="color: #DD0000">'user'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'status&nbsp;=&nbsp;0'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();</span></code></pre>
-<h2>Quoting table and column names <a href="#quoting-table-and-column-names" name="quoting-table-and-column-names">&para;</a></h2>
-<p>Most of the time you would use the following syntax for quoting table and column names:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"SELECT&nbsp;COUNT([[</span><span style="color: #0000BB">$column</span><span style="color: #DD0000">]])&nbsp;FROM&nbsp;{{table}}"</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$rowCount&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();</span></code></pre>
-<p>In the code above <code>[[X]]</code> will be converted to properly quoted column name while <code>{{Y}}</code> will be converted to properly
-quoted table name.</p>
-<p>For table names there's a special variant <code>{{%Y}}</code> that allows you to automatically appending table prefix if it is set:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"SELECT&nbsp;COUNT([[</span><span style="color: #0000BB">$column</span><span style="color: #DD0000">]])&nbsp;FROM&nbsp;{{%table}}"</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$rowCount&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();</span></code></pre>
-<p>The code above will result in selecting from <code>tbl_table</code> if you have table prefix configured like the following in your
-config file:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'tablePrefix'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'tbl_'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
-<p>The alternative is to quote table and column names manually using <span style="background: #f00;">yii\db\Connection::quoteTableName()</span> and
-<span style="background: #f00;">yii\db\Connection::quoteColumnName()</span>:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$column&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteColumnName</span><span style="color: #007700">(</span><span style="color: #0000BB">$column</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$table&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">quoteTableName</span><span style="color: #007700">(</span><span style="color: #0000BB">$table</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$sql&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">"SELECT&nbsp;COUNT(</span><span style="color: #0000BB">$column</span><span style="color: #DD0000">)&nbsp;FROM&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #DD0000">"</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$rowCount&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryScalar</span><span style="color: #007700">();</span></code></pre>
-<h2>Prepared statements <a href="#prepared-statements" name="prepared-statements">&para;</a></h2>
-<p>In order to securely pass query parameters you can use prepared statements:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;post&nbsp;WHERE&nbsp;id=:id'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">bindValue</span><span style="color: #007700">(</span><span style="color: #DD0000">':id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$_GET</span><span style="color: #007700">[</span><span style="color: #DD0000">'id'</span><span style="color: #007700">]);<br /></span><span style="color: #0000BB">$post&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">query</span><span style="color: #007700">();</span></code></pre>
-<p>Another usage is performing a query multiple times while preparing it only once:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$command&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'DELETE&nbsp;FROM&nbsp;post&nbsp;WHERE&nbsp;id=:id'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">bindParam</span><span style="color: #007700">(</span><span style="color: #DD0000">':id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br /><br /></span><span style="color: #0000BB">$id&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$command</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();</span></code></pre>
-<h2>Transactions <a href="#transactions" name="transactions">&para;</a></h2>
-<p>When running multiple related queries in a sequence you may need to wrap them in a transaction to
-ensure you data is consistent. Yii provides a simple interface to work with transactions in simple
-cases but also for advanced usage when you need to define isolation levels.</p>
-<p>The following code shows a simple pattern that all code that uses transactional queries should follow:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$transaction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginTransaction</span><span style="color: #007700">();<br />try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql1</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql2</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...&nbsp;executing&nbsp;other&nbsp;SQL&nbsp;statements&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">commit</span><span style="color: #007700">();<br />}&nbsp;catch(\</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rollBack</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;</span><span style="color: #0000BB">$e</span><span style="color: #007700">;<br />}</span></code></pre>
-<p>The first line starts a new transaction using the <span style="background: #f00;">yii\db\Connection::beginTransaction()</span>-method of the database connection
-object. The transaction itself is represented by a <span style="background: #f00;">yii\db\Transaction</span> object stored in <code>$transaction</code>.
-We wrap the execution of all queries in a try-catch-block to be able to handle errors.
-We call <span style="background: #f00;">yii\db\Transaction::commit()</span> on success to commit the transaction and
-<span style="background: #f00;">yii\db\Transaction::rollBack()</span> in case of an error. This will revert the effect of all queries
-that have been executed inside of the transaction.
-<code>throw $e</code> is used to re-throw the exception in case we can not handle the error ourselves and delegate it
-to some other code or the yii error handler.</p>
-<p>It is also possible to nest multiple transactions, if needed:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;outer&nbsp;transaction<br /></span><span style="color: #0000BB">$transaction1&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginTransaction</span><span style="color: #007700">();<br />try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql1</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;inner&nbsp;transaction<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction2&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginTransaction</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #0000BB">$sql2</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction2</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">commit</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;catch&nbsp;(</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction2</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rollBack</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction1</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">commit</span><span style="color: #007700">();<br />}&nbsp;catch&nbsp;(</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction1</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rollBack</span><span style="color: #007700">();<br />}</span></code></pre>
-<p>Note that your DBMS should have support for Savepoints for this to work as expected.
-The above code will work for any DBMS but transactional safety is only guaranteed if
-the underlying DBMS supports it.</p>
-<p>Yii also supports setting [isolation levels] for your transactions.
-When beginning a transaction it will run in the default isolation level set by you database system.
-You can specifying an isolation level explicitly when starting a transaction:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$transaction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginTransaction</span><span style="color: #007700">(\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">db</span><span style="color: #007700">\</span><span style="color: #0000BB">Transaction</span><span style="color: #007700">::</span><span style="color: #0000BB">REPEATABLE_READ</span><span style="color: #007700">);</span></code></pre>
-<p>Yii provides four constants for the most common isolation levels:</p>
-<ul>
-<li><span style="background: #f00;">\yii\db\Transaction::READ_UNCOMMITTED</span> - the weakest level, Dirty reads, Non-repeatable reads and Phantoms may occur.</li>
-<li><span style="background: #f00;">\yii\db\Transaction::READ_COMMITTED</span> - avoid Dirty reads.</li>
-<li><span style="background: #f00;">\yii\db\Transaction::REPEATABLE_READ</span> - avoid Dirty reads and Non-repeatable reads.</li>
-<li><span style="background: #f00;">\yii\db\Transaction::SERIALIZABLE</span> - the strongest level, avoids all of the above named problems.</li>
-</ul>
-<p>You may use the constants named above but you can also use a string that represents a valid syntax that can be
-used in your DBMS following <code>SET TRANSACTION ISOLATION LEVEL</code>. For postgres this could be for example
-<code>SERIALIZABLE READ ONLY DEFERRABLE</code>.</p>
-<p>Note that some DBMS allow setting of the isolation level only for the whole connection so subsequent transactions
-may get the same isolation level even if you did not specify any. When using this feature
-you may need to set the isolation level for all transactions explicitly to avoid conflicting settings.
-At the time of this writing affected DBMS are MSSQL and SQLite.</p>
-<blockquote><p>Note: SQLite only supports two isolation levels, so you can only use <code>READ UNCOMMITTED</code> and <code>SERIALIZABLE</code>.
-Usage of other levels will result in an exception to be thrown.</p>
-</blockquote>
-<blockquote><p>Note: PostgreSQL does not allow setting the isolation level before the transaction starts so you can not
-specify the isolation level directly when starting the transaction.
-You have to call <span style="background: #f00;">yii\db\Transaction::setIsolationLevel()</span> in this case after the transaction has started.</p>
-</blockquote>
-<h2>Replication and Read-Write Splitting <a href="#replication-and-read-write-splitting" name="replication-and-read-write-splitting">&para;</a></h2>
-<p>Many DBMS support <a href="http://en.wikipedia.org/wiki/Replication_(computing">database replication</a>#Database_replication)
-to get better database availability and faster server response time. With database replication, data are replicated
-from the so-called <em>master servers</em> to <em>slave servers</em>. All writes and updates must take place on the master servers,
-while reads may take place on the slave servers.</p>
-<p>To take advantage of database replication and achieve read-write splitting, you can configure a <span style="background: #f00;">yii\db\Connection</span>
-component like the following:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;configuration&nbsp;for&nbsp;the&nbsp;master<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;master&nbsp;server'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'master'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;common&nbsp;configuration&nbsp;for&nbsp;slaves<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'slaveConfig'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'slave'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attributes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;use&nbsp;a&nbsp;smaller&nbsp;connection&nbsp;timeout<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">PDO</span><span style="color: #007700">::</span><span style="color: #0000BB">ATTR_TIMEOUT&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">10</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;list&nbsp;of&nbsp;slave&nbsp;configurations<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'slaves'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;1'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;2'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;3'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;4'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]</span></code></pre>
-<p>The above configuration specifies a setup with a single master and multiple slaves. One of the slaves will
-be connected and used to perform read queries, while the master will be used to perform write queries.
-Such read-write splitting is accomplished automatically with this configuration. For example,</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;create&nbsp;a&nbsp;Connection&nbsp;instance&nbsp;using&nbsp;the&nbsp;above&nbsp;configuration<br /></span><span style="color: #0000BB">$db&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">createObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;query&nbsp;against&nbsp;one&nbsp;of&nbsp;the&nbsp;slaves<br /></span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;user&nbsp;LIMIT&nbsp;10'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryAll</span><span style="color: #007700">();<br /><br /></span><span style="color: #FF8000">//&nbsp;query&nbsp;against&nbsp;the&nbsp;master<br /></span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">"UPDATE&nbsp;user&nbsp;SET&nbsp;username='demo'&nbsp;WHERE&nbsp;id=1"</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();</span></code></pre>
-<blockquote><p>Info: Queries performed by calling <span style="background: #f00;">yii\db\Command::execute()</span> are considered as write queries, while
-  all other queries done through one of the "query" method of <span style="background: #f00;">yii\db\Command</span> are read queries.
-  You can get the currently active slave connection via <code>$db-&gt;slave</code>.</p>
-</blockquote>
-<p>The <code>Connection</code> component supports load balancing and failover about slaves.
-When performing a read query for the first time, the <code>Connection</code> component will randomly pick a slave and
-try connecting to it. If the slave is found "dead", it will try another one. If none of the slaves is available,
-it will connect to the master. By configuring a <span style="background: #f00;">yii\db\Connection::serverStatusCache</span>,
-a "dead" server can be remembered so that it will not be tried again during a
-<span style="background: #f00;">yii\db\Connection::serverRetryInterval</span>.</p>
-<blockquote><p>Info: In the above configuration, a connection timeout of 10 seconds is specified for every slave.
-  This means if a slave cannot be reached in 10 seconds, it is considered as "dead". You can adjust this parameter
-  based on your actual environment.</p>
-</blockquote>
-<p>You can also configure multiple masters with multiple slaves. For example,</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;common&nbsp;configuration&nbsp;for&nbsp;masters<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'masterConfig'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'master'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attributes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;use&nbsp;a&nbsp;smaller&nbsp;connection&nbsp;timeout<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">PDO</span><span style="color: #007700">::</span><span style="color: #0000BB">ATTR_TIMEOUT&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">10</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;list&nbsp;of&nbsp;master&nbsp;configurations<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'masters'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;master&nbsp;server&nbsp;1'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;master&nbsp;server&nbsp;2'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;common&nbsp;configuration&nbsp;for&nbsp;slaves<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'slaveConfig'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'slave'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attributes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;use&nbsp;a&nbsp;smaller&nbsp;connection&nbsp;timeout<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">PDO</span><span style="color: #007700">::</span><span style="color: #0000BB">ATTR_TIMEOUT&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">10</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;list&nbsp;of&nbsp;slave&nbsp;configurations<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'slaves'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;1'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;2'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;3'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'dsn&nbsp;for&nbsp;slave&nbsp;server&nbsp;4'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]</span></code></pre>
-<p>The above configuration specifies two masters and four slaves. The <code>Connection</code> component also supports
-load balancing and failover about masters, like that about slaves. A difference is that in case none of
-the masters is available, an exception will be thrown.</p>
-<blockquote><p>Note: When you use the <span style="background: #f00;">yii\db\Connection::masters</span> property to configure one or multiple
-  masters, all other properties for specifying a database connection (e.g. <code>dsn</code>, <code>username</code>, <code>password</code>)
-  with the <code>Connection</code> object itself will be ignored.</p>
-</blockquote>
-<p>By default, transactions use the master connection. And within a transaction, all DB operations will use
-the master connection. For example,</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;the&nbsp;transaction&nbsp;is&nbsp;started&nbsp;on&nbsp;the&nbsp;master&nbsp;connection<br /></span><span style="color: #0000BB">$transaction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginTransaction</span><span style="color: #007700">();<br /><br />try&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;both&nbsp;queries&nbsp;are&nbsp;performed&nbsp;against&nbsp;the&nbsp;master<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;user&nbsp;LIMIT&nbsp;10'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryAll</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">"UPDATE&nbsp;user&nbsp;SET&nbsp;username='demo'&nbsp;WHERE&nbsp;id=1"</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">execute</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">commit</span><span style="color: #007700">();<br />}&nbsp;catch(\</span><span style="color: #0000BB">Exception&nbsp;$e</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$transaction</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">rollBack</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;</span><span style="color: #0000BB">$e</span><span style="color: #007700">;<br />}</span></code></pre>
-<p>If you want to start a transaction with the slave connection, you should explicitly do so, like the following:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$transaction&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">slave</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginTransaction</span><span style="color: #007700">();</span></code></pre>
-<p>Sometimes, you may want to force using the master connection to perform a read query. This can be achieved
-with the <code>useMaster()</code> method:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">useMaster</span><span style="color: #007700">(function&nbsp;(</span><span style="color: #0000BB">$db</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">(</span><span style="color: #DD0000">'SELECT&nbsp;*&nbsp;FROM&nbsp;user&nbsp;LIMIT&nbsp;10'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">queryAll</span><span style="color: #007700">();<br />});</span></code></pre>
-<p>You may also directly set <code>$db-&gt;enableSlaves</code> to be false to direct all queries to the master connection.</p>
-<h2>Working with database schema <a href="#working-with-database-schema" name="working-with-database-schema">&para;</a></h2>
-<h3>Getting schema information <a href="#getting-schema-information" name="getting-schema-information">&para;</a></h3>
-<p>You can get a <span style="background: #f00;">yii\db\Schema</span> instance like the following:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$schema&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getSchema</span><span style="color: #007700">();</span></code></pre>
-<p>It contains a set of methods allowing you to retrieve various information about the database:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$tables&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$schema</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getTableNames</span><span style="color: #007700">();</span></code></pre>
-<p>For the full reference check <span style="background: #f00;">yii\db\Schema</span>.</p>
-<h3>Modifying schema <a href="#modifying-schema" name="modifying-schema">&para;</a></h3>
-<p>Aside from basic SQL queries <span style="background: #f00;">yii\db\Command</span> contains a set of methods allowing to modify database schema:</p>
-<ul>
-<li>createTable, renameTable, dropTable, truncateTable</li>
-<li>addColumn, renameColumn, dropColumn, alterColumn</li>
-<li>addPrimaryKey, dropPrimaryKey</li>
-<li>addForeignKey, dropForeignKey</li>
-<li>createIndex, dropIndex</li>
-</ul>
-<p>These can be used as follows:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;CREATE&nbsp;TABLE<br /></span><span style="color: #0000BB">$connection</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createCommand</span><span style="color: #007700">()-&gt;</span><span style="color: #0000BB">createTable</span><span style="color: #007700">(</span><span style="color: #DD0000">'post'</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'pk'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'title'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'string'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'text'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'text'</span><span style="color: #007700">,<br />]);</span></code></pre>
-<p>For the full reference check <span style="background: #f00;">yii\db\Command</span>.</p>
+        <p>数据库基础</p>
+<p>Yii 基于 PHP's PDO建立了一个成熟的数据库访问层。它提供统一的 API 并解决了一些不同 DBMS 产生的使用不利。 Yii 默认支持以下 DBMS ：</p>
+<p>MySQL
+MariaDB
+SQLite
+PostgreSQL
+CUBRID: version 9.1.0 or higher.
+Oracle
+MSSQL: version 2012 或更高版本，如需使用 LIMIT/OFFSET。
+配置</p>
+<p>开始使用数据库首先需要配置数据库连接组件，通过添加 db 组件到应用配置实现（"基础的" Web 应用是 config/web.php），如下所示：</p>
+<p>return [</p>
+<pre><code>// ...
+'components' =&gt; [
+    // ...
+    'db' =&gt; [
+        'class' =&gt; 'yii\db\Connection',
+        'dsn' =&gt; 'mysql:host=localhost;dbname=mydatabase', // MySQL, MariaDB
+        //'dsn' =&gt; 'sqlite:/path/to/database/file', // SQLite
+        //'dsn' =&gt; 'pgsql:host=localhost;port=5432;dbname=mydatabase', // PostgreSQL
+        //'dsn' =&gt; 'cubrid:dbname=demodb;host=localhost;port=33000', // CUBRID
+        //'dsn' =&gt; 'sqlsrv:Server=localhost;Database=mydatabase', // MS SQL Server, sqlsrv driver
+        //'dsn' =&gt; 'dblib:host=localhost;dbname=mydatabase', // MS SQL Server, dblib driver
+        //'dsn' =&gt; 'mssql:host=localhost;dbname=mydatabase', // MS SQL Server, mssql driver
+        //'dsn' =&gt; 'oci:dbname=//localhost:1521/mydatabase', // Oracle
+        'username' =&gt; 'root', //数据库用户名
+        'password' =&gt; '', //数据库密码
+        'charset' =&gt; 'utf8',
+    ],
+],
+// ...
+</code></pre>
+<p>];
+请参考PHP manual获取更多有关 DSN 格式信息。</p>
+<p>配置连接组件后可以使用以下语法访问：</p>
+<p>$connection = \Yii::$app-&gt;db;
+请参考<a href="./yii-db-connection.html">yii\db\Connection</a>获取可配置的属性列表。也请注意如果需要同时使用多个数据库可以定义 多个 连接组件：</p>
+<p>$primaryConnection = \Yii::$app-&gt;db;
+$secondaryConnection = \Yii::$app-&gt;secondDb;
+如果不想定义数据库连接为应用组件，可以直接初始化使用：</p>
+<p>$connection = new \yii\db\Connection([</p>
+<pre><code>'dsn' =&gt; $dsn,
+ 'username' =&gt; $username,
+ 'password' =&gt; $password,
+</code></pre>
+<p>]);
+$connection-&gt;open();
+小提示：如果在创建了连接后需要执行额外的 SQL 查询，可以添加以下代码到应用配置文件：</p>
+<p>return [</p>
+<pre><code>// ...
+'components' =&gt; [
+    // ...
+    'db' =&gt; [
+        'class' =&gt; 'yii\db\Connection',
+        // ...
+        'on afterOpen' =&gt; function($event) {
+            $event-&gt;sender-&gt;createCommand("SET time_zone = 'UTC'")-&gt;execute();
+        }
+    ],
+],
+// ...
+</code></pre>
+<p>];
+SQL 基础查询</p>
+<p>一旦有了连接实例就可以通过<a href="./yii-db-command.html">yii\db\Command</a>执行 SQL 查询。</p>
+<p>SELECT 查询</p>
+<p>查询返回多行：</p>
+<p>$command = $connection-&gt;createCommand('SELECT * FROM post');
+$posts = $command-&gt;queryAll();
+返回单行：</p>
+<p>$command = $connection-&gt;createCommand('SELECT * FROM post WHERE id=1');
+$post = $command-&gt;queryOne();
+查询多列值：</p>
+<p>$command = $connection-&gt;createCommand('SELECT title FROM post');
+$titles = $command-&gt;queryColumn();
+查询标量值/计算值：</p>
+<p>$command = $connection-&gt;createCommand('SELECT COUNT(*) FROM post');
+$postCount = $command-&gt;queryScalar();
+UPDATE, INSERT, DELETE 更新、插入和删除等</p>
+<p>如果执行 SQL 不返回任何数据可使用命令中的 execute 方法：</p>
+<p>$command = $connection-&gt;createCommand('UPDATE post SET status=1 WHERE id=1');
+$command-&gt;execute();
+选择以下考虑到引用了恰当表名和列名的语法是可能的：</p>
+<p>// INSERT
+$connection-&gt;createCommand()-&gt;insert('user', [</p>
+<pre><code>'name' =&gt; 'Sam',
+'age' =&gt; 30,
+</code></pre>
+<p>])-&gt;execute();</p>
+<p>// INSERT 一次插入多行
+$connection-&gt;createCommand()-&gt;batchInsert('user', ['name', 'age'], [</p>
+<pre><code>['Tom', 30],
+['Jane', 20],
+['Linda', 25],
+</code></pre>
+<p>])-&gt;execute();</p>
+<p>// UPDATE
+$connection-&gt;createCommand()-&gt;update('user', ['status' =&gt; 1], 'age &gt; 30')-&gt;execute();</p>
+<p>// DELETE
+$connection-&gt;createCommand()-&gt;delete('user', 'status = 0')-&gt;execute();
+引用的表名和列名</p>
+<p>大多数时间都使用以下语法来引用表名和列名：</p>
+<p>$sql = "SELECT COUNT(<span style="background: #f00;">$column</span>) FROM {{$table}}";
+$rowCount = $connection-&gt;createCommand($sql)-&gt;queryScalar();
+In the code above <span style="background: #f00;">X</span> will be converted to properly quoted column name while {{Y}} will be converted to properly 以上代码<span style="background: #f00;">X</span> 会转变为引用恰当的列名，而{{Y}} 就转变为引用恰当的表名。</p>
+<p>表名有个专用的变体 {{%Y}} ，如果设置了表前缀使用该变体可以自动在表名前添加前缀：</p>
+<p>$sql = "SELECT COUNT(<span style="background: #f00;">$column</span>) FROM {{%$table}}";
+$rowCount = $connection-&gt;createCommand($sql)-&gt;queryScalar();
+如果在配置文件如下设置了表前缀，以上代码将在 tbl_table 这个表查询结果：</p>
+<p>return [</p>
+<pre><code>// ...
+'components' =&gt; [
+    // ...
+    'db' =&gt; [
+        // ...
+        'tablePrefix' =&gt; 'tbl_',
+    ],
+],
+</code></pre>
+<p>];
+手工引用表名和列名的另一个选择是使用<a href="./yii-db-connection.html#quoteTableName()-detail">yii\db\Connection::quoteTableName()</a> 和 <a href="./yii-db-connection.html#quoteColumnName()-detail">yii\db\Connection::quoteColumnName()</a>：</p>
+<p>$column = $connection-&gt;quoteColumnName($column);
+$table = $connection-&gt;quoteTableName($table);
+$sql = "SELECT COUNT($column) FROM $table";
+$rowCount = $connection-&gt;createCommand($sql)-&gt;queryScalar();
+预处理语句</p>
+<p>为安全传递查询参数可以使用预处理语句：</p>
+<p>$command = $connection-&gt;createCommand('SELECT * FROM post WHERE id=:id');
+$command-&gt;bindValue(':id', $_GET['id']);
+$post = $command-&gt;query();
+另一种用法是准备一次预处理语句而执行多次查询：</p>
+<p>$command = $connection-&gt;createCommand('DELETE FROM post WHERE id=:id');
+$command-&gt;bindParam(':id', $id);</p>
+<p>$id = 1;
+$command-&gt;execute();</p>
+<p>$id = 2;
+$command-&gt;execute();
+事务</p>
+<p>如下执行 SQL 事务查询语句：</p>
+<p>$transaction = $connection-&gt;beginTransaction();
+try {</p>
+<pre><code>$connection-&gt;createCommand($sql1)-&gt;execute();
+ $connection-&gt;createCommand($sql2)-&gt;execute();
+// ... 执行其他 SQL 语句 ...
+$transaction-&gt;commit();
+</code></pre>
+<p>} catch(Exception $e) {</p>
+<pre><code>$transaction-&gt;rollBack();
+</code></pre>
+<p>}
+如需要也可以嵌套多个事务：</p>
+<p>// 外部事务
+$transaction1 = $connection-&gt;beginTransaction();
+try {</p>
+<pre><code>$connection-&gt;createCommand($sql1)-&gt;execute();
+
+// 内部事务
+$transaction2 = $connection-&gt;beginTransaction();
+try {
+    $connection-&gt;createCommand($sql2)-&gt;execute();
+    $transaction2-&gt;commit();
+} catch (Exception $e) {
+    $transaction2-&gt;rollBack();
+}
+
+$transaction1-&gt;commit();
+</code></pre>
+<p>} catch (Exception $e) {</p>
+<pre><code>$transaction1-&gt;rollBack();
+</code></pre>
+<p>}
+操作数据库模式</p>
+<p>获得模式信息</p>
+<p>如下获得<a href="./yii-db-schema.html">yii\db\Schema</a>实例：</p>
+<p>$schema = $connection-&gt;getSchema();
+该实例包括一系列方法来检索数据库多方面的信息：</p>
+<p>$tables = $schema-&gt;getTableNames();
+完整参考请核对<a href="./yii-db-schema.html">yii\db\Schema</a>。</p>
+<p>修改模式</p>
+<p>除了基础的 SQL 查询，<a href="./yii-db-command.html">yii\db\Command</a>还包括一系列方法来修改数据库模式：</p>
+<p>createTable, renameTable, dropTable, truncateTable
+addColumn, renameColumn, dropColumn, alterColumn
+addPrimaryKey, dropPrimaryKey
+addForeignKey, dropForeignKey
+createIndex, dropIndex
+如下使用它们：</p>
+<p>// 新建表
+$connection-&gt;createCommand()-&gt;createTable('post', [</p>
+<pre><code>'id' =&gt; 'pk',
+'title' =&gt; 'string',
+'text' =&gt; 'text',
+</code></pre>
+<p>]);
+完整参考请核对 <a href="./yii-db-command.html">yii\db\Command</a>.</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
 
@@ -283,12 +335,91 @@ with the <code>useMaster()</code> method:</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:46 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 27 Jul 2014 21:04:22 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
     var shiftWindow = function () { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
 });</script></body>
 </html>

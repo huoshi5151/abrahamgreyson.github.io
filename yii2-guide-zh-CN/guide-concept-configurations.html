@@ -4,194 +4,192 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/48a2e71d/style.css" rel="stylesheet">
-<script src="./assets/26f1d6e6/jquery.js"></script>
-<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/c6866355/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/2a503da9/style.css" rel="stylesheet">
+<script src="./assets/a25e4490/jquery.js"></script>
+<script src="./assets/c6866355/js/bootstrap.js"></script>
+<script src="./assets/c4fa220/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w18" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w18-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w188" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w188-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w18-collapse" class="collapse navbar-collapse"><ul id="w19" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w188-collapse" class="collapse navbar-collapse"><ul id="w189" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
     
 <div class="row">
     <div class="col-md-2">
-                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
-<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
-<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
-<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
-<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
-<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
-<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
-<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
-<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
-<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
-<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
-<a class="list-group-item" href="./guide-concept-components.html">Components</a>
-<a class="list-group-item active" href="./guide-concept-configurations.html">Configurations</a>
-<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
-<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
-<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
-<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
-<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
-<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
-<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
-<a class="list-group-item" href="./guide-db-dao.html">Database basics</a>
-<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
-<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
-<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
-<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
-<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
-<a class="list-group-item" href="./guide-concept-events.html">Events</a>
-<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
-<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
-<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
-<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
-<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
-<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
-<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
-<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
-<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
-<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
-<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
-<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
-<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
-<a class="list-group-item" href="./guide-structure-assets.html">Managing assets</a>
-<a class="list-group-item" href="./guide-structure-models.html">Models</a>
-<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
-<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
-<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
-<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
-<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
-<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
-<a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
-<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
-<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
-<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
-<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
-<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
-<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
-<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
-<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
-<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
-<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
-<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
-<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
-<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
-<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
-<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
-<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
-<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
-<a class="list-group-item" href="./guide-structure-views.html">Views</a>
-<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
-<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
-<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
-<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
-<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
-<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-171" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-171" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-172" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-172" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-173" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-173" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-174" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-174" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item active" href="#navigation-175" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-175" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item active" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-176" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-176" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-177" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-177" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-178" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-178" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-179" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-179" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-180" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-180" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-181" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-181" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-182" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-182" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-183" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-183" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-184" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-184" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-185" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-185" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-186" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-186" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-187" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-187" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Configurations <a href="#configurations" name="configurations">&para;</a></h1>
-<p>Configurations are widely used in Yii when creating new objects or initializing existing objects. Configurations usually include the class name of the object being created, and a list of initial values
-that should be assigned to the object's <a href="guide-concept-properties.html">properties</a>. Configurations may also include a list of
-handlers that should be attached to the object's <a href="guide-concept-events.html">events</a> and/or a list of
-<a href="guide-concept-behaviors.html">behaviors</a> that should also be attached to the object.</p>
-<p>In the following, a configuration is used to create and initialize a database connection:</p>
+        <h1>配置 <a href="#pei-zhi" name="pei-zhi" class="hashlink">&para;</a></h1>
+<p>在 Yii 中，创建新对象和初始化已存在对象时广泛使用配置。配置通常包含被创建对象的类名和一组将要赋值给对象<a href="guide-concept-properties.html">属性</a>的初始值。还可能包含一组将被附加到对象<a href="guide-concept-events.html">事件</a>上的句柄。和一组将被附加到对象上的<a href="guide-concept-behaviors.html">行为</a>。</p>
+<p>以下代码中的配置被用来创建并初始化一个数据库连接：</p>
 <pre><code class="language-php"><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'mysql:host=127.0.0.1;dbname=demo'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'charset'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'utf8'</span><span style="color: #007700">,<br />];<br /><br /></span><span style="color: #0000BB">$db&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">createObject</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">);</span></code></pre>
-<p>The <span style="background: #f00;">Yii::createObject()</span> method takes a configuration array as its argument, and creates an object by instantiating the class named in the configuration. When the object is instantiated, the rest of the configuration
-will be used to initialize the object's properties, event handlers, and behaviors.</p>
-<p>If you already have an object, you may use <span style="background: #f00;">Yii::configure()</span> to initialize the object's properties with
-a configuration array:</p>
+<p><a href="./yii-baseyii.html#createObject()-detail">Yii::createObject()</a> 方法接受一个配置并根据配置中指定的类名创建对象。对象实例化后，剩余的参数被用来初始化对象的属性，事件处理和行为。</p>
+<p>对于已存在的对象，可以使用 <a href="./yii-baseyii.html#configure()-detail">Yii::configure()</a> 方法根据配置去初始化其属性，就像这样：</p>
 <pre><code class="language-php"><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">configure</span><span style="color: #007700">(</span><span style="color: #0000BB">$object</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">);</span></code></pre>
-<p>Note that, in this case, the configuration array should not contain a <code>class</code> element.</p>
-<h2>Configuration Format <a name="configuration-format"></a> <a href="#configuration-format" name="configuration-format">&para;</a></h2>
-<p>The format of a configuration can be formally described as:</p>
+<p>请注意，如果配置一个已存在的对象，那么配置数组中不应该包含指定类名的 <code>class</code> 元素。</p>
+<h2>配置的格式 <a name="configuration-format"></a> <a href="#pei-zhi-de-ge-shi" name="pei-zhi-de-ge-shi" class="hashlink">&para;</a></h2>
+<p>一个配置的格式可以描述为以下形式：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'ClassName'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'propertyName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'propertyValue'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'on&nbsp;eventName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$eventHandler</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'as&nbsp;behaviorName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$behaviorConfig</span><span style="color: #007700">,<br />]</span></code></pre>
-<p>where</p>
+<p>其中</p>
 <ul>
-<li>The <code>class</code> element specifies a fully qualified class name for the object being created.</li>
-<li>The <code>propertyName</code> elements specify the initial values for the named property. The keys are the property names, and the
-values are the corresponding initial values. Only public member variables and <a href="guide-concept-properties.html">properties</a>
-defined by getters/setters can be configured.</li>
-<li>The <code>on eventName</code> elements specify what handlers should be attached to the object's <a href="guide-concept-events.html">events</a>.
-Notice that the array keys are formed by prefixing event names with <code>on </code>. Please refer to
-the <a href="guide-concept-events.html">Events</a> section for supported event handler formats.</li>
-<li>The <code>as behaviorName</code> elements specify what <a href="guide-concept-behaviors.html">behaviors</a> should be attached to the object.
-Notice that the array keys are formed by prefixing behavior names with <code>as </code>; the value, <code>$behaviorConfig</code>, represents
-the configuration for creating a behavior, like a normal configuration  described here.</li>
+<li><code>class</code> 元素指定了将要创建的对象的完全限定类名。</li>
+<li><code>propertyName</code> 元素指定了对象属性的初始值。键名是属性名，值是该属性对应的初始值。只有公共成员变量以及通过 getter/setter 定义的<a href="guide-concept-properties.html">属性</a>可以被配置。</li>
+<li><code>on eventName</code> 元素指定了附加到对象<a href="guide-concept-events.html">事件</a>上的句柄是什么。请注意，数组的键名由 <code>on </code> 前缀加事件名组成。请参考<a href="guide-concept-events.html">事件</a>章节了解事件句柄格式。</li>
+<li><code>as behaviorName</code> 元素指定了附加到对象的<a href="guide-concept-behaviors.html">行为</a>。请注意，数组的键名由 <code>as </code> 前缀加行为名组成。<code>$behaviorConfig</code> 表示创建行为的配置信息，格式与我们现在总体叙述的配置格式一样。</li>
 </ul>
-<p>Below is an example showing a configuration with initial property values, event handlers, and behaviors:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'app\components\SearchEngine'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'apiKey'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'xxxxxxxx'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'on&nbsp;search'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;function&nbsp;(</span><span style="color: #0000BB">$event</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">info</span><span style="color: #007700">(</span><span style="color: #DD0000">"Keyword&nbsp;searched:&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$event</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">keyword</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;},<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'as&nbsp;indexer'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'app\components\IndexerBehavior'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...&nbsp;property&nbsp;init&nbsp;values&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />]</span></code></pre>
-<h2>Using Configurations <a name="using-configurations"></a> <a href="#using-configurations" name="using-configurations">&para;</a></h2>
-<p>Configurations are used in many places in Yii. At the beginning of this section, we have shown how to 
-create an object according to a configuration by using <span style="background: #f00;">Yii::createObject()</span>. In this subsection, we will
-describe application configurations and widget configurations - two major usages of configurations.</p>
-<h3>Application Configurations <a name="application-configurations"></a> <a href="#application-configurations" name="application-configurations">&para;</a></h3>
-<p>Configuration for an <a href="guide-structure-applications.html">application</a> is probably one of the most complex configurations.
-This is because the <span style="background: #f00;">yii\web\Application</span> class has a lot of configurable properties and events.
-More importantly, its <span style="background: #f00;">yii\web\Application::components</span> property can receive an array of configurations
-for creating components that are registered through the application. The following is an abstract from the application
-configuration file for the <a href="guide-start-basic.html">basic application template</a>.</p>
+<p>下面是一个配置了初始化属性值，事件句柄和行为的示例：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'app\components\SearchEngine'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'apiKey'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'xxxxxxxx'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'on&nbsp;search'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;function&nbsp;(</span><span style="color: #0000BB">$event</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">info</span><span style="color: #007700">(</span><span style="color: #DD0000">"搜索的关键词：&nbsp;"&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$event</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">keyword</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;},<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'as&nbsp;indexer'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'app\components\IndexerBehavior'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...&nbsp;初始化属性值&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />]</span></code></pre>
+<h2>使用配置 <a href="#shi-yong-pei-zhi" name="shi-yong-pei-zhi" class="hashlink">&para;</a></h2>
+<p>Yii 中的配置可以用在很多场景。本章开头我们展示了如何使用 <span style="background: #ff0;">Yii</span><span style="background: #f00;">::creatObject()</span> 根据配置信息创建对象。本小节将介绍配置的两种主要用法 —— 配置应用与配置小部件。</p>
+<h3>应用的配置 <a name="application-configurations"></a> <a href="#ying-yong-de-pei-zhi" name="ying-yong-de-pei-zhi" class="hashlink">&para;</a></h3>
+<p><a href="guide-structure-applications.html">应用</a>的配置可能是最复杂的配置之一。因为 <a href="./yii-web-application.html">application</a> 类拥有很多可配置的属性和事件。更重要的是它的 <a href="./yii-web-application.html#$components-detail">components</a> 属性可以接收配置数组并通过应用注册为组件。以下是一个针对<a href="guide-start-basic.html">基础应用模板</a>的应用配置概要：</p>
 <pre><code class="language-php"><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'basic'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'basePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">__DIR__</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'extensions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;require(</span><span style="color: #0000BB">__DIR__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/../vendor/yiisoft/extensions.php'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cache'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\caching\FileCache'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'mailer'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\swiftmailer\Mailer'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'log'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\log\Dispatcher'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'traceLevel'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">YII_DEBUG&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">3&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'targets'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\log\FileTarget'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'mysql:host=localhost;dbname=stay2'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'charset'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'utf8'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
-<p>The configuration does not have a <code>class</code> key. This is because it is used as follows in
-an <a href="guide-structure-entry-scripts.html">entry script</a>, where the class name is already given,</p>
+<p>配置中没有 <code>class</code> 键的原因是这段配置应用在下面的入口脚本中，类名已经指定了。</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">(new&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Application</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">))-&gt;</span><span style="color: #0000BB">run</span><span style="color: #007700">();</span></code></pre>
-<p>For more details about configuring the <code>components</code> property of an application can be found
-in the <a href="guide-structure-applications.html">Applications</a> section and the <a href="guide-concept-service-locator.html">Service Locator</a> section.</p>
-<h3>Widget Configurations <a name="widget-configurations"></a> <a href="#widget-configurations" name="widget-configurations">&para;</a></h3>
-<p>When using <a href="guide-structure-widgets.html">widgets</a>, you often need to use configurations to customize the widget properties.
-Both of the <span style="background: #f00;">yii\base\Widget::widget()</span> and <span style="background: #f00;">yii\base\Widget::beginWidget()</span> methods can be used to create
-a widget. They take a configuration array, like the following,</p>
+<p>更多关于应用 <code>components</code> 属性配置的信息可以查阅<a href="guide-structure-applications.html">应用</a>以及<a href="guide-concept-service-locator.html">服务定位器</a>章节。</p>
+<h3>小部件的配置 <a name="widget-configurations"></a> <a href="#xiao-bu-jian-de-pei-zhi" name="xiao-bu-jian-de-pei-zhi" class="hashlink">&para;</a></h3>
+<p>使用<a href="guide-structure-widgets.html">小部件</a>时，常常需要配置以便自定义其属性。 <a href="./yii-base-widget.html#widget()-detail">yii\base\Widget::widget()</a> 和  <span style="background: #ff0;">yii\base\Widget</span><span style="background: #f00;">::beginWidget()</span> 方法都可以用来创建小部件。它们可以接受配置数组：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">widgets</span><span style="color: #007700">\</span><span style="color: #0000BB">Menu</span><span style="color: #007700">;<br /><br />echo&nbsp;</span><span style="color: #0000BB">Menu</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'activateItems'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'items'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'label'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Home'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'url'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">]],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'label'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Products'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'url'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'product/index'</span><span style="color: #007700">]],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'label'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Login'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'url'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'site/login'</span><span style="color: #007700">],&nbsp;</span><span style="color: #DD0000">'visible'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isGuest</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]);</span></code></pre>
-<p>The above code creates a <code>Menu</code> widget and initializes its <code>activeItems</code> property to be false.
-The <code>items</code> property is also configured with menu items to be displayed.</p>
-<p>Note that because the class name is already given, the configuration array should NOT have the <code>class</code> key.</p>
-<h2>Configuration Files <a name="configuration-files"></a> <a href="#configuration-files" name="configuration-files">&para;</a></h2>
-<p>When a configuration is very complex, a common practice is to store it in one or multiple PHP files, known as
-<em>configuration files</em>. A configuration file returns a PHP array representing the configuration.
-For example, you may keep an application configuration in a file named <code>web.php</code>, like the following,</p>
+<p>上述代码创建了一个小部件 <code>Menu</code> 并将其 <code>activateItems</code> 属性初始化为 false。<code>item</code> 属性也配置成了将要显示的菜单条目。</p>
+<p>请注意，代码中已经给出了类名 <code>yii\widgets\Menu'，配置数组**不应该**再包含 </code>class` 键。</p>
+<h2>配置文件 <a name="configuration-files"></a> <a href="#pei-zhi-wen-jian" name="pei-zhi-wen-jian" class="hashlink">&para;</a></h2>
+<p>当配置的内容十分复杂，通用做法是将其存储在一或多个 PHP 文件中，这些文件被称为<strong>配置文件</strong>。一个配置文件返回的是 PHP 数组。例如，像这样把应用配置信息存储在名为 <code>web.php</code> 的文件中：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'basic'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'basePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">dirname</span><span style="color: #007700">(</span><span style="color: #0000BB">__DIR__</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'extensions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;require(</span><span style="color: #0000BB">__DIR__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/../vendor/yiisoft/extensions.php'</span><span style="color: #007700">),<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;require(</span><span style="color: #0000BB">__DIR__&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'/components.php'</span><span style="color: #007700">),<br />];</span></code></pre>
-<p>Because the <code>components</code> configuration is complex too, you store it in a separate file called <code>components.php</code>
-and "require" this file in <code>web.php</code> as shown above. The content of <code>components.php</code> is as follows,</p>
+<p>鉴于 <code>components</code> 配置也很复杂，上述代码把它们存储在单独的 <code>components.php</code> 文件中，并且包含在 <code>web.php</code> 里。<code>components.php</code> 的内容如下：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cache'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\caching\FileCache'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'mailer'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\swiftmailer\Mailer'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'log'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\log\Dispatcher'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'traceLevel'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">YII_DEBUG&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">3&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'targets'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\log\FileTarget'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\db\Connection'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dsn'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'mysql:host=localhost;dbname=stay2'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'root'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'password'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'charset'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'utf8'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
-<p>To get a configuration stored in a configuration file, simply "require" it, like the following:</p>
+<p>仅仅需要 “require”，就可以取得一个配置文件的配置内容，像这样：</p>
 <pre><code class="language-php"><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;require(</span><span style="color: #DD0000">'path/to/web.php'</span><span style="color: #007700">);<br />(new&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Application</span><span style="color: #007700">(</span><span style="color: #0000BB">$config</span><span style="color: #007700">))-&gt;</span><span style="color: #0000BB">run</span><span style="color: #007700">();</span></code></pre>
-<h2>Default Configurations <a name="default-configurations"></a> <a href="#default-configurations" name="default-configurations">&para;</a></h2>
-<p>The <span style="background: #f00;">Yii::createObject()</span> method is implemented based on a <a href="guide-concept-di-container.html">dependency injection container</a>.
-It allows you specify a set of the so-called <em>default configurations</em> which will be applied to ANY instances of
-the specified classes when they are being created using <span style="background: #f00;">Yii::createObject()</span>. The default configurations
-can be specified by calling <code>Yii::$container-&gt;set()</code> in the <a href="guide-runtime-bootstrapping.html">bootstrapping</a> code.</p>
-<p>For example, if you want to customize <span style="background: #f00;">yii\widgets\LinkPager</span> so that ALL link pagers will show at most 5 page buttons
-(the default value is 10), you may use the following code to achieve this goal,</p>
+<h2>默认配置 <a name="default-configurations"></a> <a href="#mo-ren-pei-zhi" name="mo-ren-pei-zhi" class="hashlink">&para;</a></h2>
+<p><a href="./yii-baseyii.html#createObject()-detail">Yii::createObject()</a> 方法基于<a href="guide-concept-di-container.html">依赖注入容器</a>实现。使用 <span style="background: #ff0;">Yii</span><span style="background: #f00;">::creatObject()</span> 创建对象时，可以附加一系列<strong>默认配置</strong>到指定类的任何实例。默认配置还可以在<a href="guide-runtime-bootstrapping.html">入口脚本</a>中调用 <code>Yii::$container-&gt;set()</code> 来定义。</p>
+<p>例如，如果你想自定义 <a href="./yii-widgets-linkpager.html">yii\widgets\LinkPager</a> 小部件，以便让分页器最多只显示 5 个翻页按钮（默认是 10 个），你可以用下述代码实现：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$container</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #DD0000">'yii\widgets\LinkPager'</span><span style="color: #007700">,&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'maxButtonCount'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">5</span><span style="color: #007700">,<br />]);</span></code></pre>
-<p>Without using default configurations, you would have to configure <code>maxButtonCount</code> in every place where you use
-link pagers.</p>
-<h2>Environment Constants <a name="environment-constants"></a> <a href="#environment-constants" name="environment-constants">&para;</a></h2>
-<p>Configurations often vary according to the environment in which an application runs. For example,
-in development environment, you may want to use a database named <code>mydb_dev</code>, while on production server
-you may want to use the <code>mydb_prod</code> database. To facilitate switching environments, Yii provides a constant
-named <code>YII_ENV</code> that you may define in the <a href="guide-structure-entry-scripts.html">entry script</a> of your application.
-For example,</p>
+<p>不使用默认配置的话，你就得在任何使用分页器的地方，都配置 <code>maxButtonCount</code> 的值。</p>
+<h2>环境常量 <a name="environment-constants"></a> <a href="#huan-jing-chang-liang" name="huan-jing-chang-liang" class="hashlink">&para;</a></h2>
+<p>配置经常要随着应用运行的不同环境更改。例如在开发环境中，你可能使用名为 <code>mydb_dev</code> 的数据库，而生产环境则使用 <code>mydb_prod</code> 数据库。为了便于切换使用环境，Yii 提供了一个定义在入口脚本中的 <code>YII_ENV</code> 常量。如下：</p>
 <pre><code class="language-php"><span style="color: #0000BB">defined</span><span style="color: #007700">(</span><span style="color: #DD0000">'YII_ENV'</span><span style="color: #007700">)&nbsp;or&nbsp;</span><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">'YII_ENV'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'dev'</span><span style="color: #007700">);</span></code></pre>
-<p>You may define <code>YII_ENV</code> as one of the following values:</p>
+<p>你可以把 <code>YII_ENV</code> 定义成以下任何一种值：</p>
 <ul>
-<li><code>prod</code>: production environment. The constant <code>YII_ENV_PROD</code> will evaluate as true.
-This is the default value of <code>YII_ENV</code> if you do not define it.</li>
-<li><code>dev</code>: development environment. The constant <code>YII_ENV_DEV</code> will evaluate as true.</li>
-<li><code>test</code>: testing environment. The constant <code>YII_ENV_TEST</code> will evaluate as true.</li>
+<li><code>prod</code>：生产环境。常量 <code>YII_ENV_PROD</code> 将被看作 true。如果你没修改过，这就是 <code>YII_ENV</code> 的默认值。</li>
+<li><code>dev</code>：开发环境。常量 <code>YII_ENV_DEV</code> 将被看作 true。</li>
+<li><code>test</code>：测试环境。常量 <code>YII_ENV_TEST</code> 将被看作 true。</li>
 </ul>
-<p>With these environment constants, you may specify your configurations conditionally based on
-the current environment. For example, your application configuration may contain the following
-code to enable the <a href="guide-tool-debugger.html">debug toolbar and debugger</a> in development environment.</p>
-<pre><code class="language-php"><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[...];<br /><br />if&nbsp;(</span><span style="color: #0000BB">YII_ENV_DEV</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;configuration&nbsp;adjustments&nbsp;for&nbsp;'dev'&nbsp;environment<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'bootstrap'</span><span style="color: #007700">][]&nbsp;=&nbsp;</span><span style="color: #DD0000">'debug'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'modules'</span><span style="color: #007700">][</span><span style="color: #DD0000">'debug'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #DD0000">'yii\debug\Module'</span><span style="color: #007700">;<br />}<br /><br />return&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">;</span></code></pre>
+<p>有了这些环境常量，你就可以根据当下应用运行环境的不同，进行差异化配置。例如，应用可以包含下述代码只在开发环境中开启<a href="guide-tool-debugger.html">调试工具</a>。</p>
+<pre><code class="language-php"><span style="color: #0000BB">$config&nbsp;</span><span style="color: #007700">=&nbsp;[...];<br /><br />if&nbsp;(</span><span style="color: #0000BB">YII_ENV_DEV</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;根据&nbsp;`dev`&nbsp;环境进行的配置调整<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'bootstrap'</span><span style="color: #007700">][]&nbsp;=&nbsp;</span><span style="color: #DD0000">'debug'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">[</span><span style="color: #DD0000">'modules'</span><span style="color: #007700">][</span><span style="color: #DD0000">'debug'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #DD0000">'yii\debug\Module'</span><span style="color: #007700">;<br />}<br /><br />return&nbsp;</span><span style="color: #0000BB">$config</span><span style="color: #007700">;</span></code></pre>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
 
@@ -199,12 +197,91 @@ code to enable the <a href="guide-tool-debugger.html">debug toolbar and debugger
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:46 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 27 Jul 2014 21:04:22 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
     var shiftWindow = function () { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
 });</script></body>
 </html>

@@ -4,209 +4,218 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/48a2e71d/style.css" rel="stylesheet">
-<script src="./assets/26f1d6e6/jquery.js"></script>
-<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/c6866355/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/2a503da9/style.css" rel="stylesheet">
+<script src="./assets/a25e4490/jquery.js"></script>
+<script src="./assets/c6866355/js/bootstrap.js"></script>
+<script src="./assets/c4fa220/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w96" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w96-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w473" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w473-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w96-collapse" class="collapse navbar-collapse"><ul id="w97" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w473-collapse" class="collapse navbar-collapse"><ul id="w474" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
     
 <div class="row">
     <div class="col-md-2">
-                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
-<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
-<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
-<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
-<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
-<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
-<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
-<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
-<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
-<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
-<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
-<a class="list-group-item" href="./guide-concept-components.html">Components</a>
-<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
-<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
-<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
-<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
-<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
-<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
-<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
-<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
-<a class="list-group-item" href="./guide-db-dao.html">Database basics</a>
-<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
-<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
-<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
-<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
-<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
-<a class="list-group-item" href="./guide-concept-events.html">Events</a>
-<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
-<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
-<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
-<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
-<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
-<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
-<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
-<a class="list-group-item active" href="./guide-start-installation.html">Installing Yii</a>
-<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
-<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
-<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
-<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
-<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
-<a class="list-group-item" href="./guide-structure-assets.html">Managing assets</a>
-<a class="list-group-item" href="./guide-structure-models.html">Models</a>
-<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
-<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
-<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
-<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
-<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
-<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
-<a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
-<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
-<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
-<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
-<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
-<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
-<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
-<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
-<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
-<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
-<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
-<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
-<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
-<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
-<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
-<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
-<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
-<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
-<a class="list-group-item" href="./guide-structure-views.html">Views</a>
-<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
-<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
-<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
-<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
-<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
-<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-456" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-456" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item active" href="#navigation-457" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-457" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-458" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-458" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-459" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-459" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-460" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-460" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-461" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-461" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-462" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-462" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-463" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-463" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-464" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-464" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-465" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-465" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-466" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-466" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-467" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-467" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-468" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-468" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-469" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-469" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-470" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-470" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-471" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-471" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-472" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-472" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Installing Yii <a href="#installing-yii" name="installing-yii">&para;</a></h1>
-<p>You can install Yii in two ways, using <a href="http://getcomposer.org/">Composer</a> or by downloading an archive file.
-The former is the preferred way, as it allows you to install new <a href="guide-extend-creating-extensions.html">extensions</a> or update Yii by simply running a single command.</p>
-<blockquote><p>Note: Unlike with Yii 1, standard installations of Yii 2 results in both the framework and an application skeleton being downloaded and installed.</p>
+        <h1>安装 Yii <a href="#an-zhuang-yii" name="an-zhuang-yii" class="hashlink">&para;</a></h1>
+<p>你可以通过两种方式安装 Yii：使用 <a href="http://getcomposer.org/">Composer</a> 或下载一个归档文件。推荐使用前者，这样只需执行一条简单的命令就可以安装新的<a href="guide-extend-creating-extensions.html">扩展</a>或更新 Yii 了。</p>
+<blockquote><p>注意：和 Yii 1 不同，以标准方式安装 Yii 2 时会同时下载并安装框架本身和一个应用程序的基本骨架。</p>
 </blockquote>
-<h2>Installing via Composer <a name="installing-via-composer"></a> <a href="#installing-via-composer" name="installing-via-composer">&para;</a></h2>
-<p>If you do not already have Composer installed, you may do so by following the instructions at
-<a href="https://getcomposer.org/download/">getcomposer.org</a>. On Linux and Mac OS X, you'll run the following commands:</p>
+<h2>通过 Composer 安装 <a name="installing-via-composer"></a> <a href="#tong-guo-composer-an-zhuang" name="tong-guo-composer-an-zhuang" class="hashlink">&para;</a></h2>
+<p>如果还没有安装 Composer，你可以按 <a href="https://getcomposer.org/download/">getcomposer.org</a> 中的方法安装。在 Linux 和 Mac OS X 中可以运行如下命令：</p>
 <pre><code>curl -s http://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 </code></pre>
-<p>On Windows, you'll download and run <a href="https://getcomposer.org/Composer-Setup.exe">Composer-Setup.exe</a>.</p>
-<p>Please refer to the <a href="https://getcomposer.org/doc/">Composer Documentation</a> if you encounter any
-problems or want to learn more about Composer usage.</p>
-<p>With Composer installed, you can install Yii by running the following command under a Web-accessible folder:</p>
+<p>在 Windows 中，你需要下载并运行 <a href="https://getcomposer.org/Composer-Setup.exe">Composer-Setup.exe</a>。</p>
+<p>如果遇到任何问题或者想更深入地学习 Composer，请参考 <a href="https://getcomposer.org/doc/">Composer 文档（英文）</a>，<a href="https://github.com/5-say/composer-doc-cn">Composer 中文</a>。</p>
+<p>Composer 安装后，切换到一个可通过 Web 访问的目录，执行如下命令即可安装 Yii ：</p>
 <pre><code>composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 </code></pre>
-<p>The above command installs Yii in a directory named <code>basic</code>.</p>
-<blockquote><p>Tip: If you want to install the latest development version of Yii, you may use the following command,
-which adds a <a href="https://getcomposer.org/doc/04-schema.md#minimum-stability">stability option</a>:</p>
+<p>如上命令会将 Yii 安装在名为 <code>basic</code> 的目录中。</p>
+<blockquote><p>技巧：如果你想安装 Yii 的最新开发版本，可以使用如下命令，它添加了一个 <a href="https://getcomposer.org/doc/04-schema.md#minimum-stability">stability 选项</a>（<a href="https://github.com/5-say/composer-doc-cn/blob/master/cn-introduction/04-schema.md#minimum-stability">中文版</a>）:</p>
 <pre><code>composer create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
 </code></pre>
-<p>Note that the development version of Yii should not be used for production as it may break your running code.</p>
+<p>注意，Yii 的开发版(dev 版)不应该用于生产环境中，它可能会破坏运行中的代码。</p>
 </blockquote>
-<h2>Installing from an Archive File <a name="installing-from-archive-file"></a> <a href="#installing-from-an-archive-file" name="installing-from-an-archive-file">&para;</a></h2>
-<p>Installing Yii from an archive file involves two steps:</p>
+<h2>通过归档文件安装 <a name="installing-from-archive-file"></a> <a href="#tong-guo-gui-dang-wen-jian-an-zhuang" name="tong-guo-gui-dang-wen-jian-an-zhuang" class="hashlink">&para;</a></h2>
+<p>通过归档文件安装 Yii 包括两个步骤：</p>
 <ol>
-<li>Download the archive file from <a href="http://www.yiiframework.com/download/yii2-basic">yiiframework.com</a>.</li>
-<li>Unpack the downloaded file to a Web-accessible folder.</li>
+<li>从 <a href="http://www.yiiframework.com/download/yii2-basic">yiiframework.com</a> 下载归档文件。</li>
+<li>将下载的文件解压缩到 Web 目录中。</li>
+<li><p>修改 <code>config/web.php</code> 文件，给 <code>cookieValidationKey</code> 配置项添加一个密钥（若你通过 Composer 安装，则此步骤会自动完成）：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;!!!&nbsp;在下面插入一段密钥（若为空）&nbsp;-&nbsp;以供&nbsp;cookie&nbsp;validation&nbsp;的需要<br /></span><span style="color: #DD0000">'cookieValidationKey'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'在此处输入你的密钥'</span><span style="color: #007700">,</span></code></pre>
+</li>
 </ol>
-<h2>Other Installation Options <a name="other-installation-options"></a> <a href="#other-installation-options" name="other-installation-options">&para;</a></h2>
-<p>The above installation instructions show how to install Yii, which also creates a basic Web application that works out of the box.
-This approach is a good starting point for small projects, or for when you just start learning Yii.</p>
-<p>But there are other installation options available:</p>
+<h2>其他安装方式 <a name="other-installation-options"></a> <a href="#qi-ta-an-zhuang-fang-shi" name="qi-ta-an-zhuang-fang-shi" class="hashlink">&para;</a></h2>
+<p>上文介绍了两种安装 Yii 的方法，安装的同时也会创建一个立即可用的 Web 应用程序。对于小的项目或用于学习上手，这都是一个不错的起点。</p>
+<p>但是其他的安装方式也存在：</p>
 <ul>
-<li>If you only want to install the core framework and would like to build an entire  application from scratch,
-you may follow the instructions as explained in <a href="guide-tutorial-start-from-scratch.html">Building Application from Scratch</a>.</li>
-<li>If you want to start with a more sophisticated application, better suited to team development environments,
-you may consider installing the <a href="guide-tutorial-advanced-app.html">Advanced Application Template</a>.</li>
+<li>如果你只想安装核心框架，然后从零开始构建整个属于你自己的应用程序模版，可以参考<a href="guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>一节的介绍。</li>
+<li>如果你要开发一个更复杂的应用，可以更好地适用于团队开发环境的，可以考虑安装<a href="guide-tutorial-advanced-app.html">高级应用模版</a>。</li>
 </ul>
-<h2>Verifying the Installation <a name="verifying-installation"></a> <a href="#verifying-the-installation" name="verifying-the-installation">&para;</a></h2>
-<p>After installation, you can use your browser to access the installed Yii application with the following URL:</p>
+<h2>验证安装的结果 <a name="verifying-installation"></a> <a href="#yan-zheng-an-zhuang-de-jie-guo" name="yan-zheng-an-zhuang-de-jie-guo" class="hashlink">&para;</a></h2>
+<p>安装完成后，就可以使用浏览器通过如下 URL 访问刚安装完的 Yii 应用了：</p>
 <pre><code>http://localhost/basic/web/index.php
 </code></pre>
-<p>This URL assumes you have installed Yii in a directory named <code>basic</code>, directly under the Web server's document root directory,
-and that the Web server is running on your local machine (<code>localhost</code>). You may need to adjust it to your installation environment.</p>
-<p><img src="images/start-app-installed.png" alt="Successful Installation of Yii" /></p>
-<p>You should see the above "Congratulations!" page in your browser. If not, please check if your PHP installation satisfies
-Yii's requirements. You can check if the minimum requirements are met using one of the following approaches:</p>
+<p>这个 URL 假设你将 Yii 安装到了一个位于 Web 文档根目录下的 <code>basic</code> 目录中，且该 Web 服务器正运行在你自己的电脑上（<code>localhost</code>）。你可能需要将其调整为适应自己的安装环境。</p>
+<p><img src="images/start-app-installed.png" alt="Yii 安装成功" /></p>
+<p>你应该可以在浏览器中看到如上所示的 “Congratulations!” 页面。如果没有，请通过以下任意一种方式，检查当前 PHP 环境是否满足 Yii 最基本需求：</p>
 <ul>
-<li>Use a browser to access the URL <code>http://localhost/basic/requirements.php</code></li>
-<li><p>Run the following commands:</p>
+<li>通过浏览器访问 URL <code>http://localhost/basic/requirements.php</code></li>
+<li><p>执行如下命令：</p>
 <pre><code>cd basic
 php requirements.php
 </code></pre>
 </li>
 </ul>
-<p>You should configure your PHP installation so that it meets the minimum requirements of Yii. Most importantly, you should have PHP 5.4 or above. You should also install
-the <a href="http://www.php.net/manual/en/pdo.installation.php">PDO PHP Extension</a> and a corresponding database driver
-(such as <code>pdo_mysql</code> for MySQL databases), if your application needs a database.</p>
-<h2>Configuring Web Servers <a name="configuring-web-servers"></a> <a href="#configuring-web-servers" name="configuring-web-servers">&para;</a></h2>
-<blockquote><p>Info: You may skip this subsection for now if you are just test driving Yii with no intention
-  of deploying it to a production server.</p>
-</blockquote>
-<p>The application installed according to the above instructions should work out of box with either
-an <a href="http://httpd.apache.org/">Apache HTTP server</a> or an <a href="http://nginx.org/">Nginx HTTP server</a>, on
- Windows, Mac OS X, or Linux.</p>
-<p>On a production server, you may want to configure your Web server so that the application can be accessed
-via the URL <code>http://www.example.com/index.php</code> instead of <code>http://www.example.com/basic/web/index.php</code>. Such configuration
-requires pointing the document root of your Web server to the <code>basic/web</code> folder. You may also
-want to hide <code>index.php</code> from the URL, as described in the <a href="guide-runtime-url-handling.html">URL Parsing and Generation</a> section.
-In this subsection, you'll learn how to configure your Apache or Nginx server to achieve these goals.</p>
-<blockquote><p>Info: By setting <code>basic/web</code> as the document root, you also prevent end users from accessing
-your private application code and sensitive data files that are stored in the sibling directories
-of <code>basic/web</code>. Denying access to those other folders is a security improvement.</p>
-</blockquote>
-<blockquote><p>Info: If your application will run in a shared hosting environment where you do not have permission
-to modify its Web server configuration, you may still adjust the structure of your application for better security. Please refer to
-the <a href="guide-tutorial-shared-hosting.html">Shared Hosting Environment</a> section for more details.</p>
-</blockquote>
-<h3>Recommended Apache Configuration <a name="recommended-apache-configuration"></a> <a href="#recommended-apache-configuration" name="recommended-apache-configuration">&para;</a></h3>
-<p>Use the following configuration in Apache's <code>httpd.conf</code> file or within a virtual host configuration. Note that you
-should replace <code>path/to/basic/web</code> with the actual path for <code>basic/web</code>.</p>
-<pre><code># Set document root to be "basic/web"
+<p>你需要配置好 PHP 安装环境，使其符合 Yii 的最小需求。主要是需要 PHP 5.4 以上版本。如果应用需要用到数据库，那还要安装 <a href="http://www.php.net/manual/zh/pdo.installation.php">PDO PHP 扩展</a> 和相应的数据库驱动（例如访问 MySQL 数据库所需的 <code>pdo_mysql</code>）。</p>
+<h2>配置 Web 服务器 <a name="configuring-web-servers"></a> <a href="#pei-zhi-web-fu-wu-qi" name="pei-zhi-web-fu-wu-qi" class="hashlink">&para;</a></h2>
+<p>&gt;补充：如果你现在只是要试用 Yii 而不是将其部署到生产环境中，本小节可以跳过。</p>
+<p>通过上述方法安装的应用程序在 Windows，Max OS X，Linux 中的 <a href="http://httpd.apache.org/">Apache HTTP 服务器</a>或 <a href="http://nginx.org/">Nginx HTTP 服务器</a> 上都可以直接运行。</p>
+<p>在生产环境的服务器上，你可能会想配置服务器让应用程序可以通过 URL <code>http://www.example.com/index.php</code> 访问而不是 <code>http://www.example.com/basic/web/index.php</code>。这种配置需要将 Web 服务器的文档根目录指向 <code>basic/web</code> 目录。可能你还会想隐藏掉 URL 中的 <code>index.php</code>，具体细节在 <a href="guide-runtime-url-handling.html">URL 解析和生成</a> 一章中有介绍，你将学到如何配置 Apache 或 Nginx 服务器实现这些目标。</p>
+<p>&gt;补充：将 <code>basic/web</code> 设置为文档根目录，可以防止终端用户访问 <code>basic/web</code> 相邻目录中的私有应用代码和敏感数据文件。禁止对其他目录的访问是一个不错的安全改进。</p>
+<p>&gt;补充：如果你的应用程序将来要运行在共享虚拟主机环境中，没有修改其 Web 服务器配置的权限，你依然可以通过调整应用的结构来提升安全性。详情请参考<a href="guide-tutorial-shared-hosting.html">共享主机环境</a> 一章。</p>
+<h3>推荐使用的 Apache 配置 <a name="recommended-apache-configuration"></a> <a href="#tui-jian-shi-yong-de-apache-pei-zhi" name="tui-jian-shi-yong-de-apache-pei-zhi" class="hashlink">&para;</a></h3>
+<p>在 Apache 的 <code>httpd.conf</code> 文件或在一个虚拟主机配置文件中使用如下配置。注意，你应该将 <code>path/to/basic/web</code> 替换为实际的 <code>basic/web</code> 目录。</p>
+<pre><code># 设置文档根目录为 “basic/web”
 DocumentRoot "path/to/basic/web"
 
 &lt;Directory "path/to/basic/web"&gt;
     RewriteEngine on
 
-    # If a directory or a file exists, use the request directly
+    # 如果请求的是真实存在的文件或目录，直接访问
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    # Otherwise forward the request to index.php
+    # 如果请求的不是真实文件或目录，分发请求至 index.php
     RewriteRule . index.php
 
-    # ...other settings...
+    # ...其它设置...
 &lt;/Directory&gt;
 </code></pre>
-<h3>Recommended Nginx Configuration <a name="recommended-nginx-configuration"></a> <a href="#recommended-nginx-configuration" name="recommended-nginx-configuration">&para;</a></h3>
-<p>You should have installed PHP as an <a href="http://php.net/install.fpm">FPM SAPI</a> to use <a href="http://wiki.nginx.org/">Nginx</a>.
-Use the following Nginx configuration, replacing <code>path/to/basic/web</code> with the actual path for <code>basic/web</code> and <code>mysite.local</code> with
-the actual hostname to serve.</p>
+<h3>推荐使用的 Nginx 配置 <a name="recommended-nginx-configuration"></a> <a href="#tui-jian-shi-yong-de-nginx-pei-zhi" name="tui-jian-shi-yong-de-nginx-pei-zhi" class="hashlink">&para;</a></h3>
+<p>为了使用 <a href="http://wiki.nginx.org/">Nginx</a>，你应该已经将 PHP 安装为 <a href="http://php.net/install.fpm">FPM SAPI</a> 了。使用如下 Nginx 配置，将 <code>path/to/basic/web</code> 替换为实际的 <code>basic/web</code> 目录，<code>mysite.local</code> 替换为实际的主机名以提供服务。</p>
 <pre><code>server {
     charset utf-8;
     client_max_body_size 128M;
 
-    listen 80; ## listen for ipv4
-    #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
+    listen 80; ## 监听 ipv4 上的 80 端口
+    #listen [::]:80 default_server ipv6only=on; ## 监听 ipv6 上的 80 端口
 
     server_name mysite.local;
     root        /path/to/basic/web;
@@ -216,11 +225,11 @@ the actual hostname to serve.</p>
     error_log   /path/to/basic/log/error.log;
 
     location / {
-        # Redirect everything that isn't a real file to index.php
+        # 如果找不到真实存在的文件，把请求重定向给 index.php
         try_files $uri $uri/ /index.php?$args;
     }
 
-    # uncomment to avoid processing of calls to non-existing static files by Yii
+    # 若取消下面这段的注释，可避免 Yii 接管不存在文件的处理过程（404）
     #location ~ \.(js|css|png|jpg|gif|swf|ico|pdf|mov|fla|zip|rar)$ {
     #    try_files $uri =404;
     #}
@@ -237,10 +246,9 @@ the actual hostname to serve.</p>
     }
 }
 </code></pre>
-<p>When using this configuration, you should also set <code>cgi.fix_pathinfo=0</code> in the <code>php.ini</code> file
-in order to avoid many unnecessary system <code>stat()</code> calls.</p>
-<p>Also note that when running an HTTPS server, you need to add <code>fastcgi_param HTTPS on;</code> so that Yii
-can properly detect if a connection is secure.</p>
+<p>使用该配置时，你还应该在 <code>php.ini</code> 文件中设置 <code>cgi.fix_pathinfo=0</code> ，能避免掉很多不必要的 <code>stat()</code> 系统调用。</p>
+<p>还要注意当运行一个 HTTPS 服务器时，需要添加 <code>fastcgi_param HTTPS on;</code> 一行，这样 Yii 才能正确地判断连接是否安全。</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
 
@@ -248,12 +256,91 @@ can properly detect if a connection is secure.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:47 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 27 Jul 2014 21:04:23 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
     var shiftWindow = function () { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
 });</script></body>
 </html>

@@ -4,188 +4,180 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/48a2e71d/style.css" rel="stylesheet">
-<script src="./assets/26f1d6e6/jquery.js"></script>
-<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/c6866355/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/2a503da9/style.css" rel="stylesheet">
+<script src="./assets/a25e4490/jquery.js"></script>
+<script src="./assets/c6866355/js/bootstrap.js"></script>
+<script src="./assets/c4fa220/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w94" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w94-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w454" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w454-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w94-collapse" class="collapse navbar-collapse"><ul id="w95" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w454-collapse" class="collapse navbar-collapse"><ul id="w455" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
     
 <div class="row">
     <div class="col-md-2">
-                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
-<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
-<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
-<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
-<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
-<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
-<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
-<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
-<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
-<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
-<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
-<a class="list-group-item" href="./guide-concept-components.html">Components</a>
-<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
-<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
-<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
-<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
-<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
-<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
-<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
-<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
-<a class="list-group-item" href="./guide-db-dao.html">Database basics</a>
-<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
-<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
-<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
-<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
-<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
-<a class="list-group-item" href="./guide-concept-events.html">Events</a>
-<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
-<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
-<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
-<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
-<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
-<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
-<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
-<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
-<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
-<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
-<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
-<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
-<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
-<a class="list-group-item" href="./guide-structure-assets.html">Managing assets</a>
-<a class="list-group-item" href="./guide-structure-models.html">Models</a>
-<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
-<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
-<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
-<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
-<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
-<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
-<a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
-<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
-<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
-<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
-<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
-<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
-<a class="list-group-item active" href="./guide-start-hello.html">Saying Hello</a>
-<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
-<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
-<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
-<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
-<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
-<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
-<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
-<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
-<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
-<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
-<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
-<a class="list-group-item" href="./guide-structure-views.html">Views</a>
-<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
-<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
-<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
-<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
-<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
-<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-437" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-437" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item active" href="#navigation-438" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-438" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item active" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-439" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-439" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-440" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-440" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-441" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-441" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-442" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-442" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-443" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-443" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-444" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-444" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-445" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-445" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-446" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-446" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-447" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-447" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-448" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-448" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-449" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-449" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-450" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-450" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-451" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-451" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-452" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-452" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-453" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-453" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Saying Hello <a href="#saying-hello" name="saying-hello">&para;</a></h1>
-<p>This section describes how to create a new "Hello" page in your application.
-To achieve this goal, you will create an <a href="guide-structure-controllers.html#creating-actions">action</a> and
-a <a href="guide-structure-views.html">view</a>:</p>
+        <h1>说声 Hello <a href="#shuo-sheng-hello" name="shuo-sheng-hello" class="hashlink">&para;</a></h1>
+<p>本章节描述了如何在你的应用中创建一个新的 “Hello” 页面。为了做到这点，将会创建一个<a href="guide-structure-controllers.html#creating-actions">操作</a>和一个<a href="structure-views.md">视图</a>：</p>
 <ul>
-<li>The application will dispatch the page request to the action</li>
-<li>and the action will in turn render the view that shows the word "Hello" to the end user.</li>
+<li>应用将会分派页面请求给操作</li>
+<li>操作将会依次渲染视图呈现 “Hello” 给最终用户</li>
 </ul>
-<p>Through this tutorial, you will learn three things:</p>
+<p>贯穿整个章节，你将会掌握三件事：</p>
 <ol>
-<li>How to create an <a href="guide-structure-controllers.html">action</a> to respond to requests,</li>
-<li>how to create a <a href="guide-structure-views.html">view</a> to compose the response's content, and</li>
-<li>how an application dispatches requests to <a href="guide-structure-controllers.html#creating-actions">actions</a>.</li>
+<li>如何创建一个<a href="guide-structure-controllers.html">操作</a>去响应请求，</li>
+<li>如何创建一个<a href="guide-structure-views.html">视图</a>去构造响应内容，</li>
+<li>以及一个应用如何分派请求给<a href="guide-structure-controllers.html#creating-actions">操作</a>。</li>
 </ol>
-<h2>Creating an Action <a name="creating-action"></a> <a href="#creating-an-action" name="creating-an-action">&para;</a></h2>
-<p>For the "Hello" task, you will create a <code>say</code> <a href="guide-structure-controllers.html#creating-actions">action</a> that reads
-a <code>message</code> parameter from the request and displays that message back to the user. If the request
-does not provide a <code>message</code> parameter, the action will display the default "Hello" message.</p>
-<blockquote><p>Info: <a href="guide-structure-controllers.html#creating-actions">Actions</a> are the objects that end users can directly refer to for
-  execution. Actions are grouped by <a href="guide-structure-controllers.html">controllers</a>. The execution result of
-  an action is the response that an end user will receive.</p>
+<h2>创建操作 <a name="creating-action"></a> <a href="#chuang-jian-cao-zuo" name="chuang-jian-cao-zuo" class="hashlink">&para;</a></h2>
+<p>为了说 “Hello”，需要创建一个 <code>say</code> <a href="guide-structure-controllers.html#creating-actions">操作</a>，从请求中接收 <code>message</code> 参数并显示给最终用户。如果请求没有提供 <code>message</code> 参数，操作将显示默认参数 “Hello”。</p>
+<blockquote><p>补充：<a href="guide-structure-controllers.html#creating-actions">操作</a>是最终用户可以直接访问并执行的对象。操作被组织在<a href="structure-controllers.md">控制器</a>中。一个操作的执行结果就是最终用户收到的响应内容。</p>
 </blockquote>
-<p>Actions must be declared in <a href="guide-structure-controllers.html">controllers</a>. For simplicity, you may
-declare the <code>say</code> action in the existing  <code>SiteController</code>. This controller is defined
-in the class file <code>controllers/SiteController.php</code>. Here is the start of the new action:</p>
-<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /><br /></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">controllers</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">SiteController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...existing&nbsp;code...<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionSay</span><span style="color: #007700">(</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Hello'</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'say'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'message'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
-<p>In the above code, the <code>say</code> action is defined as a method named <code>actionSay</code> in the <code>SiteController</code> class.
-Yii uses the prefix <code>action</code> to differentiate action methods from non-action methods in a controller class.
-The name after the <code>action</code> prefix maps to the action's ID.</p>
-<p>When it comes to naming your actions, you should understand how Yii treats action IDs. Action IDs are always
-referenced in lower case. If an action ID requires multiple words, they will be concatenated by dashes
-(e.g., <code>create-comment</code>). Action method names are mapped to action IDs by removing any dashes from the IDs,
-capitalizing the first letter in each word, and prefixing the resulting with <code>action</code>. For example,
-the action ID <code>create-comment</code> corresponds to the action method name <code>actionCreateComment</code>.</p>
-<p>The action method in our example takes a parameter <code>$message</code>, whose value defaults to <code>"Hello"</code> (in exactly
-the same way you set a default value for any function or method argument in PHP). When the application
-receives a request and determines that the <code>say</code> action is responsible for handling said request, the application will
-populate this parameter with the same named parameter found in the request. In other words, if the request includes
-a <code>message</code> parameter with a value of <code>"Goodbye"</code>, the <code>$message</code> variable within the action will be assigned that value.</p>
-<p>Within the action method, <span style="background: #f00;">yii\web\Controller::render()</span> is called to render
-a <a href="guide-structure-views.html">view</a> file named <code>say</code>. The <code>message</code> parameter is also passed to the view
-so that it can be used there. The rendering result is returned by the action method. That result will be received
-by the application and displayed to the end user in the browser (as part of a complete HTML page). </p>
-<h2>Creating a View <a name="creating-view"></a> <a href="#creating-a-view" name="creating-a-view">&para;</a></h2>
-<p><a href="guide-structure-views.html">Views</a> are scripts you write to generate a response's content.
-For the "Hello" task, you will create a <code>say</code> view that prints the <code>message</code> parameter received from the action method, and passed by the action to the view:</p>
+<p>操作必须声明在<a href="guide-structure-controllers.html">控制器</a>中。为了简单起见，你可以直接在 <code>SiteController</code> 控制器里声明 <code>say</code> 操作。这个控制器是由文件 <code>controllers/SiteController.php</code> 定义的。以下是一个操作的声明：</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /><br /></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">controllers</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">SiteController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...其它代码...<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionSay</span><span style="color: #007700">(</span><span style="color: #0000BB">$message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'你好'</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'say'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'message'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">]);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
+<p>在上述 <code>SiteController</code> 代码中，<code>say</code> 操作被定义为 <code>actionSay</code> 方法。Yii 使用 <code>action</code> 前缀区分普通方法和操作。<code>action</code> 前缀后面的名称被映射为操作的 ID。</p>
+<p>涉及到给操作命名时，你应该理解 Yii 如何处理操作 ID。操作 ID 总是被以小写处理，如果一个操作 ID 由多个单词组成，单词之间将由连字符连接（如 <code>create-comment</code>）。操作 ID 映射为方法名时移除了连字符，将每个单词首字母大写，并加上 <code>action</code> 前缀。 例子：操作 ID <code>create-comment</code> 相当于方法名 <code>actionCreateComment</code>。</p>
+<p>上述代码中的操作方法接受一个参数 <code>$message</code>，它的默认值是 <code>“Hello”</code>（就像你设置 PHP 中其它函数或方法的默认值一样）。当应用接收到请求并确定由 <code>say</code> 操作来响应请求时，应用将从请求的参数中寻找对应值传入进来。换句话说，如果请求包含一个 <code>message</code> 参数，它的值是 <code>“Goodybye”</code>， 操作方法中的 <code>$message</code> 变量也将被填充为 <code>“Goodbye”</code>。</p>
+<p>在操作方法中，<a href="./yii-base-controller.html#render()-detail">render()</a> 被用来渲染一个名为 <code>say</code> 的<a href="guide-structure-views.html">视图</a>文件。 <code>message</code> 参数也被传入视图，这样就可以在里面使用。操作方法会返回渲染结果。结果会被应用接收并显示给最终用户的浏览器（作为整页 HTML 的一部分）。</p>
+<h2>创建视图 <a name="creating-view"></a> <a href="#chuang-jian-shi-tu" name="chuang-jian-shi-tu" class="hashlink">&para;</a></h2>
+<p><a href="guide-structure-views.html">视图</a>是你用来生成响应内容的脚本。为了说 “Hello”，你需要创建一个 <code>say</code> 视图，以便显示从操作方法中传来的 <code>message</code> 参数。</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">helpers</span><span style="color: #007700">\</span><span style="color: #0000BB">Html</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;<br />&lt;?=&nbsp;Html</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$message</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>The <code>say</code> view should be saved in the file <code>views/site/say.php</code>. When the method <span style="background: #f00;">yii\web\Controller::render()</span>
-is called in an action, it will look for a PHP file named as <code>views/ControllerID/ViewName.php</code>.</p>
-<p>Note that in the above code, the <code>message</code> parameter is <span style="background: #f00;">yii\helpers\Html::encode()</span>
-before being printed. This is necessary as the parameter comes from an end user, making it vulnerable to
-<a href="http://en.wikipedia.org/wiki/Cross-site_scripting">cross-site scripting (XSS) attacks</a> by embedding
-malicious JavaScript code in the parameter.</p>
-<p>Naturally, you may put more content in the <code>say</code> view. The content can consist of HTML tags, plain text, and even PHP statements.
-In fact, the <code>say</code> view is just a PHP script that is executed by the <span style="background: #f00;">yii\web\Controller::render()</span> method.
-The content printed by the view script will be returned to the application as the response's result. The application will in turn output this result to the end user.</p>
-<h2>Trying it Out <a name="trying-it-out"></a> <a href="#trying-it-out" name="trying-it-out">&para;</a></h2>
-<p>After creating the action and the view, you may access the new page by accessing the following URL:</p>
+<p><code>say</code> 视图应该存为 <code>views/site/say.php</code> 文件。当一个操作中调用了 <a href="./yii-base-controller.html#render()-detail">render()</a> 方法时，它将会按 <code>views/控制器 ID/视图名.php</code> 路径加载 PHP 文件。</p>
+<p>注意以上代码，<code>message</code> 参数在输出之前被 <a href="./yii-helpers-basehtml.html#encode()-detail">HTML-encoded</a> 方法处理过。这很有必要，当参数来自于最终用户时，参数中可能隐含的恶意 JavaScript 代码会导致<a href="http://en.wikipedia.org/wiki/Cross-site_scripting">跨站脚本（XSS）攻击</a>。</p>
+<p>当然了，你大概会在 <code>say</code> 视图里放入更多内容。内容可以由 HTML 标签，纯文本，甚至 PHP 语句组成。实际上 <code>say</code> 视图就是一个由 <a href="./yii-base-controller.html#render()-detail">render()</a> 执行的 PHP 脚本。视图脚本输出的内容将会作为响应结果返回给应用。应用将依次输出结果给最终用户。</p>
+<h2>尝试下 <a name="trying-it-out"></a> <a href="#chang-shi-xia" name="chang-shi-xia" class="hashlink">&para;</a></h2>
+<p>创建完操作和视图后，你就可以通过下面的 URL 访问新页面了：</p>
 <pre><code>http://hostname/index.php?r=site/say&amp;message=Hello+World
 </code></pre>
 <p><img src="images/start-hello-world.png" alt="Hello World" /></p>
-<p>This URL will result in a page displaying "Hello World". The page shares the same header and footer as the other application pages. </p>
-<p>If you omit the <code>message</code> parameter in the URL, you would see the page display just "Hello". This is because <code>message</code> is passed as a parameter to the <code>actionSay()</code> method, and when it is omitted,
-the default value of <code>"Hello"</code> will be used instead.</p>
-<blockquote><p>Info: The new page shares the same header and footer as other pages because the <span style="background: #f00;">yii\web\Controller::render()</span>
-  method will automatically embed the result of the <code>say</code> view in a so-called <a href="guide-structure-views.html#layouts">layout</a> which in this
-  case is located at <code>views/layouts/main.php</code>.</p>
+<p>这个 URL 将会输出包含 “Hello World” 的页面，页面和应用里的其它页面使用同样的头部和尾部。</p>
+<p>如果你省略 URL 中的 <code>message</code> 参数，将会看到页面只显示 “Hello”。这是因为 <code>message</code> 被作为一个参数传给 <code>actionSay()</code> 方法，当省略它时，参数将使用默认的 <code>“Hello”</code> 代替。</p>
+<blockquote><p>补充：新页面和其它页面使用同样的头部和尾部是因为 <a href="./yii-base-controller.html#render()-detail">render()</a> 方法会自动把 <code>say</code> 视图执行的结果嵌入称为<a href="guide-structure-views.html#layouts">布局</a>的文件中，本例中是 <code>views/layouts/main.php</code>。</p>
 </blockquote>
-<p>The <code>r</code> parameter in the above URL requires more explanation. It stands for <a href="guide-runtime-routing.html">route</a>, an application wide unique ID
-that refers to an action. The route's format is <code>ControllerID/ActionID</code>. When the application receives
-a request, it will check this parameter, using the <code>ControllerID</code> part to determine which controller
-class should be instantiated to handle the request. Then, the controller will use the <code>ActionID</code> part
-to determine which action should be instantiated to do the real work. In this example case, the route <code>site/say</code>
-will be resolved to the <code>SiteController</code> controller class and the <code>say</code> action. As a result,
-the <code>SiteController::actionSay()</code> method will be called to handle the request.</p>
-<blockquote><p>Info: Like actions, controllers also have IDs that uniquely identify them in an application.
-  Controller IDs use the same naming rules as action IDs. Controller class names are derived from
-  controller IDs by removing dashes from the IDs, capitalizing the first letter in each word,
-  and suffixing the resulting string with the word <code>Controller</code>. For example, the controller ID <code>post-comment</code> corresponds
-  to the controller class name <code>PostCommentController</code>.</p>
+<p>上面 URL 中的参数 <code>r</code> 需要更多解释。它代表<a href="guide-runtime-routing.html">路由</a>，是整个应用级的，指向特定操作的独立 ID。路由格式是 <code>控制器 ID/操作 ID</code>。应用接受请求的时候会检查参数，使用控制器 ID 去确定哪个控制器应该被用来处理请求。然后相应控制器将使用操作 ID 去确定哪个操作方法将被用来做具体工作。上述例子中，路由 <code>site/say</code> 将被解析至 <code>SiteController</code> 控制器和其中的 <code>say</code> 操作。因此 <code>SiteController::actionSay()</code> 方法将被调用处理请求。</p>
+<blockquote><p>补充：与操作一样，一个应用中控制器同样有唯一的 ID。控制器 ID 和操作 ID 使用同样的命名规则。控制器的类名源自于控制器 ID，移除了连字符，每个单词首字母大写，并加上 <code>Controller</code> 后缀。例子：控制器 ID <code>post-comment</code> 相当于控制器类名 <code>PostCommentController</code>。</p>
 </blockquote>
-<h2>Summary <a name="summary"></a> <a href="#summary" name="summary">&para;</a></h2>
-<p>In this section, you have touched the controller and view parts of the MVC design pattern.
-You created an action as part of a controller to handle a specific request. And you also created a view
-to compose the response's content. In this simple example, no model was involved as the only data used was the <code>message</code> parameter.</p>
-<p>You have also learned about routes in Yii, which act as the bridge between user requests and controller actions.</p>
-<p>In the next section, you will learn how to create a model, and add a new page containing an HTML form.</p>
+<h2>总结 <a name="summary"></a> <a href="#zong-jie" name="zong-jie" class="hashlink">&para;</a></h2>
+<p>通过本章节你接触了 MVC 设计模式中的控制器和视图部分。创建了一个操作作为控制器的一部分去处理特定请求。然后又创建了一个视图去构造响应内容。在这个小例子中，没有模型调用，唯一涉及到数据的地方是 <code>message</code> 参数。</p>
+<p>你同样学习了 Yii 路由的相关内容，它是用户请求与控制器操作之间的桥梁。</p>
+<p>下一章，你将学习如何创建一个模型，以及添加一个包含 HTML 表单的页面。</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
 
@@ -193,12 +185,91 @@ to compose the response's content. In this simple example, no model was involved
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:47 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 27 Jul 2014 21:04:23 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
     var shiftWindow = function () { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
 });</script></body>
 </html>

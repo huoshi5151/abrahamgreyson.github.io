@@ -4,139 +4,157 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/48a2e71d/style.css" rel="stylesheet">
-<script src="./assets/26f1d6e6/jquery.js"></script>
-<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/c6866355/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/2a503da9/style.css" rel="stylesheet">
+<script src="./assets/a25e4490/jquery.js"></script>
+<script src="./assets/c6866355/js/bootstrap.js"></script>
+<script src="./assets/c4fa220/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w24" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w24-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w245" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w245-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w24-collapse" class="collapse navbar-collapse"><ul id="w25" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w245-collapse" class="collapse navbar-collapse"><ul id="w246" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
     
 <div class="row">
     <div class="col-md-2">
-                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
-<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
-<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
-<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
-<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
-<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
-<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
-<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
-<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
-<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
-<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
-<a class="list-group-item" href="./guide-concept-components.html">Components</a>
-<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
-<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
-<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
-<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
-<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
-<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
-<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
-<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
-<a class="list-group-item" href="./guide-db-dao.html">Database basics</a>
-<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
-<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
-<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
-<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
-<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
-<a class="list-group-item" href="./guide-concept-events.html">Events</a>
-<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
-<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
-<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
-<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
-<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
-<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
-<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
-<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
-<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
-<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
-<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
-<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
-<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
-<a class="list-group-item" href="./guide-structure-assets.html">Managing assets</a>
-<a class="list-group-item" href="./guide-structure-models.html">Models</a>
-<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
-<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
-<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
-<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
-<a class="list-group-item active" href="./guide-concept-properties.html">Properties</a>
-<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
-<a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
-<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
-<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
-<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
-<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
-<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
-<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
-<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
-<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
-<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
-<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
-<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
-<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
-<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
-<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
-<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
-<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
-<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
-<a class="list-group-item" href="./guide-structure-views.html">Views</a>
-<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
-<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
-<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
-<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
-<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
-<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-228" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-228" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-229" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-229" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-230" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-230" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-231" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-231" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item active" href="#navigation-232" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-232" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item active" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-233" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-233" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-234" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-234" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-235" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-235" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-236" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-236" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-237" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-237" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-238" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-238" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-239" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-239" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-240" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-240" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-241" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-241" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-242" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-242" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-243" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-243" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-244" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-244" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Properties <a href="#properties" name="properties">&para;</a></h1>
-<p>In PHP, class member variables are also called <em>properties</em>. These variables are part of the class definition, and are used
-to represent the state of a class instance (i.e., to differentiate one instance of the class from another). In practice, you may often want to handle the reading or writing of properties in special ways. For example, you may want to always trim a string when it is being assigned
-to a <code>label</code> property. You <em>could</em> use the following code to achieve this task:</p>
+        <h1>属性（Property） <a href="#shu-xing-property" name="shu-xing-property" class="hashlink">&para;</a></h1>
+<p>在 PHP 中，类的成员变量也被称为<strong>属性（properties）</strong>。它们是类定义的一部分，用来表现一个实例的状态（也就是区分类的不同实例）。在具体实践中，常常会想用一个稍微特殊些的方法实现属性的读写。例如，要对 <code>label</code> 属性执行 trim 操作，可以用以下代码实现：</p>
 <pre><code class="language-php"><span style="color: #0000BB">$object</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">$label</span><span style="color: #007700">);</span></code></pre>
-<p>The drawback of the above code is that you would have to call <code>trim()</code> everywhere in your code where you might set the <code>label</code>
-property. If, in the future, the <code>label</code> property gets a new requirement, such as the first letter must be captialized, you would again have to modify every bit of code that assigns a value to <code>label</code>. The repetition of code leads to bugs, and is a practice you want to avoid as much as possible.</p>
-<p>To solve this problem, Yii introduces a base class called <span style="background: #f00;">yii\base\Object</span> that supports defining properties
-based on <em>getter</em> and <em>setter</em> class methods. If a class needs that functionality, it should extend from
-<span style="background: #f00;">yii\base\Object</span>, or from a child class.</p>
-<blockquote><p>Info: Nearly every core class in the Yii framework extends from <span style="background: #f00;">yii\base\Object</span> or a child class.
-  This means that whenever you see a getter or setter in a core class, you can use it like a property.</p>
+<p>上述代码的缺点是只要修改 <code>label</code> 属性就必须再次调用 <code>trim()</code> 函数。若将来需要用其它方式处理 <code>label</code> 属性，比如首字母大写，就不得不修改所有给 <code>label</code> 属性赋值的代码。这种代码的重复会导致 bug，这种实践显然需要尽可能避免。</p>
+<p>为解决该问题，Yii 引入了一个名为 <a href="./yii-base-object.html">yii\base\Object</a> 的基类，它支持基于类内的 <strong>getter</strong> 和 <strong>setter</strong>（读取器和设定器）方法来定义属性。如果某类需要支持这个特性，只需要继承 <a href="./yii-base-object.html">yii\base\Object</a> 或其子类即可。</p>
+<blockquote><p>补充：几乎每个 Yii 框架的核心类都继承自 <a href="./yii-base-object.html">yii\base\Object</a> 或其子类。这意味着只要在核心类中见到 getter 或 setter 方法，就可以像调用属性一样调用它。</p>
 </blockquote>
-<p>A getter method is a method whose name starts with the word <code>get</code>; a setter method starts with <code>set</code>.
-The name after the <code>get</code> or <code>set</code> prefix defines the name of a property. For example, a getter <code>getLabel()</code> and/or
-a setter <code>setLabel()</code> defines a property named <code>label</code>, as shown in the following code:</p>
+<p>getter 方法是名称以 <code>get</code> 开头的方法，而 setter 方法名以 <code>set</code> 开头。方法名中 <code>get</code> 或 <code>set</code> 后面的部分就定义了该属性的名字。如下面代码所示，getter 方法 <code>getLabel()</code> 和 setter 方法 <code>setLabel()</code> 操作的是 <code>label</code> 属性，：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">components</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">base</span><span style="color: #007700">\</span><span style="color: #0000BB">Object</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">Foo&nbsp;extend&nbsp;Object<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;private&nbsp;</span><span style="color: #0000BB">$_label</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">getLabel</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_label</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">setLabel</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">_label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">trim</span><span style="color: #007700">(</span><span style="color: #0000BB">$value</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
-<p>(To be clear, the getter and setter methods create the property <code>label</code>, which in this case internally refer to a private attributed named <code>_label</code>.)</p>
-<p>Properties defined by getters and setters can be used like class member variables. The main difference is that
-when such a property is being read, the corresponding getter method will be called;  when the property is
-being assigned a value, the corresponding setter method will be called. For example:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;equivalent&nbsp;to&nbsp;$label&nbsp;=&nbsp;$object-&gt;getLabel();<br /></span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label</span><span style="color: #007700">;<br /><br /></span><span style="color: #FF8000">//&nbsp;equivalent&nbsp;to&nbsp;$object-&gt;setLabel('abc');<br /></span><span style="color: #0000BB">$object</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'abc'</span><span style="color: #007700">;</span></code></pre>
-<p>A property defined by a getter without a setter is <em>read only</em>. Trying to assign a value to such a property will cause
-an <span style="background: #f00;">yii\base\InvalidCallException</span>. Similarly, a property defined by a setter without a getter
-is <em>write only</em>, and trying to read such a property will also cause an exception. It is not common to have write-only
-properties.</p>
-<p>There are several special rules for, and limitations on, the properties defined via getters and setters:</p>
+<p>（详细解释：getter 和 setter 方法创建了一个名为 <code>label</code> 的属性，在这个例子里，它指向一个私有的内部属性 <code>_label</code>。）</p>
+<p>getter/setter 定义的属性用法与类成员变量一样。两者主要的区别是：当这种属性被读取时，对应的 getter 方法将被调用；而当属性被赋值时，对应的 setter 方法就调用。如：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;等效于&nbsp;$label&nbsp;=&nbsp;$object-&gt;getLabel();<br /></span><span style="color: #0000BB">$label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label</span><span style="color: #007700">;<br /><br /></span><span style="color: #FF8000">//&nbsp;等效于&nbsp;$object-&gt;setLabel('abc');<br /></span><span style="color: #0000BB">$object</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">label&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'abc'</span><span style="color: #007700">;</span></code></pre>
+<p>只定义了 getter 没有 setter 的属性是<strong>只读属性</strong>。尝试赋值给这样的属性将导致 <a href="./yii-base-invalidcallexception.html">InvalidCallException</a> （无效调用）异常。类似的，只有 setter 方法而没有 getter 方法定义的属性是<strong>只写属性</strong>，尝试读取这种属性也会触发异常。使用只写属性的情况几乎没有。</p>
+<p>通过 getter 和 setter 定义的属性也有一些特殊规则和限制：</p>
 <ul>
-<li>The names of such properties are <em>case-insensitive</em>. For example, <code>$object-&gt;label</code> and <code>$object-&gt;Label</code> are the same.
-This is because method names in PHP are case-insensitive.</li>
-<li>If the name of such a property is the same as a class member variable, the latter will take precedence.
-For example, if the above <code>Foo</code> class has a member variable <code>label</code>, then the assignment <code>$object-&gt;label = 'abc'</code>
-will affect the <em>member variable</em> 'label'; that line would not call the  <code>setLabel()</code> setter method.</li>
-<li>These properties do not support visibility. It makes no difference for the visibility of a property
-if the defining getter or setter method is public, protected or private.</li>
-<li>The properties can only be defined by <em>non-static</em> getters and/or setters. Static methods will not be treated in this same manner.</li>
+<li>这类属性的名字是<strong>不区分大小写</strong>的。如，<code>$object-&gt;label</code> 和 <code>$object-&gt;Label</code> 是同一个属性。因为 PHP 方法名是不区分大小写的。</li>
+<li>如果此类属性名和类成员变量相同，以后者为准。例如，假设以上 <code>Foo</code> 类有个 <code>label</code> 成员变量，然后给 <code>$object-&gt;label = 'abc'</code> 赋值，将赋给成员变量而不是 setter <code>setLabel()</code> 方法。</li>
+<li>这类属性不支持可见性（访问限制）。定义属性的 getter 和 setter 方法是 public、protected 还是 private 对属性的可见性没有任何影响。</li>
+<li>这类属性的 getter 和 setter 方法只能定义为<strong>非静态</strong>的，若定义为静态方法（static）则不会以相同方式处理。</li>
 </ul>
-<p>Returning back to the problem described at the beginning of this guide, instead of calling <code>trim()</code> everywhere a <code>label</code> value is assigned, <code>trim()</code> now only needs to be invoked within the setter <code>setLabel()</code>. And if a new requirement comes that requires the label be initially capitalized, the <code>setLabel()</code> method can quickly be modified without touching any other code. The one change will universally affect every assignment to <code>label</code>.</p>
+<p>回到开头提到的问题，与其处处要调用 <code>trim()</code> 函数，现在我们只需在 setter <code>setLabel()</code> 方法内调用一次。如果 label 首字母变成大写的新要求来了，我们只需要修改<code>setLabel()</code> 方法，而无须接触任何其它代码。</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
 
@@ -144,12 +162,91 @@ if the defining getter or setter method is public, protected or private.</li>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:46 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 27 Jul 2014 21:04:22 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
     var shiftWindow = function () { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
 });</script></body>
 </html>

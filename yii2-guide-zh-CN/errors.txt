@@ -1,0 +1,709 @@
+Array
+(
+    [0] => Array
+        (
+            [file] => ..\..\framework\base\Component.php
+            [message] => broken link to Object in yii\base\Component
+        )
+
+    [1] => Array
+        (
+            [line] => 167
+            [file] => ..\..\framework\base\Security.php
+            [message] => No docblock for element '__destruct'
+        )
+
+    [2] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\captcha\CaptchaAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [3] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\captcha\CaptchaAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [4] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\captcha\CaptchaAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [5] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\captcha\CaptchaAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [6] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\captcha\CaptchaAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [7] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\captcha\CaptchaAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [8] => Array
+        (
+            [line] => 37
+            [file] => ..\..\framework\console\Markdown.php
+            [message] => Method identifyLine has no parent to inherit from in yii\console\Markdown.
+        )
+
+    [9] => Array
+        (
+            [line] => 89
+            [file] => ..\..\framework\console\Markdown.php
+            [message] => Method renderParagraph has no parent to inherit from in yii\console\Markdown.
+        )
+
+    [10] => Array
+        (
+            [line] => 97
+            [file] => ..\..\framework\console\Markdown.php
+            [message] => Method inlineMarkers has no parent to inherit from in yii\console\Markdown.
+        )
+
+    [11] => Array
+        (
+            [file] => ..\..\framework\db\mssql\QueryBuilder.php
+            [message] => broken link to \yii\db\mssql\Query in yii\db\mssql\QueryBuilder
+        )
+
+    [12] => Array
+        (
+            [file] => ..\..\framework\db\mssql\QueryBuilder.php
+            [message] => broken link to \yii\db\mssql\Query in yii\db\mssql\QueryBuilder
+        )
+
+    [13] => Array
+        (
+            [file] => ..\..\framework\db\mssql\QueryBuilder.php
+            [message] => broken link to \yii\db\mssql\Query in yii\db\mssql\QueryBuilder
+        )
+
+    [14] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\db\mssql\QueryBuilder.php
+            [message] => No docblock for element '$_oldMssql'
+        )
+
+    [15] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\db\mssql\QueryBuilder.php
+            [message] => No short description for element '$_oldMssql'
+        )
+
+    [16] => Array
+        (
+            [file] => ..\..\framework\db\mssql\Schema.php
+            [message] => broken link to \yii\db\mssql\Transaction::READ_COMMITTED in yii\db\mssql\Schema
+        )
+
+    [17] => Array
+        (
+            [file] => ..\..\framework\db\mssql\Schema.php
+            [message] => broken link to \yii\db\mssql\Transaction::READ_UNCOMMITTED in yii\db\mssql\Schema
+        )
+
+    [18] => Array
+        (
+            [file] => ..\..\framework\db\mssql\Schema.php
+            [message] => broken link to \yii\db\mssql\Transaction::REPEATABLE_READ in yii\db\mssql\Schema
+        )
+
+    [19] => Array
+        (
+            [file] => ..\..\framework\db\mssql\Schema.php
+            [message] => broken link to \yii\db\mssql\Transaction::SERIALIZABLE in yii\db\mssql\Schema
+        )
+
+    [20] => Array
+        (
+            [file] => ..\..\framework\db\mysql\Schema.php
+            [message] => broken link to \yii\db\mysql\Transaction::READ_COMMITTED in yii\db\mysql\Schema
+        )
+
+    [21] => Array
+        (
+            [file] => ..\..\framework\db\mysql\Schema.php
+            [message] => broken link to \yii\db\mysql\Transaction::READ_UNCOMMITTED in yii\db\mysql\Schema
+        )
+
+    [22] => Array
+        (
+            [file] => ..\..\framework\db\mysql\Schema.php
+            [message] => broken link to \yii\db\mysql\Transaction::REPEATABLE_READ in yii\db\mysql\Schema
+        )
+
+    [23] => Array
+        (
+            [file] => ..\..\framework\db\mysql\Schema.php
+            [message] => broken link to \yii\db\mysql\Transaction::SERIALIZABLE in yii\db\mysql\Schema
+        )
+
+    [24] => Array
+        (
+            [file] => ..\..\framework\db\oci\QueryBuilder.php
+            [message] => broken link to \yii\db\oci\Query in yii\db\oci\QueryBuilder
+        )
+
+    [25] => Array
+        (
+            [file] => ..\..\framework\db\oci\QueryBuilder.php
+            [message] => broken link to \yii\db\oci\Query in yii\db\oci\QueryBuilder
+        )
+
+    [26] => Array
+        (
+            [file] => ..\..\framework\db\oci\QueryBuilder.php
+            [message] => broken link to \yii\db\oci\Query in yii\db\oci\QueryBuilder
+        )
+
+    [27] => Array
+        (
+            [file] => ..\..\framework\db\oci\Schema.php
+            [message] => broken link to \yii\db\oci\Transaction::READ_COMMITTED in yii\db\oci\Schema
+        )
+
+    [28] => Array
+        (
+            [file] => ..\..\framework\db\oci\Schema.php
+            [message] => broken link to \yii\db\oci\Transaction::READ_UNCOMMITTED in yii\db\oci\Schema
+        )
+
+    [29] => Array
+        (
+            [file] => ..\..\framework\db\oci\Schema.php
+            [message] => broken link to \yii\db\oci\Transaction::REPEATABLE_READ in yii\db\oci\Schema
+        )
+
+    [30] => Array
+        (
+            [file] => ..\..\framework\db\oci\Schema.php
+            [message] => broken link to \yii\db\oci\Transaction::SERIALIZABLE in yii\db\oci\Schema
+        )
+
+    [31] => Array
+        (
+            [file] => ..\..\framework\db\pgsql\Schema.php
+            [message] => broken link to \yii\db\pgsql\Transaction::READ_COMMITTED in yii\db\pgsql\Schema
+        )
+
+    [32] => Array
+        (
+            [file] => ..\..\framework\db\pgsql\Schema.php
+            [message] => broken link to \yii\db\pgsql\Transaction::READ_UNCOMMITTED in yii\db\pgsql\Schema
+        )
+
+    [33] => Array
+        (
+            [file] => ..\..\framework\db\pgsql\Schema.php
+            [message] => broken link to \yii\db\pgsql\Transaction::REPEATABLE_READ in yii\db\pgsql\Schema
+        )
+
+    [34] => Array
+        (
+            [file] => ..\..\framework\db\pgsql\Schema.php
+            [message] => broken link to \yii\db\pgsql\Transaction::SERIALIZABLE in yii\db\pgsql\Schema
+        )
+
+    [35] => Array
+        (
+            [line] => 208
+            [file] => ..\..\framework\filters\Cors.php
+            [message] => Undefined parameter documented:  in addCorsHeaders().
+        )
+
+    [36] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\grid\GridViewAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [37] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\grid\GridViewAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [38] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\grid\GridViewAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [39] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\grid\GridViewAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [40] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\grid\GridViewAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [41] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\grid\GridViewAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [42] => Array
+        (
+            [line] => 30
+            [file] => ..\..\framework\grid\SerialColumn.php
+            [message] => No docblock for element '$header'
+        )
+
+    [43] => Array
+        (
+            [line] => 30
+            [file] => ..\..\framework\grid\SerialColumn.php
+            [message] => No short description for element '$header'
+        )
+
+    [44] => Array
+        (
+            [file] => ..\..\framework\helpers\BaseConsole.php
+            [message] => broken link to \yii\helpers\FG_COLOR in yii\helpers\BaseConsole
+        )
+
+    [45] => Array
+        (
+            [line] => 501
+            [file] => ..\..\framework\helpers\BaseConsole.php
+            [message] => No docblock for element 'renderColoredString'
+        )
+
+    [46] => Array
+        (
+            [line] => 566
+            [file] => ..\..\framework\helpers\BaseConsole.php
+            [message] => No docblock for element 'escape'
+        )
+
+    [47] => Array
+        (
+            [file] => ..\..\framework\helpers\BaseHtml.php
+            [message] => broken link to \yii\helpers\activeCheckBoxList() in yii\helpers\BaseHtml
+        )
+
+    [48] => Array
+        (
+            [line] => 37
+            [file] => ..\..\framework\i18n\GettextMessageSource.php
+            [message] => No short description for element '$basePath'
+        )
+
+    [49] => Array
+        (
+            [line] => 41
+            [file] => ..\..\framework\i18n\GettextMessageSource.php
+            [message] => No short description for element '$catalog'
+        )
+
+    [50] => Array
+        (
+            [line] => 45
+            [file] => ..\..\framework\i18n\GettextMessageSource.php
+            [message] => No short description for element '$useMoFile'
+        )
+
+    [51] => Array
+        (
+            [line] => 49
+            [file] => ..\..\framework\i18n\GettextMessageSource.php
+            [message] => No short description for element '$useBigEndian'
+        )
+
+    [52] => Array
+        (
+            [line] => 29
+            [file] => ..\..\framework\rbac\Assignment.php
+            [message] => No short description for element '$roleName'
+        )
+
+    [53] => Array
+        (
+            [file] => ..\..\framework\rbac\PhpManager.php
+            [message] => broken link to \yii\rbac\authFile in yii\rbac\PhpManager
+        )
+
+    [54] => Array
+        (
+            [line] => 62
+            [file] => ..\..\framework\rbac\PhpManager.php
+            [message] => No short description for element '$items'
+        )
+
+    [55] => Array
+        (
+            [line] => 66
+            [file] => ..\..\framework\rbac\PhpManager.php
+            [message] => No short description for element '$children'
+        )
+
+    [56] => Array
+        (
+            [line] => 70
+            [file] => ..\..\framework\rbac\PhpManager.php
+            [message] => No short description for element '$assignments'
+        )
+
+    [57] => Array
+        (
+            [line] => 74
+            [file] => ..\..\framework\rbac\PhpManager.php
+            [message] => No short description for element '$rules'
+        )
+
+    [58] => Array
+        (
+            [line] => 74
+            [file] => ..\..\framework\rbac\PhpManager.php
+            [message] => Property $rules conflicts with a defined getter getRules in yii\rbac\PhpManager.
+        )
+
+    [59] => Array
+        (
+            [file] => ..\..\framework\rest\ActiveController.php
+            [message] => broken link to \yii\rest\VerbFilter::actions in yii\rest\ActiveController
+        )
+
+    [60] => Array
+        (
+            [file] => ..\..\framework\rest\Controller.php
+            [message] => broken link to \yii\rest\Behavior in yii\rest\Controller
+        )
+
+    [61] => Array
+        (
+            [file] => ..\..\framework\validators\FileValidator.php
+            [message] => broken link to \yii\validators\wrongType in yii\validators\FileValidator
+        )
+
+    [62] => Array
+        (
+            [line] => 204
+            [file] => ..\..\framework\validators\FileValidator.php
+            [message] => Method param $file does not exist in parent method, @inheritdoc not possible in validateValue in yii\validators\FileValidator.
+        )
+
+    [63] => Array
+        (
+            [line] => 271
+            [file] => ..\..\framework\validators\FileValidator.php
+            [message] => Method param $trim does not exist in parent method, @inheritdoc not possible in isEmpty in yii\validators\FileValidator.
+        )
+
+    [64] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\validators\PunycodeAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [65] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\validators\PunycodeAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [66] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\validators\PunycodeAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [67] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\validators\PunycodeAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [68] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\validators\ValidationAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [69] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\validators\ValidationAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [70] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\validators\ValidationAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [71] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\validators\ValidationAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [72] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\validators\ValidationAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [73] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\validators\ValidationAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [74] => Array
+        (
+            [line] => 61
+            [file] => ..\..\framework\web\AssetManager.php
+            [message] => No short description for element '$basePath'
+        )
+
+    [75] => Array
+        (
+            [line] => 65
+            [file] => ..\..\framework\web\AssetManager.php
+            [message] => No short description for element '$baseUrl'
+        )
+
+    [76] => Array
+        (
+            [line] => 18
+            [file] => ..\..\framework\web\JqueryAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [77] => Array
+        (
+            [line] => 18
+            [file] => ..\..\framework\web\JqueryAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [78] => Array
+        (
+            [line] => 19
+            [file] => ..\..\framework\web\JqueryAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [79] => Array
+        (
+            [line] => 19
+            [file] => ..\..\framework\web\JqueryAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [80] => Array
+        (
+            [line] => 18
+            [file] => ..\..\framework\web\YiiAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [81] => Array
+        (
+            [line] => 18
+            [file] => ..\..\framework\web\YiiAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [82] => Array
+        (
+            [line] => 19
+            [file] => ..\..\framework\web\YiiAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [83] => Array
+        (
+            [line] => 19
+            [file] => ..\..\framework\web\YiiAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [84] => Array
+        (
+            [line] => 22
+            [file] => ..\..\framework\web\YiiAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [85] => Array
+        (
+            [line] => 22
+            [file] => ..\..\framework\web\YiiAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [86] => Array
+        (
+            [line] => 30
+            [file] => ..\..\framework\widgets\ActiveForm.php
+            [message] => No short description for element '$action'
+        )
+
+    [87] => Array
+        (
+            [line] => 18
+            [file] => ..\..\framework\widgets\ActiveFormAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [88] => Array
+        (
+            [line] => 18
+            [file] => ..\..\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [89] => Array
+        (
+            [line] => 19
+            [file] => ..\..\framework\widgets\ActiveFormAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [90] => Array
+        (
+            [line] => 19
+            [file] => ..\..\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [91] => Array
+        (
+            [line] => 22
+            [file] => ..\..\framework\widgets\ActiveFormAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [92] => Array
+        (
+            [line] => 22
+            [file] => ..\..\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [93] => Array
+        (
+            [line] => 22
+            [file] => ..\..\framework\widgets\MaskedInputAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [94] => Array
+        (
+            [line] => 22
+            [file] => ..\..\framework\widgets\MaskedInputAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [95] => Array
+        (
+            [line] => 23
+            [file] => ..\..\framework\widgets\MaskedInputAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [96] => Array
+        (
+            [line] => 23
+            [file] => ..\..\framework\widgets\MaskedInputAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [97] => Array
+        (
+            [line] => 26
+            [file] => ..\..\framework\widgets\MaskedInputAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [98] => Array
+        (
+            [line] => 26
+            [file] => ..\..\framework\widgets\MaskedInputAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [99] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\widgets\PjaxAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [100] => Array
+        (
+            [line] => 20
+            [file] => ..\..\framework\widgets\PjaxAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [101] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\widgets\PjaxAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [102] => Array
+        (
+            [line] => 21
+            [file] => ..\..\framework\widgets\PjaxAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [103] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\widgets\PjaxAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [104] => Array
+        (
+            [line] => 24
+            [file] => ..\..\framework\widgets\PjaxAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+)
