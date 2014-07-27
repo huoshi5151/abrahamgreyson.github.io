@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/48a2e71d/style.css" rel="stylesheet">
+<script src="./assets/26f1d6e6/jquery.js"></script>
+<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w106" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w106-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w106-collapse" class="collapse navbar-collapse"><ul id="w107" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
+<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
+<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
+<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
+<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
+<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
+<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
+<a class="list-group-item" href="./guide-concept-components.html">Components</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
+<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
+<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
+<a class="list-group-item" href="./guide-db-dao.html">Database basics</a>
+<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
+<a class="list-group-item" href="./guide-concept-events.html">Events</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
+<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
+<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
+<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
+<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
+<a class="list-group-item active" href="./guide-structure-assets.html">Managing assets</a>
+<a class="list-group-item" href="./guide-structure-models.html">Models</a>
+<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
+<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
+<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
+<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
+<a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
+<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
+<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
+<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
+<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
+<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
+<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
+<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
+<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
+<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
+<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
+<a class="list-group-item" href="./guide-structure-views.html">Views</a>
+<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
+<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
+<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
+<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
+<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
+<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Managing assets <a href="#managing-assets" name="managing-assets">&para;</a></h1>
+<blockquote><p>Note: This section is under development.</p>
+</blockquote>
+<p>An asset in Yii is a file that is included into the page. It could be CSS, JavaScript or
+any other file. The framework provides many ways to work with assets from basics such as adding <code>&lt;script src="..."&gt;</code> tags
+for a file which is covered by the <a href="guide-view.html">View section</a>, to advanced usage such as publishing files that are not
+under the webservers document root, resolving JavaScript dependencies or minifying CSS, which we will cover in the following.</p>
+<h2>Declaring asset bundles <a href="#declaring-asset-bundles" name="declaring-asset-bundles">&para;</a></h2>
+<p>In order to define a set of assets the belong together and should be used on the website you declare a class called
+an "asset bundle". The bundle defines a set of asset files and their dependencies on other asset bundles.</p>
+<p>Asset files can be located under the webservers accessable directory but also hidden inside of application or vendor
+directories. If the latter, the asset bundle will care for publishing them to a directory accessible by the webserver
+so they can be included in the website. This feature is useful for extensions so that they can ship all content in one
+directory and make installation easier for you.</p>
+<p>To define an asset you create a class extending from <span style="background: #f00;">yii\web\AssetBundle</span> and set the properties according to your needs.
+Here you can see an example asset definition which is part of the basic application template, the
+<code>AppAsset</code> asset bundle class. It defines assets required application wide:</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /><br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">AssetBundle&nbsp;</span><span style="color: #007700">as&nbsp;</span><span style="color: #0000BB">AssetBundle</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">AppAsset&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">AssetBundle<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$basePath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@webroot'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$baseUrl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@web'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$css&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'css/site.css'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$js&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$depends&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\web\YiiAsset'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\bootstrap\BootstrapAsset'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />}</span></code></pre>
+<p>In the above <code>$basePath</code> specifies web-accessible directory assets are served from. It is a base for relative
+<code>$css</code> and <code>$js</code> paths i.e. <code>@webroot/css/site.css</code> for <code>css/site.css</code>. Here <code>@webroot</code> is an <a href="guide-basics.html#path-aliases" title="Yii Path alias">alias</a> that points to
+application's <code>web</code> directory.</p>
+<p><code>$baseUrl</code> is used to specify base URL for the same relative <code>$css</code> and <code>$js</code> i.e. <code>@web/css/site.css</code> where <code>@web</code>
+is an <a href="guide-basics.html#path-aliases" title="Yii Path alias">alias</a> that corresponds to your website base URL such as <code>http://example.com/</code>.</p>
+<p>In case you have asset files under a non web accessible directory, that is the case for any extension, you need
+to specify <code>$sourcePath</code> instead of <code>$basePath</code> and <code>$baseUrl</code>. <strong>All files</strong> from the source path will be copied
+or symlinked to the <code>web/assets</code> directory of your application prior to being registered.
+In this case <code>$basePath</code> and <code>$baseUrl</code> are generated automatically at the time of publishing the asset bundle.
+This is the way to work with assets when you want to publish the whole directory no matter what's in be it images,
+webfonts etc.</p>
+<blockquote><p><strong>Note:</strong> do not use the <code>web/assets</code> path to put your own files in it. It is meant to be used only for asset publishing.
+When you create files that are already in web accessable directory put them in folders like <code>web/css</code> or <code>web/js</code>.</p>
+</blockquote>
+<p>Dependencies on other asset bundles are specified via <code>$depends</code> property. It is an array that contains fully qualified
+class names of bundle classes that should be published in order for this bundle to work properly.
+Javascript and CSS files for <code>AppAsset</code> are added to the header after the files of <span style="background: #f00;">yii\web\YiiAsset</span> and
+<span style="background: #f00;">yii\bootstrap\BootstrapAsset</span> in this example.</p>
+<p>Here <span style="background: #f00;">yii\web\YiiAsset</span> adds Yii's JavaScript library while <span style="background: #f00;">yii\bootstrap\BootstrapAsset</span> includes
+<a href="http://getbootstrap.com">Bootstrap</a> frontend framework.</p>
+<p>Asset bundles are regular classes so if you need to define another one, just create alike class with unique name. This
+class can be placed anywhere but the convention for it is to be under <code>assets</code> directory of the application.</p>
+<p>Additionally you may specify <code>$jsOptions</code>, <code>$cssOptions</code> and <code>$publishOptions</code> that will be passed to
+<span style="background: #f00;">yii\web\View::registerJsFile()</span>, <span style="background: #f00;">yii\web\View::registerCssFile()</span> and <span style="background: #f00;">yii\web\AssetManager::publish()</span>
+respectively during registering and publising an asset. For more details on this see <a href="#setting-special-options">Setting special options</a>.</p>
+<h3>Language-specific asset bundle <a href="#language-specific-asset-bundle" name="language-specific-asset-bundle">&para;</a></h3>
+<p>If you need to define an asset bundle that includes JavaScript file depending on the language you can do it the
+following way:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">LanguageAsset&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">AssetBundle<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$language</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$sourcePath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@app/assets/language'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$js&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">registerAssetFiles</span><span style="color: #007700">(</span><span style="color: #0000BB">$view</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$language&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">language&nbsp;</span><span style="color: #007700">?&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">language&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">language</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">js</span><span style="color: #007700">[]&nbsp;=&nbsp;</span><span style="color: #DD0000">'language-'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$language&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #DD0000">'.js'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">registerAssetFiles</span><span style="color: #007700">(</span><span style="color: #0000BB">$view</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
+<p>In order to set language use the following code when registering an asset bundle in a view:</p>
+<pre><code class="language-php"><span style="color: #0000BB">LanguageAsset</span><span style="color: #007700">::</span><span style="color: #0000BB">register</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">language&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$language</span><span style="color: #007700">;</span></code></pre>
+<h2>Registering asset bundle <a href="#registering-asset-bundle" name="registering-asset-bundle">&para;</a></h2>
+<p>Asset bundle classes are typically registered in view files or <a href="guide-view.html#widgets">widgets</a> that depend on the css or
+javascript files for providing its functionality. An exception to this is the <code>AppAsset</code> class defined above which is
+added in the applications main layout file to be registered on any page of the application.
+Registering an asset bundle is as simple as calling the <span style="background: #f00;">yii\web\AssetBundle::register()</span> method:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">assets</span><span style="color: #007700">\</span><span style="color: #0000BB">AppAsset</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">AppAsset</span><span style="color: #007700">::</span><span style="color: #0000BB">register</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">);</span></code></pre>
+<p>Since we're in a view context <code>$this</code> refers to <code>View</code> class.
+To register an asset inside of a widget, the view instance is available as <code>$this-&gt;view</code>:</p>
+<pre><code class="language-php"><span style="color: #0000BB">AppAsset</span><span style="color: #007700">::</span><span style="color: #0000BB">register</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">view</span><span style="color: #007700">);</span></code></pre>
+<blockquote><p>Note: If there is a need to modify third party asset bundles it is recommended to create your own bundles depending
+  on third party ones and use CSS and JavaScript features to modify behavior instead of editing files directly or
+  copying them over.</p>
+</blockquote>
+<h2>Setting special options <a name="setting-special-options"></a> <a href="#setting-special-options" name="setting-special-options">&para;</a></h2>
+<p>Asset bundles allow setting specific options for the files to be published.
+This can be done by configuring the <span style="background: #f00;">yii\web\AssetBundle::$jsOptions</span>,
+<span style="background: #f00;">yii\web\AssetBundle::$cssOptions</span> or <span style="background: #f00;">yii\web\AssetBundle::$publishOptions</span>
+property of the asset bundle.</p>
+<p>Some of these options are described in the following:</p>
+<ul>
+<li><p>For setting conditional comments for your CSS files you can set the following option:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;</span><span style="color: #0000BB">$cssOptions&nbsp;</span><span style="color: #007700">=&nbsp;[</span><span style="color: #DD0000">'condition'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'lte&nbsp;IE9'</span><span style="color: #007700">];</span></code></pre>
+<p>This will result in a link tag generated as follows: <code>&lt;!--[if lte IE9]&gt;&lt;link .../&gt;&lt;![endif]--&gt;</code>.
+You can only define one condition per asset bundle, if you have multiple files with different conditions,
+you have to define multiple assets bundles.</p>
+</li>
+<li><p>For javascipt files you can define the position where they should be added in the HTML.
+You can choose one of the following positions:</p>
+</li>
+<li><span style="background: #f00;">yii\web\View::POS_HEAD</span>: in the head section</li>
+<li><span style="background: #f00;">yii\web\View::POS_BEGIN</span>: at the beginning of the body section</li>
+<li><span style="background: #f00;">yii\web\View::POS_END</span>: at the end of the body section. This is the default value.</li>
+</ul>
+<p>  Example for putting all javascript files to the end of the body.</p>
+<p>  <code>`</code>php
+  public $jsOptions = ['position' =&gt; \yii\web\View::POS_END];
+  <code>`</code></p>
+<p>  This option is also reflected when resolving dependencies.</p>
+<ul>
+<li>For further javascript options, see <span style="background: #f00;">yii\helpers\Html::jsFile()</span>.</li>
+</ul>
+<h2>Overriding asset bundles <a href="#overriding-asset-bundles" name="overriding-asset-bundles">&para;</a></h2>
+<p>Sometimes you need to override some asset bundles application wide. A good example is loading jQuery from CDN instead
+of your own server. In order to do it we need to configure <code>assetManager</code> application component via config file. In case
+of basic application it is <code>config/web.php</code>:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'assetManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'bundles'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\web\JqueryAsset'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'sourcePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'js'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'</span><span style="color: #007700">]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
+<p>In the above we're adding asset bundle definitions to the <span style="background: #f00;">yii\web\AssetManager::bundles</span> property of asset manager. Keys are fully
+qualified class names to asset bundle classes we want to override while values are key-value arrays of class properties
+and corresponding values to set.</p>
+<p>Setting <code>sourcePath</code> to <code>null</code> tells asset manager not to copy anything while <code>js</code> overrides local files with a link
+to CDN.</p>
+<blockquote><p>Tip: You may also use this procedure to configure different scripts dependent on the environment. For example
+use minified files in production and normal files in development:</p>
+<p> <code>`</code>php
+'yii\web\JqueryAsset' =&gt; [</p>
+<pre><code>'js' =&gt; [
+    YII_ENV_DEV ? 'jquery.js' : 'jquery.min.js'
+]
+</code></pre>
+<p>],
+<code>`</code></p>
+</blockquote>
+<h2>Enabling symlinks <a href="#enabling-symlinks" name="enabling-symlinks">&para;</a></h2>
+<p>Asset manager is able to use symlinks instead of copying files. It is turned off by default since symlinks are often
+disabled on shared hosting. If your hosting environment supports symlinks you certainly should enable the feature via
+application config:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'assetManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'linkAssets'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
+<p>There are two main benefits in enabling it. First it is faster since no copying is required and second is that assets
+will always be up to date with source files.</p>
+<h2>Compressing and combining assets <a href="#compressing-and-combining-assets" name="compressing-and-combining-assets">&para;</a></h2>
+<p>To improve application performance you can compress and then combine several CSS or JS files into lesser number of files
+therefore reducing number of HTTP requests and overall download size needed to load a web page.  Yii provides a console
+command that allows you to do both.</p>
+<h3>Preparing configuration <a href="#preparing-configuration" name="preparing-configuration">&para;</a></h3>
+<p>In order to use <code>asset</code> command you should prepare a configuration first. A template for it can be generated using</p>
+<pre><code>yii asset/template /path/to/myapp/config.php
+</code></pre>
+<p>The template itself looks like the following:</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #FF8000">/**<br />&nbsp;*&nbsp;Configuration&nbsp;file&nbsp;for&nbsp;the&nbsp;"yii&nbsp;asset"&nbsp;console&nbsp;command.<br />&nbsp;*&nbsp;Note&nbsp;that&nbsp;in&nbsp;the&nbsp;console&nbsp;environment,&nbsp;some&nbsp;path&nbsp;aliases&nbsp;like&nbsp;'@webroot'&nbsp;and&nbsp;'@web'&nbsp;may&nbsp;not&nbsp;exist.<br />&nbsp;*&nbsp;Please&nbsp;define&nbsp;these&nbsp;missing&nbsp;path&nbsp;aliases.<br />&nbsp;*/<br /></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Adjust&nbsp;command/callback&nbsp;for&nbsp;JavaScript&nbsp;files&nbsp;compressing:<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'jsCompressor'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'java&nbsp;-jar&nbsp;compiler.jar&nbsp;--js&nbsp;{from}&nbsp;--js_output_file&nbsp;{to}'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Adjust&nbsp;command/callback&nbsp;for&nbsp;CSS&nbsp;files&nbsp;compressing:<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cssCompressor'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'java&nbsp;-jar&nbsp;yuicompressor.jar&nbsp;--type&nbsp;css&nbsp;{from}&nbsp;-o&nbsp;{to}'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;The&nbsp;list&nbsp;of&nbsp;asset&nbsp;bundles&nbsp;to&nbsp;compress:<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'bundles'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;'yii\web\YiiAsset',<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;'yii\web\JqueryAsset',<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Asset&nbsp;bundle&nbsp;for&nbsp;compression&nbsp;output:<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'targets'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'app\config\AllAsset'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'basePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'path/to/web'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'baseUrl'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'js'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'js/all-{hash}.js'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'css'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'css/all-{hash}.css'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Asset&nbsp;manager&nbsp;configuration:<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'assetManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'basePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">__DIR__</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'baseUrl'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">''</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
+<p>In the above keys are <code>properties</code> of <code>AssetController</code>. <code>bundles</code> list contains bundles that should be compressed. These are typically what's used by application.
+<code>targets</code> contains a list of bundles that define how resulting files will be written. In our case we're writing
+everything to <code>path/to/web</code> that can be accessed like <code>http://example.com/</code> i.e. it is website root directory.</p>
+<blockquote><p>Note: in the console environment some path aliases like '@webroot' and '@web' may not exist,
+  so corresponding paths inside the configuration should be specified directly.</p>
+</blockquote>
+<p>JavaScript files are combined, compressed and written to <code>js/all-{hash}.js</code> where {hash} is replaced with the hash of
+the resulting file.</p>
+<p><code>jsCompressor</code> and <code>cssCompressor</code> are console commands or PHP callbacks, which should perform JavaScript and CSS files
+compression correspondingly. You should adjust these values according to your environment.
+By default Yii relies on <a href="https://developers.google.com/closure/compiler/">Closure Compiler</a> for JavaScript file compression,
+and on <a href="https://github.com/yui/yuicompressor/">YUI Compressor</a>. You should install this utilities manually, if you wish to use them.</p>
+<h3>Providing compression tools <a href="#providing-compression-tools" name="providing-compression-tools">&para;</a></h3>
+<p>The command relies on external compression tools that are not bundled with Yii so you need to provide CSS and JS
+compressors which are correspondingly specified via <code>cssCompressor</code> and <code>jsCompression</code> properties. If compressor is
+specified as a string it is treated as a shell command template which should contain two placeholders: <code>{from}</code> that
+is replaced by source file name and <code>{to}</code> that is replaced by output file name. Another way to specify compressor is
+to use any valid PHP callback.</p>
+<p>By default for JavaScript compression Yii tries to use
+<a href="https://developers.google.com/closure/compiler/">Google Closure compiler</a> that is expected to be in a file named
+<code>compiler.jar</code>.</p>
+<p>For CSS compression Yii assumes that <a href="https://github.com/yui/yuicompressor/">YUI Compressor</a> is looked up in a file
+named <code>yuicompressor.jar</code>.</p>
+<p>In order to compress both JavaScript and CSS, you need to download both tools and place them under the directory
+containing your <code>yii</code> console bootstrap file. You also need to install JRE in order to run these tools.</p>
+<p>You may customize the compression commands (e.g. changing the location of the jar files) in the <code>config.php</code> file
+like the following,</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cssCompressor'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'java&nbsp;-jar&nbsp;path.to.file\yuicompressor.jar&nbsp;&nbsp;--type&nbsp;css&nbsp;{from}&nbsp;-o&nbsp;{to}'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'jsCompressor'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'java&nbsp;-jar&nbsp;path.to.file\compiler.jar&nbsp;--js&nbsp;{from}&nbsp;--js_output_file&nbsp;{to}'</span><span style="color: #007700">,<br />];</span></code></pre>
+<p>where <code>{from}</code> and <code>{to}</code> are tokens that will be replaced with the actual source and target file paths, respectively,
+when the <code>asset</code> command is compressing every file.</p>
+<h3>Performing compression <a href="#performing-compression" name="performing-compression">&para;</a></h3>
+<p>After configuration is adjusted you can run the <code>compress</code> action, using created config:</p>
+<pre><code>yii asset /path/to/myapp/config.php /path/to/myapp/config/assets_compressed.php
+</code></pre>
+<p>Now processing takes some time and finally finished. You need to adjust your web application config to use compressed
+assets file like the following:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'assetManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'bundles'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;require&nbsp;</span><span style="color: #DD0000">'/path/to/myapp/config/assets_compressed.php'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />],</span></code></pre>
+<h2>Using asset converter <a href="#using-asset-converter" name="using-asset-converter">&para;</a></h2>
+<p>Instead of using CSS and JavaScript directly often developers are using their improved versions such as LESS or SCSS
+for CSS or Microsoft TypeScript for JavaScript. Using these with Yii is easy.</p>
+<p>First of all, corresponding compression tools should be installed and should be available from where <code>yii</code> console
+bootstrap file is. The following lists file extensions and their corresponding conversion tool names that Yii converter
+recognizes:</p>
+<ul>
+<li>LESS: <code>less</code> - <code>lessc</code></li>
+<li>SCSS: <code>scss</code>, <code>sass</code> - <code>sass</code></li>
+<li>Stylus: <code>styl</code> - <code>stylus</code></li>
+<li>CoffeeScript: <code>coffee</code> - <code>coffee</code></li>
+<li>TypeScript: <code>ts</code> - <code>tsc</code></li>
+</ul>
+<p>So if the corresponding tool is installed you can specify any of these in asset bundle:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">AppAsset&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">AssetBundle<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$basePath&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@webroot'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$baseUrl&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@web'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$css&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'css/site.less'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$js&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'js/site.ts'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$depends&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\web\YiiAsset'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\bootstrap\BootstrapAsset'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />}</span></code></pre>
+<p>In order to adjust conversion tool call parameters or add new ones you can use application config:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;...<br /></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'assetManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'converter'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\web\AssetConverter'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'commands'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'less'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'css'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'lessc&nbsp;{from}&nbsp;{to}&nbsp;--no-color'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'ts'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'js'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'tsc&nbsp;--out&nbsp;{to}&nbsp;{from}'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />],</span></code></pre>
+<p>In the above we've left two types of extra file extensions. First one is <code>less</code> that can be specified in <code>css</code> part
+of an asset bundle. Conversion is performed via running <code>lessc {from} {to} --no-color</code> where <code>{from}</code> is replaced with
+LESS file path while <code>{to}</code> is replaced with target CSS file path. Second one is <code>ts</code> that can be specified in <code>js</code> part
+of an asset bundle. The command that is run during conversion is in the same format that is used for <code>less</code>.</p>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:47 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+});</script></body>
+</html>
