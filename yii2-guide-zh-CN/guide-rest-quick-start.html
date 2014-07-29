@@ -4,146 +4,197 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-    <link href="./assets/ffea2029/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/48a2e71d/style.css" rel="stylesheet">
-<script src="./assets/26f1d6e6/jquery.js"></script>
-<script src="./assets/ffea2029/js/bootstrap.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/347258e4/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/d607947b/style.css" rel="stylesheet">
+<script src="./assets/ff75f2d2/jquery.js"></script>
+<script src="./assets/347258e4/js/bootstrap.js"></script>
+<script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w64" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w64-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w2201" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w2201-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./guide-index.html">Yii Framework 2.0 API Documentation</a></div><div id="w64-collapse" class="collapse navbar-collapse"><ul id="w65" class="navbar-nav nav"><li><a href="./guide-index.html">Guide</a></li></ul></div></nav>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w2201-collapse" class="collapse navbar-collapse"><ul id="w2202" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w2203" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
     
 <div class="row">
     <div class="col-md-2">
-                <div id="navigation" class="list-group"><a class="list-group-item" href="./guide-index.html">Index</a>
-<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
-<a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced application template</a>
-<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
-<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
-<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
-<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
-<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
-<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
-<a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
-<a class="list-group-item" href="./guide-caching-overview.html">Caching</a>
-<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
-<a class="list-group-item" href="./guide-concept-components.html">Components</a>
-<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
-<a class="list-group-item" href="./guide-tutorial-console.html">Console applications</a>
-<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
-<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
-<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Creating your own Application structure</a>
-<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
-<a class="list-group-item" href="./guide-output-data-providers.html">Data providers</a>
-<a class="list-group-item" href="./guide-output-data-widgets.html">Data widgets</a>
-<a class="list-group-item" href="./guide-db-migrations.html">Database Migration</a>
-<a class="list-group-item" href="./guide-db-dao.html">Database basics</a>
-<a class="list-group-item" href="./guide-tool-debugger.html">Debug toolbar and debugger</a>
-<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a>
-<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
-<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a>
-<a class="list-group-item" href="./guide-runtime-handling-errors.html">Error Handling</a>
-<a class="list-group-item" href="./guide-concept-events.html">Events</a>
-<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a>
-<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
-<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a>
-<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
-<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
-<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a>
-<a class="list-group-item" href="./guide-helper-overview.html">Helpers</a>
-<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
-<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
-<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a>
-<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a>
-<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a>
-<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
-<a class="list-group-item" href="./guide-structure-assets.html">Managing assets</a>
-<a class="list-group-item" href="./guide-structure-models.html">Models</a>
-<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
-<a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
-<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
-<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
-<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
-<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder and Query</a>
-<a class="list-group-item active" href="./guide-rest-quick-start.html">Quick Start</a>
-<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
-<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
-<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
-<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
-<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
-<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
-<a class="list-group-item" href="./guide-security-passwords.html">Security</a>
-<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
-<a class="list-group-item" href="./guide-test-overview.html">Testing</a>
-<a class="list-group-item" href="./guide-tool-gii.html">The Gii code generation tool</a>
-<a class="list-group-item" href="./guide-output-theming.html">Theming</a>
-<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Management</a>
-<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a>
-<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
-<a class="list-group-item" href="./guide-tutorial-template-engines.html">Using template engines</a>
-<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
-<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
-<a class="list-group-item" href="./guide-structure-views.html">Views</a>
-<a class="list-group-item" href="./guide-intro-yii.html">What is Yii</a>
-<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
-<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
-<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
-<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-input-forms.html">Working with Forms</a>
-<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
-<a class="list-group-item" href="./guide-glossary.html">glossary.md</a></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-2185" data-toggle="collapse" data-parent="#navigation">Introduction <b class="caret"></b></a><div id="navigation-2185" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">About Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a></div>
+<a class="list-group-item" href="#navigation-2186" data-toggle="collapse" data-parent="#navigation">Getting Started <b class="caret"></b></a><div id="navigation-2186" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
+<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
+<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a></div>
+<a class="list-group-item" href="#navigation-2187" data-toggle="collapse" data-parent="#navigation">Application Structure <b class="caret"></b></a><div id="navigation-2187" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">Overview</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
+<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-structure-models.html">Models</a>
+<a class="list-group-item" href="./guide-structure-views.html">Views</a>
+<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
+<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
+<a class="list-group-item" href="./guide-structure-assets.html">Asset Bundles</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a></div>
+<a class="list-group-item" href="#navigation-2188" data-toggle="collapse" data-parent="#navigation">Handling Requests <b class="caret"></b></a><div id="navigation-2188" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">Bootstrapping</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">Routing</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">Requests</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">Responses</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions and Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL Parsing and Generation</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">Handling Errors</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a></div>
+<a class="list-group-item" href="#navigation-2189" data-toggle="collapse" data-parent="#navigation">Key Concepts <b class="caret"></b></a><div id="navigation-2189" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">Components</a>
+<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
+<a class="list-group-item" href="./guide-concept-events.html">Events</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
+<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a></div>
+<a class="list-group-item" href="#navigation-2190" data-toggle="collapse" data-parent="#navigation">Working with Databases <b class="caret"></b></a><div id="navigation-2190" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">Data Access Objects</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder</a>
+<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
+<a class="list-group-item" href="./guide-db-migrations.html">Migrations</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-2191" data-toggle="collapse" data-parent="#navigation">Getting Data from Users <b class="caret"></b></a><div id="navigation-2191" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">Creating Forms</a>
+<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
+<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">Getting Data for Multiple Models</a></div>
+<a class="list-group-item" href="#navigation-2192" data-toggle="collapse" data-parent="#navigation">Displaying Data <b class="caret"></b></a><div id="navigation-2192" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">Data Formatting</a>
+<a class="list-group-item" href="./guide-output-pagination.html">Pagination</a>
+<a class="list-group-item" href="./guide-output-sorting.html">Sorting</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">Data Providers</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">Data Widgets</a>
+<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
+<a class="list-group-item" href="./guide-output-theming.html">Theming</a></div>
+<a class="list-group-item" href="#navigation-2193" data-toggle="collapse" data-parent="#navigation">Security <b class="caret"></b></a><div id="navigation-2193" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
+<a class="list-group-item" href="./guide-security-passwords.html">Working with Passwords</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">Auth Clients</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">Best Practices</a></div>
+<a class="list-group-item" href="#navigation-2194" data-toggle="collapse" data-parent="#navigation">Caching <b class="caret"></b></a><div id="navigation-2194" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">Overview</a>
+<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
+<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a></div>
+<a class="list-group-item active" href="#navigation-2195" data-toggle="collapse" data-parent="#navigation">RESTful Web Services <b class="caret"></b></a><div id="navigation-2195" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./guide-rest-quick-start.html">Quick Start</a>
+<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
+<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a></div>
+<a class="list-group-item" href="#navigation-2196" data-toggle="collapse" data-parent="#navigation">Development Tools <b class="caret"></b></a><div id="navigation-2196" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">Debug Toolbar and Debugger</a>
+<a class="list-group-item" href="./guide-tool-gii.html">Generating Code using Gii</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">Generating API Documentation</a></div>
+<a class="list-group-item" href="#navigation-2197" data-toggle="collapse" data-parent="#navigation">Testing <b class="caret"></b></a><div id="navigation-2197" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">Overview</a>
+<a class="list-group-item" href="./guide-test-unit.html">Unit Tests</a>
+<a class="list-group-item" href="./guide-test-functional.html">Functional Tests</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">Acceptance Tests</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a></div>
+<a class="list-group-item" href="#navigation-2198" data-toggle="collapse" data-parent="#navigation">Special Topics <b class="caret"></b></a><div id="navigation-2198" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">Advanced Application Template</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Building Application from Scratch</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">Console Commands</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">Shared Hosting Environment</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">Template Engines</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a></div>
+<a class="list-group-item" href="#navigation-2199" data-toggle="collapse" data-parent="#navigation">Widgets <b class="caret"></b></a><div id="navigation-2199" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap Widgets</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI Widgets</a></div>
+<a class="list-group-item" href="#navigation-2200" data-toggle="collapse" data-parent="#navigation">Helpers <b class="caret"></b></a><div id="navigation-2200" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">Overview</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">Security</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Quick Start <a href="#quick-start" name="quick-start">&para;</a></h1>
-<p>Yii provides a whole set of tools to simplify the task of implementing RESTful Web Service APIs.
-In particular, Yii supports the following features about RESTful APIs:</p>
+        <h1>快速入门 <a href="#kuai-su-ru-men" name="kuai-su-ru-men" class="hashlink">&para;</a></h1>
+<p>Yii 提供了一整套用来简化实现RESTful风格的Web Service服务的API。
+特别是，Yii支持以下关于RESTful风格的API：</p>
 <ul>
-<li>Quick prototyping with support for common APIs for <a href="guide-db-active-record.html">Active Record</a>;</li>
-<li>Response format (supporting JSON and XML by default) negotiation;</li>
-<li>Customizable object serialization with support for selectable output fields;</li>
-<li>Proper formatting of collection data and validation errors;</li>
-<li>Support for <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>;</li>
-<li>Efficient routing with proper HTTP verb check;</li>
-<li>Built-in support for the <code>OPTIONS</code> and <code>HEAD</code> verbs;</li>
-<li>Authentication and authorization;</li>
-<li>Data caching and HTTP caching;</li>
-<li>Rate limiting;</li>
+<li>支持 <a href="guide-db-active-record.html">Active Record</a> 类的通用API的快速原型;</li>
+<li>涉及的响应格式（在默认情况下支持JSON 和 XML）;</li>
+<li>支持可选输出字段的 可定制对象序列化；</li>
+<li>适当的格式的数据采集和验证错误;</li>
+<li>支持 <a href="http://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>;</li>
+<li>有适当HTTP动词检查的高效的路由;</li>
+<li>内置<code>OPTIONS</code>和<code>HEAD</code>动词的支持;</li>
+<li>认证和授权;</li>
+<li>数据缓存和HTTP缓存;</li>
+<li>速率限制;</li>
 </ul>
-<p>In the following, we use an example to illustrate how you can build a set of RESTful APIs with some minimal coding effort.</p>
-<p>Assume you want to expose the user data via RESTful APIs. The user data are stored in the user DB table,
-and you have already created the <span style="background: #f00;">yii\db\ActiveRecord</span> class <code>app\models\User</code> to access the user data.</p>
-<h2>Creating a Controller <a name="creating-controller"></a> <a href="#creating-a-controller" name="creating-a-controller">&para;</a></h2>
-<p>First, create a controller class <code>app\controllers\UserController</code> as follows,</p>
+<p>如下， 我们用一个例子来说明如何用最少的编码来建立一套RESTful风格的API。</p>
+<p>假设你想通过RESTful风格的API来展示用户数据。用户数据被存储在用户DB表，
+你已经创建了 <a href="./yii-db-activerecord.html">ActiveRecord</a> 类 <code>app\models\User</code> 来访问该用户数据.</p>
+<h2>创建一个控制器 <a name="creating-controller"></a> <a href="#chuang-jian-yi-ge-kong-zhi-qi" name="chuang-jian-yi-ge-kong-zhi-qi" class="hashlink">&para;</a></h2>
+<p>首先，创建一个控制器类 <code>app\controllers\UserController</code> 如下，</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">controllers</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">rest</span><span style="color: #007700">\</span><span style="color: #0000BB">ActiveController</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">UserController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">ActiveController<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$modelClass&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'app\models\User'</span><span style="color: #007700">;<br />}</span></code></pre>
-<p>The controller class extends from <span style="background: #f00;">yii\rest\ActiveController</span>. By specifying <span style="background: #f00;">yii\rest\ActiveController::modelClass</span>
-as <code>app\models\User</code>, the controller knows what model can be used for fetching and manipulating data.</p>
-<h2>Configuring URL Rules <a name="configuring-url-rules"></a> <a href="#configuring-url-rules" name="configuring-url-rules">&para;</a></h2>
-<p>Then, modify the configuration about the <code>urlManager</code> component in your application configuration:</p>
+<p>控制器类扩展自 <a href="./yii-rest-activecontroller.html">yii\rest\ActiveController</a>。通过指定 <a href="./yii-rest-activecontroller.html#$modelClass-detail">modelClass</a>
+作为 <code>app\models\User</code>， 控制器就能知道使用哪个模型去获取和处理数据。</p>
+<h2>配置URL规则 <a name="configuring-url-rules"></a> <a href="#pei-zhiurl-gui-ze" name="pei-zhiurl-gui-ze" class="hashlink">&para;</a></h2>
+<p>然后，修改有关在应用程序配置的<code>urlManager</code>组件的配置：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'urlManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'enablePrettyUrl'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'enableStrictParsing'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'showScriptName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\rest\UrlRule'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'controller'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'user'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]</span></code></pre>
-<p>The above configuration mainly adds a URL rule for the <code>user</code> controller so that the user data
-can be accessed and manipulated with pretty URLs and meaningful HTTP verbs.</p>
-<h2>Trying it Out <a name="trying-it-out"></a> <a href="#trying-it-out" name="trying-it-out">&para;</a></h2>
-<p>With the above minimal amount of effort, you have already finished your task of creating the RESTful APIs
-for accessing the user data. The APIs you have created include:</p>
+<p>上面的配置主要是为<code>user</code>控制器增加一个URL规则。这样，
+用户的数据就能通过美化的URL和有意义的http动词进行访问和操作。</p>
+<h2>尝试 <a name="trying-it-out"></a> <a href="#chang-shi" name="chang-shi" class="hashlink">&para;</a></h2>
+<p>随着以上所做的最小的努力，你已经完成了创建用于访问用户数据
+的RESTful风格的API。您所创建的API包括：</p>
 <ul>
-<li><code>GET /users</code>: list all users page by page;</li>
-<li><code>HEAD /users</code>: show the overview information of user listing;</li>
-<li><code>POST /users</code>: create a new user;</li>
-<li><code>GET /users/123</code>: return the details of the user 123;</li>
-<li><code>HEAD /users/123</code>: show the overview information of user 123;</li>
-<li><code>PATCH /users/123</code> and <code>PUT /users/123</code>: update the user 123;</li>
-<li><code>DELETE /users/123</code>: delete the user 123;</li>
-<li><code>OPTIONS /users</code>: show the supported verbs regarding endpoint <code>/users</code>;</li>
-<li><code>OPTIONS /users/123</code>: show the supported verbs regarding endpoint <code>/users/123</code>.</li>
+<li><code>GET /users</code>: 逐页列出所有用户；</li>
+<li><code>HEAD /users</code>: 显示用户列表的概要信息；</li>
+<li><code>POST /users</code>: 创建一个新用户；</li>
+<li><code>GET /users/123</code>: 返回用户为123的详细信息;</li>
+<li><code>HEAD /users/123</code>: 显示用户 123 的概述信息;</li>
+<li><code>PATCH /users/123</code> and <code>PUT /users/123</code>: 更新用户123;</li>
+<li><code>DELETE /users/123</code>: 删除用户123;</li>
+<li><code>OPTIONS /users</code>: 显示关于末端 <code>/users</code> 支持的动词;</li>
+<li><code>OPTIONS /users/123</code>: 显示有关末端 <code>/users/123</code> 支持的动词。</li>
 </ul>
-<blockquote><p>Info: Yii will automatically pluralize controller names for use in endpoints.</p>
+<blockquote><p>Info: Yii将在末端使用的控制器的名称自动变为复数。</p>
 </blockquote>
-<p>You may access your APIs with the <code>curl</code> command like the following,</p>
+<p>你可以访问你的API用<code>curl</code>命令如下，</p>
 <pre><code>$ curl -i -H "Accept:application/json" "http://localhost/users"
 
 HTTP/1.1 200 OK
@@ -172,8 +223,7 @@ Content-Type: application/json; charset=UTF-8
     ...
 ]
 </code></pre>
-<p>Try changing the acceptable content type to be <code>application/xml</code>, and you will see the result
-is returned in XML format:</p>
+<p>试着改变可接受的内容类型为<code>application/xml</code>，你会看到结果以XML格式返回：</p>
 <pre><code>$ curl -i -H "Accept:application/xml" "http://localhost/users"
 
 HTTP/1.1 200 OK
@@ -203,27 +253,28 @@ Content-Type: application/xml
     ...
 &lt;/response&gt;
 </code></pre>
-<blockquote><p>Tip: You may also access your APIs via Web browser by entering the URL <code>http://localhost/users</code>.
-  However, you may need some browser plugins to send specific request headers.</p>
+<blockquote><p>Tip: 您还可以通过Web浏览器中输入URL <code>http://localhost/users</code> 来访问你的API。
+  尽管如此，你可能需要一些浏览器插件来发送特定的headers请求。</p>
 </blockquote>
-<p>As you can see, in the response headers, there are information about the total count, page count, etc.
-There are also links that allow you to navigate to other pages of data. For example, <code>http://localhost/users?page=2</code>
-would give you the next page of the user data.</p>
-<p>Using the <code>fields</code> and <code>expand</code> parameters, you may also specify which fields should be included in the result.
-For example, the URL <code>http://localhost/users?fields=id,email</code> will only return the <code>id</code> and <code>email</code> fields.</p>
-<blockquote><p>Info: You may have noticed that the result of <code>http://localhost/users</code> includes some sensitive fields,
-such as <code>password_hash</code>, <code>auth_key</code>. You certainly do not want these to appear in your API result.
-You can and should filter out these fields as described in the <a href="guide-rest-response-formatting.html">Response Formatting</a> section.</p>
+<p>如你所见， 在headers响应， 有关于总数，页数的信息，等等。
+还有一些链接，让您导航到其他页面的数据. 例如， <code>http://localhost/users?page=2</code>
+会给你的用户数据的下一个页面。</p>
+<p>使用 <code>fields</code> 和 <code>expand</code> 参数， 您也可以指定哪些字段应该包含在结果内。
+例如, URL <code>http://localhost/users?fields=id,email</code> 将只返回 <code>id</code> 和 <code>email</code> 字段。</p>
+<blockquote><p>Info: 您可能已经注意到了 <code>http://localhost/users</code> 的结果包括一些敏感字段，
+例如 <code>password_hash</code>, <code>auth_key</code>。 你肯定不希望这些出现在你的API结果中。
+你应该在 <a href="guide-rest-response-formatting.html">Response Formatting</a> 部分中过滤掉这些字段。</p>
 </blockquote>
-<h2>Summary <a name="summary"></a> <a href="#summary" name="summary">&para;</a></h2>
-<p>Using the Yii RESTful API framework, you implement an API endpoint in terms of a controller action, and you use
-a controller to organize the actions that implement the endpoints for a single type of resource.</p>
-<p>Resources are represented as data models which extend from the <span style="background: #f00;">yii\base\Model</span> class.
-If you are working with databases (relational or NoSQL), it is recommended you use <span style="background: #f00;">yii\db\ActiveRecord</span>
-to represent resources.</p>
-<p>You may use <span style="background: #f00;">yii\rest\UrlRule</span> to simplify the routing to your API endpoints.</p>
-<p>While not required, it is recommended that you develop your RESTful APIs as a separate application, different from
-your Web front end and back end for easier maintenance.</p>
+<h2>总结 <a name="summary"></a> <a href="#zong-jie" name="zong-jie" class="hashlink">&para;</a></h2>
+<p>使用Yii框架的RESTful风格的API， 在控制器的操作中实现API末端， 使用
+控制器来组织末端接口为一个单一的资源类型。</p>
+<p>从 <a href="./yii-base-model.html">yii\base\Model</a> 类扩展的资源被表示为数据模型。
+如果你在使用（关系或非关系）数据库，推荐您使用 <a href="./yii-db-activerecord.html">ActiveRecord</a>
+来表示资源。</p>
+<p>你可以使用 <a href="./yii-rest-urlrule.html">yii\rest\UrlRule</a> 简化路由到你的API末端。</p>
+<p>虽然不是必须的，为了方便维护您的WEB前端和后端，
+建议您开发接口作为一个单独的应用程序。</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
 
@@ -231,12 +282,91 @@ your Web front end and back end for easier maintenance.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 21 Jul 2014 02:26:46 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 29 Jul 2014 05:56:17 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
     var shiftWindow = function () { scrollBy(0, -50) };
     if (location.hash) shiftWindow();
     window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
 });</script></body>
 </html>
