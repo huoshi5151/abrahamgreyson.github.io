@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/bbeb8e3d/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/d607947b/style.css" rel="stylesheet">
+<script src="./assets/ff75f2d2/jquery.js"></script>
+<script src="./assets/bbeb8e3d/js/bootstrap.js"></script>
+<script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w17" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w17-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w17-collapse" class="collapse navbar-collapse"><ul id="w18" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w19" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-0" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-0" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-1" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-1" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-2" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-2" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-3" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-3" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-4" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-4" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-5" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-5" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-6" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-6" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-7" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-7" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-8" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-8" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item active" href="#navigation-9" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-9" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item active" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-10" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-10" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-11" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-11" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-12" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-12" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-13" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-13" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-14" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-14" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-15" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-15" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-16" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-16" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>数据缓存 <a href="#shu-ju-huan-cun" name="shu-ju-huan-cun" class="hashlink">&para;</a></h1>
+<p>数据缓存是指将一些 PHP 变量存储到缓存中，使用时再从缓存中取回。它也是更高级缓存特性的基础，例如<a href="#query-caching">查询缓存</a>和<a href="guide-caching-content.html">内容缓存</a>。</p>
+<p>如下代码是一个典型的数据缓存使用模式。其中 <code>$cache</code> 指向<a href="#cache-components">缓存组件</a>：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;尝试从缓存中取回&nbsp;$data&nbsp;<br /></span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br /><br />if&nbsp;(</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;$data&nbsp;在缓存中没有找到，则重新计算它的值<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;将&nbsp;$data&nbsp;存放到缓存供下次使用<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">);<br />}<br /><br /></span><span style="color: #FF8000">//&nbsp;这儿&nbsp;$data&nbsp;可以使用了。</span></code></pre>
+<h2>缓存组件 <a name="cache-components"></a> <a href="#huan-cun-zu-jian" name="huan-cun-zu-jian" class="hashlink">&para;</a></h2>
+<p>数据缓存需要<strong>缓存组件</strong>提供支持，它代表各种缓存存储器，例如内存，文件，数据库。</p>
+<p>缓存组件通常注册为应用程序组件，这样它们就可以在全局进行配置与访问。如下代码演示了如何配置应用程序组件 <code>cache</code> 使用两个 <a href="http://memcached.org/">memcached</a> 服务器：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cache'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\caching\MemCache'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'servers'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'host'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'server1'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'port'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">11211</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'weight'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">100</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'host'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'server2'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'port'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">11211</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'weight'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">50</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />],</span></code></pre>
+<p>然后就可以通过  <code>Yii::$app-&gt;cache</code> 访问上面的缓存组件了。</p>
+<p>由于所有缓存组件都支持同样的一系列 API ，并不需要修改使用缓存的业务代码就能直接替换为其他底层缓存组件，只需在应用配置中重新配置一下就可以。例如，你可以将上述配置修改为使用 <a href="./yii-caching-apccache.html">APC cache</a>:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cache'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\caching\ApcCache'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />],</span></code></pre>
+<blockquote><p>Tip: 你可以注册多个缓存组件，很多依赖缓存的类默认调用名为 <code>cache</code> 的组件（例如 <a href="./yii-web-urlmanager.html">yii\web\UrlManager</a>）。</p>
+</blockquote>
+<h3>支持的缓存存储器 <a name="supported-cache-storage"></a> <a href="#zhi-chi-de-huan-cun-cun-chu-qi" name="zhi-chi-de-huan-cun-cun-chu-qi" class="hashlink">&para;</a></h3>
+<p>Yii 支持一系列缓存存储器，概况如下：</p>
+<ul>
+<li><a href="./yii-caching-apccache.html">yii\caching\ApcCache</a>: 使用 PHP <a href="http://php.net/manual/en/book.apc.php">APC</a> 扩展。这个选项可以认为是集中式应用程序环境中（例如：单一服务器，没有独立的负载均衡器等）最快的缓存方案。</li>
+<li><a href="./yii-caching-dbcache.html">yii\caching\DbCache</a>: 使用一个数据库的表存储缓存数据。要使用这个缓存，你必须创建一个与 <a href="./yii-caching-dbcache.html#$cacheTable-detail">yii\caching\DbCache::$cacheTable</a> 对应的表。</li>
+<li><a href="./yii-caching-dummycache.html">yii\caching\DummyCache</a>: 仅作为一个缓存占位符，不实现任何真正的缓存功能。这个组件的目的是为了简化那些需要查询缓存有效性的代码。例如，在开发中如果服务器没有实际的缓存支持，用它配置一个缓存组件。一个真正的缓存服务启用后，可以再切换为使用相应的缓存组件。两种条件下你都可以使用同样的代码 <code>Yii::$app-&gt;cache-&gt;get($key)</code> 尝试从缓存中取回数据而不用担心 <code>Yii::$app-&gt;cache</code> 可能是 <code>null</code>。</li>
+<li></li>
+<li><a href="./yii-caching-memcache.html">yii\caching\MemCache</a>: 使用 PHP <a href="http://php.net/manual/en/book.memcache.php">memcache</a> 和 <a href="http://php.net/manual/en/book.memcached.php">memcached</a> 扩展。这个选项被看作分布式应用环境中（例如：多台服务器，有负载均衡等）最快的缓存方案。</li>
+<li><a href="./yii-redis-cache.html">yii\redis\Cache</a>: 实现了一个基于 <a href="http://redis.io/">Redis</a> 键值对存储器的缓存组件（需要 redis 2.6.12 及以上版本的支持 ）。</li>
+<li><a href="./yii-caching-wincache.html">yii\caching\WinCache</a>: 使用 PHP <a href="http://iis.net/downloads/microsoft/wincache-extension">WinCache</a>（<a href="http://php.net/manual/en/book.wincache.php">另可参考</a>）扩展.</li>
+<li><a href="./yii-caching-xcache.html">yii\caching\XCache</a>: 使用 PHP <a href="http://xcache.lighttpd.net/">XCache</a>扩展。</li>
+<li><a href="./yii-caching-zenddatacache.html">yii\caching\ZendDataCache</a>: 使用 <a href="http://files.zend.com/help/Zend-Server-6/zend-server.htm#data_cache_component.htm">Zend Data Cache</a> 作为底层缓存媒介。</li>
+</ul>
+<blockquote><p>Tip: 你可以在同一个应用程序中使用不同的缓存存储器。一个常见的策略是使用基于内存的缓存存储器存储小而常用的数据（例如：统计数据），使用基于文件或数据库的缓存存储器存储大而不太常用的数据（例如：网页内容）。</p>
+</blockquote>
+<h2>缓存 API <a name="cache-apis"></a> <a href="#huan-cun-api" name="huan-cun-api" class="hashlink">&para;</a></h2>
+<p>所有缓存组件都有同样的基类 <a href="./yii-caching-cache.html">yii\caching\Cache</a> ，因此都支持如下 API：</p>
+<ul>
+<li><a href="./yii-caching-cache.html#get()-detail">get()</a>: 通过一个指定的键（key）从缓存中取回一项数据。如果该项数据不存在于缓存中或者已经过期/失效，则返回值 false。</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+<p>有些缓存存储器如 MemCache，APC 支持以批量模式取回缓存值，这样可以节省取回缓存数据的开支。 <a href="./yii-caching-cache.html#mget()-detail">mget()</a> 和 <a href="./yii-caching-cache.html#madd()-detail">madd()</a> API提供对该特性的支持。如果底层缓存存储器不支持该特性，Yii 也会模拟实现。</p>
+<p>由于 <a href="./yii-caching-cache.html">yii\caching\Cache</a> 实现了 PHP <code>ArrayAccess</code> 接口，缓存组件也可以像数组那样使用，下面是几个例子：</p>
+<pre><code class="language-php"><span style="color: #0000BB">$cache</span><span style="color: #007700">[</span><span style="color: #DD0000">'var1'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">$value1</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;等价于：&nbsp;$cache-&gt;set('var1',&nbsp;$value1);<br /></span><span style="color: #0000BB">$value2&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">[</span><span style="color: #DD0000">'var2'</span><span style="color: #007700">];&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;等价于：&nbsp;$value2&nbsp;=&nbsp;$cache-&gt;get('var2');</span></code></pre>
+<h3>缓存键 <a name="cache-keys"></a> <a href="#huan-cun-jian" name="huan-cun-jian" class="hashlink">&para;</a></h3>
+<p>存储在缓存中的每项数据都通过键作唯一识别。当你在缓存中存储一项数据时，必须为它指定一个键，稍后从缓存中取回数据时，也需要提供相应的键。</p>
+<p>你可以使用一个字符串或者任意值作为一个缓存键。当键不是一个字符串时，它将会自动被序列化为一个字符串。</p>
+<p>定义一个缓存键常见的一个策略就是在一个数组中包含所有的决定性因素。例如，<a href="./yii-db-schema.html">yii\db\Schema</a> 使用如下键存储一个数据表的结构信息。</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">__CLASS__</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;结构类名<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">dsn</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;数据源名称<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">username</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;数据库登录用户名<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;表名<br /></span><span style="color: #007700">];</span></code></pre>
+<p>如你所见，该键包含了可唯一指定一个数据库表所需的所有必要信息。</p>
+<p>当同一个缓存存储器被用于多个不同的应用时，应该为每个应用指定一个唯一的缓存键前缀以避免缓存键冲突。可以通过配置 <a href="./yii-caching-cache.html#$keyPrefix-detail">yii\caching\Cache::$keyPrefix</a> 属性实现。例如，在应用配置中可以编写如下代码：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'cache'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\caching\ApcCache'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'keyPrefix'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'myapp'</span><span style="color: #007700">,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;唯一键前缀<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />],</span></code></pre>
+<p>为了确保互通性，此处只能使用字母和数字。</p>
+<h3>缓存过期 <a name="cache-expiration"></a> <a href="#huan-cun-guo-qi" name="huan-cun-guo-qi" class="hashlink">&para;</a></h3>
+<p>默认情况下，缓存中的数据会永久存留，除非它被某些缓存策略强制移除（例如：缓存空间已满，最老的数据会被移除）。要改变此特性，你可以在调用 <a href="./yii-caching-cache.html#set()-detail">set()</a> 存储一项数据时提供一个过期时间参数。该参数代表这项数据在缓存中可保持有效多少秒。当你调用 <a href="./yii-caching-cache.html#get()-detail">get()</a> 取回数据时，如果它已经过了超时时间，该方法将返回 false，表明在缓存中找不到这项数据。例如：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;将数据在缓存中保留&nbsp;45&nbsp;秒<br /></span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">45</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">sleep</span><span style="color: #007700">(</span><span style="color: #0000BB">50</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);<br />if&nbsp;(</span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;$data&nbsp;已过期，或者在缓存中找不到<br /></span><span style="color: #007700">}</span></code></pre>
+<h3>缓存依赖 <a name="cache-dependencies"></a> <a href="#huan-cun-yi-lai" name="huan-cun-yi-lai" class="hashlink">&para;</a></h3>
+<p>除了超时设置，缓存数据还可能受到<strong>缓存依赖</strong>的影响而失效。例如，<a href="./yii-caching-filedependency.html">yii\caching\FileDependency</a> 代表对一个文件修改时间的依赖。这个依赖条件发生变化也就意味着相应的文件已经被修改。因此，缓存中任何过期的文件内容都应该被置为失效状态，对 <a href="./yii-caching-cache.html#get()-detail">get()</a> 的调用都应该返回 false。</p>
+<p>缓存依赖用 <a href="./yii-caching-dependency.html">yii\caching\Dependency</a> 的派生类所表示。当调用 <a href="./yii-caching-cache.html#set()-detail">set()</a> 在缓存中存储一项数据时，可以同时传递一个关联的缓存依赖对象。例如：</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;创建一个对&nbsp;example.txt&nbsp;文件修改时间的缓存依赖<br /></span><span style="color: #0000BB">$dependency&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">caching</span><span style="color: #007700">\</span><span style="color: #0000BB">FileDependency</span><span style="color: #007700">([</span><span style="color: #DD0000">'fileName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'example.txt'</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;缓存数据将在30秒后超时<br />//&nbsp;如果&nbsp;example.txt&nbsp;被修改，它也可能被更早地置为失效状态。<br /></span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">30</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;缓存会检查数据是否已超时。<br />//&nbsp;它还会检查关联的依赖是否已变化。<br />//&nbsp;符合任何一个条件时都会返回&nbsp;false。<br /></span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);</span></code></pre>
+<p>下面是可用的缓存依赖的概况：</p>
+<ul>
+<li></li>
+<li><a href="./yii-caching-dbdependency.html">yii\caching\DbDependency</a>: 如果指定 SQL 语句的查询结果发生了变化，则依赖改变。</li>
+<li><a href="./yii-caching-expressiondependency.html">yii\caching\ExpressionDependency</a>: 如果指定的 PHP 表达式执行结果发生变化，则依赖改变。</li>
+<li></li>
+<li><a href="./yii-caching-tagdependency.html">yii\caching\TagDependency</a>: 为一项缓存数据添加一个或多个标签。你可以通过调用 <a href="./yii-caching-tagdependency.html#invalidate()-detail">yii\caching\TagDependency::invalidate()</a>
+一次性将具有指定标签的缓存数据全部置为失效状态。</li>
+</ul>
+<h2>查询缓存 <a name="query-caching"></a> <a href="#cha-xun-huan-cun" name="cha-xun-huan-cun" class="hashlink">&para;</a></h2>
+<p>查询缓存是一个建立在数据缓存之上的特殊缓存特性。它用于缓存数据库查询的结果。</p>
+<p>查询缓存需要一个 <a href="./yii-db-connection.html">数据库连接</a> 和一个有效的 <code>cache</code> 应用组件。查询缓存的基本用法如下，假设 <code>$db</code> 是一个 <a href="./yii-db-connection.html">yii\db\Connection</a> 实例：</p>
+<pre><code class="language-php"><span style="color: #0000BB">$duration&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">60</span><span style="color: #007700">;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;缓存查询结果60秒<br /></span><span style="color: #0000BB">$dependency&nbsp;</span><span style="color: #007700">=&nbsp;...;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;可选的缓存依赖<br /><br /></span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">beginCache</span><span style="color: #007700">(</span><span style="color: #0000BB">$duration</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;...这儿执行数据库查询...<br /><br /></span><span style="color: #0000BB">$db</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">endCache</span><span style="color: #007700">();</span></code></pre>
+<p>如你所见，<code>beginCache()</code> 和 <code>endCache()</code> 中间的任何查询结果都会被缓存起来。如果缓存中找到了同样查询的结果，则查询会被跳过，直接从缓存中提取结果。</p>
+<p>查询缓存可以用于 <a href="guide-db-active-record.html">ActiveRecord</a> 和 <a href="guide-db-dao.html">DAO</a>。</p>
+<blockquote><p>Info: 有些 DBMS （例如：<a href="http://dev.mysql.com/doc/refman/5.1/en/query-cache.html">MySQL</a>）也支持数据库服务器端的查询缓存。你可以选择使用任一查询缓存机制。上文所述的查询缓存的好处在于你可以指定更灵活的缓存依赖因此可能更加高效。</p>
+</blockquote>
+<h3>配置 <a name="query-caching-configs"></a> <a href="#pei-zhi" name="pei-zhi" class="hashlink">&para;</a></h3>
+<p>查询缓存有两个通过 <a href="./yii-db-connection.html">yii\db\Connection</a> 设置的配置项：</p>
+<ul>
+<li><a href="./yii-db-connection.html#$queryCacheDuration-detail">queryCacheDuration</a>: 查询结果在缓存中的有效期，以秒表示。如果在调用 <span style="background: #ff0;">yii\db\Connection</span><span style="background: #f00;">::beginCache()</span> 时传递了一个显式的时值参数，则配置中的有效期时值会被覆盖。</li>
+<li><a href="./yii-db-connection.html#$queryCache-detail">queryCache</a>: 缓存应用组件的 ID。默认为 <code>'cache'</code>。只有在设置了一个有效的缓存应用组件时，查询缓存才会有效。</li>
+</ul>
+<h3>限制条件 <a name="query-caching-limitations"></a> <a href="#xian-zhi-tiao-jian" name="xian-zhi-tiao-jian" class="hashlink">&para;</a></h3>
+<p>当查询结果中含有资源句柄时，查询缓存无法使用。例如，在有些 DBMS 中使用了 <code>BLOB</code> 列的时候，缓存结果会为该数据列返回一个资源句柄。</p>
+<p>有些缓存存储器有大小限制。例如，memcache 限制每条数据最大为 1MB。因此，如果查询结果的大小超出了该限制，则会导致缓存失败。</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Wed, 30 Jul 2014 03:53:25 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

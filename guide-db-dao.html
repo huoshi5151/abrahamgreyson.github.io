@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/bbeb8e3d/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/d607947b/style.css" rel="stylesheet">
+<script src="./assets/ff75f2d2/jquery.js"></script>
+<script src="./assets/bbeb8e3d/js/bootstrap.js"></script>
+<script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w317" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w317-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w317-collapse" class="collapse navbar-collapse"><ul id="w318" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w319" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-300" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-300" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-301" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-301" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-302" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-302" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-303" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-303" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-304" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-304" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item active" href="#navigation-305" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-305" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-306" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-306" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-307" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-307" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-308" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-308" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-309" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-309" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-310" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-310" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-311" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-311" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-312" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-312" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-313" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-313" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-314" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-314" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-315" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-315" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-316" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-316" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <p>数据库基础</p>
+<p>Yii 基于 PHP's PDO建立了一个成熟的数据库访问层。它提供统一的 API 并解决了一些不同 DBMS 产生的使用不利。 Yii 默认支持以下 DBMS ：</p>
+<p>MySQL
+MariaDB
+SQLite
+PostgreSQL
+CUBRID: version 9.1.0 or higher.
+Oracle
+MSSQL: version 2012 或更高版本，如需使用 LIMIT/OFFSET。
+配置</p>
+<p>开始使用数据库首先需要配置数据库连接组件，通过添加 db 组件到应用配置实现（"基础的" Web 应用是 config/web.php），如下所示：</p>
+<p>return [</p>
+<pre><code>// ...
+'components' =&gt; [
+    // ...
+    'db' =&gt; [
+        'class' =&gt; 'yii\db\Connection',
+        'dsn' =&gt; 'mysql:host=localhost;dbname=mydatabase', // MySQL, MariaDB
+        //'dsn' =&gt; 'sqlite:/path/to/database/file', // SQLite
+        //'dsn' =&gt; 'pgsql:host=localhost;port=5432;dbname=mydatabase', // PostgreSQL
+        //'dsn' =&gt; 'cubrid:dbname=demodb;host=localhost;port=33000', // CUBRID
+        //'dsn' =&gt; 'sqlsrv:Server=localhost;Database=mydatabase', // MS SQL Server, sqlsrv driver
+        //'dsn' =&gt; 'dblib:host=localhost;dbname=mydatabase', // MS SQL Server, dblib driver
+        //'dsn' =&gt; 'mssql:host=localhost;dbname=mydatabase', // MS SQL Server, mssql driver
+        //'dsn' =&gt; 'oci:dbname=//localhost:1521/mydatabase', // Oracle
+        'username' =&gt; 'root', //数据库用户名
+        'password' =&gt; '', //数据库密码
+        'charset' =&gt; 'utf8',
+    ],
+],
+// ...
+</code></pre>
+<p>];
+请参考PHP manual获取更多有关 DSN 格式信息。</p>
+<p>配置连接组件后可以使用以下语法访问：</p>
+<p>$connection = \Yii::$app-&gt;db;
+请参考<a href="./yii-db-connection.html">yii\db\Connection</a>获取可配置的属性列表。也请注意如果需要同时使用多个数据库可以定义 多个 连接组件：</p>
+<p>$primaryConnection = \Yii::$app-&gt;db;
+$secondaryConnection = \Yii::$app-&gt;secondDb;
+如果不想定义数据库连接为应用组件，可以直接初始化使用：</p>
+<p>$connection = new \yii\db\Connection([</p>
+<pre><code>'dsn' =&gt; $dsn,
+ 'username' =&gt; $username,
+ 'password' =&gt; $password,
+</code></pre>
+<p>]);
+$connection-&gt;open();
+小提示：如果在创建了连接后需要执行额外的 SQL 查询，可以添加以下代码到应用配置文件：</p>
+<p>return [</p>
+<pre><code>// ...
+'components' =&gt; [
+    // ...
+    'db' =&gt; [
+        'class' =&gt; 'yii\db\Connection',
+        // ...
+        'on afterOpen' =&gt; function($event) {
+            $event-&gt;sender-&gt;createCommand("SET time_zone = 'UTC'")-&gt;execute();
+        }
+    ],
+],
+// ...
+</code></pre>
+<p>];
+SQL 基础查询</p>
+<p>一旦有了连接实例就可以通过<a href="./yii-db-command.html">yii\db\Command</a>执行 SQL 查询。</p>
+<p>SELECT 查询</p>
+<p>查询返回多行：</p>
+<p>$command = $connection-&gt;createCommand('SELECT * FROM post');
+$posts = $command-&gt;queryAll();
+返回单行：</p>
+<p>$command = $connection-&gt;createCommand('SELECT * FROM post WHERE id=1');
+$post = $command-&gt;queryOne();
+查询多列值：</p>
+<p>$command = $connection-&gt;createCommand('SELECT title FROM post');
+$titles = $command-&gt;queryColumn();
+查询标量值/计算值：</p>
+<p>$command = $connection-&gt;createCommand('SELECT COUNT(*) FROM post');
+$postCount = $command-&gt;queryScalar();
+UPDATE, INSERT, DELETE 更新、插入和删除等</p>
+<p>如果执行 SQL 不返回任何数据可使用命令中的 execute 方法：</p>
+<p>$command = $connection-&gt;createCommand('UPDATE post SET status=1 WHERE id=1');
+$command-&gt;execute();
+选择以下考虑到引用了恰当表名和列名的语法是可能的：</p>
+<p>// INSERT
+$connection-&gt;createCommand()-&gt;insert('user', [</p>
+<pre><code>'name' =&gt; 'Sam',
+'age' =&gt; 30,
+</code></pre>
+<p>])-&gt;execute();</p>
+<p>// INSERT 一次插入多行
+$connection-&gt;createCommand()-&gt;batchInsert('user', ['name', 'age'], [</p>
+<pre><code>['Tom', 30],
+['Jane', 20],
+['Linda', 25],
+</code></pre>
+<p>])-&gt;execute();</p>
+<p>// UPDATE
+$connection-&gt;createCommand()-&gt;update('user', ['status' =&gt; 1], 'age &gt; 30')-&gt;execute();</p>
+<p>// DELETE
+$connection-&gt;createCommand()-&gt;delete('user', 'status = 0')-&gt;execute();
+引用的表名和列名</p>
+<p>大多数时间都使用以下语法来引用表名和列名：</p>
+<p>$sql = "SELECT COUNT(<span style="background: #f00;">$column</span>) FROM {{$table}}";
+$rowCount = $connection-&gt;createCommand($sql)-&gt;queryScalar();
+In the code above <span style="background: #f00;">X</span> will be converted to properly quoted column name while {{Y}} will be converted to properly 以上代码<span style="background: #f00;">X</span> 会转变为引用恰当的列名，而{{Y}} 就转变为引用恰当的表名。</p>
+<p>表名有个专用的变体 {{%Y}} ，如果设置了表前缀使用该变体可以自动在表名前添加前缀：</p>
+<p>$sql = "SELECT COUNT(<span style="background: #f00;">$column</span>) FROM {{%$table}}";
+$rowCount = $connection-&gt;createCommand($sql)-&gt;queryScalar();
+如果在配置文件如下设置了表前缀，以上代码将在 tbl_table 这个表查询结果：</p>
+<p>return [</p>
+<pre><code>// ...
+'components' =&gt; [
+    // ...
+    'db' =&gt; [
+        // ...
+        'tablePrefix' =&gt; 'tbl_',
+    ],
+],
+</code></pre>
+<p>];
+手工引用表名和列名的另一个选择是使用<a href="./yii-db-connection.html#quoteTableName()-detail">yii\db\Connection::quoteTableName()</a> 和 <a href="./yii-db-connection.html#quoteColumnName()-detail">yii\db\Connection::quoteColumnName()</a>：</p>
+<p>$column = $connection-&gt;quoteColumnName($column);
+$table = $connection-&gt;quoteTableName($table);
+$sql = "SELECT COUNT($column) FROM $table";
+$rowCount = $connection-&gt;createCommand($sql)-&gt;queryScalar();
+预处理语句</p>
+<p>为安全传递查询参数可以使用预处理语句：</p>
+<p>$command = $connection-&gt;createCommand('SELECT * FROM post WHERE id=:id');
+$command-&gt;bindValue(':id', $_GET['id']);
+$post = $command-&gt;query();
+另一种用法是准备一次预处理语句而执行多次查询：</p>
+<p>$command = $connection-&gt;createCommand('DELETE FROM post WHERE id=:id');
+$command-&gt;bindParam(':id', $id);</p>
+<p>$id = 1;
+$command-&gt;execute();</p>
+<p>$id = 2;
+$command-&gt;execute();
+事务</p>
+<p>如下执行 SQL 事务查询语句：</p>
+<p>$transaction = $connection-&gt;beginTransaction();
+try {</p>
+<pre><code>$connection-&gt;createCommand($sql1)-&gt;execute();
+ $connection-&gt;createCommand($sql2)-&gt;execute();
+// ... 执行其他 SQL 语句 ...
+$transaction-&gt;commit();
+</code></pre>
+<p>} catch(Exception $e) {</p>
+<pre><code>$transaction-&gt;rollBack();
+</code></pre>
+<p>}
+如需要也可以嵌套多个事务：</p>
+<p>// 外部事务
+$transaction1 = $connection-&gt;beginTransaction();
+try {</p>
+<pre><code>$connection-&gt;createCommand($sql1)-&gt;execute();
+
+// 内部事务
+$transaction2 = $connection-&gt;beginTransaction();
+try {
+    $connection-&gt;createCommand($sql2)-&gt;execute();
+    $transaction2-&gt;commit();
+} catch (Exception $e) {
+    $transaction2-&gt;rollBack();
+}
+
+$transaction1-&gt;commit();
+</code></pre>
+<p>} catch (Exception $e) {</p>
+<pre><code>$transaction1-&gt;rollBack();
+</code></pre>
+<p>}
+操作数据库模式</p>
+<p>获得模式信息</p>
+<p>如下获得<a href="./yii-db-schema.html">yii\db\Schema</a>实例：</p>
+<p>$schema = $connection-&gt;getSchema();
+该实例包括一系列方法来检索数据库多方面的信息：</p>
+<p>$tables = $schema-&gt;getTableNames();
+完整参考请核对<a href="./yii-db-schema.html">yii\db\Schema</a>。</p>
+<p>修改模式</p>
+<p>除了基础的 SQL 查询，<a href="./yii-db-command.html">yii\db\Command</a>还包括一系列方法来修改数据库模式：</p>
+<p>createTable, renameTable, dropTable, truncateTable
+addColumn, renameColumn, dropColumn, alterColumn
+addPrimaryKey, dropPrimaryKey
+addForeignKey, dropForeignKey
+createIndex, dropIndex
+如下使用它们：</p>
+<p>// 新建表
+$connection-&gt;createCommand()-&gt;createTable('post', [</p>
+<pre><code>'id' =&gt; 'pk',
+'title' =&gt; 'string',
+'text' =&gt; 'text',
+</code></pre>
+<p>]);
+完整参考请核对 <a href="./yii-db-command.html">yii\db\Command</a>.</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Wed, 30 Jul 2014 03:53:26 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

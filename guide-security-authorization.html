@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/bbeb8e3d/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/d607947b/style.css" rel="stylesheet">
+<script src="./assets/ff75f2d2/jquery.js"></script>
+<script src="./assets/bbeb8e3d/js/bootstrap.js"></script>
+<script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w877" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w877-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w877-collapse" class="collapse navbar-collapse"><ul id="w878" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w879" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-860" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-860" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-861" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-861" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-862" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-862" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item" href="#navigation-863" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-863" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-864" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-864" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-865" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-865" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-866" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-866" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-867" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-867" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item active" href="#navigation-868" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-868" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item active" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-869" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-869" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-870" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-870" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-871" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-871" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-872" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-872" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-873" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-873" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-874" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-874" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-875" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-875" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-876" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-876" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Authorization <a href="#authorization" name="authorization" class="hashlink">&para;</a></h1>
+<blockquote><p>Note: This section is under development.</p>
+</blockquote>
+<p>Authorization is the process of verifying that a user has enough permission to do something. Yii provides two authorization
+methods: Access Control Filter (ACF) and Role-Based Access Control (RBAC).</p>
+<h2>Access Control Filter <a href="#access-control-filter" name="access-control-filter" class="hashlink">&para;</a></h2>
+<p>Access Control Filter (ACF) is a simple authorization method that is best used by applications that only need some
+simple access control. As its name indicates, ACF is an action filter that can be attached to a controller or a module
+as a behavior. ACF will check a set of <a href="./yii-filters-accesscontrol.html#$rules-detail">access rules</a> to make sure the current user
+can access the requested action.</p>
+<p>The code below shows how to use ACF which is implemented as <a href="./yii-filters-accesscontrol.html">yii\filters\AccessControl</a>:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">filters</span><span style="color: #007700">\</span><span style="color: #0000BB">AccessControl</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">SiteController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">behaviors</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'access'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">AccessControl</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'only'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'login'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'logout'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'signup'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'allow'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'actions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'login'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'signup'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'roles'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'?'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'allow'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'actions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'logout'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'roles'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'@'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br /></span><span style="color: #007700">}</span></code></pre>
+<p>In the code above ACF is attached to the <code>site</code> controller as a behavior. This is the typical way of using an action
+filter. The <code>only</code> option specifies that the ACF should only be applied to <code>login</code>, <code>logout</code> and <code>signup</code> actions.
+The <code>rules</code> option specifies the <a href="./yii-filters-accessrule.html">access rules</a>, which reads as follows:</p>
+<ul>
+<li>Allow all guest (not yet authenticated) users to access 'login' and 'signup' actions. The <code>roles</code> option
+contains a question mark <code>?</code> which is a special token recognized as "guests".</li>
+<li>Allow authenticated users to access 'logout' action. The <code>@</code> character is another special token recognized as
+authenticated users.</li>
+</ul>
+<p>When ACF performs authorization check, it will examine the rules one by one from top to bottom until it finds
+a match. The <code>allow</code> value of the matching rule will then be used to judge if the user is authorized. If none
+of the rules matches, it means the user is NOT authorized and ACF will stop further action execution.</p>
+<p>By default, ACF does only of the followings when it determines a user is not authorized to access the current action:</p>
+<ul>
+<li>If the user is a guest, it will call <a href="./yii-web-user.html#loginRequired()-detail">yii\web\User::loginRequired()</a>, which may redirect the browser to the login page.</li>
+<li>If the user is already authenticated, it will throw a <a href="./yii-web-forbiddenhttpexception.html">yii\web\ForbiddenHttpException</a>.</li>
+</ul>
+<p>You may customize this behavior by configuring the <a href="./yii-filters-accesscontrol.html#$denyCallback-detail">yii\filters\AccessControl::$denyCallback</a> property:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">AccessControl</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'denyCallback'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;function&nbsp;(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$action</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throw&nbsp;new&nbsp;\</span><span style="color: #0000BB">Exception</span><span style="color: #007700">(</span><span style="color: #DD0000">'You&nbsp;are&nbsp;not&nbsp;allowed&nbsp;to&nbsp;access&nbsp;this&nbsp;page'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />]</span></code></pre>
+<p><a href="./yii-filters-accessrule.html">Access rules</a> support many options. Below is a summary of the supported options.
+You may also extend <a href="./yii-filters-accessrule.html">yii\filters\AccessRule</a> to create your own customized access rule classes.</p>
+<ul>
+<li><p><a href="./yii-filters-accessrule.html#$allow-detail">allow</a>: specifies whether this is an "allow" or "deny" rule.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$actions-detail">actions</a>: specifies which actions this rule matches. This should
+be an array of action IDs. The comparison is case-sensitive. If this option is empty or not set,
+it means the rule applies to all actions.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$controllers-detail">controllers</a>: specifies which controllers this rule
+matches. This should be an array of controller IDs. The comparison is case-sensitive. If this option is
+empty or not set, it means the rule applies to all controllers.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$roles-detail">roles</a>: specifies which user roles that this rule matches.
+Two special roles are recognized, and they are checked via <a href="./yii-web-user.html#$isGuest-detail">yii\web\User::$isGuest</a>:
+  - <code>?</code>: matches a guest user (not authenticated yet)
+  - <code>@</code>: matches an authenticated user
+Using other role names requires RBAC (to be described in the next section), and <a href="./yii-web-user.html#can()-detail">yii\web\User::can()</a> will be called.
+If this option is empty or not set, it means this rule applies to all roles.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$ips-detail">ips</a>: specifies which <a href="./yii-web-request.html#$userIP-detail">client IP addresses</a> this rule matches.
+An IP address can contain the wildcard <code>*</code> at the end so that it matches IP addresses with the same prefix.
+For example, '192.168.*' matches all IP addresses in the segment '192.168.'. If this option is empty or not set,
+it means this rule applies to all IP addresses.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$verbs-detail">verbs</a>: specifies which request method (e.g. <code>GET</code>, <code>POST</code>) this rule matches.
+The comparison is case-insensitive.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$matchCallback-detail">matchCallback</a>: specifies a PHP callable that should be called to determine
+if this rule should be applied.</p>
+</li>
+<li><p><a href="./yii-filters-accessrule.html#$denyCallback-detail">denyCallback</a>: specifies a PHP callable that should be called when this rule
+will deny the access.</p>
+</li>
+</ul>
+<p>Below is an example showing how to make use of the <code>matchCallback</code> option, which allows you to write arbitrary access
+check logic:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">filters</span><span style="color: #007700">\</span><span style="color: #0000BB">AccessControl</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">SiteController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">behaviors</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'access'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">AccessControl</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'only'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'special-callback'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'actions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'special-callback'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'allow'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'matchCallback'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;function&nbsp;(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$action</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">date</span><span style="color: #007700">(</span><span style="color: #DD0000">'d-m'</span><span style="color: #007700">)&nbsp;===&nbsp;</span><span style="color: #DD0000">'31-10'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;];<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Match&nbsp;callback&nbsp;called!&nbsp;This&nbsp;page&nbsp;can&nbsp;be&nbsp;accessed&nbsp;only&nbsp;each&nbsp;October&nbsp;31st<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionSpecialCallback</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'happy-halloween'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
+<h2>Role based access control (RBAC) <a href="#role-based-access-control-rbac" name="role-based-access-control-rbac" class="hashlink">&para;</a></h2>
+<p>Role-Based Access Control (RBAC) provides a simple yet powerful centralized access control. Please refer to
+the <a href="http://en.wikipedia.org/wiki/Role-based_access_control">Wiki article</a> for details about comparing RBAC
+with other more traditional access control schemes.</p>
+<p>Yii implements a General Hierarchical RBAC, following the <a href="http://csrc.nist.gov/rbac/sandhu-ferraiolo-kuhn-00.pdf">NIST RBAC model</a>.
+It provides the RBAC functionality through the <a href="./yii-rbac-managerinterface.html">authManager</a> application component.</p>
+<p>Using RBAC involves two parts of work. The first part is to build up the RBAC authorization data, and the second
+part is to use the authorization data to perform access check in places where it is needed.</p>
+<p>To facilitate our description next, we will first introduce some basic RBAC concepts.</p>
+<h3>Basic Concepts <a href="#basic-concepts" name="basic-concepts" class="hashlink">&para;</a></h3>
+<p>A role represents a collection of <em>permissions</em> (e.g. creating posts, updating posts). A role may be assigned
+to one or multiple users. To check if a user has a specified permission, we may check if the user is assigned
+with a role that contains that permission.</p>
+<p>Associated with each role or permission, there may be a <em>rule</em>. A rule represents a piece of code that will be
+executed during access check to determine if the corresponding role or permission applies to the current user.
+For example, the "update post" permission may have a rule that checks if the current user is the post creator.
+During access checking, if the user is NOT the post creator, he/she will be considered not having the "update post" permission.</p>
+<p>Both roles and permissions can be organized in a hierarchy. In particular, a role may consist of other roles or permissions;
+and a permission may consist of other permissions. Yii implements a <em>partial order</em> hierarchy which includes the
+more special <em>tree</em> hierarchy. While a role can contain a permission, it is not true vice versa.</p>
+<h3>Configuring RBAC Manager <a href="#configuring-rbac-manager" name="configuring-rbac-manager" class="hashlink">&para;</a></h3>
+<p>Before we set off to define authorization data and perform access checking, we need to configure the
+<a href="./yii-base-application.html#$authManager-detail">authManager</a> application component. Yii provides two types of authorization managers:
+<a href="./yii-rbac-phpmanager.html">yii\rbac\PhpManager</a> and <a href="./yii-rbac-dbmanager.html">yii\rbac\DbManager</a>. The former uses a PHP script file to store authorization
+data, while the latter stores authorization data in database. You may consider using the former if your application
+does not require very dynamic role and permission management.</p>
+<p>The following code shows how to configure <code>authManager</code> in the application configuration:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'authManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\rbac\PhpManager'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />];</span></code></pre>
+<p>The <code>authManager</code> can now be accessed via <code>\Yii::$app-&gt;authManager</code>.</p>
+<blockquote><p>Tip: By default, <a href="./yii-rbac-phpmanager.html">yii\rbac\PhpManager</a> stores RBAC data in the file <code>@app/data/rbac.php</code>.
+  Sometime you need to create this file manually.</p>
+</blockquote>
+<h3>Building Authorization Data <a href="#building-authorization-data" name="building-authorization-data" class="hashlink">&para;</a></h3>
+<p>Building authorization data is all about the following tasks:</p>
+<ul>
+<li>defining roles and permissions;</li>
+<li>establishing relations among roles and permissions;</li>
+<li>defining rules;</li>
+<li>associating rules with roles and permissions;</li>
+<li>assigning roles to users.</li>
+</ul>
+<p>Depending on authorization flexibility requirements the tasks above could be done in different ways.</p>
+<p>If your persmissions hierarchy doesn't change at all and you have a fixed number of users you can create a console
+command that will initialize authorization data once via APIs offered by <code>authManager</code>:</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">commands</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">console</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">RbacController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionInit</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">authManager</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;add&nbsp;"createPost"&nbsp;permission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$createPost&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createPermission</span><span style="color: #007700">(</span><span style="color: #DD0000">'createPost'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$createPost</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Create&nbsp;a&nbsp;post'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$createPost</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;add&nbsp;"updatePost"&nbsp;permission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$updatePost&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createPermission</span><span style="color: #007700">(</span><span style="color: #DD0000">'updatePost'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$updatePost</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Update&nbsp;post'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$updatePost</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;add&nbsp;"author"&nbsp;role&nbsp;and&nbsp;give&nbsp;this&nbsp;role&nbsp;the&nbsp;"createPost"&nbsp;permission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$author&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createRole</span><span style="color: #007700">(</span><span style="color: #DD0000">'author'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$author</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addChild</span><span style="color: #007700">(</span><span style="color: #0000BB">$author</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$createPost</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;add&nbsp;"admin"&nbsp;role&nbsp;and&nbsp;give&nbsp;this&nbsp;role&nbsp;the&nbsp;"updatePost"&nbsp;permission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;as&nbsp;well&nbsp;as&nbsp;the&nbsp;permissions&nbsp;of&nbsp;the&nbsp;"author"&nbsp;role<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$admin&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createRole</span><span style="color: #007700">(</span><span style="color: #DD0000">'admin'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$admin</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addChild</span><span style="color: #007700">(</span><span style="color: #0000BB">$admin</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$updatePost</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addChild</span><span style="color: #007700">(</span><span style="color: #0000BB">$admin</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$author</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;Assign&nbsp;roles&nbsp;to&nbsp;users.&nbsp;1&nbsp;and&nbsp;2&nbsp;are&nbsp;IDs&nbsp;returned&nbsp;by&nbsp;IdentityInterface::getId()<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;usually&nbsp;implemented&nbsp;in&nbsp;your&nbsp;User&nbsp;model.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assign</span><span style="color: #007700">(</span><span style="color: #0000BB">$author</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assign</span><span style="color: #007700">(</span><span style="color: #0000BB">$admin</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
+<p>After executing the command we'll get the following hierarchy:</p>
+<p><img src="images/rbac-hierarchy-1.png" alt="Simple RBAC hierarchy" title="Simple RBAC hierarchy" /></p>
+<p>Author can create post, admin can update post and do everything author can.</p>
+<p>If your application allows user signup you need to assign roles to these new users once. For example, in order for all
+signed up users to become authors you in advanced application template you need to modify <code>frontend\models\SignupForm::signup()</code>
+as follows:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">signup</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">validate</span><span style="color: #007700">())&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">User</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">username&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">username</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">email&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">email</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">setPassword</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">password</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">generateAuthKey</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">save</span><span style="color: #007700">(</span><span style="color: #0000BB">false</span><span style="color: #007700">);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;the&nbsp;following&nbsp;three&nbsp;lines&nbsp;were&nbsp;added:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">authManager</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$authorRole&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getRole</span><span style="color: #007700">(</span><span style="color: #DD0000">'author'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">assign</span><span style="color: #007700">(</span><span style="color: #0000BB">$authorRole</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getId</span><span style="color: #007700">());<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$user</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">;<br />}</span></code></pre>
+<p>For applications that require complex access control with dynamically updated authorization data, special user interfaces
+(i.e. admin panel) may need to be developed using APIs offered by <code>authManager</code>.</p>
+<blockquote><p>Tip: By default, <a href="./yii-rbac-phpmanager.html">yii\rbac\PhpManager</a> stores RBAC data in the file <code>@app/data/rbac.php</code>.
+  Sometimes when you want to make some minor changes to the RBAC data, you may directly edit this file.</p>
+</blockquote>
+<h3>Using Rules <a href="#using-rules" name="using-rules" class="hashlink">&para;</a></h3>
+<p>As aforementioned, rules add additional constraint to roles and permissions. A rule is a class extending
+from <a href="./yii-rbac-rule.html">yii\rbac\Rule</a>. It must implement the <a href="./yii-rbac-rule.html#execute()-detail">execute()</a> method. In the hierarchy we've
+created previously author cannot edit his own post. Let's fix it. First we need a rule to verify that the user is the post author:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">rbac</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">rbac</span><span style="color: #007700">\</span><span style="color: #0000BB">Rule</span><span style="color: #007700">;<br /><br /></span><span style="color: #FF8000">/**<br />&nbsp;*&nbsp;Checks&nbsp;if&nbsp;authorID&nbsp;matches&nbsp;user&nbsp;passed&nbsp;via&nbsp;params<br />&nbsp;*/<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">AuthorRule&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Rule<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'isAuthor'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;string|integer&nbsp;$user&nbsp;the&nbsp;user&nbsp;ID.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;Item&nbsp;$item&nbsp;the&nbsp;role&nbsp;or&nbsp;permission&nbsp;that&nbsp;this&nbsp;rule&nbsp;is&nbsp;associated&nbsp;with<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;array&nbsp;$params&nbsp;parameters&nbsp;passed&nbsp;to&nbsp;ManagerInterface::checkAccess().<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@return&nbsp;boolean&nbsp;a&nbsp;value&nbsp;indicating&nbsp;whether&nbsp;the&nbsp;rule&nbsp;permits&nbsp;the&nbsp;role&nbsp;or&nbsp;permission&nbsp;it&nbsp;is&nbsp;associated&nbsp;with.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">execute</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;isset(</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'post'</span><span style="color: #007700">])&nbsp;?&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'post'</span><span style="color: #007700">]-&gt;</span><span style="color: #0000BB">createdBy&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">$user&nbsp;</span><span style="color: #007700">:&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
+<p>The rule above checks if the <code>post</code> is created by <code>$user</code>. We'll create a special permission <code>updateOwnPost</code> in the
+command we've used previously:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;add&nbsp;the&nbsp;rule<br /></span><span style="color: #0000BB">$rule&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;\</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">rbac</span><span style="color: #007700">\</span><span style="color: #0000BB">AuthorRule</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;add&nbsp;the&nbsp;"updateOwnPost"&nbsp;permission&nbsp;and&nbsp;associate&nbsp;the&nbsp;rule&nbsp;with&nbsp;it.<br /></span><span style="color: #0000BB">$updateOwnPost&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createPermission</span><span style="color: #007700">(</span><span style="color: #DD0000">'updateOwnPost'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$updateOwnPost</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">description&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Update&nbsp;own&nbsp;post'</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$updateOwnPost</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ruleName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$updateOwnPost</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;"updateOwnPost"&nbsp;will&nbsp;be&nbsp;used&nbsp;from&nbsp;"updatePost"<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addChild</span><span style="color: #007700">(</span><span style="color: #0000BB">$updateOwnPost</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$updatePost</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;allow&nbsp;"author"&nbsp;to&nbsp;update&nbsp;their&nbsp;own&nbsp;posts<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addChild</span><span style="color: #007700">(</span><span style="color: #0000BB">$author</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$updateOwnPost</span><span style="color: #007700">);</span></code></pre>
+<p>Now we've got the following hierarchy:</p>
+<p><img src="images/rbac-hierarchy-2.png" alt="RBAC hierarchy with a rule" title="RBAC hierarchy with a rule" /></p>
+<h3>Access Check <a href="#access-check" name="access-check" class="hashlink">&para;</a></h3>
+<p>With the authorization data ready, access check is as simple as a call to the <a href="./yii-rbac-managerinterface.html#checkAccess()-detail">yii\rbac\ManagerInterface::checkAccess()</a>
+method. Because most access check is about the current user, for convenience Yii provides a shortcut method
+<a href="./yii-web-user.html#can()-detail">yii\web\User::can()</a>, which can be used like the following:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">if&nbsp;(\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">can</span><span style="color: #007700">(</span><span style="color: #DD0000">'createPost'</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;create&nbsp;post<br /></span><span style="color: #007700">}</span></code></pre>
+<p>If the current user is Jane with ID=1 we're starting at <code>createPost</code> and trying to get to <code>Jane</code>:</p>
+<p><img src="images/rbac-access-check-1.png" alt="Access check" title="Access check" /></p>
+<p>In order to check if user can update post we need to pass an extra parameter that is required by the <code>AuthorRule</code> described before:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">if&nbsp;(\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">can</span><span style="color: #007700">(</span><span style="color: #DD0000">'updatePost'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'post'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$post</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;update&nbsp;post<br /></span><span style="color: #007700">}</span></code></pre>
+<p>Here's what happens if current user is John:</p>
+<p><img src="images/rbac-access-check-2.png" alt="Access check" title="Access check" /></p>
+<p>We're starting with the <code>updatePost</code> and going through <code>updateOwnPost</code>. In order to pass it <code>AuthorRule</code> should return
+<code>true</code> from its <code>execute</code> method. The method receives its <code>$params</code> from <code>can</code> method call so the value is
+<code>['post' =&gt; $post]</code>. If everything is OK we're getting to <code>author</code> that is assigned to John.</p>
+<p>In case of Jane it is a bit simpler since she's an admin:</p>
+<p><img src="images/rbac-access-check-3.png" alt="Access check" title="Access check" /></p>
+<h3>Using Default Roles <a href="#using-default-roles" name="using-default-roles" class="hashlink">&para;</a></h3>
+<p>A default role is a role that is <em>implicitly</em> assigned to <em>all</em> users. The call to <a href="./yii-rbac-managerinterface.html#assign()-detail">yii\rbac\ManagerInterface::assign()</a>
+is not needed, and the authorization data does not contain its assignment information.</p>
+<p>A default role is usually associated with a rule which determines if the role applies to the user being checked.</p>
+<p>Default roles are often used in applications which already have some sort of role assignment. For example, an application
+may have a "group" column in its user table to represent which privilege group each user belongs to.
+If each privilege group can be mapped to a RBAC role, you can use the default role feature to automatically
+assign each user to a RBAC role. Let's use an example to show how this can be done.</p>
+<p>Assume in the user table, you have a <code>group</code> column which uses 1 to represent the administrator group and 2 the author group.
+You plan to have two RBAC roles <code>admin</code> and <code>author</code> to represent the permissions for these two groups, respectively.
+You can create set up the RBAC data as follows,</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">rbac</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">rbac</span><span style="color: #007700">\</span><span style="color: #0000BB">Rule</span><span style="color: #007700">;<br /><br /></span><span style="color: #FF8000">/**<br />&nbsp;*&nbsp;Checks&nbsp;if&nbsp;authorID&nbsp;matches&nbsp;user&nbsp;passed&nbsp;via&nbsp;params<br />&nbsp;*/<br /></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">UserGroupRule&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Rule<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$name&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'userGroup'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">execute</span><span style="color: #007700">(</span><span style="color: #0000BB">$user</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$item</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(!</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">isGuest</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$group&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">user</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">identity</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">group</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$item</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'admin'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$group&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(</span><span style="color: #0000BB">$item</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'author'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$group&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">1&nbsp;</span><span style="color: #007700">||&nbsp;</span><span style="color: #0000BB">$group&nbsp;</span><span style="color: #007700">==&nbsp;</span><span style="color: #0000BB">2</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}<br /><br /></span><span style="color: #0000BB">$rule&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;\</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">rbac</span><span style="color: #007700">\</span><span style="color: #0000BB">UserGroupRule</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$rule</span><span style="color: #007700">);<br /><br /></span><span style="color: #0000BB">$author&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createRole</span><span style="color: #007700">(</span><span style="color: #DD0000">'author'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$author</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ruleName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$author</span><span style="color: #007700">);<br /></span><span style="color: #FF8000">//&nbsp;...&nbsp;add&nbsp;permissions&nbsp;as&nbsp;children&nbsp;of&nbsp;$author&nbsp;...<br /><br /></span><span style="color: #0000BB">$admin&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createRole</span><span style="color: #007700">(</span><span style="color: #DD0000">'admin'</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$admin</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">ruleName&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$rule</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">name</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">add</span><span style="color: #007700">(</span><span style="color: #0000BB">$admin</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$auth</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">addChild</span><span style="color: #007700">(</span><span style="color: #0000BB">$admin</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$author</span><span style="color: #007700">);<br /></span><span style="color: #FF8000">//&nbsp;...&nbsp;add&nbsp;permissions&nbsp;as&nbsp;children&nbsp;of&nbsp;$admin&nbsp;...</span></code></pre>
+<p>Note that in the above, because "author" is added as a child of "admin", when you implement the <code>execute()</code> method
+of the rule class, you need to respect this hierarchy as well. That is why when the role name is "author",
+the <code>execute()</code> method will return true if the user group is either 1 or 2 (meaning the user is in either "admin"
+group or "author" group).</p>
+<p>Next, configure <code>authManager</code> by listing the two roles in <a href="./yii-rbac-basemanager.html#$defaultRoles-detail">yii\rbac\BaseManager::$defaultRoles</a>:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'authManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\rbac\PhpManager'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'defaultRoles'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'admin'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'author'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />];</span></code></pre>
+<p>Now if you perform an access check, both of the <code>admin</code> and <code>author</code> roles will be checked by evaluating
+the rules associated with them. If the rule returns true, it means the role applies to the current user.
+Based on the above rule implementation, this means if the <code>group</code> value of a user is 1, the <code>admin</code> role
+would apply to the user; and if the <code>group</code> value is 2, the <code>author</code> role would apply.</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Wed, 30 Jul 2014 03:53:27 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

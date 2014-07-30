@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/bbeb8e3d/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/d607947b/style.css" rel="stylesheet">
+<script src="./assets/ff75f2d2/jquery.js"></script>
+<script src="./assets/bbeb8e3d/js/bootstrap.js"></script>
+<script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w837" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w837-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w837-collapse" class="collapse navbar-collapse"><ul id="w838" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w839" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
+<li><a href="./ext-composer-index.html" tabindex="-1">composer</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-820" data-toggle="collapse" data-parent="#navigation">介绍 <b class="caret"></b></a><div id="navigation-820" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">关于 Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">从 Yii 1.1 升级</a></div>
+<a class="list-group-item" href="#navigation-821" data-toggle="collapse" data-parent="#navigation">入门 <b class="caret"></b></a><div id="navigation-821" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-installation.html">安装 Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">运行应用</a>
+<a class="list-group-item" href="./guide-start-hello.html">第一次问候</a>
+<a class="list-group-item" href="./guide-start-forms.html">使用 Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">玩转 Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">更上一层楼</a></div>
+<a class="list-group-item" href="#navigation-822" data-toggle="collapse" data-parent="#navigation">应用结构 <b class="caret"></b></a><div id="navigation-822" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">结构总览</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">入口脚本</a>
+<a class="list-group-item" href="./guide-structure-applications.html">应用</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">应用组件</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">控制器（Controller）</a>
+<a class="list-group-item" href="./guide-structure-views.html">视图（View）</a>
+<a class="list-group-item" href="./guide-structure-models.html">模型（Model）</a>
+<a class="list-group-item" href="./guide-structure-filters.html">过滤器</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">小部件（Widget）</a>
+<a class="list-group-item" href="./guide-structure-modules.html">模块（Module）</a>
+<a class="list-group-item" href="./guide-structure-assets.html">前端资源（Asset）</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">扩展（extensions）</a></div>
+<a class="list-group-item active" href="#navigation-823" data-toggle="collapse" data-parent="#navigation">请求处理 <b class="caret"></b></a><div id="navigation-823" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./guide-runtime-bootstrapping.html">引导（Bootstrapping）</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">路由（Routing）</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">请求（Request）</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">响应（Response）</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions（会话）和 Cookies</a>
+<a class="list-group-item active" href="./guide-runtime-url-handling.html">URL 解析和生成</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">错误处理</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">日志</a></div>
+<a class="list-group-item" href="#navigation-824" data-toggle="collapse" data-parent="#navigation">关键概念 <b class="caret"></b></a><div id="navigation-824" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">组件（Component）</a>
+<a class="list-group-item" href="./guide-concept-properties.html">属性（Property）</a>
+<a class="list-group-item" href="./guide-concept-events.html">事件（Event）</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">行为（Behavior）</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">配置（Configurations）</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">类自动加载（Autoloading）</a>
+<a class="list-group-item" href="./guide-concept-alias.html">别名（Alias）</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">服务定位器（Service Locator）</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">依赖注入容器（DI Container）</a></div>
+<a class="list-group-item" href="#navigation-825" data-toggle="collapse" data-parent="#navigation">配合数据库工作 <b class="caret"></b></a><div id="navigation-825" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">数据访问对象（DAO）</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">查询生成器（Query Builder）</a>
+<a class="list-group-item" href="./guide-db-active-record.html">活动记录（Active Record）</a>
+<a class="list-group-item" href="./guide-db-migrations.html">数据库迁移（Migration）</a>
+<a class="list-group-item" href="./guide-db-sphinx.html">Sphinx</a>
+<a class="list-group-item" href="./guide-db-redis.html">Redis</a>
+<a class="list-group-item" href="./guide-db-mongodb.html">MongoDB</a>
+<a class="list-group-item" href="./guide-db-elastic-search.html">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-826" data-toggle="collapse" data-parent="#navigation">接收用户数据 <b class="caret"></b></a><div id="navigation-826" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">创建表单</a>
+<a class="list-group-item" href="./guide-input-validation.html">输入验证</a>
+<a class="list-group-item" href="./guide-input-file-uploading.html">文件上传</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">多模型同时输入</a></div>
+<a class="list-group-item" href="#navigation-827" data-toggle="collapse" data-parent="#navigation">显示数据 <b class="caret"></b></a><div id="navigation-827" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">格式化输出数据</a>
+<a class="list-group-item" href="./guide-output-pagination.html">分页（Pagination）</a>
+<a class="list-group-item" href="./guide-output-sorting.html">排序（Sorting）</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">数据提供器</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">数据小部件</a>
+<a class="list-group-item" href="./guide-output-theming.html">主题</a></div>
+<a class="list-group-item" href="#navigation-828" data-toggle="collapse" data-parent="#navigation">安全 <b class="caret"></b></a><div id="navigation-828" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-authentication.html">认证（Authentication）</a>
+<a class="list-group-item" href="./guide-security-authorization.html">授权（Authorization）</a>
+<a class="list-group-item" href="./guide-security-passwords.html">处理密码</a>
+<a class="list-group-item" href="./guide-security-auth-clients.html">客户端认证</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">安全领域的最佳实践</a></div>
+<a class="list-group-item" href="#navigation-829" data-toggle="collapse" data-parent="#navigation">缓存 <b class="caret"></b></a><div id="navigation-829" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">概述</a>
+<a class="list-group-item" href="./guide-caching-data.html">数据缓存</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">片段缓存</a>
+<a class="list-group-item" href="./guide-caching-page.html">分页缓存</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP 缓存</a></div>
+<a class="list-group-item" href="#navigation-830" data-toggle="collapse" data-parent="#navigation">RESTful Web 服务 <b class="caret"></b></a><div id="navigation-830" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">快速入门</a>
+<a class="list-group-item" href="./guide-rest-resources.html">资源</a>
+<a class="list-group-item" href="./guide-rest-routing.html">路由</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">格式化响应</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">授权验证</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">速率限制</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">版本化</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">错误处理</a>
+<a class="list-group-item" href="./guide-rest-testing.html">测试</a></div>
+<a class="list-group-item" href="#navigation-831" data-toggle="collapse" data-parent="#navigation">开发工具 <b class="caret"></b></a><div id="navigation-831" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tool-debugger.html">调试工具栏和调试器</a>
+<a class="list-group-item" href="./guide-tool-gii.html">使用 Gii 生成代码</a>
+<a class="list-group-item" href="./guide-tool-api-doc.html">生成 API 文档</a></div>
+<a class="list-group-item" href="#navigation-832" data-toggle="collapse" data-parent="#navigation">测试 <b class="caret"></b></a><div id="navigation-832" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">概述</a>
+<a class="list-group-item" href="./guide-test-unit.html">单元测试</a>
+<a class="list-group-item" href="./guide-test-functional.html">功能测试</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">验收测试</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">测试夹具</a></div>
+<a class="list-group-item" href="#navigation-833" data-toggle="collapse" data-parent="#navigation">高级专题 <b class="caret"></b></a><div id="navigation-833" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-tutorial-advanced-app.html">高级应用模版</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">从头构建自定义模版</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">控制台命令</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">核心验证器</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">国际化</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">收发邮件</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">性能优化</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">共享主机环境</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">模板引擎</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">集成第三方代码</a></div>
+<a class="list-group-item" href="#navigation-834" data-toggle="collapse" data-parent="#navigation">小部件 <b class="caret"></b></a><div id="navigation-834" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-widget-bootstrap.html">Bootstrap 小部件</a>
+<a class="list-group-item" href="./guide-widget-jui.html">Jquery UI 小部件</a></div>
+<a class="list-group-item" href="#navigation-835" data-toggle="collapse" data-parent="#navigation">助手类 <b class="caret"></b></a><div id="navigation-835" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">助手一览</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a>
+<a class="list-group-item" href="./guide-helper-security.html">security</a></div>
+<a class="list-group-item" href="#navigation-836" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-836" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>URL Management <a href="#url-management" name="url-management" class="hashlink">&para;</a></h1>
+<blockquote><p>Note: This section is under development.</p>
+</blockquote>
+<p>The concept of URL management in Yii is fairly simple. URL management is based on the premise that the application uses
+internal routes and parameters everywhere. The framework itself will then translate routes into URLs, and vice versa, according to the URL manager's configuration. This approach allows you to change site-wide URLs merely by
+editing a single configuration file, without ever touching the application code.</p>
+<h2>Internal routes <a href="#internal-routes" name="internal-routes" class="hashlink">&para;</a></h2>
+<p>When implementing an application using Yii, you'll deal with internal routes, often referred to as routes and parameters.
+Each controller and controller action has a corresponding internal route such as <code>site/index</code> or <code>user/create</code>.
+In the first example, <code>site</code> is referred to as the <em>controller ID</em> while <code>index</code> is referred to as the <em>action ID</em>. In the
+second example, <code>user</code> is the controller ID and <code>create</code> is the action ID. If the controller belongs to a <em>module</em>, the
+internal route is prefixed with the module ID. For example <code>blog/post/index</code> for a blog module (with <code>post</code> being the
+controller ID and <code>index</code> being the action ID).</p>
+<h2>Creating URLs <a href="#creating-urls" name="creating-urls" class="hashlink">&para;</a></h2>
+<p>The most important rule for creating URLs in your site is to always do so using the URL manager. The URL manager is a built-in application component named <code>urlManager</code>. This component is accessible from both web and console applications via
+<code>\Yii::$app-&gt;urlManager</code>. The component makes available the two following URL creation methods:</p>
+<ul>
+<li><code>createUrl($params)</code></li>
+<li><code>createAbsoluteUrl($params, $schema = null)</code></li>
+</ul>
+<p>The <code>createUrl</code> method creates an URL relative to the application root, such as <code>/index.php/site/index/</code>.
+The <code>createAbsoluteUrl</code> method creates an URL prefixed with the proper protocol and hostname:
+<code>http://www.example.com/index.php/site/index</code>. The former is suitable for internal application URLs, while the latter
+is used when you need to create URLs for external resources, such as connecting to third party services, sending email,
+generating RSS feeds etc.</p>
+<p>Some examples:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">echo&nbsp;\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">urlManager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createUrl</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/page'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'about'</span><span style="color: #007700">]);<br /></span><span style="color: #FF8000">//&nbsp;/index.php/site/page/id/about/<br /></span><span style="color: #007700">echo&nbsp;\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">urlManager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createUrl</span><span style="color: #007700">([</span><span style="color: #DD0000">'date-time/fast-forward'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">105</span><span style="color: #007700">])<br /></span><span style="color: #FF8000">//&nbsp;/index.php?r=date-time/fast-forward&amp;id=105<br /></span><span style="color: #007700">echo&nbsp;\</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">urlManager</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createAbsoluteUrl</span><span style="color: #007700">(</span><span style="color: #DD0000">'blog/post/index'</span><span style="color: #007700">);<br /></span><span style="color: #FF8000">//&nbsp;http://www.example.com/index.php/blog/post/index/</span></code></pre>
+<p>The exact format of the URL depends on how the URL manager is configured. The above
+examples may also output:</p>
+<ul>
+<li><code>/site/page/id/about/</code></li>
+<li><code>/index.php?r=site/page&amp;id=about</code></li>
+<li><code>/index.php?r=date-time/fast-forward&amp;id=105</code></li>
+<li><code>/index.php/date-time/fast-forward?id=105</code></li>
+<li><code>http://www.example.com/blog/post/index/</code></li>
+<li><code>http://www.example.com/index.php?r=blog/post/index</code></li>
+</ul>
+<p>In order to simplify URL creation there is <a href="./yii-helpers-url.html">yii\helpers\Url</a> helper. Assuming we're at <code>/index.php?r=management/default/users&amp;id=10</code> the following
+is how <code>Url</code> helper works:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">helpers</span><span style="color: #007700">\</span><span style="color: #0000BB">Url</span><span style="color: #007700">;<br /><br /></span><span style="color: #FF8000">//&nbsp;currently&nbsp;active&nbsp;route<br />//&nbsp;/index.php?r=management/default/users<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">''</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;same&nbsp;controller,&nbsp;different&nbsp;action<br />//&nbsp;/index.php?r=management/default/page&amp;id=contact<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">toRoute</span><span style="color: #007700">([</span><span style="color: #DD0000">'page'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'contact'</span><span style="color: #007700">]);<br /><br /><br /></span><span style="color: #FF8000">//&nbsp;same&nbsp;module,&nbsp;different&nbsp;controller&nbsp;and&nbsp;action<br />//&nbsp;/index.php?r=management/post/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">toRoute</span><span style="color: #007700">(</span><span style="color: #DD0000">'post/index'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;absolute&nbsp;route&nbsp;no&nbsp;matter&nbsp;what&nbsp;controller&nbsp;is&nbsp;making&nbsp;this&nbsp;call<br />//&nbsp;/index.php?r=site/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">toRoute</span><span style="color: #007700">(</span><span style="color: #DD0000">'/site/index'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;url&nbsp;for&nbsp;the&nbsp;case&nbsp;sensitive&nbsp;action&nbsp;`actionHiTech`&nbsp;of&nbsp;the&nbsp;current&nbsp;controller<br />//&nbsp;/index.php?r=management/default/hi-tech<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">toRoute</span><span style="color: #007700">(</span><span style="color: #DD0000">'hi-tech'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;url&nbsp;for&nbsp;action&nbsp;the&nbsp;case&nbsp;sensitive&nbsp;controller,&nbsp;`DateTimeController::actionFastForward`<br />//&nbsp;/index.php?r=date-time/fast-forward&amp;id=105<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">toRoute</span><span style="color: #007700">([</span><span style="color: #DD0000">'/date-time/fast-forward'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">105</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;get&nbsp;URL&nbsp;from&nbsp;alias<br />//&nbsp;http://google.com/<br /></span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">setAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'@google'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'http://google.com/'</span><span style="color: #007700">);<br />echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">'@google'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;get&nbsp;home&nbsp;URL<br />//&nbsp;/index.php?r=site/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">home</span><span style="color: #007700">();<br /><br /></span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">remember</span><span style="color: #007700">();&nbsp;</span><span style="color: #FF8000">//&nbsp;save&nbsp;URL&nbsp;to&nbsp;be&nbsp;used&nbsp;later<br /></span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">previous</span><span style="color: #007700">();&nbsp;</span><span style="color: #FF8000">//&nbsp;get&nbsp;previously&nbsp;saved&nbsp;URL</span></code></pre>
+<blockquote><p><strong>Tip</strong>: In order to generate URL with a hashtag, for example <code>/index.php?r=site/page&amp;id=100#title</code>, you need to
+  specify the parameter named <code>#</code> using <code>Url::to(['post/read', 'id' =&gt; 100, '#' =&gt; 'title'])</code>.</p>
+</blockquote>
+<p>There's also <code>Url::canonical()</code> method that allows you to generate
+<a href="https://en.wikipedia.org/wiki/Canonical_link_element">canonical URL</a> for the currently executing action.
+The method ignores all action parameters except ones passed via action arguments:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">controllers</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">helpers</span><span style="color: #007700">\</span><span style="color: #0000BB">Url</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">CanonicalController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionTest</span><span style="color: #007700">(</span><span style="color: #0000BB">$page</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">canonical</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
+<p>When accessed as <code>/index.php?r=canonical/test&amp;page=hello&amp;number=42</code> canonical URL will be <code>/index.php?r=canonical/test&amp;page=hello</code>.</p>
+<h2>Customizing URLs <a href="#customizing-urls" name="customizing-urls" class="hashlink">&para;</a></h2>
+<p>By default, Yii uses a query string format for URLs, such as <code>/index.php?r=news/view&amp;id=100</code>. In order to make URLs
+human-friendly i.e., more readable, you need to configure the <code>urlManager</code> component in the application's configuration
+file. Enabling "pretty" URLs will convert the query string format to a directory-based format: <code>/index.php/news/view?id=100</code>.
+Disabling the <code>showScriptName</code> parameter means that <code>index.php</code> will not be part of the URLs. Here's the relevant part of
+the application's configuration file:</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'urlManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'enablePrettyUrl'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'showScriptName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
+<p>Note that this configuration will only work if the web server has been properly configured for Yii, see
+<a href="guide-installation.html#recommended-apache-configuration">installation</a>.</p>
+<h3>Named parameters <a href="#named-parameters" name="named-parameters" class="hashlink">&para;</a></h3>
+<p>A rule can be associated with a few <code>GET</code> parameters. These <code>GET</code> parameters appear in the rule's pattern as special tokens in the following format:</p>
+<pre><code>&lt;ParameterName:ParameterPattern&gt;
+</code></pre>
+<p><code>ParameterName</code> is a name of a <code>GET</code> parameter, and the optional <code>ParameterPattern</code> is the regular expression that should
+be used to match the value of the <code>GET</code> parameter. In case <code>ParameterPattern</code> is omitted, it means the parameter
+should match any characters except <code>/</code>. When creating a URL, these parameter tokens will be replaced with the
+corresponding parameter values; when parsing a URL, the corresponding GET parameters will be populated with the parsed results.</p>
+<p>Let's use some examples to explain how URL rules work. We assume that our rule set consists of three rules:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'posts'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'post/list'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'post/&lt;id:\d+&gt;'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'post/read'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'post/&lt;year:\d{4}&gt;/&lt;title&gt;'</span><span style="color: #007700">=&gt;</span><span style="color: #DD0000">'post/read'</span><span style="color: #007700">,<br />]</span></code></pre>
+<ul>
+<li>Calling <code>Url::toRoute('post/list')</code> generates <code>/index.php/posts</code>. The first rule is applied.</li>
+<li>Calling <code>Url::toRoute(['post/read', 'id' =&gt; 100])</code> generates <code>/index.php/post/100</code>. The second rule is applied.</li>
+<li>Calling <code>Url::toRoute(['post/read', 'year' =&gt; 2008, 'title' =&gt; 'a sample post'])</code> generates
+<code>/index.php/post/2008/a%20sample%20post</code>. The third rule is applied.</li>
+<li>Calling <code>Url::toRoute('post/read')</code> generates <code>/index.php/post/read</code>. None of the rules is applied, convention is used
+instead.</li>
+</ul>
+<p>In summary, when using <code>createUrl</code> to generate a URL, the route and the <code>GET</code> parameters passed to the method are used to
+decide which URL rule to be applied. If every parameter associated with a rule can be found in the <code>GET</code> parameters passed
+to <code>createUrl</code>, and if the route of the rule also matches the route parameter, the rule will be used to generate the URL.</p>
+<p>If the <code>GET</code> parameters passed to <code>Url::toRoute</code> are more than those required by a rule, the additional parameters will
+appear in the query string. For example, if we call <code>Url::toRoute(['post/read', 'id' =&gt; 100, 'year' =&gt; 2008])</code>, we will
+obtain <code>/index.php/post/100?year=2008</code>.</p>
+<p>As we mentioned earlier, the other purpose of URL rules is to parse the requesting URLs. Naturally, this is an inverse
+process of URL creation. For example, when a user requests for <code>/index.php/post/100</code>, the second rule in the above example
+will apply, which resolves in the route <code>post/read</code> and the <code>GET</code> parameter <code>['id' =&gt; 100]</code> (accessible via
+<code>Yii::$app-&gt;request-&gt;get('id')</code>).</p>
+<h3>Parameterizing Routes <a href="#parameterizing-routes" name="parameterizing-routes" class="hashlink">&para;</a></h3>
+<p>We may reference named parameters in the route part of a rule. This allows a rule to be applied to multiple routes based
+on matching criteria. It may also help reduce the number of rules needed for an application, and thus improve the overall
+performance.</p>
+<p>We use the following example rules to illustrate how to parameterize routes with named parameters:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'&lt;controller:(post|comment)&gt;/&lt;id:\d+&gt;/&lt;action:(create|update|delete)&gt;'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'&lt;controller&gt;/&lt;action&gt;'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'&lt;controller:(post|comment)&gt;/&lt;id:\d+&gt;'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'&lt;controller&gt;/read'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'&lt;controller:(post|comment)&gt;s'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'&lt;controller&gt;/list'</span><span style="color: #007700">,<br />]</span></code></pre>
+<p>In the above example, we use two named parameters in the route part of the rules: <code>controller</code> and <code>action</code>. The former matches a controller ID to be either post or comment, while the latter matches an action ID to be create, update or delete. You may name the parameters differently as long as they do not conflict with GET parameters that may appear in URLs.</p>
+<p>Using the above rules, the URL <code>/index.php/post/123/create</code> will be parsed as the route <code>post/create</code> with <code>GET</code> parameter
+<code>id=123</code>. Given the route <code>comment/list</code> and <code>GET</code> parameter <code>page=2</code>, we can create a URL <code>/index.php/comments?page=2</code>.</p>
+<h3>Parameterizing  hostnames <a href="#parameterizing-hostnames" name="parameterizing-hostnames" class="hashlink">&para;</a></h3>
+<p>It is also possible to include hostnames in the rules for parsing and creating URLs. One may extract part of the hostname
+to be a <code>GET</code> parameter. This is especially useful for handling subdomains. For example, the URL
+<code>http://admin.example.com/en/profile</code> may be parsed into GET parameters <code>user=admin</code> and <code>lang=en</code>. On the other hand,
+rules with hostname may also be used to create URLs with parameterized hostnames.</p>
+<p>In order to use parameterized hostnames, simply declare URL rules with host info, e.g.:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'http://&lt;user:\w+&gt;.example.com/&lt;lang:\w+&gt;/profile'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'user/profile'</span><span style="color: #007700">,<br />]</span></code></pre>
+<p>In the above example the first segment of the hostname is treated as the user parameter while the first segment
+of the path info is treated as the lang parameter. The rule corresponds to the <code>user/profile</code> route.</p>
+<p>Note that <a href="./yii-web-urlmanager.html#$showScriptName-detail">yii\web\UrlManager::$showScriptName</a> will not take effect when a URL is being created using a rule with a parameterized hostname.</p>
+<p>Also note that any rule with a parameterized hostname should NOT contain the subfolder if the application is under
+a subfolder of the Web root. For example, if the application is under <code>http://www.example.com/sandbox/blog</code>, then we
+should still use the same URL rule as described above without the subfolder <code>sandbox/blog</code>.</p>
+<h3>Faking URL Suffix <a href="#faking-url-suffix" name="faking-url-suffix" class="hashlink">&para;</a></h3>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'urlManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'suffix'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'.html'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
+<h3>Handling REST requests <a href="#handling-rest-requests" name="handling-rest-requests" class="hashlink">&para;</a></h3>
+<p>TBD:
+- RESTful routing: <a href="./yii-filters-verbfilter.html">yii\filters\VerbFilter</a>, <a href="./yii-web-urlmanager.html#$rules-detail">yii\web\UrlManager::$rules</a>
+- Json API:
+  - response: <a href="./yii-web-response.html#$format-detail">yii\web\Response::$format</a>
+  - request: <a href="./yii-web-request.html#$parsers-detail">yii\web\Request::$parsers</a>, <a href="./yii-web-jsonparser.html">yii\web\JsonParser</a></p>
+<h2>URL parsing <a href="#url-parsing" name="url-parsing" class="hashlink">&para;</a></h2>
+<p>Complimentary to creating URLs Yii also handles transforming custom URLs back into internal routes and parameters.</p>
+<h3>Strict URL parsing <a href="#strict-url-parsing" name="strict-url-parsing" class="hashlink">&para;</a></h3>
+<p>By default if there's no custom rule for a URL and the URL matches the default format such as <code>/site/page</code>, Yii tries to run the corresponding controller's action. This behavior can be disabled so if there's no custom rule match, a 404 not found error will be produced immediately.</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'urlManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'enableStrictParsing'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
+<h2>Creating your own rule classes <a href="#creating-your-own-rule-classes" name="creating-your-own-rule-classes" class="hashlink">&para;</a></h2>
+<p><a href="./yii-web-urlrule.html">yii\web\UrlRule</a> class is used for both parsing URL into parameters and creating URL based on parameters. Despite
+the fact that default implementation is flexible enough for the majority of projects, there are situations when using
+your own rule class is the best choice. For example, in a car dealer website, we may want to support the URL format like
+<code>/Manufacturer/Model</code>, where <code>Manufacturer</code> and <code>Model</code> must both match some data in a database table. The default rule
+class will not work because it mostly relies on statically declared regular expressions which have no database knowledge.</p>
+<p>We can write a new URL rule class by extending from <a href="./yii-web-urlrule.html">yii\web\UrlRule</a> and use it in one or multiple URL rules. Using
+the above car dealer website as an example, we may declare the following URL rules in application config:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;...<br /></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'urlManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'&lt;action:(login|logout|about)&gt;'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'site/&lt;action&gt;'</span><span style="color: #007700">,<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">[</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'app\components\CarUrlRule'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'connectionID'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'db'</span><span style="color: #007700">,&nbsp;</span><span style="color: #FF8000">/*&nbsp;...&nbsp;*/</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />],</span></code></pre>
+<p>In the above, we use the custom URL rule class <code>CarUrlRule</code> to handle
+the URL format <code>/Manufacturer/Model</code>. The class can be written like the following:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">components</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">UrlRule</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">CarUrlRule&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">UrlRule<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$connectionID&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'db'</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">createUrl</span><span style="color: #007700">(</span><span style="color: #0000BB">$manager</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$route</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$route&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #DD0000">'car/index'</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(isset(</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'manufacturer'</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'model'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'manufacturer'</span><span style="color: #007700">]&nbsp;.&nbsp;</span><span style="color: #DD0000">'/'&nbsp;</span><span style="color: #007700">.&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'model'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}&nbsp;elseif&nbsp;(isset(</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'manufacturer'</span><span style="color: #007700">]))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">[</span><span style="color: #DD0000">'manufacturer'</span><span style="color: #007700">];<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;this&nbsp;rule&nbsp;does&nbsp;not&nbsp;apply<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">parseRequest</span><span style="color: #007700">(</span><span style="color: #0000BB">$manager</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$pathInfo&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$request</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getPathInfo</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">preg_match</span><span style="color: #007700">(</span><span style="color: #DD0000">'%^(\w+)(/(\w+))?$%'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$pathInfo</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$matches</span><span style="color: #007700">))&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;check&nbsp;$matches[1]&nbsp;and&nbsp;$matches[3]&nbsp;to&nbsp;see<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;if&nbsp;they&nbsp;match&nbsp;a&nbsp;manufacturer&nbsp;and&nbsp;a&nbsp;model&nbsp;in&nbsp;the&nbsp;database<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;If&nbsp;so,&nbsp;set&nbsp;$params['manufacturer']&nbsp;and/or&nbsp;$params['model']<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//&nbsp;and&nbsp;return&nbsp;['car/index',&nbsp;$params]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;this&nbsp;rule&nbsp;does&nbsp;not&nbsp;apply<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br />}</span></code></pre>
+<p>Besides the above usage, custom URL rule classes can also be implemented
+for many other purposes. For example, we can write a rule class to log the URL parsing
+and creation requests. This may be useful during development stage. We can also
+write a rule class to display a special 404 error page in case all other URL rules fail
+to resolve the current request. Note that in this case, the rule of this special class
+must be declared as the last rule.</p>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Wed, 30 Jul 2014 03:53:27 +0200</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script type="text/javascript">jQuery(document).ready(function () {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) shiftWindow();
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// focus the search field
+searchBox.focus();
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>
