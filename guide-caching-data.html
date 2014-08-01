@@ -166,30 +166,30 @@
 <h3>支持的缓存存储器 <a name="supported-cache-storage"></a> <a href="#zhi-chi-de-huan-cun-cun-chu-qi" name="zhi-chi-de-huan-cun-cun-chu-qi" class="hashlink">&para;</a></h3>
 <p>Yii 支持一系列缓存存储器，概况如下：</p>
 <ul>
-<li><a href="./yii-caching-apccache.html">yii\caching\ApcCache</a>: 使用 PHP <a href="http://php.net/manual/en/book.apc.php">APC</a> 扩展。这个选项可以认为是集中式应用程序环境中（例如：单一服务器，没有独立的负载均衡器等）最快的缓存方案。</li>
-<li><a href="./yii-caching-dbcache.html">yii\caching\DbCache</a>: 使用一个数据库的表存储缓存数据。要使用这个缓存，你必须创建一个与 <a href="./yii-caching-dbcache.html#$cacheTable-detail">yii\caching\DbCache::$cacheTable</a> 对应的表。</li>
+<li><a href="./yii-caching-apccache.html">yii\caching\ApcCache</a>：使用 PHP <a href="http://php.net/manual/en/book.apc.php">APC</a> 扩展。这个选项可以认为是集中式应用程序环境中（例如：单一服务器，没有独立的负载均衡器等）最快的缓存方案。</li>
+<li><a href="./yii-caching-dbcache.html">yii\caching\DbCache</a>：使用一个数据库的表存储缓存数据。要使用这个缓存，你必须创建一个与 <a href="./yii-caching-dbcache.html#$cacheTable-detail">yii\caching\DbCache::$cacheTable</a> 对应的表。</li>
 <li><a href="./yii-caching-dummycache.html">yii\caching\DummyCache</a>: 仅作为一个缓存占位符，不实现任何真正的缓存功能。这个组件的目的是为了简化那些需要查询缓存有效性的代码。例如，在开发中如果服务器没有实际的缓存支持，用它配置一个缓存组件。一个真正的缓存服务启用后，可以再切换为使用相应的缓存组件。两种条件下你都可以使用同样的代码 <code>Yii::$app-&gt;cache-&gt;get($key)</code> 尝试从缓存中取回数据而不用担心 <code>Yii::$app-&gt;cache</code> 可能是 <code>null</code>。</li>
-<li></li>
-<li><a href="./yii-caching-memcache.html">yii\caching\MemCache</a>: 使用 PHP <a href="http://php.net/manual/en/book.memcache.php">memcache</a> 和 <a href="http://php.net/manual/en/book.memcached.php">memcached</a> 扩展。这个选项被看作分布式应用环境中（例如：多台服务器，有负载均衡等）最快的缓存方案。</li>
-<li><a href="./yii-redis-cache.html">yii\redis\Cache</a>: 实现了一个基于 <a href="http://redis.io/">Redis</a> 键值对存储器的缓存组件（需要 redis 2.6.12 及以上版本的支持 ）。</li>
-<li><a href="./yii-caching-wincache.html">yii\caching\WinCache</a>: 使用 PHP <a href="http://iis.net/downloads/microsoft/wincache-extension">WinCache</a>（<a href="http://php.net/manual/en/book.wincache.php">另可参考</a>）扩展.</li>
-<li><a href="./yii-caching-xcache.html">yii\caching\XCache</a>: 使用 PHP <a href="http://xcache.lighttpd.net/">XCache</a>扩展。</li>
-<li><a href="./yii-caching-zenddatacache.html">yii\caching\ZendDataCache</a>: 使用 <a href="http://files.zend.com/help/Zend-Server-6/zend-server.htm#data_cache_component.htm">Zend Data Cache</a> 作为底层缓存媒介。</li>
+<li><a href="./yii-caching-filecache.html">yii\caching\FileCache</a>：使用标准文件存储缓存数据。这个特别适用于缓存大块数据，例如一个整页的内容。</li>
+<li><a href="./yii-caching-memcache.html">yii\caching\MemCache</a>：使用 PHP <a href="http://php.net/manual/en/book.memcache.php">memcache</a> 和 <a href="http://php.net/manual/en/book.memcached.php">memcached</a> 扩展。这个选项被看作分布式应用环境中（例如：多台服务器，有负载均衡等）最快的缓存方案。</li>
+<li><a href="./yii-redis-cache.html">yii\redis\Cache</a>：实现了一个基于 <a href="http://redis.io/">Redis</a> 键值对存储器的缓存组件（需要 redis 2.6.12 及以上版本的支持 ）。</li>
+<li><a href="./yii-caching-wincache.html">yii\caching\WinCache</a>：使用 PHP <a href="http://iis.net/downloads/microsoft/wincache-extension">WinCache</a>（<a href="http://php.net/manual/en/book.wincache.php">另可参考</a>）扩展.</li>
+<li><a href="./yii-caching-xcache.html">yii\caching\XCache</a>：使用 PHP <a href="http://xcache.lighttpd.net/">XCache</a>扩展。</li>
+<li><a href="./yii-caching-zenddatacache.html">yii\caching\ZendDataCache</a>：使用 <a href="http://files.zend.com/help/Zend-Server-6/zend-server.htm#data_cache_component.htm">Zend Data Cache</a> 作为底层缓存媒介。</li>
 </ul>
 <blockquote><p>Tip: 你可以在同一个应用程序中使用不同的缓存存储器。一个常见的策略是使用基于内存的缓存存储器存储小而常用的数据（例如：统计数据），使用基于文件或数据库的缓存存储器存储大而不太常用的数据（例如：网页内容）。</p>
 </blockquote>
 <h2>缓存 API <a name="cache-apis"></a> <a href="#huan-cun-api" name="huan-cun-api" class="hashlink">&para;</a></h2>
 <p>所有缓存组件都有同样的基类 <a href="./yii-caching-cache.html">yii\caching\Cache</a> ，因此都支持如下 API：</p>
 <ul>
-<li><a href="./yii-caching-cache.html#get()-detail">get()</a>: 通过一个指定的键（key）从缓存中取回一项数据。如果该项数据不存在于缓存中或者已经过期/失效，则返回值 false。</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li><a href="./yii-caching-cache.html#get()-detail">get()</a>：通过一个指定的键（key）从缓存中取回一项数据。如果该项数据不存在于缓存中或者已经过期/失效，则返回值 false。</li>
+<li><a href="./yii-caching-cache.html#set()-detail">set()</a>：将一项数据指定一个键，存放到缓存中。</li>
+<li><a href="./yii-caching-cache.html#add()-detail">add()</a>：如果缓存中未找到该键，则将指定数据存放到缓存中。</li>
+<li><a href="./yii-caching-cache.html#mget()-detail">mget()</a>：通过指定的多个键从缓存中取回多项数据。</li>
+<li><a href="./yii-caching-cache.html#mset()-detail">mset()</a>：将多项数据存储到缓存中，每项数据对应一个键。</li>
+<li><a href="./yii-caching-cache.html#madd()-detail">madd()</a>：将多项数据存储到缓存中，每项数据对应一个键。如果某个键已经存在于缓存中，则该项数据会被跳过。</li>
+<li><a href="./yii-caching-cache.html#exists()-detail">exists()</a>：返回一个值，指明某个键是否存在于缓存中。</li>
+<li><a href="./yii-caching-cache.html#delete()-detail">delete()</a>：通过一个键，删除缓存中对应的值。</li>
+<li><a href="./yii-caching-cache.html#flush()-detail">flush()</a>：删除缓存中的所有数据。</li>
 </ul>
 <p>有些缓存存储器如 MemCache，APC 支持以批量模式取回缓存值，这样可以节省取回缓存数据的开支。 <a href="./yii-caching-cache.html#mget()-detail">mget()</a> 和 <a href="./yii-caching-cache.html#madd()-detail">madd()</a> API提供对该特性的支持。如果底层缓存存储器不支持该特性，Yii 也会模拟实现。</p>
 <p>由于 <a href="./yii-caching-cache.html">yii\caching\Cache</a> 实现了 PHP <code>ArrayAccess</code> 接口，缓存组件也可以像数组那样使用，下面是几个例子：</p>
@@ -212,12 +212,11 @@
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;创建一个对&nbsp;example.txt&nbsp;文件修改时间的缓存依赖<br /></span><span style="color: #0000BB">$dependency&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">caching</span><span style="color: #007700">\</span><span style="color: #0000BB">FileDependency</span><span style="color: #007700">([</span><span style="color: #DD0000">'fileName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'example.txt'</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;缓存数据将在30秒后超时<br />//&nbsp;如果&nbsp;example.txt&nbsp;被修改，它也可能被更早地置为失效状态。<br /></span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">set</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">30</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$dependency</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;缓存会检查数据是否已超时。<br />//&nbsp;它还会检查关联的依赖是否已变化。<br />//&nbsp;符合任何一个条件时都会返回&nbsp;false。<br /></span><span style="color: #0000BB">$data&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$cache</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">get</span><span style="color: #007700">(</span><span style="color: #0000BB">$key</span><span style="color: #007700">);</span></code></pre>
 <p>下面是可用的缓存依赖的概况：</p>
 <ul>
-<li></li>
-<li><a href="./yii-caching-dbdependency.html">yii\caching\DbDependency</a>: 如果指定 SQL 语句的查询结果发生了变化，则依赖改变。</li>
-<li><a href="./yii-caching-expressiondependency.html">yii\caching\ExpressionDependency</a>: 如果指定的 PHP 表达式执行结果发生变化，则依赖改变。</li>
-<li></li>
-<li><a href="./yii-caching-tagdependency.html">yii\caching\TagDependency</a>: 为一项缓存数据添加一个或多个标签。你可以通过调用 <a href="./yii-caching-tagdependency.html#invalidate()-detail">yii\caching\TagDependency::invalidate()</a>
-一次性将具有指定标签的缓存数据全部置为失效状态。</li>
+<li><a href="./yii-caching-chaineddependency.html">yii\caching\ChainedDependency</a>：如果依赖链上任何一个依赖产生变化，则依赖改变。</li>
+<li><a href="./yii-caching-dbdependency.html">yii\caching\DbDependency</a>：如果指定 SQL 语句的查询结果发生了变化，则依赖改变。</li>
+<li><a href="./yii-caching-expressiondependency.html">yii\caching\ExpressionDependency</a>：如果指定的 PHP 表达式执行结果发生变化，则依赖改变。</li>
+<li><a href="./yii-caching-filedependency.html">yii\caching\FileDependency</a>：如果文件的最后修改时间发生变化，则依赖改变。</li>
+<li><span style="background: #f00;">yii\caching\GroupDependency</span>：将一项缓存数据标记到一个组名，你可以通过调用 <span style="background: #f00;">yii\caching\GroupDependency::invalidate()</span> 一次性将相同组名的缓存全部置为失效状态。</li>
 </ul>
 <h2>查询缓存 <a name="query-caching"></a> <a href="#cha-xun-huan-cun" name="cha-xun-huan-cun" class="hashlink">&para;</a></h2>
 <p>查询缓存是一个建立在数据缓存之上的特殊缓存特性。它用于缓存数据库查询的结果。</p>
@@ -244,7 +243,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 31 Jul 2014 10:02:15 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 01 Aug 2014 03:08:58 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

@@ -186,6 +186,11 @@ described below.</p>
 <pre><code>{{ void(my_function({'a' : 'b'})) }}
 {{ void(myObject.my_function({'a' : 'b'})) }}
 </code></pre>
+<h4>Setting object properties <a href="#setting-object-properties" name="setting-object-properties" class="hashlink">&para;</a></h4>
+<p>There's a special function called <code>set</code> that allows you to set property of an object. For example, the following
+in the template will change page title:</p>
+<pre><code>{{ set(this, 'title', 'New title') }}
+</code></pre>
 <h4>Importing namespaces and classes <a href="#importing-namespaces-and-classes" name="importing-namespaces-and-classes" class="hashlink">&para;</a></h4>
 <p>You can import additional classes and namespaces right in the template:</p>
 <pre><code>Namespace import:
@@ -197,6 +202,17 @@ Class import:
 Aliased class import:
 {{ use({'alias' =&gt; '/app/widgets/MyWidget'}) }}
 </code></pre>
+<h4>Referencing other views <a href="#referencing-other-views" name="referencing-other-views" class="hashlink">&para;</a></h4>
+<p>There are two ways of referencing views in <code>include</code> and <code>extends</code> statements:</p>
+<pre><code>{% include "comment.twig" %}
+{% extends "post.twig" %
+
+{% include "@app/views/snippets/avatar.twig" %}
+{% extends "@app/views/layouts/2columns.twig" %}
+</code></pre>
+<p>In the first case the view will be searched relatively to the path current view is in. For <code>comment.twig</code> and <code>post.twig</code>
+that means these will be searched in the same directory as the view that's rendered currently.</p>
+<p>In the second case we're using path aliases. All the Yii aliases such as <code>@app</code> are available by default.</p>
 <h4>Widgets <a href="#widgets" name="widgets" class="hashlink">&para;</a></h4>
 <p>Extension helps using widgets in convenient way converting their syntax to function calls:</p>
 <pre><code>{{ use('yii/bootstrap') }}
@@ -297,7 +313,7 @@ or <code>$this-&gt;renderPartial()</code> controller calls:</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 31 Jul 2014 10:02:18 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 01 Aug 2014 03:09:01 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
