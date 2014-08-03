@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/5c205785/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/5c205785/js/bootstrap.js"></script>
+<script src="./assets/57a1342a/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -438,7 +438,8 @@ the <a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$c
             <tr id="$createdByAttribute">
         <td><a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$createdByAttribute</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
-        <td>The attribute that will receive current user ID value</td>
+        <td>The attribute that will receive current user ID value
+Set this property to be null if you do not want to record the creator ID.</td>
         <td><a href="yii-behaviors-blameablebehavior.html">yii\behaviors\BlameableBehavior</a></td>
     </tr>
             <tr class="inherited" id="$owner">
@@ -450,7 +451,8 @@ the <a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$c
             <tr id="$updatedByAttribute">
         <td><a href="yii-behaviors-blameablebehavior.html#$updatedByAttribute-detail">$updatedByAttribute</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
-        <td>The attribute that will receive current user ID value</td>
+        <td>The attribute that will receive current user ID value
+Set this property to be null if you do not want to record the updater ID.</td>
         <td><a href="yii-behaviors-blameablebehavior.html">yii\behaviors\BlameableBehavior</a></td>
     </tr>
             <tr id="$value">
@@ -594,8 +596,8 @@ the <a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$c
     <div class="detail-header h3" id="$createdByAttribute-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L58" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L58" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L59" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L59" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $createdByAttribute        <span class="detailHeaderTag small">
             public                                    property
@@ -604,15 +606,16 @@ the <a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$c
 
     <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$createdByAttribute</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'created_by'</span></div>
 
-    <p>The attribute that will receive current user ID value</p>
+    <p>The attribute that will receive current user ID value
+Set this property to be null if you do not want to record the creator ID.</p>
 
     
 
     <div class="detail-header h3" id="$updatedByAttribute-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-blameablebehavior.html#$updatedByAttribute-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L62" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L62" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L64" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L64" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $updatedByAttribute        <span class="detailHeaderTag small">
             public                                    property
@@ -621,15 +624,16 @@ the <a href="yii-behaviors-blameablebehavior.html#$createdByAttribute-detail">$c
 
     <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-behaviors-blameablebehavior.html#$updatedByAttribute-detail">$updatedByAttribute</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'updated_by'</span></div>
 
-    <p>The attribute that will receive current user ID value</p>
+    <p>The attribute that will receive current user ID value
+Set this property to be null if you do not want to record the updater ID.</p>
 
     
 
     <div class="detail-header h3" id="$value-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-blameablebehavior.html#$value-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L76" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L76" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L78" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L78" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $value        <span class="detailHeaderTag small">
             public                                    property
@@ -653,8 +657,8 @@ The signature of the callable should be:</p>
     <div class="detail-header h3" id="getValue()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-blameablebehavior.html#getValue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L100" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L100" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L102" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L102" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getValue()
         <span class="detail-header-tag small">
@@ -689,8 +693,8 @@ The signature of the callable should be:</p>
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-blameablebehavior.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L82" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L82" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/BlameableBehavior.php#L84" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/BlameableBehavior.php#L84" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -750,7 +754,7 @@ given configuration.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 02 Aug 2014 18:21:02 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:26:19 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/5c205785/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/5c205785/js/bootstrap.js"></script>
+<script src="./assets/57a1342a/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -721,10 +721,10 @@ that is not listed in <a href="yii-validators-filevalidator.html#$mimeTypes-deta
         <td>Returns the fully qualified name of this class.</td>
         <td><a href="yii-base-object.html">yii\base\Object</a></td>
     </tr>
-            <tr class="inherited" id="clientValidateAttribute()">
-        <td><a href="yii-validators-filevalidator.html#clientValidateAttribute()-detail">clientValidateAttribute()</a></td>
+            <tr id="clientValidateAttribute()">
+        <td><a href="yii-validators-imagevalidator.html#clientValidateAttribute()-detail">clientValidateAttribute()</a></td>
         <td>Returns the JavaScript needed for performing client-side validation.</td>
-        <td><a href="yii-validators-filevalidator.html">yii\validators\FileValidator</a></td>
+        <td><a href="yii-validators-imagevalidator.html">yii\validators\ImageValidator</a></td>
     </tr>
             <tr class="inherited" id="createValidator()">
         <td><a href="yii-validators-validator.html#createValidator()-detail">createValidator()</a></td>
@@ -756,7 +756,7 @@ that is not listed in <a href="yii-validators-filevalidator.html#$mimeTypes-deta
         <td>Returns all behaviors attached to this component.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
-            <tr class="inherited" id="getSizeLimit()">
+                <tr class="inherited" id="getSizeLimit()">
         <td><a href="yii-validators-filevalidator.html#getSizeLimit()-detail">getSizeLimit()</a></td>
         <td>Returns the maximum size allowed for uploaded files.</td>
         <td><a href="yii-validators-filevalidator.html">yii\validators\FileValidator</a></td>
@@ -838,7 +838,12 @@ that is not listed in <a href="yii-validators-filevalidator.html#$mimeTypes-deta
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                                                                                                                                                <tr class="inherited" id="validateExtension()">
+                                                                                            <tr id="getClientOptions()">
+        <td><a href="yii-validators-imagevalidator.html#getClientOptions()-detail">getClientOptions()</a></td>
+        <td>Returns the client side validation options.</td>
+        <td><a href="yii-validators-imagevalidator.html">yii\validators\ImageValidator</a></td>
+    </tr>
+                                                                <tr class="inherited" id="validateExtension()">
         <td><a href="yii-validators-filevalidator.html#validateExtension()-detail">validateExtension()</a></td>
         <td>Checks if given uploaded file have correct type (extension) according current validator settings.</td>
         <td><a href="yii-validators-filevalidator.html">yii\validators\FileValidator</a></td>
@@ -1088,6 +1093,106 @@ You may use the following tokens in the message:</p>
 
 <div class="method-doc">
 
+    <div class="detail-header h3" id="clientValidateAttribute()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-validators-imagevalidator.html#clientValidateAttribute()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/ImageValidator.php#L165" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/ImageValidator.php#L165" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        clientValidateAttribute()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Returns the JavaScript needed for performing client-side validation.</strong></p>
+
+        <p>You may override this method to return the JavaScript validation code if
+the validator can support client-side validation.</p>
+<p>The following JavaScript variables are predefined and can be used in the validation code:</p>
+<ul>
+<li><code>attribute</code>: the name of the attribute being validated.</li>
+<li><code>value</code>: the value being validated.</li>
+<li><code>messages</code>: an array used to hold the validation error messages for the attribute.</li>
+</ul>
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-validators-imagevalidator.html#clientValidateAttribute()-detail">clientValidateAttribute</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$attribute</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$view&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$object</span></td>
+                  <td class="param-type-col"><a href="yii-base-model.html">yii\base\Model</a></td>
+                  <td class="param-desc-col"><p>The data object being validated</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$attribute</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The name of the attribute to be validated.</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$view</span></td>
+                  <td class="param-type-col"><a href="yii-web-view.html">yii\web\View</a></td>
+                  <td class="param-desc-col"><p>The view object that is going to be used to render views or view files
+containing a model form with this validator applied.</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The client-side validation script. Null if the validator does not support
+client-side validation.</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="getClientOptions()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-validators-imagevalidator.html#getClientOptions()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/ImageValidator.php#L175" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/ImageValidator.php#L175" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        getClientOptions()
+        <span class="detail-header-tag small">
+            protected            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Returns the client side validation options.</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.array">array</a> <strong><a href="yii-validators-imagevalidator.html#getClientOptions()-detail">getClientOptions</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$attribute&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$object</span></td>
+                  <td class="param-type-col"><a href="yii-base-model.html">yii\base\Model</a></td>
+                  <td class="param-desc-col"><p>The model being validated</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$attribute</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The attribute name being validated</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The client side validation options</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-imagevalidator.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -1232,7 +1337,7 @@ Null should be returned if the data is valid.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 02 Aug 2014 18:21:24 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:26:41 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

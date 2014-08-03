@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/5c205785/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/5c205785/js/bootstrap.js"></script>
+<script src="./assets/57a1342a/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -703,7 +703,7 @@ that is not listed in <a href="yii-validators-filevalidator.html#$mimeTypes-deta
         <td>Returns all behaviors attached to this component.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
-            <tr id="getSizeLimit()">
+                <tr id="getSizeLimit()">
         <td><a href="yii-validators-filevalidator.html#getSizeLimit()-detail">getSizeLimit()</a></td>
         <td>Returns the maximum size allowed for uploaded files.</td>
         <td><a href="yii-validators-filevalidator.html">yii\validators\FileValidator</a></td>
@@ -785,7 +785,12 @@ that is not listed in <a href="yii-validators-filevalidator.html#$mimeTypes-deta
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                                                                                                                                                <tr id="validateExtension()">
+                                                                                            <tr id="getClientOptions()">
+        <td><a href="yii-validators-filevalidator.html#getClientOptions()-detail">getClientOptions()</a></td>
+        <td>Returns the client side validation options.</td>
+        <td><a href="yii-validators-filevalidator.html">yii\validators\FileValidator</a></td>
+    </tr>
+                                                                <tr id="validateExtension()">
         <td><a href="yii-validators-filevalidator.html#validateExtension()-detail">validateExtension()</a></td>
         <td>Checks if given uploaded file have correct type (extension) according current validator settings.</td>
         <td><a href="yii-validators-filevalidator.html">yii\validators\FileValidator</a></td>
@@ -1115,8 +1120,8 @@ You may use the following tokens in the message:</p>
     <div class="detail-header h3" id="clientValidateAttribute()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-filevalidator.html#clientValidateAttribute()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L333" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L333" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L337" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L337" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         clientValidateAttribute()
         <span class="detail-header-tag small">
@@ -1170,11 +1175,53 @@ client-side validation.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="getClientOptions()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-validators-filevalidator.html#getClientOptions()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L350" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L350" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        getClientOptions()
+        <span class="detail-header-tag small">
+            protected            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Returns the client side validation options.</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.array">array</a> <strong><a href="yii-validators-filevalidator.html#getClientOptions()-detail">getClientOptions</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$object</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$attribute&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$object</span></td>
+                  <td class="param-type-col"><a href="yii-base-model.html">yii\base\Model</a></td>
+                  <td class="param-desc-col"><p>The model being validated</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$attribute</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The attribute name being validated</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The client side validation options</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="getSizeLimit()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-filevalidator.html#getSizeLimit()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L255" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L255" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L259" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L259" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getSizeLimit()
         <span class="detail-header-tag small">
@@ -1235,8 +1282,8 @@ given configuration.</p>
     <div class="detail-header h3" id="isEmpty()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-filevalidator.html#isEmpty()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L271" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L271" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L275" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L275" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         isEmpty()
         <span class="detail-header-tag small">
@@ -1278,8 +1325,8 @@ Note that this method is different from PHP empty(). It will return false when t
     <div class="detail-header h3" id="validateAttribute()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-filevalidator.html#validateAttribute()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L165" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L165" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L169" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L169" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         validateAttribute()
         <span class="detail-header-tag small">
@@ -1315,8 +1362,8 @@ Note that this method is different from PHP empty(). It will return false when t
     <div class="detail-header h3" id="validateExtension()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-filevalidator.html#validateExtension()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L305" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L305" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L309" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L309" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         validateExtension()
         <span class="detail-header-tag small">
@@ -1344,8 +1391,8 @@ Note that this method is different from PHP empty(). It will return false when t
     <div class="detail-header h3" id="validateValue()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-filevalidator.html#validateValue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L204" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L204" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/FileValidator.php#L208" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/FileValidator.php#L208" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         validateValue()
         <span class="detail-header-tag small">
@@ -1422,7 +1469,7 @@ Null should be returned if the data is valid.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 02 Aug 2014 18:21:24 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:26:40 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
