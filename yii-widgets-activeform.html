@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/167dbb02/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/57a1342a/js/bootstrap.js"></script>
+<script src="./assets/167dbb02/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -437,6 +437,12 @@
         <td>A JS callback that is called after validating an attribute.</td>
         <td><a href="yii-widgets-activeform.html">yii\widgets\ActiveForm</a></td>
     </tr>
+            <tr id="$afterValidateAll">
+        <td><a href="yii-widgets-activeform.html#$afterValidateAll-detail">$afterValidateAll</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="yii-web-jsexpression.html">yii\web\JsExpression</a></td>
+        <td>A JS callback that is called after all validation has run (Only called when the form is submitted).</td>
+        <td><a href="yii-widgets-activeform.html">yii\widgets\ActiveForm</a></td>
+    </tr>
             <tr id="$ajaxBeforeSend">
         <td><a href="yii-widgets-activeform.html#$ajaxBeforeSend-detail">$ajaxBeforeSend</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a>|<a href="yii-web-jsexpression.html">yii\web\JsExpression</a></td>
@@ -483,6 +489,12 @@
         <td><a href="yii-widgets-activeform.html#$beforeValidate-detail">$beforeValidate</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a>|<a href="yii-web-jsexpression.html">yii\web\JsExpression</a></td>
         <td>A JS callback that is called before validating an attribute.</td>
+        <td><a href="yii-widgets-activeform.html">yii\widgets\ActiveForm</a></td>
+    </tr>
+            <tr id="$beforeValidateAll">
+        <td><a href="yii-widgets-activeform.html#$beforeValidateAll-detail">$beforeValidateAll</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="yii-web-jsexpression.html">yii\web\JsExpression</a></td>
+        <td>A JS callback that is called before any validation has run (Only called when the form is submitted).</td>
         <td><a href="yii-widgets-activeform.html">yii\widgets\ActiveForm</a></td>
     </tr>
             <tr id="$behaviors">
@@ -883,8 +895,8 @@ is changed or the user types in the field.</td>
     <div class="detail-header h3" id="$afterValidate-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#$afterValidate-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L153" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L153" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L164" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L164" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $afterValidate        <span class="detailHeaderTag small">
             public                                    property
@@ -901,11 +913,32 @@ The signature of the callback should be:</p>
 
     
 
+    <div class="detail-header h3" id="$afterValidateAll-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-widgets-activeform.html#$afterValidateAll-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L174" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L174" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $afterValidateAll        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="yii-web-jsexpression.html">yii\web\JsExpression</a> <a href="yii-widgets-activeform.html#$afterValidateAll-detail">$afterValidateAll</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>A JS callback that is called after all validation has run (Only called when the form is submitted).
+The signature of the callback should be:</p>
+<pre><code>function ($form, data, messages) {
+}
+</code></pre>
+
+    
+
     <div class="detail-header h3" id="$ajaxBeforeSend-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#$ajaxBeforeSend-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L163" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L163" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L184" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L184" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $ajaxBeforeSend        <span class="detailHeaderTag small">
             public                                    property
@@ -925,8 +958,8 @@ The signature of the callback should be:</p>
     <div class="detail-header h3" id="$ajaxComplete-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#$ajaxComplete-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L173" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L173" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L194" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L194" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $ajaxComplete        <span class="detailHeaderTag small">
             public                                    property
@@ -980,8 +1013,8 @@ The signature of the callback should be:</p>
     <div class="detail-header h3" id="$attributes-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#$attributes-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L179" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L179" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L200" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L200" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $attributes        <span class="detailHeaderTag small">
             public                                    property
@@ -1033,6 +1066,28 @@ The signature of the callback should be:</p>
     <p>A JS callback that is called before validating an attribute.
 The signature of the callback should be:</p>
 <pre><code>function ($form, attribute, messages) {
+    ...return false to cancel the validation...
+}
+</code></pre>
+
+    
+
+    <div class="detail-header h3" id="$beforeValidateAll-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-widgets-activeform.html#$beforeValidateAll-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L154" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L154" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $beforeValidateAll        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="yii-web-jsexpression.html">yii\web\JsExpression</a> <a href="yii-widgets-activeform.html#$beforeValidateAll-detail">$beforeValidateAll</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>A JS callback that is called before any validation has run (Only called when the form is submitted).
+The signature of the callback should be:</p>
+<pre><code>function ($form, data) {
     ...return false to cancel the validation...
 }
 </code></pre>
@@ -1382,8 +1437,8 @@ If this property is not set, it will take the value of the form's action attribu
     <div class="detail-header h3" id="errorSummary()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#errorSummary()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L255" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L255" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L276" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L276" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         errorSummary()
         <span class="detail-header-tag small">
@@ -1431,8 +1486,8 @@ be HTML-encoded using <a href="yii-helpers-basehtml.html#encode()-detail">yii\he
     <div class="detail-header h3" id="field()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#field()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L272" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L272" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L293" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L293" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         field()
         <span class="detail-header-tag small">
@@ -1482,8 +1537,8 @@ about attribute expression.</p>
     <div class="detail-header h3" id="getClientOptions()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#getClientOptions()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L218" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L218" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L239" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L239" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getClientOptions()
         <span class="detail-header-tag small">
@@ -1512,8 +1567,8 @@ about attribute expression.</p>
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L186" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L186" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L207" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L207" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -1537,8 +1592,8 @@ about attribute expression.</p>
     <div class="detail-header h3" id="run()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#run()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L201" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L201" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L222" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L222" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         run()
         <span class="detail-header-tag small">
@@ -1562,8 +1617,8 @@ about attribute expression.</p>
     <div class="detail-header h3" id="validate()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#validate()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L315" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L315" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L336" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L336" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         validate()
         <span class="detail-header-tag small">
@@ -1623,8 +1678,8 @@ as a model.</p>
     <div class="detail-header h3" id="validateMultiple()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-widgets-activeform.html#validateMultiple()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L358" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L358" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/widgets/ActiveForm.php#L379" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/widgets/ActiveForm.php#L379" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         validateMultiple()
         <span class="detail-header-tag small">
@@ -1712,7 +1767,7 @@ validation rules should be validated.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:26:47 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 04 Aug 2014 18:29:09 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/167dbb02/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/57a1342a/js/bootstrap.js"></script>
+<script src="./assets/167dbb02/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -153,34 +153,32 @@
 <a class="list-group-item" href="./guide-helper-security.html">security</a></div>
 <a class="list-group-item" href="#navigation-814" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-814" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Versioning <a href="#versioning" name="versioning" class="hashlink">&para;</a></h1>
-<p>Your APIs should be versioned. Unlike Web applications which you have full control on both client side and server side
-code, for APIs you usually do not have control of the client code that consumes the APIs. Therefore, backward
-compatibility (BC) of the APIs should be maintained whenever possible, and if some BC-breaking changes must be
-introduced to the APIs, you should bump up the version number. You may refer to <a href="http://semver.org/">Semantic Versioning</a>
-for more information about designing the version numbers of your APIs.</p>
-<p>Regarding how to implement API versioning, a common practice is to embed the version number in the API URLs.
-For example, <code>http://example.com/v1/users</code> stands for <code>/users</code> API of version 1. Another method of API versioning
-which gains momentum recently is to put version numbers in the HTTP request headers, typically through the <code>Accept</code> header,
-like the following:</p>
-<pre><code>// via a parameter
+        <h1>版本 <a href="#ban-ben" name="ban-ben" class="hashlink">&para;</a></h1>
+<p>你的API应该是版本化的。不像你完全控制在客户端和服务器端Web应用程序代码, 对于API，您通常没有对API的客户端代码的控制权。
+因此，应该尽可能的保持向后兼容性(BC)，如果一些不能向后兼容的变化必须引入
+APIs，你应该增加版本号。你可以参考<a href="http://semver.org/">Semantic Versioning</a>
+有关设计的API的版本号的详细信息。</p>
+<p>关于如何实现API版本，一个常见的做法是在API的URL中嵌入版本号。
+例如，<code>http://example.com/v1/users</code>代表<code>/users</code>版本1的API. 另一种API版本化的方法最近用的非常多的是把版本号放入HTTP请求头，通常是通过<code>Accept</code>头，
+如下：</p>
+<pre><code>// 通过参数
 Accept: application/json; version=v1
-// via a vendor content type
+// 通过vendor的内容类型
 Accept: application/vnd.company.myapp-v1+json
 </code></pre>
-<p>Both methods have pros and cons, and there are a lot of debates about them. Below we describe a practical strategy
-of API versioning that is kind of a mix of these two methods:</p>
+<p>这两种方法都有优点和缺点， 而且关于他们也有很多争论。
+下面我们描述在一种API版本混合了这两种方法的一个实用的策略:</p>
 <ul>
-<li>Put each major version of API implementation in a separate module whose ID is the major version number (e.g. <code>v1</code>, <code>v2</code>).
-Naturally, the API URLs will contain major version numbers.</li>
-<li>Within each major version (and thus within the corresponding module), use the <code>Accept</code> HTTP request header
-to determine the minor version number and write conditional code to respond to the minor versions accordingly.</li>
+<li>把每个主要版本的API实现在一个单独的模块ID的主版本号 (例如 <code>v1</code>, <code>v2</code>)。
+自然，API的url将包含主要的版本号。</li>
+<li>在每一个主要版本 (在相应的模块)，使用 <code>Accept</code> HTTP 请求头
+确定小版本号编写条件代码来响应相应的次要版本.</li>
 </ul>
-<p>For each module serving a major version, it should include the resource classes and the controller classes
-serving for that specific version. To better separate code responsibility, you may keep a common set of
-base resource and controller classes, and subclass them in each individual version module. Within the subclasses,
-implement the concrete code such as <code>Model::fields()</code>.</p>
-<p>Your code may be organized like the following:</p>
+<p>为每个模块提供一个主要版本， 它应该包括资源类和控制器类
+为特定服务版本。 更好的分离代码， 你可以保存一组通用的
+基础资源和控制器类， 并用在每个子类版本模块。 在子类中，
+实现具体的代码例如 <code>Model::fields()</code>。</p>
+<p>你的代码可以类似于如下的方法组织起来：</p>
 <pre><code>api/
     common/
         controllers/
@@ -205,22 +203,22 @@ implement the concrete code such as <code>Model::fields()</code>.</p>
                 User.php
                 Post.php
 </code></pre>
-<p>Your application configuration would look like:</p>
+<p>你的应用程序配置应该这样：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'modules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'v1'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'basePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'@app/modules/v1'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'v2'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'basePath'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'@app/modules/v2'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'urlManager'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'enablePrettyUrl'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'enableStrictParsing'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'showScriptName'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">false</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'rules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\rest\UrlRule'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'controller'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'v1/user'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'v1/post'</span><span style="color: #007700">]],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\rest\UrlRule'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'controller'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'v2/user'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'v2/post'</span><span style="color: #007700">]],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
-<p>As a result, <code>http://example.com/v1/users</code> will return the list of users in version 1, while
-<code>http://example.com/v2/users</code> will return version 2 users.</p>
-<p>Using modules, code for different major versions can be well isolated. And it is still possible
-to reuse code across modules via common base classes and other shared classes.</p>
-<p>To deal with minor version numbers, you may take advantage of the content negotiation
-feature provided by the <a href="./yii-filters-contentnegotiator.html">contentNegotiator</a> behavior. The <code>contentNegotiator</code>
-behavior will set the <a href="./yii-web-response.html#$acceptParams-detail">yii\web\Response::$acceptParams</a> property when it determines which
-content type to support.</p>
-<p>For example, if a request is sent with the HTTP header <code>Accept: application/json; version=v1</code>,
-after content negotiation, <a href="./yii-web-response.html#$acceptParams-detail">yii\web\Response::$acceptParams</a> will contain the value <code>['version' =&gt; 'v1']</code>.</p>
-<p>Based on the version information in <code>acceptParams</code>, you may write conditional code in places
-such as actions, resource classes, serializers, etc.</p>
-<p>Since minor versions require maintaining backward compatibility, hopefully there are not much
-version checks in your code. Otherwise, chances are that you may need to create a new major version.</p>
+<p>因此，<code>http://example.com/v1/users</code>将返回版本1的用户列表，而
+<code>http://example.com/v2/users</code>将返回版本2的用户。</p>
+<p>使用模块， 将不同版本的代码隔离。 通过共用基类和其他类
+跨模块重用代码也是有可能的。</p>
+<p>为了处理次要版本号， 可以利用内容协商
+功能通过 <a href="./yii-filters-contentnegotiator.html">contentNegotiator</a> 提供的行为。<code>contentNegotiator</code>
+行为可设置 <a href="./yii-web-response.html#$acceptParams-detail">yii\web\Response::$acceptParams</a> 属性当它确定
+支持哪些内容类型时。</p>
+<p>例如， 如果一个请求通过 <code>Accept: application/json; version=v1</code>被发送，
+内容交涉后，<a href="./yii-web-response.html#$acceptParams-detail">yii\web\Response::$acceptParams</a>将包含值<code>['version' =&gt; 'v1']</code>.</p>
+<p>基于 <code>acceptParams</code> 的版本信息，你可以写条件代码
+如 actions，resource classes，serializers等等。</p>
+<p>由于次要版本需要保持向后兼容性，希望你的代码不会有
+太多的版本检查。否则，有机会你可能需要创建一个新的主要版本。</p>
         <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
@@ -229,7 +227,7 @@ version checks in your code. Otherwise, chances are that you may need to create 
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:28:15 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 04 Aug 2014 18:30:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

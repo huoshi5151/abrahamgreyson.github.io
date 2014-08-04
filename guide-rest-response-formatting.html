@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/167dbb02/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/57a1342a/js/bootstrap.js"></script>
+<script src="./assets/167dbb02/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -153,26 +153,26 @@
 <a class="list-group-item" href="./guide-helper-security.html">security</a></div>
 <a class="list-group-item" href="#navigation-772" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-772" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Response Formatting <a href="#response-formatting" name="response-formatting" class="hashlink">&para;</a></h1>
-<p>When handling a RESTful API request, an application usually takes the following steps that are related
-with response formatting:</p>
+        <h1>响应格式 <a href="#xiang-ying-ge-shi" name="xiang-ying-ge-shi" class="hashlink">&para;</a></h1>
+<p>当处理一个 RESTful API 请求时， 一个应用程序通常需要如下步骤
+来处理响应格式：</p>
 <ol>
-<li>Determine various factors that may affect the response format, such as media type, language, version, etc.
-This process is also known as <a href="http://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a>.</li>
-<li>Convert resource objects into arrays, as described in the <a href="guide-rest-resources.html">Resources</a> section.
-This is done by <a href="./yii-rest-serializer.html">yii\rest\Serializer</a>.</li>
-<li>Convert arrays into a string in the format as determined by the content negotiation step. This is
-done by <a href="./yii-web-responseformatterinterface.html">response formatters</a> registered with
-the <a href="./yii-web-response.html#$formatters-detail">response</a> application component.</li>
+<li>确定可能影响响应格式的各种因素， 例如媒介类型， 语言， 版本， 等等。
+这个过程也被称为 <a href="http://en.wikipedia.org/wiki/Content_negotiation">content negotiation</a>。</li>
+<li>资源对象转换为数组， 如在 <a href="guide-rest-resources.html">Resources</a> 部分中所描述的。
+通过 <a href="./yii-rest-serializer.html">yii\rest\Serializer</a> 来完成。</li>
+<li>通过内容协商步骤将数组转换成字符串。
+[yii\web\ResponseFormatterInterface|response formatters]] 通过
+[yii\web\Response::formatters|response]] 应用程序组件来注册完成。</li>
 </ol>
-<h2>Content Negotiation <a name="content-negotiation"></a> <a href="#content-negotiation" name="content-negotiation" class="hashlink">&para;</a></h2>
-<p>Yii supports content negotiation via the <a href="./yii-filters-contentnegotiator.html">yii\filters\ContentNegotiator</a> filter. The RESTful API base
-controller class <a href="./yii-rest-controller.html">yii\rest\Controller</a> is equipped with this filter under the name of <code>contentNegotiator</code>.
-The filer provides response format negotiation as well as language negotiation. For example, if a RESTful
-API request contains the following header,</p>
+<h2>内容协商 <a name="content-negotiation"></a> <a href="#nei-rong-xie-shang" name="nei-rong-xie-shang" class="hashlink">&para;</a></h2>
+<p>Yii 提供了通过 <a href="./yii-filters-contentnegotiator.html">yii\filters\ContentNegotiator</a> 过滤器支持内容协商。RESTful API 基于
+控制器类 <a href="./yii-rest-controller.html">yii\rest\Controller</a> 在 <code>contentNegotiator</code> 下配备这个过滤器。
+文件管理器提供了涉及的响应格式和语言。 例如， 如果一个 RESTful
+API 请求中包含以下 header，</p>
 <pre><code>Accept: application/json; q=1.0, */*; q=0.1
 </code></pre>
-<p>it will get a response in JSON format, like the following:</p>
+<p>将会得到JSON格式的响应，如下：</p>
 <pre><code>$ curl -i -H "Accept: application/json; q=1.0, */*; q=0.1" "http://localhost/users"
 
 HTTP/1.1 200 OK
@@ -201,28 +201,28 @@ Content-Type: application/json; charset=UTF-8
     ...
 ]
 </code></pre>
-<p>Behind the scene, before a RESTful API controller action is executed, the <a href="./yii-filters-contentnegotiator.html">yii\filters\ContentNegotiator</a>
-filter will check the <code>Accept</code> HTTP header in the request and set the <a href="./yii-web-response.html#$format-detail">response format</a>
-to be <code>'json'</code>. After the action is executed and returns the resulting resource object or collection,
-<a href="./yii-rest-serializer.html">yii\rest\Serializer</a> will convert the result into an array. And finally, <a href="./yii-web-jsonresponseformatter.html">yii\web\JsonResponseFormatter</a>
-will serialize the array into a JSON string and include it in the response body.</p>
-<p>By default, RESTful APIs support both JSON and XML formats. To support a new format, you should configure
-the <a href="./yii-filters-contentnegotiator.html#$formats-detail">formats</a> property of the <code>contentNegotiator</code> filter like
-the following in your API controller classes:</p>
+<p>幕后，执行一个 RESTful API 控制器动作之前，<a href="./yii-filters-contentnegotiator.html">yii\filters\ContentNegotiator</a>
+filter 将检查 <code>Accept</code> HTTP header 在请求时和配置 <a href="./yii-web-response.html#$format-detail">response format</a>
+为 <code>'json'</code>。 之后的动作被执行并返回得到的资源对象或集合，
+<a href="./yii-rest-serializer.html">yii\rest\Serializer</a> 将结果转换成一个数组。最后，<a href="./yii-web-jsonresponseformatter.html">yii\web\JsonResponseFormatter</a>
+该数组将序列化为JSON字符串，并将其包括在响应主体。</p>
+<p>默认, RESTful APIs 同时支持JSON和XML格式。为了支持新的格式，你应该
+在 <code>contentNegotiator</code> 过滤器中配置 <a href="./yii-filters-contentnegotiator.html#$formats-detail">formats</a> 属性，
+类似如下 API 控制器类:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Response</span><span style="color: #007700">;<br /><br />public&nbsp;function&nbsp;</span><span style="color: #0000BB">behaviors</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$behaviors&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">behaviors</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$behaviors</span><span style="color: #007700">[</span><span style="color: #DD0000">'contentNegotiator'</span><span style="color: #007700">][</span><span style="color: #DD0000">'formats'</span><span style="color: #007700">][</span><span style="color: #DD0000">'text/html'</span><span style="color: #007700">]&nbsp;=&nbsp;</span><span style="color: #0000BB">Response</span><span style="color: #007700">::</span><span style="color: #0000BB">FORMAT_HTML</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$behaviors</span><span style="color: #007700">;<br />}</span></code></pre>
-<p>The keys of the <code>formats</code> property are the supported MIME types, while the values are the corresponding
-response format names which must be supported in <a href="./yii-web-response.html#$formatters-detail">yii\web\Response::$formatters</a>.</p>
-<h2>Data Serializing <a name="data-serializing"></a> <a href="#data-serializing" name="data-serializing" class="hashlink">&para;</a></h2>
-<p>As we have described above, <a href="./yii-rest-serializer.html">yii\rest\Serializer</a> is the central piece responsible for converting resource
-objects or collections into arrays. It recognizes objects implementing <span style="background: #f00;">yii\base\ArrayableInterface</span> as
-well as <a href="./yii-data-dataproviderinterface.html">yii\data\DataProviderInterface</a>. The former is mainly implemented by resource objects, while
-the latter resource collections.</p>
-<p>You may configure the serializer by setting the <a href="./yii-rest-controller.html#$serializer-detail">yii\rest\Controller::$serializer</a> property with a configuration array.
-For example, sometimes you may want to help simplify the client development work by including pagination information
-directly in the response body. To do so, configure the <a href="./yii-rest-serializer.html#$collectionEnvelope-detail">yii\rest\Serializer::$collectionEnvelope</a> property
-as follows:</p>
+<p><code>formats</code> 属性的keys支持 MIME 类型，而 values 必须在 <a href="./yii-web-response.html#$formatters-detail">yii\web\Response::$formatters</a>
+中支持被响应格式名称。</p>
+<h2>数据序列化 <a name="data-serializing"></a> <a href="#shu-ju-xu-lie-hua" name="shu-ju-xu-lie-hua" class="hashlink">&para;</a></h2>
+<p>正如我们上面所描述的，<a href="./yii-rest-serializer.html">yii\rest\Serializer</a> 负责转换资源的中间件
+对象或集合到数组。它将对象 <span style="background: #f00;">yii\base\ArrayableInterface</span> 作为
+<a href="./yii-data-dataproviderinterface.html">yii\data\DataProviderInterface</a>。 前者主要由资源对象实现， 而
+后者是资源集合。</p>
+<p>你可以通过设置 <a href="./yii-rest-controller.html#$serializer-detail">yii\rest\Controller::$serializer</a> 属性和一个配置数组。
+例如，有时你可能想通过直接在响应主体内包含分页信息来
+简化客户端的开发工作。这样做，按照如下规则配置 <a href="./yii-rest-serializer.html#$collectionEnvelope-detail">yii\rest\Serializer::$collectionEnvelope</a> 
+属性：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">rest</span><span style="color: #007700">\</span><span style="color: #0000BB">ActiveController</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">UserController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">ActiveController<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$modelClass&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'app\models\User'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$serializer&nbsp;</span><span style="color: #007700">=&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\rest\Serializer'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'collectionEnvelope'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'items'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />}</span></code></pre>
-<p>You may then get the following response for request <code>http://localhost/users</code>:</p>
+<p>那么你的请求可能会得到的响应如下 <code>http://localhost/users</code>:</p>
 <pre><code>HTTP/1.1 200 OK
 Date: Sun, 02 Mar 2014 05:31:43 GMT
 Server: Apache/2.2.26 (Unix) DAV/2 PHP/5.4.20 mod_ssl/2.2.26 OpenSSL/0.9.8y
@@ -270,7 +270,7 @@ Content-Type: application/json; charset=UTF-8
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:28:15 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 04 Aug 2014 18:30:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

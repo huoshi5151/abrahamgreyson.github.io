@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/57a1342a/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/167dbb02/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/57a1342a/js/bootstrap.js"></script>
+<script src="./assets/167dbb02/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -435,6 +435,12 @@ and add it to <a href="yii-web-urlmanager.html#$rules-detail">yii\web\UrlManager
         <td>The default GET parameters (name =&gt; value) that this rule provides.</td>
         <td><a href="yii-web-urlrule.html">yii\web\UrlRule</a></td>
     </tr>
+            <tr id="$encodeParams">
+        <td><a href="yii-web-urlrule.html#$encodeParams-detail">$encodeParams</a></td>
+        <td>bool</td>
+        <td>A value indicating if parameters should be url encoded.</td>
+        <td><a href="yii-web-urlrule.html">yii\web\UrlRule</a></td>
+    </tr>
             <tr id="$host">
         <td><a href="yii-web-urlrule.html#$host-detail">$host</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
@@ -628,6 +634,23 @@ will be injected into $_GET.</p>
 
     
 
+    <div class="detail-header h3" id="$encodeParams-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-web-urlrule.html#$encodeParams-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L89" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L89" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $encodeParams        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature">bool <a href="yii-web-urlrule.html#$encodeParams-detail">$encodeParams</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">true</span></div>
+
+    <p>A value indicating if parameters should be url encoded.</p>
+
+    
+
     <div class="detail-header h3" id="$host-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-urlrule.html#$host-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -763,8 +786,8 @@ Note that this property is only used when parsing a request. It is ignored for U
     <div class="detail-header h3" id="createUrl()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-urlrule.html#createUrl()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L269" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L269" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L273" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L273" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createUrl()
         <span class="detail-header-tag small">
@@ -811,8 +834,8 @@ Note that this property is only used when parsing a request. It is ignored for U
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-urlrule.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L108" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L108" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L112" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L112" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -835,8 +858,8 @@ Note that this property is only used when parsing a request. It is ignored for U
     <div class="detail-header h3" id="parseRequest()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-urlrule.html#parseRequest()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L204" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L204" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/UrlRule.php#L208" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/UrlRule.php#L208" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         parseRequest()
         <span class="detail-header-tag small">
@@ -913,7 +936,7 @@ If false, it means this rule cannot be used to parse this path info.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 03 Aug 2014 18:26:46 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 04 Aug 2014 18:29:08 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

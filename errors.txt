@@ -6399,124 +6399,131 @@ Array
 
     [938] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [line] => 30
+            [file] => E:\Github\yii2\framework\widgets\ActiveForm.php
+            [message] => No short description for element '$action'
         )
 
     [939] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No short description for element '$sourcePath'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [940] => Array
         (
-            [line] => 19
+            [line] => 18
             [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No docblock for element '$js'
+            [message] => No short description for element '$sourcePath'
         )
 
     [941] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No short description for element '$js'
+            [message] => No docblock for element '$js'
         )
 
     [942] => Array
         (
-            [line] => 22
+            [line] => 19
             [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No docblock for element '$depends'
+            [message] => No short description for element '$js'
         )
 
     [943] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$depends'
         )
 
     [944] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [945] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
-            [message] => No short description for element '$sourcePath'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [946] => Array
         (
-            [line] => 23
+            [line] => 22
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
-            [message] => No docblock for element '$js'
+            [message] => No short description for element '$sourcePath'
         )
 
     [947] => Array
         (
             [line] => 23
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
-            [message] => No short description for element '$js'
+            [message] => No docblock for element '$js'
         )
 
     [948] => Array
         (
-            [line] => 26
+            [line] => 23
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
-            [message] => No docblock for element '$depends'
+            [message] => No short description for element '$js'
         )
 
     [949] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$depends'
         )
 
     [950] => Array
         (
-            [line] => 20
-            [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [line] => 26
+            [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [951] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
-            [message] => No short description for element '$sourcePath'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [952] => Array
         (
-            [line] => 21
+            [line] => 20
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
-            [message] => No docblock for element '$js'
+            [message] => No short description for element '$sourcePath'
         )
 
     [953] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
-            [message] => No short description for element '$js'
+            [message] => No docblock for element '$js'
         )
 
     [954] => Array
+        (
+            [line] => 21
+            [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [955] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [955] => Array
+    [956] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
