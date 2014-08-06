@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/167dbb02/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/1fd5e98/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/167dbb02/js/bootstrap.js"></script>
+<script src="./assets/1fd5e98/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -493,8 +493,8 @@ while relative routes are converted to absolute ones.</td>
     <div class="detail-header h3" id="base()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-baseurl.html#base()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L224" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L224" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L229" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L229" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         base()
         <span class="detail-header-tag small">
@@ -516,7 +516,7 @@ while relative routes are converted to absolute ones.</td>
                   <td class="param-desc-col"><p>The URI scheme to use in the returned base URL:</p>
 <ul>
 <li><code>false</code> (default): returning the base URL without host info.</li>
-<li><code>true</code>: returning an absolute base URL whose scheme is the same as the current request.</li>
+<li><code>true</code>: returning an absolute base URL whose scheme is the same as that in <a href="yii-web-urlmanager.html#$hostInfo-detail">yii\web\UrlManager::$hostInfo</a>.</li>
 <li>string: returning an absolute base URL with the specified scheme (either <code>http</code> or <code>https</code>).</li>
 </ul>
 </td>
@@ -528,8 +528,8 @@ while relative routes are converted to absolute ones.</td>
     <div class="detail-header h3" id="canonical()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-baseurl.html#canonical()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L285" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L285" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L290" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L290" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         canonical()
         <span class="detail-header-tag small">
@@ -562,8 +562,8 @@ about canonical URL:</p>
     <div class="detail-header h3" id="home()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-baseurl.html#home()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L304" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L304" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L309" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L309" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         home()
         <span class="detail-header-tag small">
@@ -585,7 +585,7 @@ about canonical URL:</p>
                   <td class="param-desc-col"><p>The URI scheme to use for the returned URL:</p>
 <ul>
 <li><code>false</code> (default): returning a relative URL.</li>
-<li><code>true</code>: returning an absolute URL whose scheme is the same as the current request.</li>
+<li><code>true</code>: returning an absolute base URL whose scheme is the same as that in <a href="yii-web-urlmanager.html#$hostInfo-detail">yii\web\UrlManager::$hostInfo</a>.</li>
 <li>string: returning an absolute URL with the specified scheme (either <code>http</code> or <code>https</code>).</li>
 </ul>
 </td>
@@ -654,8 +654,8 @@ to the current module and will be prepended with the module's uniqueId.</li>
     <div class="detail-header h3" id="previous()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-baseurl.html#previous()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L264" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L264" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L269" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L269" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         previous()
         <span class="detail-header-tag small">
@@ -691,8 +691,8 @@ If not set, it will use <a href="yii-web-user.html#$returnUrlParam-detail">yii\w
     <div class="detail-header h3" id="remember()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-baseurl.html#remember()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L245" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L245" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L250" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L250" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         remember()
         <span class="detail-header-tag small">
@@ -729,8 +729,8 @@ later by <a href="yii-helpers-baseurl.html#previous()-detail">previous()</a>. If
     <div class="detail-header h3" id="to()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-baseurl.html#to()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L185" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L185" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseUrl.php#L187" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseUrl.php#L187" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         to()
         <span class="detail-header-tag small">
@@ -742,23 +742,22 @@ later by <a href="yii-helpers-baseurl.html#previous()-detail">previous()</a>. If
         <p><strong>Creates a URL based on the given parameters.</strong></p>
 
         <p>This method is very similar to <a href="yii-helpers-baseurl.html#toRoute()-detail">toRoute()</a>. The only difference is that this method
-requires a route to be specified as an array only. If a string is given, it will be treated
-as a URL which will be prefixed with the base URL if it does not start with a slash.
+requires a route to be specified as an array only. If a string is given, it will be treated as a URL.
 In particular, if <code>$url</code> is</p>
 <ul>
 <li>an array: <a href="yii-helpers-baseurl.html#toRoute()-detail">toRoute()</a> will be called to generate the URL. For example:
 <code>['site/index']</code>, <code>['post/index', 'page' =&gt; 2]</code>. Please refer to <a href="yii-helpers-baseurl.html#toRoute()-detail">toRoute()</a> for more details
 on how to specify a route.</li>
-<li>a string with a leading <code>@</code>: it is treated as an alias and the corresponding aliased string
-will be subject to the following rules.</li>
+<li>a string with a leading <code>@</code>: it is treated as an alias, and the corresponding aliased string
+will be returned.</li>
 <li>an empty string: the currently requested URL will be returned;</li>
-<li>a string without a leading slash: it will be prefixed with <a href="yii-web-request.html#$baseUrl-detail">yii\web\Request::$baseUrl</a>.</li>
-<li>a string with a leading slash: it will be returned as is.</li>
+<li>a normal string: it will be returned as is.</li>
 </ul>
-<p>Note that in case <code>$scheme</code> is specified (either a string or true), an absolute URL with host info
-will be returned.</p>
+<p>When <code>$scheme</code> is specified (either a string or true), an absolute URL with host info (obtained from
+<a href="yii-web-urlmanager.html#$hostInfo-detail">yii\web\UrlManager::$hostInfo</a>) will be returned. If <code>$url</code> is already an absolute URL, its scheme
+will be replaced with the specified one.</p>
 <p>Below are some examples of using this method:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;/index?r=site/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;/index?r=site/index&amp;src=ref1#name<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'src'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'ref1'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'#'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'name'</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;the&nbsp;currently&nbsp;requested&nbsp;URL<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">();<br /><br /></span><span style="color: #FF8000">//&nbsp;/images/logo.gif<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">'images/logo.gif'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;http://www.example.com/index.php?r=site/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">],&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;https://www.example.com/index.php?r=site/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">],&nbsp;</span><span style="color: #DD0000">'https'</span><span style="color: #007700">);</span></code></pre>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;/index?r=site/index<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;/index?r=site/index&amp;src=ref1#name<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">([</span><span style="color: #DD0000">'site/index'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'src'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'ref1'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'#'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'name'</span><span style="color: #007700">]);<br /><br /></span><span style="color: #FF8000">//&nbsp;the&nbsp;currently&nbsp;requested&nbsp;URL<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">();<br /><br /></span><span style="color: #FF8000">//&nbsp;/images/logo.gif<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">'@web/images/logo.gif'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;images/logo.gif<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">'images/logo.gif'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;http://www.example.com/images/logo.gif<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">'@web/images/logo.gif'</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">true</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;https://www.example.com/images/logo.gif<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">Url</span><span style="color: #007700">::</span><span style="color: #0000BB">to</span><span style="color: #007700">(</span><span style="color: #DD0000">'@web/images/logo.gif'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'https'</span><span style="color: #007700">);</span></code></pre>
 
             </div>
 
@@ -776,7 +775,7 @@ will be returned.</p>
                   <td class="param-desc-col"><p>The URI scheme to use in the generated URL:</p>
 <ul>
 <li><code>false</code> (default): generating a relative URL.</li>
-<li><code>true</code>: generating an absolute URL whose scheme is the same as the current request.</li>
+<li><code>true</code>: returning an absolute base URL whose scheme is the same as that in <a href="yii-web-urlmanager.html#$hostInfo-detail">yii\web\UrlManager::$hostInfo</a>.</li>
 <li>string: generating an absolute URL with the specified scheme (either <code>http</code> or <code>https</code>).</li>
 </ul>
 </td>
@@ -850,7 +849,7 @@ or an array to represent a route with query parameters (e.g. <code>['site/index'
                   <td class="param-desc-col"><p>The URI scheme to use in the generated URL:</p>
 <ul>
 <li><code>false</code> (default): generating a relative URL.</li>
-<li><code>true</code>: generating an absolute URL whose scheme is the same as the current request.</li>
+<li><code>true</code>: returning an absolute base URL whose scheme is the same as that in <a href="yii-web-urlmanager.html#$hostInfo-detail">yii\web\UrlManager::$hostInfo</a>.</li>
 <li>string: generating an absolute URL with the specified scheme (either <code>http</code> or <code>https</code>).</li>
 </ul>
 </td>
@@ -909,7 +908,7 @@ or an array to represent a route with query parameters (e.g. <code>['site/index'
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 04 Aug 2014 18:28:54 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 06 Aug 2014 07:09:58 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
