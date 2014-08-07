@@ -147,7 +147,7 @@ and <a href="yii-base-widget.html#end()-detail">end()</a> calls within the modal
     </tr>
             <tr id="$closeButton">
         <td><a href="yii-bootstrap-modal.html#$closeButton-detail">$closeButton</a></td>
-        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a>|false</td>
         <td>The options for rendering the close button tag.</td>
         <td><a href="yii-bootstrap-modal.html">yii\bootstrap\Modal</a></td>
     </tr>
@@ -544,11 +544,11 @@ and <a href="yii-base-widget.html#end()-detail">end()</a> calls within the modal
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-bootstrap-modal.html#$closeButton-detail">$closeButton</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a>|false <a href="yii-bootstrap-modal.html#$closeButton-detail">$closeButton</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
 
     <p>The options for rendering the close button tag.
 The close button is displayed in the header of the modal window. Clicking
-on the button will hide the modal window. If this is null, no close button will be rendered.</p>
+on the button will hide the modal window. If this is false, no close button will be rendered.</p>
 <p>The following special options are supported:</p>
 <ul>
 <li>tag: string, the tag name of the button. Defaults to 'button'.</li>
@@ -639,11 +639,11 @@ for the supported HTML attributes.</p>
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-bootstrap-modal.html#$toggleButton-detail">$toggleButton</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-bootstrap-modal.html#$toggleButton-detail">$toggleButton</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
 
     <p>The options for rendering the toggle button tag.
 The toggle button is used to toggle the visibility of the modal window.
-If this property is null, no toggle button will be rendered.</p>
+If this property is false, no toggle button will be rendered.</p>
 <p>The following special options are supported:</p>
 <ul>
 <li>tag: string, the tag name of the button. Defaults to 'button'.</li>
@@ -984,7 +984,7 @@ for the supported HTML attributes.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 06 Aug 2014 21:27:56 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 07 Aug 2014 18:34:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

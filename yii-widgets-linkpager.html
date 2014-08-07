@@ -467,7 +467,7 @@ With the default configuration, LinkPager should look good using Twitter Bootstr
     </tr>
             <tr id="$firstPageLabel">
         <td><a href="yii-widgets-linkpager.html#$firstPageLabel-detail">$firstPageLabel</a></td>
-        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
         <td>The text label for the "first" page button.</td>
         <td><a href="yii-widgets-linkpager.html">yii\widgets\LinkPager</a></td>
     </tr>
@@ -491,7 +491,7 @@ With the default configuration, LinkPager should look good using Twitter Bootstr
     </tr>
             <tr id="$lastPageLabel">
         <td><a href="yii-widgets-linkpager.html#$lastPageLabel-detail">$lastPageLabel</a></td>
-        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
         <td>The text label for the "last" page button.</td>
         <td><a href="yii-widgets-linkpager.html">yii\widgets\LinkPager</a></td>
     </tr>
@@ -515,7 +515,7 @@ With the default configuration, LinkPager should look good using Twitter Bootstr
     </tr>
             <tr id="$nextPageLabel">
         <td><a href="yii-widgets-linkpager.html#$nextPageLabel-detail">$nextPageLabel</a></td>
-        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
         <td>The label for the "next" page button.</td>
         <td><a href="yii-widgets-linkpager.html">yii\widgets\LinkPager</a></td>
     </tr>
@@ -539,7 +539,7 @@ With the default configuration, LinkPager should look good using Twitter Bootstr
     </tr>
             <tr id="$prevPageLabel">
         <td><a href="yii-widgets-linkpager.html#$prevPageLabel-detail">$prevPageLabel</a></td>
-        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
         <td>The text label for the previous page button.</td>
         <td><a href="yii-widgets-linkpager.html">yii\widgets\LinkPager</a></td>
     </tr>
@@ -893,10 +893,10 @@ With the default configuration, LinkPager should look good using Twitter Bootstr
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-widgets-linkpager.html#$firstPageLabel-detail">$firstPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-widgets-linkpager.html#$firstPageLabel-detail">$firstPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
 
     <p>The text label for the "first" page button. Note that this will NOT be HTML-encoded.
-If this property is null, the "first" page button will not be displayed.</p>
+Default is false that means the "first" page button will not be displayed.</p>
 
     
 
@@ -962,10 +962,10 @@ If this property is null, the "first" page button will not be displayed.</p>
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-widgets-linkpager.html#$lastPageLabel-detail">$lastPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-widgets-linkpager.html#$lastPageLabel-detail">$lastPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
 
     <p>The text label for the "last" page button. Note that this will NOT be HTML-encoded.
-If this property is null, the "last" page button will not be displayed.</p>
+Default is false that means the "last" page button will not be displayed.</p>
 
     
 
@@ -1031,10 +1031,10 @@ If this property is null, the "last" page button will not be displayed.</p>
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-widgets-linkpager.html#$nextPageLabel-detail">$nextPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'&amp;raquo;'</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-widgets-linkpager.html#$nextPageLabel-detail">$nextPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'&amp;raquo;'</span></div>
 
     <p>The label for the "next" page button. Note that this will NOT be HTML-encoded.
-If this property is null, the "next" page button will not be displayed.</p>
+If this property is false, the "next" page button will not be displayed.</p>
 
     
 
@@ -1101,10 +1101,10 @@ You must set this property in order to make LinkPager work.</p>
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-widgets-linkpager.html#$prevPageLabel-detail">$prevPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'&amp;laquo;'</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-widgets-linkpager.html#$prevPageLabel-detail">$prevPageLabel</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'&amp;laquo;'</span></div>
 
     <p>The text label for the previous page button. Note that this will NOT be HTML-encoded.
-If this property is null, the "previous" page button will not be displayed.</p>
+If this property is false, the "previous" page button will not be displayed.</p>
 
     
 
@@ -1397,7 +1397,7 @@ Defaults to <code>false</code> to avoid conflicts when multiple pagers are used 
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 06 Aug 2014 21:28:36 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 07 Aug 2014 18:35:11 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
