@@ -51,7 +51,8 @@
     
 <div class="row">
     <div class="col-md-3">
-                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-2077" data-toggle="collapse" data-parent="#navigation">yii\smarty <b class="caret"></b></a><div id="navigation-2077" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./yii-smarty-viewrenderer.html">ViewRenderer</a></div></div>    </div>
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-2077" data-toggle="collapse" data-parent="#navigation">yii\smarty <b class="caret"></b></a><div id="navigation-2077" class="submenu panel-collapse collapse in"><a class="list-group-item" href="./yii-smarty-extension.html">Extension</a>
+<a class="list-group-item active" href="./yii-smarty-viewrenderer.html">ViewRenderer</a></div></div>    </div>
     <div class="col-md-9 api-content" role="main">
         <h1>Class yii\smarty\ViewRenderer</h1>
 <div id="nav">
@@ -116,13 +117,61 @@
         <td>The directory or path alias pointing to where Smarty compiled templates will be stored.</td>
         <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
     </tr>
-            <tr id="$smarty">
-        <td><a href="yii-smarty-viewrenderer.html#$smarty-detail">$smarty</a></td>
-        <td>\Smarty</td>
-        <td></td>
+            <tr id="$extensionClass">
+        <td><a href="yii-smarty-viewrenderer.html#$extensionClass-detail">$extensionClass</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Extension class name</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
+    </tr>
+            <tr id="$imports">
+        <td><a href="yii-smarty-viewrenderer.html#$imports-detail">$imports</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>Class imports similar to the use tag</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
+    </tr>
+            <tr id="$options">
+        <td><a href="yii-smarty-viewrenderer.html#$options-detail">$options</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>Additional Smarty options</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
+    </tr>
+            <tr id="$pluginDirs">
+        <td><a href="yii-smarty-viewrenderer.html#$pluginDirs-detail">$pluginDirs</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>Add additional directories to Smarty's search path for plugins.</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
+    </tr>
+                <tr id="$widgets">
+        <td><a href="yii-smarty-viewrenderer.html#$widgets-detail">$widgets</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>Widget declarations</td>
         <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
     </tr>
     </table>
+</div>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+                                    <tr id="$smarty">
+        <td><a href="yii-smarty-viewrenderer.html#$smarty-detail">$smarty</a></td>
+        <td>\Smarty</td>
+        <td>The Smarty object used for rendering</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
+    </tr>
+        </table>
 </div>
 
 <a name="methods"></a>
@@ -141,10 +190,10 @@
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-        <tr class="inherited" id="__call()">
-        <td><a href="yii-base-component.html#__call()-detail">__call()</a></td>
-        <td>Calls the named method which is not a class method.</td>
-        <td><a href="yii-base-component.html">yii\base\Component</a></td>
+        <tr id="__call()">
+        <td><a href="yii-smarty-viewrenderer.html#__call()-detail">__call()</a></td>
+        <td>Mechanism to pass a widget's tag name to the callback function.</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
     </tr>
             <tr class="inherited" id="__clone()">
         <td><a href="yii-base-component.html#__clone()-detail">__clone()</a></td>
@@ -175,6 +224,11 @@
         <td><a href="yii-base-component.html#__unset()-detail">__unset()</a></td>
         <td>Sets a component property to be null.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
+    </tr>
+            <tr id="aliasHandler()">
+        <td><a href="yii-smarty-viewrenderer.html#aliasHandler()-detail">aliasHandler()</a></td>
+        <td>Resolves Yii alias into file path</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
     </tr>
             <tr class="inherited" id="attachBehavior()">
         <td><a href="yii-base-component.html#attachBehavior()-detail">attachBehavior()</a></td>
@@ -248,7 +302,7 @@
     </tr>
             <tr id="init()">
         <td><a href="yii-smarty-viewrenderer.html#init()-detail">init()</a></td>
-        <td></td>
+        <td>Instantiates and configures the Smarty object.</td>
         <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
     </tr>
             <tr class="inherited" id="off()">
@@ -266,17 +320,35 @@
         <td>Renders a view file.</td>
         <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
     </tr>
-            <tr id="smarty_function_path()">
-        <td><a href="yii-smarty-viewrenderer.html#smarty_function_path()-detail">smarty_function_path()</a></td>
-        <td>Smarty template function to get a path for using in links</td>
-        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
-    </tr>
-            <tr class="inherited" id="trigger()">
+                <tr class="inherited" id="trigger()">
         <td><a href="yii-base-component.html#trigger()-detail">trigger()</a></td>
         <td>Triggers an event.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
     </table>
+</div>
+
+<div class="summary doc-method">
+<h2>Protected Methods</h2>
+
+<p><a href="#" class="toggle">Hide inherited methods</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-method" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Method</th><th>Description</th><th>Defined By</th>
+</tr>
+                                                                                                                <tr id="resolveTemplateDir()">
+        <td><a href="yii-smarty-viewrenderer.html#resolveTemplateDir()-detail">resolveTemplateDir()</a></td>
+        <td>The directory can be specified in Yii's standard convention
+using @, // and / prefixes or no prefix for view relative directories.</td>
+        <td><a href="yii-smarty-viewrenderer.html">yii\smarty\ViewRenderer</a></td>
+    </tr>
+        </table>
 </div>
 
 <a name="events"></a>
@@ -307,8 +379,8 @@
     <div class="detail-header h3" id="$cachePath-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$cachePath-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L27" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L27" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L30" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L30" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $cachePath        <span class="detailHeaderTag small">
             public                                    property
@@ -324,8 +396,8 @@
     <div class="detail-header h3" id="$compilePath-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$compilePath-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L31" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L31" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L34" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L34" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $compilePath        <span class="detailHeaderTag small">
             public                                    property
@@ -338,31 +410,220 @@
 
     
 
+    <div class="detail-header h3" id="$extensionClass-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$extensionClass-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L62" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L62" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $extensionClass        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-smarty-viewrenderer.html#$extensionClass-detail">$extensionClass</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'\yii\smarty\Extension'</span></div>
+
+    <p>Extension class name</p>
+
+    
+
+    <div class="detail-header h3" id="$imports-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$imports-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L43" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L43" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $imports        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-smarty-viewrenderer.html#$imports-detail">$imports</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
+
+    <p>Class imports similar to the use tag</p>
+
+    
+
+    <div class="detail-header h3" id="$options-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$options-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L57" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L57" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $options        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-smarty-viewrenderer.html#$options-detail">$options</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
+
+    <p>Additional Smarty options</p>
+
+    <p>See also <a href="http://www.smarty.net/docs/en/api.variables.tpl">http://www.smarty.net/docs/en/api.variables.tpl</a>.</p>
+
+    <div class="detail-header h3" id="$pluginDirs-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$pluginDirs-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L39" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L39" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $pluginDirs        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-smarty-viewrenderer.html#$pluginDirs-detail">$pluginDirs</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
+
+    <p>Add additional directories to Smarty's search path for plugins.</p>
+
+    
+
     <div class="detail-header h3" id="$smarty-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$smarty-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L35" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L35" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L51" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L51" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $smarty        <span class="detailHeaderTag small">
-            public                                    property
+            protected                                    property
                     </span>
     </div>
 
     <div class="signature">\Smarty <a href="yii-smarty-viewrenderer.html#$smarty-detail">$smarty</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
 
+    <p>The Smarty object used for rendering</p>
+
     
+
+    <div class="detail-header h3" id="$widgets-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#$widgets-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L47" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L47" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $widgets        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-smarty-viewrenderer.html#$widgets-detail">$widgets</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[</span><span style="color: #DD0000">'functions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[],&nbsp;</span><span style="color: #DD0000">'blocks'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[]]</span></div>
+
+    <p>Widget declarations</p>
+
     
 </div>
 <h2>Method Details</h2>
 
 <div class="method-doc">
 
+    <div class="detail-header h3" id="__call()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#__call()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L158" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L158" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        __call()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Mechanism to pass a widget's tag name to the callback function.</strong></p>
+
+        <p>Using a magic function call would not be necessary if Smarty would
+support closures. Smarty closure support is announced for 3.2,
+until its release magic function calls are used to pass the
+tag name to the callback.</p>
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-smarty-viewrenderer.html#__call()-detail">__call</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$method</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$args&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$method</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$args</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                                    <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="yii-base-invalidconfigexception.html">yii\base\InvalidConfigException</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="http://www.php.net/class.badmethodcallexception">BadMethodCallException</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+
+    <div class="detail-header h3" id="aliasHandler()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#aliasHandler()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L268" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L268" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        aliasHandler()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Resolves Yii alias into file path</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">bool|<a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-smarty-viewrenderer.html#aliasHandler()-detail">aliasHandler</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$type</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$name</span><span style="color: #007700">,&nbsp;&lt;</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;&amp;&lt;/</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">$content</span><span style="color: #007700">,&nbsp;&lt;</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;&amp;&lt;/</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">$modified</span><span style="color: #007700">,&nbsp;\</span><span style="color: #0000BB">Smarty&nbsp;$smarty&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$type</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$name</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$content</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$modified</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$smarty</span></td>
+                  <td class="param-type-col">\Smarty</td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col">bool|<a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Path to file or false if it's not found</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-smarty-viewrenderer.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L38" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L38" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L68" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L68" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -371,7 +632,7 @@
     </div>
 
     <div class="doc-description">
-        <p><strong></strong></p>
+        <p><strong>Instantiates and configures the Smarty object.</strong></p>
 
         
             </div>
@@ -385,8 +646,8 @@
     <div class="detail-header h3" id="render()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-smarty-viewrenderer.html#render()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L85" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L85" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L244" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L244" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         render()
         <span class="detail-header-tag small">
@@ -397,7 +658,7 @@
     <div class="doc-description">
         <p><strong>Renders a view file.</strong></p>
 
-        <p>This method is invoked by <a href="yii-base-view.html">yii\base\View</a> whenever it tries to render a view.
+        <p>This method is invoked by <a href="yii-web-view.html">yii\web\View</a> whenever it tries to render a view.
 Child classes must implement this method to render the given view file.</p>
 
             </div>
@@ -406,7 +667,7 @@ Child classes must implement this method to render the given view file.</p>
         <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-smarty-viewrenderer.html#render()-detail">render</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$view</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$file</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$view</span></td>
-                  <td class="param-type-col"><a href="yii-base-view.html">yii\base\View</a></td>
+                  <td class="param-type-col"><a href="yii-web-view.html">yii\web\View</a></td>
                   <td class="param-desc-col"><p>The view object used for rendering the file.</p>
 </td>
                 </tr>
@@ -432,40 +693,40 @@ Child classes must implement this method to render the given view file.</p>
 
 <!--	-->
 
-    <div class="detail-header h3" id="smarty_function_path()-detail">
+    <div class="detail-header h3" id="resolveTemplateDir()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#smarty_function_path()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L61" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L61" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        <a class="tool-link hash" href="yii-smarty-viewrenderer.html#resolveTemplateDir()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/smarty/ViewRenderer.php#L121" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/smarty/ViewRenderer.php#L121" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
-        smarty_function_path()
+        resolveTemplateDir()
         <span class="detail-header-tag small">
-            public            method
+            protected            method
                     </span>
     </div>
 
     <div class="doc-description">
-        <p><strong>Smarty template function to get a path for using in links</strong></p>
+        <p><strong>The directory can be specified in Yii's standard convention
+using @, // and / prefixes or no prefix for view relative directories.</strong></p>
 
-        <p>Usage is the following:</p>
-<p>{path route='blog/view' alias=$post.alias user=$user.id}</p>
-<p>where route is Yii route and the rest of parameters are passed as is.</p>
-
+        
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-smarty-viewrenderer.html#smarty_function_path()-detail">smarty_function_path</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$params</span><span style="color: #007700">,&nbsp;\</span><span style="color: #0000BB">Smarty_Internal_Template&nbsp;$template&nbsp;</span><span style="color: #007700">)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-smarty-viewrenderer.html#resolveTemplateDir()-detail">resolveTemplateDir</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$dir&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
+                  <td class="param-name-col"><span style="color: #0000BB">$dir</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Directory name to be resolved</p>
+</td>
                 </tr>
-                            <tr>
-                  <td class="param-name-col"><span style="color: #0000BB">$template</span></td>
-                  <td class="param-type-col">\Smarty_Internal_Template</td>
-                  <td class="param-desc-col"></td>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The resolved directory name</p>
+</td>
                 </tr>
-                                                </table>
+                                    </table>
 
 <!--	-->
 </div>
@@ -507,7 +768,7 @@ Child classes must implement this method to render the given view file.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 10 Aug 2014 09:02:58 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:52:05 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

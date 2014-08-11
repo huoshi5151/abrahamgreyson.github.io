@@ -205,16 +205,16 @@ Class import:
 Aliased class import:
 {{ use({'alias' =&gt; '/app/widgets/MyWidget'}) }}
 </code></pre>
-<h4>Referencing other views <a href="#referencing-other-views" name="referencing-other-views" class="hashlink">&para;</a></h4>
-<p>There are two ways of referencing views in <code>include</code> and <code>extends</code> statements:</p>
+<h4>Referencing other templates <a href="#referencing-other-templates" name="referencing-other-templates" class="hashlink">&para;</a></h4>
+<p>There are two ways of referencing templates in <code>include</code> and <code>extends</code> statements:</p>
 <pre><code>{% include "comment.twig" %}
 {% extends "post.twig" %
 
 {% include "@app/views/snippets/avatar.twig" %}
 {% extends "@app/views/layouts/2columns.twig" %}
 </code></pre>
-<p>In the first case the view will be searched relatively to the path current view is in. For <code>comment.twig</code> and <code>post.twig</code>
-that means these will be searched in the same directory as the view that's rendered currently.</p>
+<p>In the first case the view will be searched relatively to the current template path. For <code>comment.twig</code> and <code>post.twig</code>
+that means these will be searched in the same directory as the currently rendered template.</p>
 <p>In the second case we're using path aliases. All the Yii aliases such as <code>@app</code> are available by default.</p>
 <h4>Widgets <a href="#widgets" name="widgets" class="hashlink">&para;</a></h4>
 <p>Extension helps using widgets in convenient way converting their syntax to function calls:</p>
@@ -295,23 +295,109 @@ helpers and your own variables there:</p>
 <pre><code>{{ model|jsonEncode }}
 </code></pre>
 <h2>Smarty <a href="#smarty" name="smarty" class="hashlink">&para;</a></h2>
-<p>To use Smarty, you need to create templates in files that have the <code>.tpl</code> extension (or use another file extension but configure the component accordingly). Unlike standard view files, when using Smarty you must include the extension in your <code>$this-&gt;render()</code>
-or <code>$this-&gt;renderPartial()</code> controller calls:</p>
+<p>To use Smarty, you need to create templates in files that have the <code>.tpl</code> extension (or use another file extension but
+configure the component accordingly). Unlike standard view files, when using Smarty you must include the extension in
+your <code>$this-&gt;render()</code> or <code>$this-&gt;renderPartial()</code> controller calls:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'renderer.tpl'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'username'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Alex'</span><span style="color: #007700">]);</span></code></pre>
 <h3>Template syntax <a href="#template-syntax" name="template-syntax" class="hashlink">&para;</a></h3>
 <p>The best resource to learn Smarty template syntax is its official documentation you can find at
 <a href="http://www.smarty.net/docs/en/">www.smarty.net</a>. Additionally there are Yii-specific syntax extensions
 described below.</p>
-<h4>Additional functions <a href="#additional-functions" name="additional-functions" class="hashlink">&para;</a></h4>
-<p>Yii adds the following construct to the standard Smarty syntax:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"{path&nbsp;route='blog/view'&nbsp;alias=</span><span style="color: #0000BB">$post</span><span style="color: #DD0000">.alias}"</span><span style="color: #007700">&gt;{</span><span style="color: #0000BB">$post</span><span style="color: #007700">.</span><span style="color: #0000BB">title</span><span style="color: #007700">}&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;</span></code></pre>
-<p>Internally, the <code>path()</code> function calls Yii's <code>Url::to()</code> method.</p>
+<h4>Setting object properties <a href="#setting-object-properties" name="setting-object-properties" class="hashlink">&para;</a></h4>
+<p>There's a special function called <code>set</code> that allows you to set common properties of the view and controller. Currently
+available properties are <code>title</code>, <code>theme</code> and <code>layout</code>:</p>
+<pre><code>{set title="My Page"}
+{set theme="frontend"}
+{set layout="main.tpl"}
+</code></pre>
+<p>For title there's dedicated block as well:</p>
+<pre><code>{title}My Page{/title}
+</code></pre>
+<h4>Setting meta tags <a href="#setting-meta-tags" name="setting-meta-tags" class="hashlink">&para;</a></h4>
+<p>Meta tags could be set like to following:</p>
+<pre><code>{meta keywords="Yii,PHP,Smarty,framework"}
+</code></pre>
+<p>There's also dedicated block for description:</p>
+<pre><code>{description}This is my page about Smarty extension{/description}
+</code></pre>
+<h4>Calling object methods <a href="#calling-object-methods" name="calling-object-methods" class="hashlink">&para;</a></h4>
+<p>Sometimes you need calling</p>
+<h4>Importing static classes, using widgets as functions and blocks <a href="#importing-static-classes-using-widgets-as-functions-and-blocks" name="importing-static-classes-using-widgets-as-functions-and-blocks" class="hashlink">&para;</a></h4>
+<p>You can import additional static classes right in the template:</p>
+<pre><code>{use class="yii\helpers\Html"}
+{Html::mailto('eugenia@example.com')}
+</code></pre>
+<p>If you want you can set custom alias:</p>
+<pre><code>{use class="yii\helpers\Html" as="Markup"}
+{Markup::mailto('eugenia@example.com')}
+</code></pre>
+<p>Extension helps using widgets in convenient way converting their syntax to function calls or blocks. For regular widgets
+function could be used like the following:</p>
+<pre><code>{use class='@yii\grid\GridView' type='function'}
+{GridView dataProvider=$provider}
+</code></pre>
+<p>For widgets with <code>begin</code> and <code>end</code> methods such as ActiveForm it's better to use block:</p>
+<pre><code>{use class='yii\widgets\ActiveForm' type='block'}
+{ActiveForm assign='form' id='login-form' action='/form-handler' options=['class' =&gt; 'form-horizontal']}
+    {$form-&gt;field($model, 'firstName')}
+    &lt;div class="form-group"&gt;
+        &lt;div class="col-lg-offset-1 col-lg-11"&gt;
+            &lt;input type="submit" value="Login" class="btn btn-primary" /&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+{/ActiveForm}
+</code></pre>
+<p>If you're using particular widget a lot, it is a good idea to declare it in application config and remove <code>{use class</code>
+call from templates:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'view'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'renderers'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'tpl'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\smarty\ViewRenderer'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'widgets'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'blocks'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'ActiveForm'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'\yii\widgets\ActiveForm'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />],</span></code></pre>
+<h4>Referencing other templates <a href="#referencing-other-templates" name="referencing-other-templates" class="hashlink">&para;</a></h4>
+<p>There are two main ways of referencing templates in <code>include</code> and <code>extends</code> statements:</p>
+<pre><code>{include 'comment.tpl'}
+{extends 'post.tpl'}
+
+{include '@app/views/snippets/avatar.tpl'}
+{extends '@app/views/layouts/2columns.tpl'}
+</code></pre>
+<p>In the first case the view will be searched relatively to the current template path. For <code>comment.tpl</code> and <code>post.tpl</code>
+that means these will be searched in the same directory as the currently rendered template.</p>
+<p>In the second case we're using path aliases. All the Yii aliases such as <code>@app</code> are available by default.</p>
+<h4>CSS, JavaScript and asset bundles <a href="#css-javascript-and-asset-bundles" name="css-javascript-and-asset-bundles" class="hashlink">&para;</a></h4>
+<p>In order to register JavaScript and CSS files the following syntax could be used:</p>
+<pre><code>{registerJsFile url='http://maps.google.com/maps/api/js?sensor=false' position='POS_END'}
+{registerCssFile url='@assets/css/normalizer.css'}
+</code></pre>
+<p>If you need JavaScript and CSS directly in the template there are convenient blocks:</p>
+<pre><code>{registerJs key='show' position='POS_LOAD'}
+    $("span.show").replaceWith('&lt;div class="show"&gt;');
+{/registerJs}
+
+{registerCss}
+div.header {
+    background-color: #3366bd;
+    color: white;
+}
+{/registerCss}
+</code></pre>
+<p>Asset bundles could be registered the following way:</p>
+<pre><code>{use class="yii\web\JqueryAsset"}
+{JqueryAsset::register($this)|void}
+</code></pre>
+<p>Here we're using <code>void</code> modifier because we don't need method call result.</p>
+<h4>URLs <a href="#urls" name="urls" class="hashlink">&para;</a></h4>
+<p>There are two functions you can use for building URLs:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"{path&nbsp;route='blog/view'&nbsp;alias=</span><span style="color: #0000BB">$post</span><span style="color: #DD0000">.alias}"</span><span style="color: #007700">&gt;{</span><span style="color: #0000BB">$post</span><span style="color: #007700">.</span><span style="color: #0000BB">title</span><span style="color: #007700">}&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;<br />&lt;</span><span style="color: #0000BB">a&nbsp;href</span><span style="color: #007700">=</span><span style="color: #DD0000">"{url&nbsp;route='blog/view'&nbsp;alias=</span><span style="color: #0000BB">$post</span><span style="color: #DD0000">.alias}"</span><span style="color: #007700">&gt;{</span><span style="color: #0000BB">$post</span><span style="color: #007700">.</span><span style="color: #0000BB">title</span><span style="color: #007700">}&lt;/</span><span style="color: #0000BB">a</span><span style="color: #007700">&gt;</span></code></pre>
+<p><code>path</code> generates relative URL while <code>url</code> generates absolute one. Internally both are using <a href="./yii-helpers-url.html">yii\helpers\Url</a>.</p>
 <h4>Additional variables <a href="#additional-variables" name="additional-variables" class="hashlink">&para;</a></h4>
-<p>Within Smarty templates, you can also make use of these variables:</p>
+<p>Within Smarty templates the following variables are always defined:</p>
 <ul>
 <li><code>$app</code>, which equates to <code>\Yii::$app</code></li>
 <li><code>$this</code>, which equates to the current <code>View</code> object</li>
 </ul>
+<h4>Accessing config params <a href="#accessing-config-params" name="accessing-config-params" class="hashlink">&para;</a></h4>
+<p>Yii parameters that are available in your application through <code>Yii::$app-&gt;params-&gt;something</code> could be used the following
+way:</p>
+<pre><code>`{#something#}`
+</code></pre>
         <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
@@ -320,7 +406,7 @@ described below.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 10 Aug 2014 09:05:05 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:54:05 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
