@@ -542,7 +542,7 @@ If left part is found in DB error message exception class from the right part is
         <td>Converts a DB exception to a more concrete one if possible.</td>
         <td><a href="yii-db-schema.html">yii\db\Schema</a></td>
     </tr>
-            <tr id="createQueryBuilder()">
+                <tr id="createQueryBuilder()">
         <td><a href="yii-db-schema.html#createQueryBuilder()-detail">createQueryBuilder()</a></td>
         <td>Creates a query builder for the database.</td>
         <td><a href="yii-db-schema.html">yii\db\Schema</a></td>
@@ -679,7 +679,12 @@ If left part is found in DB error message exception class from the right part is
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                                                        <tr id="findTableNames()">
+                                                <tr id="createColumnSchema()">
+        <td><a href="yii-db-schema.html#createColumnSchema()-detail">createColumnSchema()</a></td>
+        <td></td>
+        <td><a href="yii-db-schema.html">yii\db\Schema</a></td>
+    </tr>
+                    <tr id="findTableNames()">
         <td><a href="yii-db-schema.html#findTableNames()-detail">findTableNames()</a></td>
         <td>Returns all table names in the database.</td>
         <td><a href="yii-db-schema.html">yii\db\Schema</a></td>
@@ -992,8 +997,8 @@ after <code>SET TRANSACTION ISOLATION LEVEL</code>.</p>
     <div class="detail-header h3" id="convertException()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#convertException()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L506" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L506" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L518" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L518" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         convertException()
         <span class="detail-header-tag small">
@@ -1024,11 +1029,40 @@ after <code>SET TRANSACTION ISOLATION LEVEL</code>.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="createColumnSchema()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-db-schema.html#createColumnSchema()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L92" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L92" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        createColumnSchema()
+        <span class="detail-header-tag small">
+            protected            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="yii-db-columnschema.html">yii\db\ColumnSchema</a> <strong><a href="yii-db-schema.html#createColumnSchema()-detail">createColumnSchema</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+                                                            <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="yii-base-invalidconfigexception.html">yii\base\InvalidConfigException</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                        </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="createQueryBuilder()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#createQueryBuilder()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L256" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L256" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L265" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L265" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createQueryBuilder()
         <span class="detail-header-tag small">
@@ -1058,8 +1092,8 @@ after <code>SET TRANSACTION ISOLATION LEVEL</code>.</p>
     <div class="detail-header h3" id="createSavepoint()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#createSavepoint()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L324" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L324" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L333" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L333" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createSavepoint()
         <span class="detail-header-tag small">
@@ -1088,8 +1122,8 @@ after <code>SET TRANSACTION ISOLATION LEVEL</code>.</p>
     <div class="detail-header h3" id="findTableNames()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#findTableNames()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L269" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L269" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L278" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L278" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         findTableNames()
         <span class="detail-header-tag small">
@@ -1132,8 +1166,8 @@ because the default implementation simply throws an exception.</p>
     <div class="detail-header h3" id="findUniqueIndexes()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#findUniqueIndexes()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L291" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L291" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L300" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L300" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         findUniqueIndexes()
         <span class="detail-header-tag small">
@@ -1182,8 +1216,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getCacheKey()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getCacheKey()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L138" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L138" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L147" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L147" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getCacheKey()
         <span class="detail-header-tag small">
@@ -1218,8 +1252,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getCacheTag()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getCacheTag()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L153" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L153" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L162" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L162" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getCacheTag()
         <span class="detail-header-tag small">
@@ -1249,8 +1283,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getColumnPhpType()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getColumnPhpType()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L478" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L478" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L487" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L487" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getColumnPhpType()
         <span class="detail-header-tag small">
@@ -1285,8 +1319,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getLastInsertID()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getLastInsertID()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L303" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L303" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L312" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L312" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getLastInsertID()
         <span class="detail-header-tag small">
@@ -1327,8 +1361,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getPdoType()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getPdoType()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L220" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L220" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L229" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L229" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getPdoType()
         <span class="detail-header-tag small">
@@ -1363,8 +1397,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getQueryBuilder()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getQueryBuilder()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L205" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L205" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L214" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L214" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getQueryBuilder()
         <span class="detail-header-tag small">
@@ -1393,8 +1427,8 @@ because the default implementation simply throws an exception</p>
     <div class="detail-header h3" id="getRawTableName()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getRawTableName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L462" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L462" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L471" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L471" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getRawTableName()
         <span class="detail-header-tag small">
@@ -1431,8 +1465,8 @@ and replace the percentage character '%' with <a href="yii-db-connection.html#$t
     <div class="detail-header h3" id="getTableNames()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getTableNames()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L193" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L193" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L202" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L202" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getTableNames()
         <span class="detail-header-tag small">
@@ -1475,8 +1509,8 @@ table names fetched previously (if available) will be returned.</p>
     <div class="detail-header h3" id="getTableSchema()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getTableSchema()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L101" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L101" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L110" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L110" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getTableSchema()
         <span class="detail-header-tag small">
@@ -1517,8 +1551,8 @@ table names fetched previously (if available) will be returned.</p>
     <div class="detail-header h3" id="getTableSchemas()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#getTableSchemas()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L170" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L170" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L179" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L179" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getTableSchemas()
         <span class="detail-header-tag small">
@@ -1561,8 +1595,8 @@ Each array element is an instance of <a href="yii-db-tableschema.html">yii\db\Ta
     <div class="detail-header h3" id="isReadQuery()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#isReadQuery()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L528" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L528" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L540" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L540" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         isReadQuery()
         <span class="detail-header-tag small">
@@ -1597,8 +1631,8 @@ Each array element is an instance of <a href="yii-db-tableschema.html">yii\db\Ta
     <div class="detail-header h3" id="loadTableSchema()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#loadTableSchema()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L93" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L93" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L102" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L102" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         loadTableSchema()
         <span class="detail-header-tag small">
@@ -1633,8 +1667,8 @@ Each array element is an instance of <a href="yii-db-tableschema.html">yii\db\Ta
     <div class="detail-header h3" id="quoteColumnName()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#quoteColumnName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L416" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L416" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L425" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L425" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         quoteColumnName()
         <span class="detail-header-tag small">
@@ -1672,8 +1706,8 @@ then this method will do nothing.</p>
     <div class="detail-header h3" id="quoteSimpleColumnName()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#quoteSimpleColumnName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L450" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L450" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L459" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L459" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         quoteSimpleColumnName()
         <span class="detail-header-tag small">
@@ -1710,8 +1744,8 @@ If the column name is already quoted or is the asterisk character '*', this meth
     <div class="detail-header h3" id="quoteSimpleTableName()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#quoteSimpleTableName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L438" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L438" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L447" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L447" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         quoteSimpleTableName()
         <span class="detail-header-tag small">
@@ -1748,8 +1782,8 @@ If the table name is already quoted, this method will do nothing.</p>
     <div class="detail-header h3" id="quoteTableName()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#quoteTableName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L390" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L390" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L399" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L399" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         quoteTableName()
         <span class="detail-header-tag small">
@@ -1787,8 +1821,8 @@ then this method will do nothing.</p>
     <div class="detail-header h3" id="quoteValue()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#quoteValue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L367" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L367" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L376" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L376" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         quoteValue()
         <span class="detail-header-tag small">
@@ -1824,8 +1858,8 @@ then this method will do nothing.</p>
     <div class="detail-header h3" id="refresh()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#refresh()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L240" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L240" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L249" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L249" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         refresh()
         <span class="detail-header-tag small">
@@ -1850,8 +1884,8 @@ to reflect the database schema change.</p>
     <div class="detail-header h3" id="releaseSavepoint()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#releaseSavepoint()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L333" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L333" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L342" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L342" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         releaseSavepoint()
         <span class="detail-header-tag small">
@@ -1880,8 +1914,8 @@ to reflect the database schema change.</p>
     <div class="detail-header h3" id="rollBackSavepoint()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#rollBackSavepoint()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L342" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L342" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L351" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L351" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         rollBackSavepoint()
         <span class="detail-header-tag small">
@@ -1910,8 +1944,8 @@ to reflect the database schema change.</p>
     <div class="detail-header h3" id="setTransactionIsolationLevel()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#setTransactionIsolationLevel()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L355" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L355" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L364" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L364" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         setTransactionIsolationLevel()
         <span class="detail-header-tag small">
@@ -1943,8 +1977,8 @@ after <code>SET TRANSACTION ISOLATION LEVEL</code>.</p>
     <div class="detail-header h3" id="supportsSavepoint()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-schema.html#supportsSavepoint()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L315" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L315" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Schema.php#L324" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Schema.php#L324" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         supportsSavepoint()
         <span class="detail-header-tag small">
@@ -2008,7 +2042,7 @@ after <code>SET TRANSACTION ISOLATION LEVEL</code>.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:52:19 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 12 Aug 2014 05:06:45 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

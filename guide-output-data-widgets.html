@@ -213,7 +213,37 @@ grid columns.</p>
 <h4>Data column <a href="#data-column" name="data-column" class="hashlink">&para;</a></h4>
 <p>Data column is for displaying and sorting data. It is default column type so specifying class could be omitted when
 using it.</p>
-<p>TBD</p>
+<p>The main setting of the data column is its format. It could be specified via <code>format</code> attribute. Its values are
+corresponding to methods in <code>format</code> application component that is <a href="./yii-base-formatter.html">Formatter</a> by default:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;?=&nbsp;</span><span style="color: #0000BB">GridView</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'columns'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attribute'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'name'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'format'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'text'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attribute'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'birthday'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'format'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'date'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Y-m-d'</span><span style="color: #007700">]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]);&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
+<p>In the above <code>text</code> corresponds to <a href="./yii-base-formatter.html#asText()-detail">yii\base\Formatter::asText()</a>. The value of the column is passed as the first
+argument. In the second column definition <code>date</code> corresponds to <a href="./yii-base-formatter.html#asDate()-detail">yii\base\Formatter::asDate()</a>. The value of the
+column is, again, passed as the first argument while 'Y-m-d' is used as the second argument value.</p>
+<p>Here's the bundled formatters list:</p>
+<ul>
+<li><a href="./yii-base-formatter.html#asRaw()-detail">raw</a> - the value is outputted as is.</li>
+<li><a href="./yii-base-formatter.html#asText()-detail">text</a> - the value is HTML-encoded. This format is used by default.</li>
+<li><a href="./yii-base-formatter.html#asNtext()-detail">ntext</a> - the value is formatted as an HTML-encoded plain text with newlines converted
+into line breaks.</li>
+<li><a href="./yii-base-formatter.html#asParagraphs()-detail">paragraphs</a> - the value is formatted as HTML-encoded text paragraphs wrapped
+into <code>&lt;p&gt;</code> tags.</li>
+<li><a href="./yii-base-formatter.html#asHtml()-detail">html</a> - the value is purified using <span style="background: #f00;">HtmlPurifier</span> to avoid XSS attacks. You can
+pass additional options such as <code>['html', ['Attr.AllowedFrameTargets' =&gt; ['_blank']]]</code>.</li>
+<li><a href="./yii-base-formatter.html#asEmail()-detail">email</a> - the value is formatted as a mailto link.</li>
+<li><a href="./yii-base-formatter.html#asImage()-detail">image</a> - the value is formatted as an image tag.</li>
+<li><a href="./yii-base-formatter.html#asUrl()-detail">url</a> - the value is formatted as a hyperlink.</li>
+<li><a href="./yii-base-formatter.html#asBoolean()-detail">boolean</a> - the value is formatted as a boolean. You can set what's rendered for
+true and false values by calling <code>Yii::$app-&gt;formatter-&gt;booleanFormat = ['No', 'Yes'];</code> before outputting GridView.</li>
+<li><a href="./yii-base-formatter.html#asDate()-detail">date</a> - the value is formatted as date.</li>
+<li><a href="./yii-base-formatter.html#asTime()-detail">time</a> - the value is formatted as time.</li>
+<li><a href="./yii-base-formatter.html#asDatetime()-detail">datetime</a> - the value is formatted as datetime.</li>
+<li><a href="./yii-base-formatter.html#asInteger()-detail">integer</a> -  the value is formatted as an integer.</li>
+<li><a href="./yii-base-formatter.html#asDouble()-detail">double</a> - the value is formatted as a double number.</li>
+<li><a href="./yii-base-formatter.html#asNumber()-detail">number</a> - the value is formatted as a number with decimal and thousand separators.</li>
+<li><a href="./yii-base-formatter.html#asSize()-detail">size</a> - the value that is a number of bytes is formatted as a human readable size.</li>
+<li><a href="./yii-base-formatter.html#asRelativeTime()-detail">relativeTime</a> - the value is formatted as the time interval between a date
+and now in human readable form.</li>
+</ul>
 <h4>Action column <a href="#action-column" name="action-column" class="hashlink">&para;</a></h4>
 <p>Action column displays action buttons such as update or delete for each row.</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">GridView</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dataProvider'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$dataProvider</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'columns'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\grid\ActionColumn'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;you&nbsp;may&nbsp;configure&nbsp;additional&nbsp;properties&nbsp;here<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],</span></code></pre>
@@ -333,7 +363,7 @@ in <code>$userProvider</code> and <code>$postProvider</code>:</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:54:03 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 12 Aug 2014 05:08:35 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

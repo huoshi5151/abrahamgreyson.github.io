@@ -441,8 +441,8 @@
     <div class="detail-header h3" id="process()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basehtmlpurifier.html#process()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseHtmlPurifier.php#L27" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseHtmlPurifier.php#L27" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseHtmlPurifier.php#L45" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseHtmlPurifier.php#L45" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         process()
         <span class="detail-header-tag small">
@@ -461,14 +461,38 @@
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$content</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
-                  <td class="param-desc-col"></td>
+                  <td class="param-desc-col"><p>The HTML content to purify</p>
+</td>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$config</span></td>
-                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.null">null</a></td>
-                  <td class="param-desc-col"></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/class.closure">Closure</a>|<a href="http://www.php.net/language.types.null">null</a></td>
+                  <td class="param-desc-col"><p>The config to use for HtmlPurifier.
+If not specified or <code>null</code> the default config will be used.
+You can use an array or an anonymous function to provide configuration options:</p>
+<ul>
+<li>An array will be passed to the <code>HTMLPurifier_Config::create()</code> method.</li>
+<li><p>An anonymous function will be called after the config was created.
+The signature should be: <code>function($config)</code> where <code>$config</code> will be an
+instance of <code>HTMLPurifier_Config</code>.</p>
+<p>Here is a usage example of such a function:</p>
+<pre><code>// Allow the HTML5 data attribute `data-type` on `img` elements.
+$content = HtmlPurifier::process($content, function($config) {
+  $config-&gt;getHTMLDefinition(true)
+         -&gt;addAttribute('img', 'data-type', 'Text');
+});
+</code></pre>
+</li>
+</ul>
+</td>
                 </tr>
-                                                </table>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The purified HTML content.</p>
+</td>
+                </tr>
+                                    </table>
 
 <!--	-->
 </div>
@@ -510,7 +534,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:52:23 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 12 Aug 2014 05:06:49 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

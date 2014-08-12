@@ -161,7 +161,15 @@
 <li><a href="https://github.com/yiisoft/yii2/blob/master/apps/advanced/README.md#testing">https://github.com/yiisoft/yii2/blob/master/apps/advanced/README.md#testing</a></li>
 <li><a href="https://github.com/yiisoft/yii2/blob/master/apps/basic/tests/README.md">https://github.com/yiisoft/yii2/blob/master/apps/basic/tests/README.md</a></li>
 </ul>
-<h2>How to run php-server <a href="#how-to-run-php-server" name="how-to-run-php-server" class="hashlink">&para;</a></h2>
+<h2>How to run webserver <a href="#how-to-run-webserver" name="how-to-run-webserver" class="hashlink">&para;</a></h2>
+<p>In order to perform acceptance tests you need a web server. Since PHP 5.4 has built-in one, we can use it. For the basic
+application template it would be:</p>
+<pre><code>cd web
+php -S localhost:8080
+</code></pre>
+<p>In order for the tests to work correctly you need to adjust <code>TEST_ENTRY_URL</code> in <code>_bootstrap.php</code> file. It should point
+to <code>index-test.php</code> of your webserver. Since we're running directly from its directory the line would be:</p>
+<pre><code class="language-php"><span style="color: #0000BB">defined</span><span style="color: #007700">(</span><span style="color: #DD0000">'TEST_ENTRY_URL'</span><span style="color: #007700">)&nbsp;or&nbsp;</span><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">'TEST_ENTRY_URL'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'/index-test.php'</span><span style="color: #007700">);</span></code></pre>
         <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
@@ -170,7 +178,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:54:04 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 12 Aug 2014 05:08:36 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

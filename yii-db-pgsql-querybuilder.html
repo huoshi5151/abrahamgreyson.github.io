@@ -534,10 +534,10 @@
         <td>Builds a SQL statement for changing the definition of a column.</td>
         <td><a href="yii-db-pgsql-querybuilder.html">yii\db\pgsql\QueryBuilder</a></td>
     </tr>
-            <tr class="inherited" id="batchInsert()">
-        <td><a href="yii-db-querybuilder.html#batchInsert()-detail">batchInsert()</a></td>
+            <tr id="batchInsert()">
+        <td><a href="yii-db-pgsql-querybuilder.html#batchInsert()-detail">batchInsert()</a></td>
         <td>Generates a batch INSERT SQL statement.</td>
-        <td><a href="yii-db-querybuilder.html">yii\db\QueryBuilder</a></td>
+        <td><a href="yii-db-pgsql-querybuilder.html">yii\db\pgsql\QueryBuilder</a></td>
     </tr>
             <tr class="inherited" id="build()">
         <td><a href="yii-db-querybuilder.html#build()-detail">build()</a></td>
@@ -906,6 +906,62 @@ will become 'varchar(255) not null'.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="batchInsert()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-db-pgsql-querybuilder.html#batchInsert()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/pgsql/QueryBuilder.php#L166" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/pgsql/QueryBuilder.php#L166" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        batchInsert()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Generates a batch INSERT SQL statement.</strong></p>
+
+        <p>For example,</p>
+<pre><code>$sql = $queryBuilder-&gt;batchInsert('user', ['name', 'age'], [
+    ['Tom', 30],
+    ['Jane', 20],
+    ['Linda', 25],
+]);
+</code></pre>
+<p>Note that the values in each row must match the corresponding column names.</p>
+
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-db-pgsql-querybuilder.html#batchInsert()-detail">batchInsert</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$table</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$columns</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$rows&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$table</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The table that new rows will be inserted into.</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$columns</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The column names</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$rows</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The rows to be batch inserted into the table</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The batch INSERT SQL statement</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="checkIntegrity()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-pgsql-querybuilder.html#checkIntegrity()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -1127,7 +1183,7 @@ the next new row's primary key will have a value 1.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 11 Aug 2014 02:52:19 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 12 Aug 2014 05:06:44 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
