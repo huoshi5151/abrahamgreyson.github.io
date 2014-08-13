@@ -106,6 +106,7 @@
 <a class="list-group-item" href="./yii-build-controllers-releasecontroller.html">ReleaseController</a>
 <a class="list-group-item" href="./yii-build-controllers-translationcontroller.html">TranslationController</a></div>
 <a class="list-group-item" href="#navigation-3581" data-toggle="collapse" data-parent="#navigation">yii\caching <b class="caret"></b></a><div id="navigation-3581" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-caching-apccache.html">ApcCache</a>
+<a class="list-group-item" href="./yii-caching-arraycache.html">ArrayCache</a>
 <a class="list-group-item" href="./yii-caching-cache.html">Cache</a>
 <a class="list-group-item" href="./yii-caching-chaineddependency.html">ChainedDependency</a>
 <a class="list-group-item" href="./yii-caching-dbcache.html">DbCache</a>
@@ -431,8 +432,8 @@ the <a href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail">$slugAt
 </tr>
         <tr id="$attribute">
         <td><a href="yii-behaviors-sluggablebehavior.html#$attribute-detail">$attribute</a></td>
-        <td><a href="http://www.php.net/language.types.string">string</a></td>
-        <td>The attribute whose value will be converted into a slug</td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a></td>
+        <td>The attribute or list of attributes whose value will be converted into a slug</td>
         <td><a href="yii-behaviors-sluggablebehavior.html">yii\behaviors\SluggableBehavior</a></td>
     </tr>
             <tr class="inherited" id="$attributes">
@@ -440,6 +441,12 @@ the <a href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail">$slugAt
         <td><a href="http://www.php.net/language.types.array">array</a></td>
         <td>List of attributes that are to be automatically filled with the value specified via <a href="yii-behaviors-attributebehavior.html#$value-detail">$value</a>.</td>
         <td><a href="yii-behaviors-attributebehavior.html">yii\behaviors\AttributeBehavior</a></td>
+    </tr>
+            <tr id="$ensureUnique">
+        <td><a href="yii-behaviors-sluggablebehavior.html#$ensureUnique-detail">$ensureUnique</a></td>
+        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+        <td>Whether to ensure generated slug value to be unique among owner class records.</td>
+        <td><a href="yii-behaviors-sluggablebehavior.html">yii\behaviors\SluggableBehavior</a></td>
     </tr>
             <tr class="inherited" id="$owner">
         <td><a href="yii-base-behavior.html#$owner-detail">$owner</a></td>
@@ -451,6 +458,18 @@ the <a href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail">$slugAt
         <td><a href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail">$slugAttribute</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
         <td>The attribute that will receive the slug value</td>
+        <td><a href="yii-behaviors-sluggablebehavior.html">yii\behaviors\SluggableBehavior</a></td>
+    </tr>
+            <tr id="$uniqueSlugGenerator">
+        <td><a href="yii-behaviors-sluggablebehavior.html#$uniqueSlugGenerator-detail">$uniqueSlugGenerator</a></td>
+        <td><a href="http://www.php.net/language.types.callable">callable</a></td>
+        <td>Slug unique value generator.</td>
+        <td><a href="yii-behaviors-sluggablebehavior.html">yii\behaviors\SluggableBehavior</a></td>
+    </tr>
+            <tr id="$uniqueValidator">
+        <td><a href="yii-behaviors-sluggablebehavior.html#$uniqueValidator-detail">$uniqueValidator</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>Configuration for slug uniqueness validator.</td>
         <td><a href="yii-behaviors-sluggablebehavior.html">yii\behaviors\SluggableBehavior</a></td>
     </tr>
             <tr id="$value">
@@ -594,25 +613,44 @@ the <a href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail">$slugAt
     <div class="detail-header h3" id="$attribute-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#$attribute-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L61" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L61" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L65" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L65" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $attribute        <span class="detailHeaderTag small">
             public                                    property
                     </span>
     </div>
 
-    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-behaviors-sluggablebehavior.html#$attribute-detail">$attribute</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a> <a href="yii-behaviors-sluggablebehavior.html#$attribute-detail">$attribute</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
 
-    <p>The attribute whose value will be converted into a slug</p>
+    <p>The attribute or list of attributes whose value will be converted into a slug</p>
+
+    
+
+    <div class="detail-header h3" id="$ensureUnique-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#$ensureUnique-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L84" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L84" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $ensureUnique        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-behaviors-sluggablebehavior.html#$ensureUnique-detail">$ensureUnique</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
+
+    <p>Whether to ensure generated slug value to be unique among owner class records.
+If enabled behavior will validate slug uniqueness automatically. If validation fails it will attempt
+generating unique slug value from based one until success.</p>
 
     
 
     <div class="detail-header h3" id="$slugAttribute-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L57" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L57" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L61" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L61" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $slugAttribute        <span class="detailHeaderTag small">
             public                                    property
@@ -625,11 +663,49 @@ the <a href="yii-behaviors-sluggablebehavior.html#$slugAttribute-detail">$slugAt
 
     
 
+    <div class="detail-header h3" id="$uniqueSlugGenerator-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#$uniqueSlugGenerator-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L104" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L104" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $uniqueSlugGenerator        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.callable">callable</a> <a href="yii-behaviors-sluggablebehavior.html#$uniqueSlugGenerator-detail">$uniqueSlugGenerator</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>Slug unique value generator. It is used in case <a href="yii-behaviors-sluggablebehavior.html#$ensureUnique-detail">$ensureUnique</a> enabled and generated
+slug is not unique. This should be a PHP callable with following signature:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">function&nbsp;(</span><span style="color: #0000BB">$baseSlug</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$iteration</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;return&nbsp;uniqueSlug<br /></span><span style="color: #007700">}</span></code></pre>
+<p>If not set unique slug will be generated adding incrementing suffix to the base slug.</p>
+
+    
+
+    <div class="detail-header h3" id="$uniqueValidator-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#$uniqueValidator-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L90" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L90" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $uniqueValidator        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-behaviors-sluggablebehavior.html#$uniqueValidator-detail">$uniqueValidator</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[]</span></div>
+
+    <p>Configuration for slug uniqueness validator. Parameter 'class' may be omitted - by default
+<a href="yii-validators-uniquevalidator.html">yii\validators\UniqueValidator</a> will be used.</p>
+
+    <p>See also <a href="yii-validators-uniquevalidator.html">yii\validators\UniqueValidator</a>.</p>
+
     <div class="detail-header h3" id="$value-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#$value-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L74" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L74" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L78" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L78" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $value        <span class="detailHeaderTag small">
             public                                    property
@@ -652,8 +728,8 @@ The signature of the function should be as follows,</p>
     <div class="detail-header h3" id="getValue()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#getValue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L96" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L96" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L126" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L126" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getValue()
         <span class="detail-header-tag small">
@@ -690,8 +766,8 @@ to the attributes corresponding to the triggering event.</p>
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-behaviors-sluggablebehavior.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L80" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L80" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/behaviors/SluggableBehavior.php#L110" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/behaviors/SluggableBehavior.php#L110" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -751,7 +827,7 @@ given configuration.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 12 Aug 2014 05:06:36 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 13 Aug 2014 06:36:55 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
