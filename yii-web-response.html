@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/f98469e7/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/9b32ba90/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/f98469e7/js/bootstrap.js"></script>
+<script src="./assets/9b32ba90/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -480,6 +480,12 @@ as it is shown in the following example:</p>
         <td>The original response data.</td>
         <td><a href="yii-web-response.html">yii\web\Response</a></td>
     </tr>
+            <tr id="$downloadHeaders">
+        <td><a href="yii-web-response.html#$downloadHeaders-detail">$downloadHeaders</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The attachment file name</td>
+        <td><a href="yii-web-response.html">yii\web\Response</a></td>
+    </tr>
             <tr class="inherited" id="$exitStatus">
         <td><a href="yii-base-response.html#$exitStatus-detail">$exitStatus</a></td>
         <td><a href="http://www.php.net/language.types.integer">integer</a></td>
@@ -844,6 +850,11 @@ as it is shown in the following example:</p>
         <td>Sends the specified stream as a file to the browser.</td>
         <td><a href="yii-web-response.html">yii\web\Response</a></td>
     </tr>
+            <tr id="setDownloadHeaders()">
+        <td><a href="yii-web-response.html#setDownloadHeaders()-detail">setDownloadHeaders()</a></td>
+        <td>Sets a default set of HTTP headers for file downloading purpose.</td>
+        <td><a href="yii-web-response.html">yii\web\Response</a></td>
+    </tr>
             <tr id="setStatusCode()">
         <td><a href="yii-web-response.html#setStatusCode()-detail">setStatusCode()</a></td>
         <td>Sets the response status code.</td>
@@ -906,7 +917,7 @@ as it is shown in the following example:</p>
         <td>Sends the response headers to the client</td>
         <td><a href="yii-web-response.html">yii\web\Response</a></td>
     </tr>
-                    </table>
+                        </table>
 </div>
 
 <a name="events"></a>
@@ -1131,6 +1142,23 @@ according to <a href="yii-web-response.html#$format-detail">$format</a> when the
 according to <a href="yii-web-response.html#$format-detail">$format</a> when the response is being sent out.</p>
 
     <p>See also <a href="yii-web-response.html#$content-detail">$content</a>.</p>
+
+    <div class="detail-header h3" id="$downloadHeaders-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-web-response.html#$downloadHeaders-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $downloadHeaders        <span class="detailHeaderTag small">
+            public                         <em>write-only</em>             property
+                    </span>
+    </div>
+
+    <div class="signature">static <strong><a href="yii-web-response.html#setDownloadHeaders()-detail">setDownloadHeaders</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$attachmentName</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$mimeType&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$contentLength&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></div>
+
+    <p>The attachment file name</p>
+
+    
 
     <div class="detail-header h3" id="$format-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
@@ -1508,8 +1536,8 @@ or '1.1' if that is not available.</p>
     <div class="detail-header h3" id="defaultFormatters()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#defaultFormatters()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L845" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L845" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L861" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L861" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         defaultFormatters()
         <span class="detail-header-tag small">
@@ -1538,8 +1566,8 @@ or '1.1' if that is not available.</p>
     <div class="detail-header h3" id="getCookies()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getCookies()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L754" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L754" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L770" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L770" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getCookies()
         <span class="detail-header-tag small">
@@ -1611,8 +1639,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getHttpRange()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getHttpRange()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L542" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L542" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L558" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L558" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getHttpRange()
         <span class="detail-header-tag small">
@@ -1647,8 +1675,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsClientError()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsClientError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L797" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L797" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L813" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L813" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsClientError()
         <span class="detail-header-tag small">
@@ -1677,8 +1705,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsEmpty()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsEmpty()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L837" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L837" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L853" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L853" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsEmpty()
         <span class="detail-header-tag small">
@@ -1707,8 +1735,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsForbidden()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsForbidden()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L821" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L821" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L837" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L837" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsForbidden()
         <span class="detail-header-tag small">
@@ -1737,8 +1765,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsInformational()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsInformational()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L773" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L773" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L789" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L789" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsInformational()
         <span class="detail-header-tag small">
@@ -1767,8 +1795,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsInvalid()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsInvalid()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L765" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L765" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L781" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L781" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsInvalid()
         <span class="detail-header-tag small">
@@ -1797,8 +1825,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsNotFound()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsNotFound()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L829" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L829" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L845" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L845" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsNotFound()
         <span class="detail-header-tag small">
@@ -1827,8 +1855,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsOk()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsOk()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L813" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L813" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L829" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L829" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsOk()
         <span class="detail-header-tag small">
@@ -1857,8 +1885,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsRedirection()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsRedirection()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L789" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L789" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L805" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L805" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsRedirection()
         <span class="detail-header-tag small">
@@ -1887,8 +1915,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsServerError()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsServerError()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L805" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L805" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L821" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L821" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsServerError()
         <span class="detail-header-tag small">
@@ -1917,8 +1945,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="getIsSuccessful()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#getIsSuccessful()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L781" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L781" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L797" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L797" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getIsSuccessful()
         <span class="detail-header-tag small">
@@ -2001,8 +2029,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="prepare()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#prepare()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L863" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L863" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L879" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L879" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         prepare()
         <span class="detail-header-tag small">
@@ -2032,8 +2060,8 @@ unset($response-&gt;cookies['name']);
     <div class="detail-header h3" id="redirect()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#redirect()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L690" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L690" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L706" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L706" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         redirect()
         <span class="detail-header-tag small">
@@ -2107,8 +2135,8 @@ for details about HTTP status code</p>
     <div class="detail-header h3" id="refresh()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#refresh()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L728" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L728" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L744" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L744" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         refresh()
         <span class="detail-header-tag small">
@@ -2351,8 +2379,8 @@ until <a href="yii-web-response.html#send()-detail">send()</a> is called explici
     <div class="detail-header h3" id="sendStreamAsFile()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#sendStreamAsFile()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L501" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L501" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L496" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L496" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         sendStreamAsFile()
         <span class="detail-header-tag small">
@@ -2404,6 +2432,54 @@ until <a href="yii-web-response.html#send()-detail">send()</a> is called explici
 
 <!--	-->
 
+    <div class="detail-header h3" id="setDownloadHeaders()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-web-response.html#setDownloadHeaders()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L531" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L531" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        setDownloadHeaders()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Sets a default set of HTTP headers for file downloading purpose.</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">static <strong><a href="yii-web-response.html#setDownloadHeaders()-detail">setDownloadHeaders</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$attachmentName</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$mimeType&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$contentLength&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$attachmentName</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The attachment file name</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$mimeType</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The MIME type for the response. If null, <code>Content-Type</code> header will NOT be set.</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$contentLength</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.integer">integer</a></td>
+                  <td class="param-desc-col"><p>The byte length of the file being downloaded. If null, <code>Content-Length</code> header will NOT be set.</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col">static</td>
+                  <td class="param-desc-col"><p>The response object itself</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="setStatusCode()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#setStatusCode()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -2450,8 +2526,8 @@ until <a href="yii-web-response.html#send()-detail">send()</a> is called explici
     <div class="detail-header h3" id="xSendFile()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-web-response.html#xSendFile()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L622" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L622" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/web/Response.php#L638" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/web/Response.php#L638" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         xSendFile()
         <span class="detail-header-tag small">
@@ -2623,7 +2699,7 @@ You may respond to this event to filter the response content before it is sent t
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 14 Aug 2014 18:54:18 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 16 Aug 2014 12:55:30 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
