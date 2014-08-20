@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/4dbab2c7/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/f80790d7/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/4dbab2c7/js/bootstrap.js"></script>
+<script src="./assets/f80790d7/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -99,13 +99,13 @@
 <tr>
   <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
 </tr>
-        <tr id="$behaviors">
+            <tr id="$behaviors">
         <td><a href="yii-codeception-basepage.html#$behaviors-detail">$behaviors</a></td>
         <td><a href="yii-base-behavior.html">yii\base\Behavior</a>[]</td>
         <td>List of behaviors attached to this component</td>
         <td><a href="yii-codeception-basepage.html">yii\codeception\BasePage</a></td>
     </tr>
-                <tr id="$route">
+            <tr id="$route">
         <td><a href="yii-codeception-basepage.html#$route-detail">$route</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a></td>
         <td>The route (controller ID and action ID, e.g. <code>site/about</code>) to this page.</td>
@@ -135,13 +135,13 @@
 <tr>
   <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
 </tr>
-            <tr id="$guy">
-        <td><a href="yii-codeception-basepage.html#$guy-detail">$guy</a></td>
-        <td>\Codeception\AbstractGuy</td>
+        <tr id="$actor">
+        <td><a href="yii-codeception-basepage.html#$actor-detail">$actor</a></td>
+        <td>\Codeception\Actor</td>
         <td>The testing guy object</td>
         <td><a href="yii-codeception-basepage.html">yii\codeception\BasePage</a></td>
     </tr>
-            </table>
+                </table>
 </div>
 
 <a name="methods"></a>
@@ -306,6 +306,23 @@
 
 <div class="property-doc">
 
+    <div class="detail-header h3" id="$actor-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-codeception-basepage.html#$actor-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/codeception/BasePage.php#L34" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/codeception/BasePage.php#L34" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $actor        <span class="detailHeaderTag small">
+            protected                                    property
+                    </span>
+    </div>
+
+    <div class="signature">\Codeception\Actor <a href="yii-codeception-basepage.html#$actor-detail">$actor</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The testing guy object</p>
+
+    
+
     <div class="detail-header h3" id="$behaviors-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-codeception-basepage.html#$behaviors-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -320,23 +337,6 @@
     <div class="signature"><a href="yii-base-behavior.html">yii\base\Behavior</a>[] <strong><a href="yii-base-component.html#getBehaviors()-detail">getBehaviors</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></div>
 
     <p>List of behaviors attached to this component</p>
-
-    
-
-    <div class="detail-header h3" id="$guy-detail">
-        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="yii-codeception-basepage.html#$guy-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/codeception/BasePage.php#L34" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/codeception/BasePage.php#L34" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
-        
-        $guy        <span class="detailHeaderTag small">
-            protected                                    property
-                    </span>
-    </div>
-
-    <div class="signature">\Codeception\AbstractGuy <a href="yii-codeception-basepage.html#$guy-detail">$guy</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
-
-    <p>The testing guy object</p>
 
     
 
@@ -402,7 +402,7 @@ the route and the rest of the name-value pairs are treated as GET parameters, e.
         <tr><td colspan="3" class="signature">void <strong><a href="yii-codeception-basepage.html#__construct()-detail">__construct</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$I&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
-                  <td class="param-type-col">\Codeception\AbstractGuy</td>
+                  <td class="param-type-col">\Codeception\Actor</td>
                   <td class="param-desc-col"><p>The testing guy object</p>
 </td>
                 </tr>
@@ -476,7 +476,7 @@ with <a href="yii-codeception-basepage.html#$route-detail">$route</a> and the pr
         <tr><td colspan="3" class="signature">static <strong><a href="yii-codeception-basepage.html#openBy()-detail">openBy</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$I</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$I</span></td>
-                  <td class="param-type-col">\Codeception\AbstractGuy</td>
+                  <td class="param-type-col">\Codeception\Actor</td>
                   <td class="param-desc-col"><p>The test guy instance</p>
 </td>
                 </tr>
@@ -534,7 +534,7 @@ with <a href="yii-codeception-basepage.html#$route-detail">$route</a> and the pr
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 18 Aug 2014 19:04:07 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 20 Aug 2014 04:55:50 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

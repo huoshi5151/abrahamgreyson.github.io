@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/4dbab2c7/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/f80790d7/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/4dbab2c7/js/bootstrap.js"></script>
+<script src="./assets/f80790d7/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -82,8 +82,8 @@ You may use codeception modules and fire events in your test, just use methods:<
 <h2>Getting Codeception modules <a href="#getting-codeception-modules" name="getting-codeception-modules" class="hashlink">&para;</a></h2>
 <p>If you want to use codeception modules and helpers in your unit tests, you can do it like this:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #FF8000">#in&nbsp;your&nbsp;unit-test<br /></span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModule</span><span style="color: #007700">(</span><span style="color: #DD0000">'CodeHelper'</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">#or&nbsp;some&nbsp;other&nbsp;module</span></code></pre>
-<p>You also can use all guy methods by accessing guy instance like:</p>
-<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br />$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">codeGuy</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">someMethodFromModule</span><span style="color: #007700">();</span></code></pre>
+<p>You also can use all actor methods by accessing actor instance like:</p>
+<pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br />$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">unitTester</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">someMethodFromModule</span><span style="color: #007700">();</span></code></pre>
 <h2>Codeception events <a href="#codeception-events" name="codeception-events" class="hashlink">&para;</a></h2>
 <p>To fire event do this:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">Codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">Event</span><span style="color: #007700">\</span><span style="color: #0000BB">TestEvent</span><span style="color: #007700">;<br /><br />public&nbsp;function&nbsp;</span><span style="color: #0000BB">testSomething</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">fire</span><span style="color: #007700">(</span><span style="color: #DD0000">'myevent'</span><span style="color: #007700">,&nbsp;new&nbsp;</span><span style="color: #0000BB">TestEvent</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">));<br />}</span></code></pre>
@@ -191,7 +191,7 @@ This method creates new application instance and replaces old one with it and is
     </tr>
     <tr>
         <td><a href="yii-codeception-dbtestcase.html">yii\codeception\DbTestCase</a></td>
-        <td></td>
+        <td>Base class for database test cases</td>
     </tr>
     <tr>
         <td><a href="yii-codeception-testcase.html">yii\codeception\TestCase</a></td>
@@ -236,7 +236,7 @@ This method creates new application instance and replaces old one with it and is
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 18 Aug 2014 19:05:05 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 20 Aug 2014 04:56:46 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

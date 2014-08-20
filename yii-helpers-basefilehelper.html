@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/4dbab2c7/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/f80790d7/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/4dbab2c7/js/bootstrap.js"></script>
+<script src="./assets/f80790d7/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -517,6 +517,13 @@
     <tr>
         <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
     </tr>
+            <tr id="PATTERN_CASE_INSENSITIVE">
+          <td>PATTERN_CASE_INSENSITIVE<a name="PATTERN_CASE_INSENSITIVE-detail"></a></td>
+          <td>32</td>
+          <td>
+</td>
+          <td><a href="yii-helpers-basefilehelper.html">yii\helpers\BaseFileHelper</a></td>
+        </tr>
             <tr id="PATTERN_ENDSWITH">
           <td>PATTERN_ENDSWITH<a name="PATTERN_ENDSWITH-detail"></a></td>
           <td>4</td>
@@ -555,8 +562,8 @@
     <div class="detail-header h3" id="copyDirectory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#copyDirectory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L240" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L240" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L242" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L242" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         copyDirectory()
         <span class="detail-header-tag small">
@@ -612,6 +619,7 @@ Patterns ending with '/' apply to directory paths only, and patterns not ending 
 apply to file paths only. For example, '/a/b' matches all file paths ending with '/a/b';
 and '.svn/' matches directory paths ending with '.svn'. Note, the '/' characters in a pattern matches
 both '/' and '\' in the paths.</li>
+<li>caseSensitive: boolean, whether patterns specified at "only" or "except" should be case sensitive. Defaults to true.</li>
 <li>recursive: boolean, whether the files under the subdirectories should also be copied. Defaults to true.</li>
 <li>beforeCopy: callback, a PHP callback that is called before copying each sub-directory or file.
 If the callback returns false, the copy operation for the sub-directory or file will be cancelled.
@@ -636,8 +644,8 @@ file copied from, while <code>$to</code> is the copy target.</li>
     <div class="detail-header h3" id="createDirectory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#createDirectory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L448" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L448" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L440" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L440" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createDirectory()
         <span class="detail-header-tag small">
@@ -687,8 +695,8 @@ in order to avoid the impact of the <code>umask</code> setting.</p>
     <div class="detail-header h3" id="filterPath()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#filterPath()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L403" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L403" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L395" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L395" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         filterPath()
         <span class="detail-header-tag small">
@@ -730,8 +738,8 @@ the supported options.</p>
     <div class="detail-header h3" id="findFiles()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#findFiles()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L349" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L349" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L354" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L354" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         findFiles()
         <span class="detail-header-tag small">
@@ -782,6 +790,7 @@ Note, the '/' characters in a pattern matches both '/' and '\' in the paths.</li
 <li>only: array, list of patterns that the file paths should match if they are to be returned. Directory paths are not checked against them.
 Same pattern matching rules as in the "except" option are used.
 If a file path matches a pattern in both "only" and "except", it will NOT be returned.</li>
+<li>caseSensitive: boolean, whether patterns specified at "only" or "except" should be case sensitive. Defaults to true.</li>
 <li>recursive: boolean, whether the files under the subdirectories should also be looked for. Defaults to true.</li>
 </ul>
 </td>
@@ -805,8 +814,8 @@ If a file path matches a pattern in both "only" and "except", it will NOT be ret
     <div class="detail-header h3" id="getExtensionsByMimeType()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#getExtensionsByMimeType()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L177" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L177" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L178" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L178" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getExtensionsByMimeType()
         <span class="detail-header-tag small">
@@ -849,8 +858,8 @@ If this is not set, the default file aliased by <code>@yii/helpers/mimeTypes.php
     <div class="detail-header h3" id="getMimeType()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#getMimeType()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L124" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L124" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L125" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L125" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getMimeType()
         <span class="detail-header-tag small">
@@ -908,8 +917,8 @@ This will be passed as the second parameter to <a href="http://php.net/manual/en
     <div class="detail-header h3" id="getMimeTypeByExtension()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#getMimeTypeByExtension()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L155" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L155" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L156" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L156" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getMimeTypeByExtension()
         <span class="detail-header-tag small">
@@ -952,8 +961,8 @@ If this is not set, the default file aliased by <code>@yii/helpers/mimeTypes.php
     <div class="detail-header h3" id="loadMimeTypes()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#loadMimeTypes()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L191" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L191" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L192" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L192" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         loadMimeTypes()
         <span class="detail-header-tag small">
@@ -989,8 +998,8 @@ If null, the file <code>@yii/helpers/mimeTypes.php</code> will be used.</p>
     <div class="detail-header h3" id="localize()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#localize()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L86" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L86" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L87" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L87" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         localize()
         <span class="detail-header-tag small">
@@ -1048,8 +1057,8 @@ If the target and the source language codes are the same, the original file will
     <div class="detail-header h3" id="normalizePath()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#normalizePath()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L44" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L44" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L45" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L45" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         normalizePath()
         <span class="detail-header-tag small">
@@ -1097,8 +1106,8 @@ If the target and the source language codes are the same, the original file will
     <div class="detail-header h3" id="removeDirectory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-helpers-basefilehelper.html#removeDirectory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L288" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L288" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/helpers/BaseFileHelper.php#L292" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/helpers/BaseFileHelper.php#L292" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         removeDirectory()
         <span class="detail-header-tag small">
@@ -1173,7 +1182,7 @@ Only symlink would be removed in that default case.</li>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 18 Aug 2014 19:04:32 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 20 Aug 2014 04:56:14 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
