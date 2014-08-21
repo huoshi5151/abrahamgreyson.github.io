@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/f80790d7/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/71415054/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/f80790d7/js/bootstrap.js"></script>
+<script src="./assets/71415054/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -184,6 +184,12 @@ After you created custom provider, for example:</p>
         <td><a href="yii-base-action.html">yii\base\Action</a></td>
         <td>The action that is currently being executed.</td>
         <td><a href="yii-base-controller.html">yii\base\Controller</a></td>
+    </tr>
+            <tr class="inherited" id="$append">
+        <td><a href="yii-console-controllers-fixturecontroller.html#$append-detail">$append</a></td>
+        <td>bool</td>
+        <td>Whether to append new fixture data to the existing ones.</td>
+        <td><a href="yii-console-controllers-fixturecontroller.html">yii\console\controllers\FixtureController</a></td>
     </tr>
             <tr id="$behaviors">
         <td><a href="yii-faker-fixturecontroller.html#$behaviors-detail">$behaviors</a></td>
@@ -366,17 +372,12 @@ After you created custom provider, for example:</p>
     </tr>
             <tr class="inherited" id="actionLoad()">
         <td><a href="yii-console-controllers-fixturecontroller.html#actionLoad()-detail">actionLoad()</a></td>
-        <td>Loads given fixture. You can load several fixtures specifying
-their names separated with commas, like: User,UserProfile,MyCustom. Be sure there is no
-whitespace between names. Note that if you are loading fixtures to storage, for example: database or nosql,
-storage will not be cleared, data will be appended to already existed.</td>
+        <td>Loads the specified fixture data.</td>
         <td><a href="yii-console-controllers-fixturecontroller.html">yii\console\controllers\FixtureController</a></td>
     </tr>
             <tr class="inherited" id="actionUnload()">
         <td><a href="yii-console-controllers-fixturecontroller.html#actionUnload()-detail">actionUnload()</a></td>
-        <td>Unloads given fixtures. You can clear environment and unload multiple fixtures by specifying
-their names separated with commas, like: User,UserProfile,MyCustom. Be sure there is no
-whitespace between names.</td>
+        <td>Unloads the specified fixtures.</td>
         <td><a href="yii-console-controllers-fixturecontroller.html">yii\console\controllers\FixtureController</a></td>
     </tr>
             <tr class="inherited" id="actions()">
@@ -589,6 +590,16 @@ whitespace between names.</td>
         <td>Checks if needed to generate all fixtures.</td>
         <td><a href="yii-faker-fixturecontroller.html">yii\faker\FixtureController</a></td>
     </tr>
+            <tr class="inherited" id="notifyNothingToLoad()">
+        <td><a href="yii-console-controllers-fixturecontroller.html#notifyNothingToLoad()-detail">notifyNothingToLoad()</a></td>
+        <td>Notifies user that there are no fixtures to load according input conditions</td>
+        <td><a href="yii-console-controllers-fixturecontroller.html">yii\console\controllers\FixtureController</a></td>
+    </tr>
+            <tr class="inherited" id="notifyNothingToUnload()">
+        <td><a href="yii-console-controllers-fixturecontroller.html#notifyNothingToUnload()-detail">notifyNothingToUnload()</a></td>
+        <td>Notifies user that there are no fixtures to unload according input conditions</td>
+        <td><a href="yii-console-controllers-fixturecontroller.html">yii\console\controllers\FixtureController</a></td>
+    </tr>
             <tr class="inherited" id="off()">
         <td><a href="yii-base-component.html#off()-detail">off()</a></td>
         <td>Detaches an existing event handler from this component.</td>
@@ -689,7 +700,7 @@ a list of options to choose from and their explanations.</td>
         <td>Creates the specified fixture instances.</td>
         <td><a href="yii-test-fixturetrait.html">yii\test\FixtureTrait</a></td>
     </tr>
-                                                                                                                                                                        </table>
+                                                                                                                                                                                </table>
 </div>
 
 <a name="events"></a>
@@ -741,13 +752,6 @@ a list of options to choose from and their explanations.</td>
     <tr>
         <th>Constant</th><th>Value</th><th>Description</th><th>Defined By</th>
     </tr>
-            <tr class="inherited" id="APPLY_ALL">
-          <td>APPLY_ALL<a name="APPLY_ALL-detail"></a></td>
-          <td>'all'</td>
-          <td>Type of fixture apply to database
-</td>
-          <td><a href="yii-console-controllers-fixturecontroller.html">yii\console\controllers\FixtureController</a></td>
-        </tr>
             <tr class="inherited" id="EXIT_CODE_ERROR">
           <td>EXIT_CODE_ERROR<a name="EXIT_CODE_ERROR-detail"></a></td>
           <td>1</td>
@@ -1363,7 +1367,7 @@ until <a href="yii-faker-fixturecontroller.html#beforeAction()-detail">beforeAct
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 20 Aug 2014 04:55:52 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 21 Aug 2014 17:24:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
