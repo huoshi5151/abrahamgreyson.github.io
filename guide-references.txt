@@ -63,6 +63,7 @@ structure-overview
 structure-views
 structure-widgets
 test-acceptance
+test-environment-setup
 test-fixtures
 test-functional
 test-overview
