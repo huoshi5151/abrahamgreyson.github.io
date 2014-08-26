@@ -3458,2514 +3458,2519 @@ Array
 
     [500] => Array
         (
-            [line] => 26
+            [line] => 25
             [file] => E:\Github\yii2\extensions\debug\LogTarget.php
-            [message] => No docblock for element '$tag'
+            [message] => No short description for element '$module'
         )
 
     [501] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\debug\LogTarget.php
-            [message] => No short description for element '$tag'
+            [message] => No docblock for element '$tag'
         )
 
     [502] => Array
+        (
+            [line] => 26
+            [file] => E:\Github\yii2\extensions\debug\LogTarget.php
+            [message] => No docblock for element '$tag'
+        )
+
+    [503] => Array
+        (
+            [line] => 26
+            [file] => E:\Github\yii2\extensions\debug\LogTarget.php
+            [message] => No short description for element '$tag'
+        )
+
+    [504] => Array
+        (
+            [line] => 26
+            [file] => E:\Github\yii2\extensions\debug\LogTarget.php
+            [message] => No short description for element '$tag'
+        )
+
+    [505] => Array
         (
             [line] => 116
             [file] => E:\Github\yii2\extensions\debug\LogTarget.php
             [message] => No docblock for element 'gc'
         )
 
-    [503] => Array
+    [506] => Array
+        (
+            [line] => 116
+            [file] => E:\Github\yii2\extensions\debug\LogTarget.php
+            [message] => No docblock for element 'gc'
+        )
+
+    [507] => Array
         (
             [line] => 40
             [file] => E:\Github\yii2\extensions\debug\Module.php
             [message] => No short description for element '$logTarget'
         )
 
-    [504] => Array
+    [508] => Array
         (
             [line] => 40
             [file] => E:\Github\yii2\extensions\debug\Panel.php
             [message] => No short description for element '$module'
         )
 
-    [505] => Array
+    [509] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No short description for element '$module'
         )
 
-    [506] => Array
+    [510] => Array
         (
             [line] => 50
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No docblock for element 'actionIndex'
         )
 
-    [507] => Array
+    [511] => Array
         (
             [line] => 68
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No docblock for element 'actionView'
         )
 
-    [508] => Array
+    [512] => Array
         (
             [line] => 90
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No docblock for element 'actionToolbar'
         )
 
-    [509] => Array
+    [513] => Array
         (
             [line] => 101
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No docblock for element 'actionDownloadMail'
         )
 
-    [510] => Array
+    [514] => Array
         (
             [line] => 114
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No docblock for element 'getManifest'
         )
 
-    [511] => Array
+    [515] => Array
         (
             [line] => 131
             [file] => E:\Github\yii2\extensions\debug\controllers\DefaultController.php
             [message] => No docblock for element 'loadData'
         )
 
-    [512] => Array
+    [516] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Db.php
             [message] => broken link to \yii\debug\models\search\Validator in yii\debug\models\search\Db
         )
 
-    [513] => Array
+    [517] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Db.php
             [message] => broken link to \yii\debug\models\search\Validator::builtInValidators in yii\debug\models\search\Db
         )
 
-    [514] => Array
+    [518] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Debug.php
             [message] => broken link to \yii\debug\models\search\Validator in yii\debug\models\search\Debug
         )
 
-    [515] => Array
+    [519] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Debug.php
             [message] => broken link to \yii\debug\models\search\Validator::builtInValidators in yii\debug\models\search\Debug
         )
 
-    [516] => Array
+    [520] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Log.php
             [message] => broken link to \yii\debug\models\search\Validator in yii\debug\models\search\Log
         )
 
-    [517] => Array
+    [521] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Log.php
             [message] => broken link to \yii\debug\models\search\Validator::builtInValidators in yii\debug\models\search\Log
         )
 
-    [518] => Array
+    [522] => Array
         (
             [line] => 63
             [file] => E:\Github\yii2\extensions\debug\models\search\Mail.php
             [message] => No docblock for element 'rules'
         )
 
-    [519] => Array
+    [523] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Profile.php
             [message] => broken link to \yii\debug\models\search\Validator in yii\debug\models\search\Profile
         )
 
-    [520] => Array
+    [524] => Array
         (
             [file] => E:\Github\yii2\extensions\debug\models\search\Profile.php
             [message] => broken link to \yii\debug\models\search\Validator::builtInValidators in yii\debug\models\search\Profile
         )
 
-    [521] => Array
-        (
-            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
-            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
-        )
-
-    [522] => Array
-        (
-            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
-            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
-        )
-
-    [523] => Array
-        (
-            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
-            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
-        )
-
-    [524] => Array
-        (
-            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
-            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
-        )
-
     [525] => Array
         (
             [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
-            [message] => broken link to \yii\elasticsearch\ActiveRecordInterface in yii\elasticsearch\ActiveRecord
+            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
         )
 
     [526] => Array
         (
             [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
-            [message] => broken link to \yii\elasticsearch\ActiveRecordInterface in yii\elasticsearch\ActiveRecord
+            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
         )
 
     [527] => Array
+        (
+            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
+            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
+        )
+
+    [528] => Array
+        (
+            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
+            [message] => broken link to \yii\elasticsearch\ActiveQueryInterface in yii\elasticsearch\ActiveRecord
+        )
+
+    [529] => Array
+        (
+            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
+            [message] => broken link to \yii\elasticsearch\ActiveRecordInterface in yii\elasticsearch\ActiveRecord
+        )
+
+    [530] => Array
+        (
+            [file] => E:\Github\yii2\extensions\elasticsearch\ActiveRecord.php
+            [message] => broken link to \yii\elasticsearch\ActiveRecordInterface in yii\elasticsearch\ActiveRecord
+        )
+
+    [531] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\elasticsearch\Command.php
             [message] => No short description for element '$db'
         )
 
-    [528] => Array
+    [532] => Array
         (
             [line] => 46
             [file] => E:\Github\yii2\extensions\elasticsearch\Command.php
             [message] => No docblock for element '$options'
         )
 
-    [529] => Array
+    [533] => Array
         (
             [line] => 46
             [file] => E:\Github\yii2\extensions\elasticsearch\Command.php
             [message] => No short description for element '$options'
         )
 
-    [530] => Array
+    [534] => Array
         (
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => broken link to \yii\elasticsearch\dsn in yii\elasticsearch\Connection
         )
 
-    [531] => Array
+    [535] => Array
         (
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => broken link to \yii\elasticsearch\dsn in yii\elasticsearch\Connection
         )
 
-    [532] => Array
+    [536] => Array
         (
             [line] => 50
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => No docblock for element '$auth'
         )
 
-    [533] => Array
+    [537] => Array
         (
             [line] => 50
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => No short description for element '$auth'
         )
 
-    [534] => Array
+    [538] => Array
         (
             [line] => 65
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => No docblock for element 'init'
         )
 
-    [535] => Array
+    [539] => Array
         (
             [line] => 454
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => No docblock for element 'getNodeInfo'
         )
 
-    [536] => Array
+    [540] => Array
         (
             [line] => 459
             [file] => E:\Github\yii2\extensions\elasticsearch\Connection.php
             [message] => No docblock for element 'getClusterState'
         )
 
-    [537] => Array
+    [541] => Array
         (
             [line] => 33
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugAction.php
             [message] => No short description for element '$panel'
         )
 
-    [538] => Array
+    [542] => Array
         (
             [line] => 37
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugAction.php
             [message] => No short description for element '$controller'
         )
 
-    [539] => Array
+    [543] => Array
         (
             [line] => 40
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugAction.php
             [message] => No docblock for element 'run'
         )
 
-    [540] => Array
+    [544] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugPanel.php
             [message] => No docblock for element '$db'
         )
 
-    [541] => Array
+    [545] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugPanel.php
             [message] => No short description for element '$db'
         )
 
-    [542] => Array
+    [546] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugPanel.php
             [message] => No docblock for element 'init'
         )
 
-    [543] => Array
+    [547] => Array
         (
             [line] => 155
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugPanel.php
             [message] => No docblock for element 'calculateTimings'
         )
 
-    [544] => Array
+    [548] => Array
         (
             [line] => 185
             [file] => E:\Github\yii2\extensions\elasticsearch\DebugPanel.php
             [message] => No docblock for element 'save'
         )
 
-    [545] => Array
+    [549] => Array
         (
             [line] => 140
             [file] => E:\Github\yii2\extensions\elasticsearch\Query.php
             [message] => No docblock for element '$facets'
         )
 
-    [546] => Array
+    [550] => Array
         (
             [line] => 140
             [file] => E:\Github\yii2\extensions\elasticsearch\Query.php
             [message] => No short description for element '$facets'
         )
 
-    [547] => Array
+    [551] => Array
         (
             [line] => 143
             [file] => E:\Github\yii2\extensions\elasticsearch\Query.php
             [message] => No docblock for element 'init'
         )
 
-    [548] => Array
+    [552] => Array
         (
             [line] => 335
             [file] => E:\Github\yii2\extensions\elasticsearch\QueryBuilder.php
             [message] => No docblock for element 'buildCompositeInCondition'
         )
 
-    [549] => Array
+    [553] => Array
         (
             [line] => 335
             [file] => E:\Github\yii2\extensions\elasticsearch\QueryBuilder.php
             [message] => No docblock for element 'buildCompositeInCondition'
         )
 
-    [550] => Array
+    [554] => Array
         (
             [line] => 178
             [file] => E:\Github\yii2\extensions\faker\FixtureController.php
             [message] => No docblock for element 'beforeAction'
         )
 
-    [551] => Array
+    [555] => Array
+        (
+            [line] => 178
+            [file] => E:\Github\yii2\extensions\faker\FixtureController.php
+            [message] => No docblock for element 'beforeAction'
+        )
+
+    [556] => Array
         (
             [line] => 184
             [file] => E:\Github\yii2\extensions\faker\FixtureController.php
             [message] => No docblock for element 'beforeAction'
         )
 
-    [552] => Array
+    [557] => Array
         (
             [line] => 185
             [file] => E:\Github\yii2\extensions\faker\FixtureController.php
             [message] => No docblock for element 'beforeAction'
         )
 
-    [553] => Array
+    [558] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\Generator.php
             [message] => broken link to \yii\gii\Validator in yii\gii\Generator
         )
 
-    [554] => Array
+    [559] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\Generator.php
             [message] => broken link to \yii\gii\Validator::builtInValidators in yii\gii\Generator
         )
 
-    [555] => Array
+    [560] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\gii\components\ActiveField.php
             [message] => No short description for element '$model'
         )
 
-    [556] => Array
+    [561] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No docblock for element '$layout'
         )
 
-    [557] => Array
+    [562] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No short description for element '$layout'
         )
 
-    [558] => Array
+    [563] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No short description for element '$module'
         )
 
-    [559] => Array
+    [564] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No short description for element '$generator'
         )
 
-    [560] => Array
+    [565] => Array
         (
             [line] => 31
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No docblock for element 'actionIndex'
         )
 
-    [561] => Array
+    [566] => Array
         (
             [line] => 38
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No docblock for element 'actionView'
         )
 
-    [562] => Array
+    [567] => Array
         (
             [line] => 59
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No docblock for element 'actionPreview'
         )
 
-    [563] => Array
+    [568] => Array
         (
             [line] => 77
             [file] => E:\Github\yii2\extensions\gii\controllers\DefaultController.php
             [message] => No docblock for element 'actionDiff'
         )
 
-    [564] => Array
+    [569] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\controller\Generator.php
             [message] => broken link to \yii\gii\generators\controller\Validator in yii\gii\generators\controller\Generator
         )
 
-    [565] => Array
+    [570] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\controller\Generator.php
             [message] => broken link to \yii\gii\generators\controller\Validator::builtInValidators in yii\gii\generators\controller\Generator
         )
 
-    [566] => Array
+    [571] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => broken link to \yii\gii\generators\crud\Validator in yii\gii\generators\crud\Generator
         )
 
-    [567] => Array
+    [572] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => broken link to \yii\gii\generators\crud\Validator::builtInValidators in yii\gii\generators\crud\Generator
         )
 
-    [568] => Array
+    [573] => Array
         (
             [line] => 34
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [569] => Array
+    [574] => Array
         (
             [line] => 34
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No short description for element '$modelClass'
         )
 
-    [570] => Array
+    [575] => Array
         (
             [line] => 35
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element '$moduleID'
         )
 
-    [571] => Array
+    [576] => Array
         (
             [line] => 35
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No short description for element '$moduleID'
         )
 
-    [572] => Array
+    [577] => Array
         (
             [line] => 36
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element '$controllerClass'
         )
 
-    [573] => Array
+    [578] => Array
         (
             [line] => 36
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No short description for element '$controllerClass'
         )
 
-    [574] => Array
+    [579] => Array
         (
             [line] => 37
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element '$baseControllerClass'
         )
 
-    [575] => Array
+    [580] => Array
         (
             [line] => 37
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No short description for element '$baseControllerClass'
         )
 
-    [576] => Array
+    [581] => Array
         (
             [line] => 38
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element '$indexWidgetType'
         )
 
-    [577] => Array
+    [582] => Array
         (
             [line] => 38
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No short description for element '$indexWidgetType'
         )
 
-    [578] => Array
+    [583] => Array
         (
             [line] => 39
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element '$searchModelClass'
         )
 
-    [579] => Array
+    [584] => Array
         (
             [line] => 39
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No short description for element '$searchModelClass'
         )
 
-    [580] => Array
+    [585] => Array
         (
             [line] => 212
             [file] => E:\Github\yii2\extensions\gii\generators\crud\Generator.php
             [message] => No docblock for element 'getNameAttribute'
         )
 
-    [581] => Array
+    [586] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => broken link to \yii\gii\generators\extension\Validator in yii\gii\generators\extension\Generator
         )
 
-    [582] => Array
+    [587] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => broken link to \yii\gii\generators\extension\Validator::builtInValidators in yii\gii\generators\extension\Generator
         )
 
-    [583] => Array
+    [588] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$vendorName'
         )
 
-    [584] => Array
+    [589] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$vendorName'
         )
 
-    [585] => Array
+    [590] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$packageName'
         )
 
-    [586] => Array
+    [591] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$packageName'
         )
 
-    [587] => Array
+    [592] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$namespace'
         )
 
-    [588] => Array
+    [593] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$namespace'
         )
 
-    [589] => Array
+    [594] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$type'
         )
 
-    [590] => Array
+    [595] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$type'
         )
 
-    [591] => Array
+    [596] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$keywords'
         )
 
-    [592] => Array
+    [597] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$keywords'
         )
 
-    [593] => Array
+    [598] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$title'
         )
 
-    [594] => Array
+    [599] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$title'
         )
 
-    [595] => Array
+    [600] => Array
         (
             [line] => 31
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$description'
         )
 
-    [596] => Array
+    [601] => Array
         (
             [line] => 31
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$description'
         )
 
-    [597] => Array
+    [602] => Array
         (
             [line] => 31
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => Property $description conflicts with a defined getter getDescription in yii\gii\generators\extension\Generator.
         )
 
-    [598] => Array
+    [603] => Array
         (
             [line] => 32
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$outputPath'
         )
 
-    [599] => Array
+    [604] => Array
         (
             [line] => 32
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$outputPath'
         )
 
-    [600] => Array
+    [605] => Array
         (
             [line] => 32
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => Property $outputPath conflicts with a defined getter getOutputPath in yii\gii\generators\extension\Generator.
         )
 
-    [601] => Array
+    [606] => Array
         (
             [line] => 33
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$license'
         )
 
-    [602] => Array
+    [607] => Array
         (
             [line] => 33
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$license'
         )
 
-    [603] => Array
+    [608] => Array
         (
             [line] => 34
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$authorName'
         )
 
-    [604] => Array
+    [609] => Array
         (
             [line] => 34
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$authorName'
         )
 
-    [605] => Array
+    [610] => Array
         (
             [line] => 35
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$authorEmail'
         )
 
-    [606] => Array
+    [611] => Array
         (
             [line] => 35
             [file] => E:\Github\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$authorEmail'
         )
 
-    [607] => Array
+    [612] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => broken link to \yii\gii\generators\form\Validator in yii\gii\generators\form\Generator
         )
 
-    [608] => Array
+    [613] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => broken link to \yii\gii\generators\form\Validator::builtInValidators in yii\gii\generators\form\Generator
         )
 
-    [609] => Array
+    [614] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [610] => Array
+    [615] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$modelClass'
         )
 
-    [611] => Array
+    [616] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$viewPath'
         )
 
-    [612] => Array
+    [617] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$viewPath'
         )
 
-    [613] => Array
+    [618] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$viewName'
         )
 
-    [614] => Array
+    [619] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$viewName'
         )
 
-    [615] => Array
+    [620] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$scenarioName'
         )
 
-    [616] => Array
+    [621] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$scenarioName'
         )
 
-    [617] => Array
+    [622] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => broken link to \yii\gii\generators\model\Validator in yii\gii\generators\model\Generator
         )
 
-    [618] => Array
+    [623] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => broken link to \yii\gii\generators\model\Validator::builtInValidators in yii\gii\generators\model\Generator
         )
 
-    [619] => Array
-        (
-            [line] => 26
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$db'
-        )
-
-    [620] => Array
-        (
-            [line] => 26
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$db'
-        )
-
-    [621] => Array
-        (
-            [line] => 26
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$db'
-        )
-
-    [622] => Array
-        (
-            [line] => 26
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$db'
-        )
-
-    [623] => Array
-        (
-            [line] => 27
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$ns'
-        )
-
     [624] => Array
         (
-            [line] => 27
+            [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$ns'
+            [message] => No docblock for element '$db'
         )
 
     [625] => Array
         (
-            [line] => 27
+            [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$ns'
+            [message] => No docblock for element '$db'
         )
 
     [626] => Array
         (
+            [line] => 26
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$db'
+        )
+
+    [627] => Array
+        (
+            [line] => 26
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$db'
+        )
+
+    [628] => Array
+        (
+            [line] => 27
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$ns'
+        )
+
+    [629] => Array
+        (
+            [line] => 27
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$ns'
+        )
+
+    [630] => Array
+        (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$ns'
         )
 
-    [627] => Array
-        (
-            [line] => 28
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$tableName'
-        )
-
-    [628] => Array
-        (
-            [line] => 28
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$tableName'
-        )
-
-    [629] => Array
-        (
-            [line] => 28
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$tableName'
-        )
-
-    [630] => Array
-        (
-            [line] => 28
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$tableName'
-        )
-
     [631] => Array
         (
-            [line] => 29
+            [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$modelClass'
+            [message] => No short description for element '$ns'
         )
 
     [632] => Array
         (
+            [line] => 28
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$tableName'
+        )
+
+    [633] => Array
+        (
+            [line] => 28
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$tableName'
+        )
+
+    [634] => Array
+        (
+            [line] => 28
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$tableName'
+        )
+
+    [635] => Array
+        (
+            [line] => 28
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$tableName'
+        )
+
+    [636] => Array
+        (
             [line] => 29
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [633] => Array
-        (
-            [line] => 29
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$modelClass'
-        )
-
-    [634] => Array
-        (
-            [line] => 29
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$modelClass'
-        )
-
-    [635] => Array
-        (
-            [line] => 30
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$baseClass'
-        )
-
-    [636] => Array
-        (
-            [line] => 30
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$baseClass'
-        )
-
     [637] => Array
         (
-            [line] => 30
+            [line] => 29
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$baseClass'
+            [message] => No docblock for element '$modelClass'
         )
 
     [638] => Array
         (
+            [line] => 29
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [639] => Array
+        (
+            [line] => 29
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [640] => Array
+        (
+            [line] => 30
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$baseClass'
+        )
+
+    [641] => Array
+        (
+            [line] => 30
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$baseClass'
+        )
+
+    [642] => Array
+        (
             [line] => 30
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$baseClass'
         )
 
-    [639] => Array
-        (
-            [line] => 31
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$generateRelations'
-        )
-
-    [640] => Array
-        (
-            [line] => 31
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$generateRelations'
-        )
-
-    [641] => Array
-        (
-            [line] => 31
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$generateRelations'
-        )
-
-    [642] => Array
-        (
-            [line] => 31
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$generateRelations'
-        )
-
     [643] => Array
         (
-            [line] => 32
+            [line] => 30
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$generateLabelsFromComments'
+            [message] => No short description for element '$baseClass'
         )
 
     [644] => Array
         (
+            [line] => 31
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$generateRelations'
+        )
+
+    [645] => Array
+        (
+            [line] => 31
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$generateRelations'
+        )
+
+    [646] => Array
+        (
+            [line] => 31
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$generateRelations'
+        )
+
+    [647] => Array
+        (
+            [line] => 31
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$generateRelations'
+        )
+
+    [648] => Array
+        (
             [line] => 32
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$generateLabelsFromComments'
         )
 
-    [645] => Array
-        (
-            [line] => 32
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$generateLabelsFromComments'
-        )
-
-    [646] => Array
-        (
-            [line] => 32
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$generateLabelsFromComments'
-        )
-
-    [647] => Array
-        (
-            [line] => 33
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$useTablePrefix'
-        )
-
-    [648] => Array
-        (
-            [line] => 33
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$useTablePrefix'
-        )
-
     [649] => Array
         (
-            [line] => 33
+            [line] => 32
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$useTablePrefix'
+            [message] => No docblock for element '$generateLabelsFromComments'
         )
 
     [650] => Array
         (
+            [line] => 32
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$generateLabelsFromComments'
+        )
+
+    [651] => Array
+        (
+            [line] => 32
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$generateLabelsFromComments'
+        )
+
+    [652] => Array
+        (
+            [line] => 33
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$useTablePrefix'
+        )
+
+    [653] => Array
+        (
+            [line] => 33
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$useTablePrefix'
+        )
+
+    [654] => Array
+        (
             [line] => 33
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$useTablePrefix'
         )
 
-    [651] => Array
-        (
-            [line] => 398
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => Undefined parameter documented:  in checkPivotTable().
-        )
-
-    [652] => Array
-        (
-            [line] => 398
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => Undefined parameter documented:  in checkPivotTable().
-        )
-
-    [653] => Array
-        (
-            [line] => 511
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$tableNames'
-        )
-
-    [654] => Array
-        (
-            [line] => 511
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$tableNames'
-        )
-
     [655] => Array
         (
-            [line] => 511
+            [line] => 33
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$tableNames'
+            [message] => No short description for element '$useTablePrefix'
         )
 
     [656] => Array
         (
+            [line] => 398
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => Undefined parameter documented:  in checkPivotTable().
+        )
+
+    [657] => Array
+        (
+            [line] => 398
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => Undefined parameter documented:  in checkPivotTable().
+        )
+
+    [658] => Array
+        (
+            [line] => 511
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$tableNames'
+        )
+
+    [659] => Array
+        (
+            [line] => 511
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$tableNames'
+        )
+
+    [660] => Array
+        (
             [line] => 511
             [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$tableNames'
         )
 
-    [657] => Array
-        (
-            [line] => 512
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$classNames'
-        )
-
-    [658] => Array
-        (
-            [line] => 512
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$classNames'
-        )
-
-    [659] => Array
-        (
-            [line] => 512
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$classNames'
-        )
-
-    [660] => Array
-        (
-            [line] => 512
-            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$classNames'
-        )
-
     [661] => Array
+        (
+            [line] => 511
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$tableNames'
+        )
+
+    [662] => Array
+        (
+            [line] => 512
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$classNames'
+        )
+
+    [663] => Array
+        (
+            [line] => 512
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$classNames'
+        )
+
+    [664] => Array
+        (
+            [line] => 512
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$classNames'
+        )
+
+    [665] => Array
+        (
+            [line] => 512
+            [file] => E:\Github\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$classNames'
+        )
+
+    [666] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\module\Generator.php
             [message] => broken link to \yii\gii\generators\module\Validator in yii\gii\generators\module\Generator
         )
 
-    [662] => Array
+    [667] => Array
         (
             [file] => E:\Github\yii2\extensions\gii\generators\module\Generator.php
             [message] => broken link to \yii\gii\generators\module\Validator::builtInValidators in yii\gii\generators\module\Generator
         )
 
-    [663] => Array
+    [668] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\module\Generator.php
             [message] => No docblock for element '$moduleClass'
         )
 
-    [664] => Array
+    [669] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\gii\generators\module\Generator.php
             [message] => No short description for element '$moduleClass'
         )
 
-    [665] => Array
+    [670] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\module\Generator.php
             [message] => No docblock for element '$moduleID'
         )
 
-    [666] => Array
+    [671] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\gii\generators\module\Generator.php
             [message] => No short description for element '$moduleID'
         )
 
-    [667] => Array
+    [672] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
             [message] => No docblock for element '$sourcePath'
-        )
-
-    [668] => Array
-        (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
-            [message] => No short description for element '$sourcePath'
-        )
-
-    [669] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
-            [message] => No docblock for element '$js'
-        )
-
-    [670] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
-            [message] => No short description for element '$js'
-        )
-
-    [671] => Array
-        (
-            [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
-            [message] => No docblock for element '$depends'
-        )
-
-    [672] => Array
-        (
-            [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
-            [message] => No short description for element '$depends'
         )
 
     [673] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [674] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [675] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
+            [message] => No short description for element '$js'
         )
 
     [676] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [677] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\AccordionAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [678] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [679] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [680] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [681] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
+            [message] => No short description for element '$js'
         )
 
     [682] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [683] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\AutoCompleteAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [684] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [685] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [686] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [687] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
+            [message] => No short description for element '$js'
         )
 
     [688] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [689] => Array
         (
-            [line] => 25
-            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
-            [message] => No docblock for element '$depends'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\ButtonAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [690] => Array
         (
-            [line] => 25
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [691] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [692] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [693] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
+            [message] => No short description for element '$js'
         )
 
     [694] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
-            [message] => No short description for element '$js'
+            [line] => 25
+            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [695] => Array
         (
-            [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
-            [message] => No docblock for element '$depends'
+            [line] => 25
+            [file] => E:\Github\yii2\extensions\jui\CoreAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [696] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [697] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [698] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [699] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
+            [message] => No short description for element '$js'
         )
 
     [700] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [701] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\DatePickerAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [702] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [703] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [704] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [705] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
+            [message] => No short description for element '$js'
         )
 
     [706] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [707] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\DatePickerRegionalAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [708] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [709] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [710] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [711] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
+            [message] => No short description for element '$js'
         )
 
     [712] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [713] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\DialogAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [714] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [715] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [716] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [717] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
+            [message] => No short description for element '$js'
         )
 
     [718] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [719] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\DraggableAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [720] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [721] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [722] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [723] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
+            [message] => No short description for element '$js'
         )
 
     [724] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [725] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\DroppableAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [726] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [727] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [728] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [729] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
+            [message] => No short description for element '$js'
         )
 
     [730] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [731] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\EffectAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [732] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [733] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [734] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [735] => Array
         (
             [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
-            [message] => No docblock for element '$js'
+            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
+            [message] => No short description for element '$js'
         )
 
     [736] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
-            [message] => No short description for element '$js'
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
+            [message] => No docblock for element '$depends'
         )
 
     [737] => Array
         (
             [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
-            [message] => No docblock for element '$depends'
+            [file] => E:\Github\yii2\extensions\jui\MenuAsset.php
+            [message] => No short description for element '$depends'
         )
 
     [738] => Array
         (
-            [line] => 22
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
-            [message] => No short description for element '$depends'
+            [message] => No docblock for element '$sourcePath'
         )
 
     [739] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
-            [message] => No docblock for element '$sourcePath'
+            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [740] => Array
         (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
-            [message] => No short description for element '$sourcePath'
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
+            [message] => No docblock for element '$js'
         )
 
     [741] => Array
         (
             [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [742] => Array
+        (
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [743] => Array
+        (
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\ProgressBarAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [744] => Array
+        (
+            [line] => 18
+            [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [745] => Array
+        (
+            [line] => 18
+            [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [746] => Array
+        (
+            [line] => 19
             [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [742] => Array
+    [747] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
             [message] => No short description for element '$js'
         )
 
-    [743] => Array
+    [748] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [744] => Array
+    [749] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\ResizableAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [745] => Array
+    [750] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SelectableAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [746] => Array
+    [751] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SelectableAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [747] => Array
+    [752] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\SelectableAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [748] => Array
+    [753] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\SelectableAsset.php
             [message] => No short description for element '$js'
         )
 
-    [749] => Array
+    [754] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\SelectableAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [750] => Array
+    [755] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\SelectableAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [751] => Array
+    [756] => Array
         (
             [line] => 32
             [file] => E:\Github\yii2\extensions\jui\Slider.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [752] => Array
+    [757] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SliderAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [753] => Array
+    [758] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SliderAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [754] => Array
+    [759] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\SliderAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [755] => Array
+    [760] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\SliderAsset.php
             [message] => No short description for element '$js'
         )
 
-    [756] => Array
+    [761] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\SliderAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [757] => Array
+    [762] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\SliderAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [758] => Array
+    [763] => Array
         (
             [line] => 55
             [file] => E:\Github\yii2\extensions\jui\SliderInput.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [759] => Array
+    [764] => Array
         (
             [line] => 75
             [file] => E:\Github\yii2\extensions\jui\Sortable.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [760] => Array
+    [765] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SortableAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [761] => Array
+    [766] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SortableAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [762] => Array
+    [767] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\SortableAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [763] => Array
+    [768] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\SortableAsset.php
             [message] => No short description for element '$js'
         )
 
-    [764] => Array
+    [769] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\SortableAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [765] => Array
+    [770] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\SortableAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [766] => Array
+    [771] => Array
         (
             [line] => 43
             [file] => E:\Github\yii2\extensions\jui\Spinner.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [767] => Array
+    [772] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
             [message] => No docblock for element '$sourcePath'
-        )
-
-    [768] => Array
-        (
-            [line] => 18
-            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
-            [message] => No short description for element '$sourcePath'
-        )
-
-    [769] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
-            [message] => No docblock for element '$js'
-        )
-
-    [770] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
-            [message] => No short description for element '$js'
-        )
-
-    [771] => Array
-        (
-            [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
-            [message] => No docblock for element '$depends'
-        )
-
-    [772] => Array
-        (
-            [line] => 22
-            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
-            [message] => No short description for element '$depends'
         )
 
     [773] => Array
         (
             [line] => 18
+            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [774] => Array
+        (
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [775] => Array
+        (
+            [line] => 19
+            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [776] => Array
+        (
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [777] => Array
+        (
+            [line] => 22
+            [file] => E:\Github\yii2\extensions\jui\SpinnerAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [778] => Array
+        (
+            [line] => 18
             [file] => E:\Github\yii2\extensions\jui\TabsAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [774] => Array
+    [779] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\TabsAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [775] => Array
+    [780] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\TabsAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [776] => Array
+    [781] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\TabsAsset.php
             [message] => No short description for element '$js'
         )
 
-    [777] => Array
+    [782] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\TabsAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [778] => Array
+    [783] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\TabsAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [779] => Array
+    [784] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\ThemeAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [780] => Array
+    [785] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\ThemeAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [781] => Array
+    [786] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\ThemeAsset.php
             [message] => No docblock for element '$css'
         )
 
-    [782] => Array
+    [787] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\ThemeAsset.php
             [message] => No short description for element '$css'
         )
 
-    [783] => Array
+    [788] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\TooltipAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [784] => Array
+    [789] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\extensions\jui\TooltipAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [785] => Array
+    [790] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\TooltipAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [786] => Array
+    [791] => Array
         (
             [line] => 19
             [file] => E:\Github\yii2\extensions\jui\TooltipAsset.php
             [message] => No short description for element '$js'
         )
 
-    [787] => Array
+    [792] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\TooltipAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [788] => Array
+    [793] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\jui\TooltipAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [789] => Array
+    [794] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\ActiveFixture.php
             [message] => broken link to \yii\mongodb\loadData() in yii\mongodb\ActiveFixture
         )
 
-    [790] => Array
+    [795] => Array
         (
             [line] => 80
             [file] => E:\Github\yii2\extensions\mongodb\ActiveFixture.php
             [message] => No docblock for element 'getCollection'
         )
 
-    [791] => Array
+    [796] => Array
         (
             [line] => 85
             [file] => E:\Github\yii2\extensions\mongodb\ActiveFixture.php
             [message] => No docblock for element 'getCollectionName'
         )
 
-    [792] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
-        )
-
-    [793] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
-        )
-
-    [794] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
-        )
-
-    [795] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
-        )
-
-    [796] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \MongoCode in yii\mongodb\Collection
-        )
-
     [797] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \MongoCode in yii\mongodb\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
     [798] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \MongoCode in yii\mongodb\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
     [799] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \MongoCode in yii\mongodb\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
     [800] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \MongoId in yii\mongodb\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
     [801] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \MongoId in yii\mongodb\Collection
+            [message] => broken link to \MongoCode in yii\mongodb\Collection
         )
 
     [802] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
+            [message] => broken link to \MongoCode in yii\mongodb\Collection
         )
 
     [803] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
+            [message] => broken link to \MongoCode in yii\mongodb\Collection
         )
 
     [804] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\Collection.php
-            [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
+            [message] => broken link to \MongoCode in yii\mongodb\Collection
         )
 
     [805] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
+            [message] => broken link to \MongoId in yii\mongodb\Collection
+        )
+
+    [806] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
+            [message] => broken link to \MongoId in yii\mongodb\Collection
+        )
+
+    [807] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
+            [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
+        )
+
+    [808] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
+            [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
+        )
+
+    [809] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\Collection.php
+            [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
+        )
+
+    [810] => Array
         (
             [line] => 91
             [file] => E:\Github\yii2\extensions\mongodb\Query.php
             [message] => Undefined parameter documented:  in from().
         )
 
-    [806] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
-        )
-
-    [807] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
-        )
-
-    [808] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
-        )
-
-    [809] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
-        )
-
-    [810] => Array
-        (
-            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\BaseActiveRecord::hasMany() in yii\mongodb\file\ActiveRecord
-        )
-
     [811] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\BaseActiveRecord::hasOne() in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
     [812] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
     [813] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
     [814] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
     [815] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\BaseActiveRecord::hasMany() in yii\mongodb\file\ActiveRecord
         )
 
     [816] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\newFileContent in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\BaseActiveRecord::hasOne() in yii\mongodb\file\ActiveRecord
         )
 
     [817] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
-            [message] => broken link to \yii\mongodb\file\newFileContent in yii\mongodb\file\ActiveRecord
+            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
     [818] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
-            [message] => broken link to \MongoId in yii\mongodb\file\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
     [819] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
-            [message] => broken link to \MongoId in yii\mongodb\file\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
     [820] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
-            [message] => broken link to \MongoId in yii\mongodb\file\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
     [821] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
-            [message] => broken link to \yii\mongo\Collection in yii\mongodb\file\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\file\newFileContent in yii\mongodb\file\ActiveRecord
         )
 
     [822] => Array
         (
-            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
-            [message] => broken link to \yii\mongodb\file\Connection::getFileCollection() in yii\mongodb\file\Collection
+            [file] => E:\Github\yii2\extensions\mongodb\file\ActiveRecord.php
+            [message] => broken link to \yii\mongodb\file\newFileContent in yii\mongodb\file\ActiveRecord
         )
 
     [823] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
-            [message] => broken link to \yii\mongodb\file\Database::getFileCollection() in yii\mongodb\file\Collection
+            [message] => broken link to \MongoId in yii\mongodb\file\Collection
         )
 
     [824] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
+            [message] => broken link to \MongoId in yii\mongodb\file\Collection
+        )
+
+    [825] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
+            [message] => broken link to \MongoId in yii\mongodb\file\Collection
+        )
+
+    [826] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
+            [message] => broken link to \yii\mongo\Collection in yii\mongodb\file\Collection
+        )
+
+    [827] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
+            [message] => broken link to \yii\mongodb\file\Connection::getFileCollection() in yii\mongodb\file\Collection
+        )
+
+    [828] => Array
+        (
+            [file] => E:\Github\yii2\extensions\mongodb\file\Collection.php
+            [message] => broken link to \yii\mongodb\file\Database::getFileCollection() in yii\mongodb\file\Collection
+        )
+
+    [829] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\file\Query.php
             [message] => broken link to \MongoGridFSFile in yii\mongodb\file\Query
         )
 
-    [825] => Array
+    [830] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => broken link to \yii\mongodb\gii\model\Validator in yii\mongodb\gii\model\Generator
         )
 
-    [826] => Array
+    [831] => Array
         (
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => broken link to \yii\mongodb\gii\model\Validator::builtInValidators in yii\mongodb\gii\model\Generator
         )
 
-    [827] => Array
+    [832] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$db'
         )
 
-    [828] => Array
+    [833] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$db'
         )
 
-    [829] => Array
+    [834] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$ns'
         )
 
-    [830] => Array
+    [835] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$ns'
         )
 
-    [831] => Array
+    [836] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$collectionName'
         )
 
-    [832] => Array
+    [837] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$collectionName'
         )
 
-    [833] => Array
+    [838] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$databaseName'
         )
 
-    [834] => Array
+    [839] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$databaseName'
         )
 
-    [835] => Array
+    [840] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$attributeList'
         )
 
-    [836] => Array
+    [841] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$attributeList'
         )
 
-    [837] => Array
+    [842] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [838] => Array
+    [843] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$modelClass'
         )
 
-    [839] => Array
+    [844] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$baseClass'
         )
 
-    [840] => Array
+    [845] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$baseClass'
         )
 
-    [841] => Array
+    [846] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [842] => Array
+    [847] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [843] => Array
+    [848] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [844] => Array
+    [849] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [845] => Array
+    [850] => Array
         (
             [line] => 133
             [file] => E:\Github\yii2\extensions\redis\Cache.php
             [message] => Method param $expire does not exist in parent method, @inheritdoc not possible in setValue in yii\redis\Cache.
         )
 
-    [846] => Array
+    [851] => Array
         (
             [line] => 147
             [file] => E:\Github\yii2\extensions\redis\Cache.php
             [message] => Method param $expire does not exist in parent method, @inheritdoc not possible in setValues in yii\redis\Cache.
         )
 
-    [847] => Array
+    [852] => Array
         (
             [line] => 182
             [file] => E:\Github\yii2\extensions\redis\Cache.php
             [message] => Method param $expire does not exist in parent method, @inheritdoc not possible in addValue in yii\redis\Cache.
         )
 
-    [848] => Array
+    [853] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\Connection.php
             [message] => broken link to \yii\redis\dsn in yii\redis\Connection
         )
 
-    [849] => Array
+    [854] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\Connection.php
             [message] => broken link to \yii\redis\dsn in yii\redis\Connection
         )
 
-    [850] => Array
+    [855] => Array
         (
             [line] => 372
             [file] => E:\Github\yii2\extensions\redis\LuaScriptBuilder.php
             [message] => No docblock for element 'buildCompositeInCondition'
         )
 
-    [851] => Array
+    [856] => Array
         (
             [file] => E:\Github\yii2\extensions\redis\Session.php
             [message] => broken link to \yii\redis\Application::id in yii\redis\Session
         )
 
-    [852] => Array
+    [857] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\smarty\Extension.php
             [message] => No short description for element '$viewRenderer'
         )
 
-    [853] => Array
+    [858] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\smarty\Extension.php
             [message] => No short description for element '$viewRenderer'
         )
 
-    [854] => Array
+    [859] => Array
         (
             [line] => 32
             [file] => E:\Github\yii2\extensions\smarty\Extension.php
             [message] => No short description for element '$smarty'
         )
 
-    [855] => Array
+    [860] => Array
         (
             [line] => 33
             [file] => E:\Github\yii2\extensions\smarty\Extension.php
             [message] => No short description for element '$smarty'
         )
 
-    [856] => Array
+    [861] => Array
         (
             [line] => 35
             [file] => E:\Github\yii2\extensions\smarty\ViewRenderer.php
             [message] => No short description for element '$smarty'
         )
 
-    [857] => Array
+    [862] => Array
         (
             [line] => 38
             [file] => E:\Github\yii2\extensions\smarty\ViewRenderer.php
             [message] => No docblock for element 'init'
         )
 
-    [858] => Array
-        (
-            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
-        )
-
-    [859] => Array
-        (
-            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
-        )
-
-    [860] => Array
-        (
-            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
-        )
-
-    [861] => Array
-        (
-            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
-        )
-
-    [862] => Array
-        (
-            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\CActiveRecord::update() in yii\sphinx\ActiveRecord
-        )
-
     [863] => Array
         (
             [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\changedAttributes in yii\sphinx\ActiveRecord
+            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
     [864] => Array
         (
             [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
-            [message] => broken link to \yii\sphinx\changedAttributes in yii\sphinx\ActiveRecord
+            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
     [865] => Array
         (
-            [file] => E:\Github\yii2\extensions\sphinx\Command.php
-            [message] => broken link to yii\sphinx\QueryBuilder::getColumnType() in yii\sphinx\Command
+            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
+            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
     [866] => Array
         (
-            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
-            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
+            [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
     [867] => Array
         (
-            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
-            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
+            [message] => broken link to \yii\sphinx\CActiveRecord::update() in yii\sphinx\ActiveRecord
         )
 
     [868] => Array
         (
-            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
-            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
+            [message] => broken link to \yii\sphinx\changedAttributes in yii\sphinx\ActiveRecord
         )
 
     [869] => Array
         (
-            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
-            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+            [file] => E:\Github\yii2\extensions\sphinx\ActiveRecord.php
+            [message] => broken link to \yii\sphinx\changedAttributes in yii\sphinx\ActiveRecord
         )
 
     [870] => Array
         (
-            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
-            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+            [file] => E:\Github\yii2\extensions\sphinx\Command.php
+            [message] => broken link to yii\sphinx\QueryBuilder::getColumnType() in yii\sphinx\Command
         )
 
     [871] => Array
@@ -5982,1043 +5987,1073 @@ Array
 
     [873] => Array
         (
+            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
+            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+        )
+
+    [874] => Array
+        (
+            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
+            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+        )
+
+    [875] => Array
+        (
+            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
+            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+        )
+
+    [876] => Array
+        (
+            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
+            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+        )
+
+    [877] => Array
+        (
+            [file] => E:\Github\yii2\extensions\sphinx\QueryBuilder.php
+            [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
+        )
+
+    [878] => Array
+        (
             [file] => E:\Github\yii2\extensions\sphinx\Schema.php
             [message] => broken link to \yii\sphinx\quoteSimpleTableName in yii\sphinx\Schema
         )
 
-    [874] => Array
+    [879] => Array
         (
             [file] => E:\Github\yii2\extensions\sphinx\Schema.php
             [message] => broken link to yii\sphinx\Connection::indexPrefix in yii\sphinx\Schema
         )
 
-    [875] => Array
+    [880] => Array
         (
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => broken link to \yii\sphinx\gii\model\Validator in yii\sphinx\gii\model\Generator
         )
 
-    [876] => Array
+    [881] => Array
         (
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => broken link to \yii\sphinx\gii\model\Validator::builtInValidators in yii\sphinx\gii\model\Generator
         )
 
-    [877] => Array
+    [882] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No docblock for element '$db'
         )
 
-    [878] => Array
+    [883] => Array
         (
             [line] => 25
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$db'
         )
 
-    [879] => Array
+    [884] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No docblock for element '$ns'
         )
 
-    [880] => Array
+    [885] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$ns'
         )
 
-    [881] => Array
+    [886] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No docblock for element '$indexName'
         )
 
-    [882] => Array
+    [887] => Array
         (
             [line] => 27
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$indexName'
         )
 
-    [883] => Array
+    [888] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [884] => Array
+    [889] => Array
         (
             [line] => 28
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$modelClass'
         )
 
-    [885] => Array
+    [890] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No docblock for element '$baseClass'
         )
 
-    [886] => Array
+    [891] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$baseClass'
         )
 
-    [887] => Array
+    [892] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No docblock for element '$useIndexPrefix'
         )
 
-    [888] => Array
+    [893] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$useIndexPrefix'
         )
 
-    [889] => Array
+    [894] => Array
         (
             [line] => 50
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => Method getNodeVisitors has no parent to inherit from in yii\twig\Extension.
         )
 
-    [890] => Array
+    [895] => Array
         (
             [line] => 60
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => Method getFunctions has no parent to inherit from in yii\twig\Extension.
         )
 
-    [891] => Array
+    [896] => Array
         (
             [line] => 87
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'registerAsset'
         )
 
-    [892] => Array
+    [897] => Array
         (
             [line] => 94
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'beginWidget'
         )
 
-    [893] => Array
+    [898] => Array
         (
             [line] => 103
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'endWidget'
         )
 
-    [894] => Array
+    [899] => Array
         (
             [line] => 116
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'widget'
         )
 
-    [895] => Array
+    [900] => Array
         (
             [line] => 123
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'viewHelper'
         )
 
-    [896] => Array
+    [901] => Array
         (
             [line] => 130
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'resolveAndCall'
         )
 
-    [897] => Array
+    [902] => Array
         (
             [line] => 135
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'call'
         )
 
-    [898] => Array
+    [903] => Array
         (
             [line] => 145
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'resolveClassName'
         )
 
-    [899] => Array
+    [904] => Array
         (
             [line] => 161
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'addUses'
         )
 
-    [900] => Array
+    [905] => Array
         (
             [line] => 181
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'path'
         )
 
-    [901] => Array
+    [906] => Array
         (
             [line] => 186
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'url'
         )
 
-    [902] => Array
+    [907] => Array
         (
             [line] => 191
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'setProperty'
         )
 
-    [903] => Array
+    [908] => Array
         (
             [line] => 199
             [file] => E:\Github\yii2\extensions\twig\Extension.php
             [message] => Method getName has no parent to inherit from in yii\twig\Extension.
         )
 
-    [904] => Array
+    [909] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\extensions\twig\Optimizer.php
             [message] => Method enterNode has no parent to inherit from in yii\twig\Optimizer.
         )
 
-    [905] => Array
+    [910] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\extensions\twig\Optimizer.php
             [message] => Method leaveNode has no parent to inherit from in yii\twig\Optimizer.
         )
 
-    [906] => Array
+    [911] => Array
         (
             [line] => 62
             [file] => E:\Github\yii2\extensions\twig\Optimizer.php
             [message] => Method getPriority has no parent to inherit from in yii\twig\Optimizer.
         )
 
-    [907] => Array
+    [912] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\extensions\twig\Template.php
             [message] => Method getAttribute has no parent to inherit from in yii\twig\Template.
         )
 
-    [908] => Array
+    [913] => Array
         (
             [line] => 73
             [file] => E:\Github\yii2\extensions\twig\ViewRenderer.php
             [message] => Property $lexerOptions conflicts with a defined setter setLexerOptions in yii\twig\ViewRenderer.
         )
 
-    [909] => Array
+    [914] => Array
         (
             [line] => 94
             [file] => E:\Github\yii2\extensions\twig\ViewRenderer.php
             [message] => No docblock for element 'init'
         )
 
-    [910] => Array
+    [915] => Array
         (
             [line] => 94
             [file] => E:\Github\yii2\extensions\twig\ViewRenderer.php
             [message] => No docblock for element 'init'
         )
 
-    [911] => Array
+    [916] => Array
         (
             [line] => 94
             [file] => E:\Github\yii2\extensions\twig\ViewRenderer.php
             [message] => No docblock for element 'init'
         )
 
-    [912] => Array
+    [917] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__construct'
         )
 
-    [913] => Array
+    [918] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__get'
         )
 
-    [914] => Array
+    [919] => Array
         (
             [line] => 33
             [file] => E:\Github\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__set'
         )
 
-    [915] => Array
+    [920] => Array
         (
             [line] => 41
             [file] => E:\Github\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__call'
         )
 
-    [916] => Array
+    [921] => Array
         (
             [file] => E:\Github\yii2\framework\base\Component.php
             [message] => broken link to Object in yii\base\Component
         )
 
-    [917] => Array
+    [922] => Array
         (
             [line] => 167
             [file] => E:\Github\yii2\framework\base\Security.php
             [message] => No docblock for element '__destruct'
         )
 
-    [918] => Array
+    [923] => Array
         (
             [line] => 167
             [file] => E:\Github\yii2\framework\base\Security.php
             [message] => No docblock for element '__destruct'
         )
 
-    [919] => Array
+    [924] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\captcha\CaptchaAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [920] => Array
+    [925] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\captcha\CaptchaAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [921] => Array
+    [926] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\captcha\CaptchaAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [922] => Array
+    [927] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\captcha\CaptchaAsset.php
             [message] => No short description for element '$js'
         )
 
-    [923] => Array
+    [928] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\captcha\CaptchaAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [924] => Array
+    [929] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\captcha\CaptchaAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [925] => Array
+    [930] => Array
         (
             [line] => 38
             [file] => E:\Github\yii2\framework\console\Markdown.php
             [message] => Method identifyLine has no parent to inherit from in yii\console\Markdown.
         )
 
-    [926] => Array
+    [931] => Array
         (
             [line] => 90
             [file] => E:\Github\yii2\framework\console\Markdown.php
             [message] => Method renderParagraph has no parent to inherit from in yii\console\Markdown.
         )
 
-    [927] => Array
+    [932] => Array
         (
             [line] => 98
             [file] => E:\Github\yii2\framework\console\Markdown.php
             [message] => Method inlineMarkers has no parent to inherit from in yii\console\Markdown.
         )
 
-    [928] => Array
+    [933] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query in yii\db\mssql\QueryBuilder
         )
 
-    [929] => Array
+    [934] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query in yii\db\mssql\QueryBuilder
         )
 
-    [930] => Array
+    [935] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query in yii\db\mssql\QueryBuilder
         )
 
-    [931] => Array
+    [936] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::READ_COMMITTED in yii\db\mssql\Schema
         )
 
-    [932] => Array
+    [937] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::READ_UNCOMMITTED in yii\db\mssql\Schema
         )
 
-    [933] => Array
+    [938] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::REPEATABLE_READ in yii\db\mssql\Schema
         )
 
-    [934] => Array
+    [939] => Array
         (
             [file] => E:\Github\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::SERIALIZABLE in yii\db\mssql\Schema
         )
 
-    [935] => Array
+    [940] => Array
         (
             [file] => E:\Github\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::READ_COMMITTED in yii\db\mysql\Schema
         )
 
-    [936] => Array
+    [941] => Array
         (
             [file] => E:\Github\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::READ_UNCOMMITTED in yii\db\mysql\Schema
         )
 
-    [937] => Array
+    [942] => Array
         (
             [file] => E:\Github\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::REPEATABLE_READ in yii\db\mysql\Schema
         )
 
-    [938] => Array
+    [943] => Array
         (
             [file] => E:\Github\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::SERIALIZABLE in yii\db\mysql\Schema
         )
 
-    [939] => Array
+    [944] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\QueryBuilder.php
             [message] => broken link to \yii\db\oci\Query in yii\db\oci\QueryBuilder
         )
 
-    [940] => Array
+    [945] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\QueryBuilder.php
             [message] => broken link to \yii\db\oci\Query in yii\db\oci\QueryBuilder
         )
 
-    [941] => Array
+    [946] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\QueryBuilder.php
             [message] => broken link to \yii\db\oci\Query in yii\db\oci\QueryBuilder
         )
 
-    [942] => Array
+    [947] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::READ_COMMITTED in yii\db\oci\Schema
         )
 
-    [943] => Array
+    [948] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::READ_UNCOMMITTED in yii\db\oci\Schema
         )
 
-    [944] => Array
+    [949] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::REPEATABLE_READ in yii\db\oci\Schema
         )
 
-    [945] => Array
+    [950] => Array
         (
             [file] => E:\Github\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::SERIALIZABLE in yii\db\oci\Schema
         )
 
-    [946] => Array
+    [951] => Array
         (
             [file] => E:\Github\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::READ_COMMITTED in yii\db\pgsql\Schema
         )
 
-    [947] => Array
+    [952] => Array
         (
             [file] => E:\Github\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::READ_UNCOMMITTED in yii\db\pgsql\Schema
         )
 
-    [948] => Array
+    [953] => Array
         (
             [file] => E:\Github\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::REPEATABLE_READ in yii\db\pgsql\Schema
         )
 
-    [949] => Array
+    [954] => Array
         (
             [file] => E:\Github\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::SERIALIZABLE in yii\db\pgsql\Schema
         )
 
-    [950] => Array
+    [955] => Array
         (
             [line] => 208
             [file] => E:\Github\yii2\framework\filters\Cors.php
             [message] => Undefined parameter documented:  in addCorsHeaders().
         )
 
-    [951] => Array
+    [956] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\grid\GridViewAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [952] => Array
+    [957] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\grid\GridViewAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [953] => Array
+    [958] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\grid\GridViewAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [954] => Array
+    [959] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\grid\GridViewAsset.php
             [message] => No short description for element '$js'
         )
 
-    [955] => Array
+    [960] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\grid\GridViewAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [956] => Array
+    [961] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\grid\GridViewAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [957] => Array
+    [962] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\framework\grid\SerialColumn.php
             [message] => No docblock for element '$header'
         )
 
-    [958] => Array
+    [963] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\framework\grid\SerialColumn.php
             [message] => No short description for element '$header'
         )
 
-    [959] => Array
+    [964] => Array
         (
             [file] => E:\Github\yii2\framework\helpers\BaseConsole.php
             [message] => broken link to \yii\helpers\FG_COLOR in yii\helpers\BaseConsole
         )
 
-    [960] => Array
+    [965] => Array
         (
             [line] => 501
             [file] => E:\Github\yii2\framework\helpers\BaseConsole.php
             [message] => No docblock for element 'renderColoredString'
         )
 
-    [961] => Array
+    [966] => Array
         (
             [line] => 566
             [file] => E:\Github\yii2\framework\helpers\BaseConsole.php
             [message] => No docblock for element 'escape'
         )
 
-    [962] => Array
+    [967] => Array
         (
             [file] => E:\Github\yii2\framework\helpers\BaseHtml.php
             [message] => broken link to \yii\helpers\activeCheckBoxList() in yii\helpers\BaseHtml
         )
 
-    [963] => Array
+    [968] => Array
         (
             [line] => 37
             [file] => E:\Github\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$basePath'
         )
 
-    [964] => Array
+    [969] => Array
         (
             [line] => 41
             [file] => E:\Github\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$catalog'
         )
 
-    [965] => Array
+    [970] => Array
         (
             [line] => 45
             [file] => E:\Github\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$useMoFile'
         )
 
-    [966] => Array
+    [971] => Array
         (
             [line] => 49
             [file] => E:\Github\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$useBigEndian'
         )
 
-    [967] => Array
+    [972] => Array
         (
             [line] => 29
             [file] => E:\Github\yii2\framework\rbac\Assignment.php
             [message] => No short description for element '$roleName'
         )
 
-    [968] => Array
+    [973] => Array
         (
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => broken link to \yii\rbac\authFile in yii\rbac\PhpManager
         )
 
-    [969] => Array
+    [974] => Array
         (
             [line] => 62
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$items'
         )
 
-    [970] => Array
+    [975] => Array
         (
             [line] => 65
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$items'
         )
 
-    [971] => Array
+    [976] => Array
         (
             [line] => 66
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$children'
         )
 
-    [972] => Array
+    [977] => Array
         (
             [line] => 69
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$children'
         )
 
-    [973] => Array
+    [978] => Array
         (
             [line] => 70
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$assignments'
         )
 
-    [974] => Array
+    [979] => Array
         (
             [line] => 73
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$assignments'
         )
 
-    [975] => Array
+    [980] => Array
         (
             [line] => 74
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$rules'
         )
 
-    [976] => Array
+    [981] => Array
         (
             [line] => 77
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$rules'
         )
 
-    [977] => Array
+    [982] => Array
         (
             [line] => 77
             [file] => E:\Github\yii2\framework\rbac\PhpManager.php
             [message] => Property $rules conflicts with a defined getter getRules in yii\rbac\PhpManager.
         )
 
-    [978] => Array
+    [983] => Array
         (
             [file] => E:\Github\yii2\framework\rest\ActiveController.php
             [message] => broken link to \yii\rest\VerbFilter::actions in yii\rest\ActiveController
         )
 
-    [979] => Array
+    [984] => Array
         (
             [file] => E:\Github\yii2\framework\rest\Controller.php
             [message] => broken link to \yii\rest\Behavior in yii\rest\Controller
         )
 
-    [980] => Array
+    [985] => Array
         (
             [file] => E:\Github\yii2\framework\validators\FileValidator.php
             [message] => broken link to \yii\validators\wrongType in yii\validators\FileValidator
         )
 
-    [981] => Array
+    [986] => Array
         (
             [line] => 208
             [file] => E:\Github\yii2\framework\validators\FileValidator.php
             [message] => Method param $file does not exist in parent method, @inheritdoc not possible in validateValue in yii\validators\FileValidator.
         )
 
-    [982] => Array
+    [987] => Array
         (
             [line] => 275
             [file] => E:\Github\yii2\framework\validators\FileValidator.php
             [message] => Method param $trim does not exist in parent method, @inheritdoc not possible in isEmpty in yii\validators\FileValidator.
         )
 
-    [983] => Array
-        (
-            [line] => 20
-            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
-            [message] => No docblock for element '$sourcePath'
-        )
-
-    [984] => Array
-        (
-            [line] => 20
-            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
-            [message] => No short description for element '$sourcePath'
-        )
-
-    [985] => Array
-        (
-            [line] => 21
-            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
-            [message] => No docblock for element '$js'
-        )
-
-    [986] => Array
-        (
-            [line] => 21
-            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
-            [message] => No short description for element '$js'
-        )
-
-    [987] => Array
-        (
-            [line] => 20
-            [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
-            [message] => No docblock for element '$sourcePath'
-        )
-
     [988] => Array
         (
             [line] => 20
-            [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
-            [message] => No short description for element '$sourcePath'
+            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
+            [message] => No docblock for element '$sourcePath'
         )
 
     [989] => Array
         (
-            [line] => 21
-            [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
-            [message] => No docblock for element '$js'
+            [line] => 20
+            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [990] => Array
         (
             [line] => 21
+            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [991] => Array
+        (
+            [line] => 21
+            [file] => E:\Github\yii2\framework\validators\PunycodeAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [992] => Array
+        (
+            [line] => 20
+            [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [993] => Array
+        (
+            [line] => 20
+            [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [994] => Array
+        (
+            [line] => 21
+            [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [995] => Array
+        (
+            [line] => 21
             [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
             [message] => No short description for element '$js'
         )
 
-    [991] => Array
+    [996] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [992] => Array
+    [997] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\validators\ValidationAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [993] => Array
+    [998] => Array
         (
             [line] => 61
             [file] => E:\Github\yii2\framework\web\AssetManager.php
             [message] => No short description for element '$basePath'
         )
 
-    [994] => Array
+    [999] => Array
         (
             [line] => 65
             [file] => E:\Github\yii2\framework\web\AssetManager.php
             [message] => No short description for element '$baseUrl'
         )
 
-    [995] => Array
-        (
-            [line] => 18
-            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
-            [message] => No docblock for element '$sourcePath'
-        )
-
-    [996] => Array
-        (
-            [line] => 18
-            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
-            [message] => No short description for element '$sourcePath'
-        )
-
-    [997] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
-            [message] => No docblock for element '$js'
-        )
-
-    [998] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
-            [message] => No short description for element '$js'
-        )
-
-    [999] => Array
-        (
-            [line] => 18
-            [file] => E:\Github\yii2\framework\web\YiiAsset.php
-            [message] => No docblock for element '$sourcePath'
-        )
-
     [1000] => Array
         (
             [line] => 18
-            [file] => E:\Github\yii2\framework\web\YiiAsset.php
-            [message] => No short description for element '$sourcePath'
+            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
+            [message] => No docblock for element '$sourcePath'
         )
 
     [1001] => Array
         (
-            [line] => 19
-            [file] => E:\Github\yii2\framework\web\YiiAsset.php
-            [message] => No docblock for element '$js'
+            [line] => 18
+            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
+            [message] => No short description for element '$sourcePath'
         )
 
     [1002] => Array
         (
             [line] => 19
+            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [1003] => Array
+        (
+            [line] => 19
+            [file] => E:\Github\yii2\framework\web\JqueryAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [1004] => Array
+        (
+            [line] => 18
+            [file] => E:\Github\yii2\framework\web\YiiAsset.php
+            [message] => No docblock for element '$sourcePath'
+        )
+
+    [1005] => Array
+        (
+            [line] => 18
+            [file] => E:\Github\yii2\framework\web\YiiAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [1006] => Array
+        (
+            [line] => 19
+            [file] => E:\Github\yii2\framework\web\YiiAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [1007] => Array
+        (
+            [line] => 19
             [file] => E:\Github\yii2\framework\web\YiiAsset.php
             [message] => No short description for element '$js'
         )
 
-    [1003] => Array
+    [1008] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\framework\web\YiiAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [1004] => Array
+    [1009] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\framework\web\YiiAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [1005] => Array
+    [1010] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\framework\widgets\ActiveForm.php
             [message] => No short description for element '$action'
         )
 
-    [1006] => Array
+    [1011] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\framework\widgets\ActiveForm.php
             [message] => No short description for element '$action'
         )
 
-    [1007] => Array
+    [1012] => Array
         (
             [line] => 30
             [file] => E:\Github\yii2\framework\widgets\ActiveForm.php
             [message] => No short description for element '$action'
         )
 
-    [1008] => Array
+    [1013] => Array
         (
             [line] => 31
             [file] => E:\Github\yii2\framework\widgets\ActiveForm.php
             [message] => No short description for element '$action'
         )
 
-    [1009] => Array
+    [1014] => Array
         (
             [line] => 18
             [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No docblock for element '$sourcePath'
-        )
-
-    [1010] => Array
-        (
-            [line] => 18
-            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No short description for element '$sourcePath'
-        )
-
-    [1011] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No docblock for element '$js'
-        )
-
-    [1012] => Array
-        (
-            [line] => 19
-            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No short description for element '$js'
-        )
-
-    [1013] => Array
-        (
-            [line] => 22
-            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No docblock for element '$depends'
-        )
-
-    [1014] => Array
-        (
-            [line] => 22
-            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
-            [message] => No short description for element '$depends'
         )
 
     [1015] => Array
         (
+            [line] => 18
+            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$sourcePath'
+        )
+
+    [1016] => Array
+        (
+            [line] => 19
+            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
+            [message] => No docblock for element '$js'
+        )
+
+    [1017] => Array
+        (
+            [line] => 19
+            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$js'
+        )
+
+    [1018] => Array
+        (
+            [line] => 22
+            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
+            [message] => No docblock for element '$depends'
+        )
+
+    [1019] => Array
+        (
+            [line] => 22
+            [file] => E:\Github\yii2\framework\widgets\ActiveFormAsset.php
+            [message] => No short description for element '$depends'
+        )
+
+    [1020] => Array
+        (
             [line] => 22
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [1016] => Array
+    [1021] => Array
         (
             [line] => 22
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [1017] => Array
+    [1022] => Array
         (
             [line] => 23
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [1018] => Array
+    [1023] => Array
         (
             [line] => 23
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No short description for element '$js'
         )
 
-    [1019] => Array
+    [1024] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [1020] => Array
+    [1025] => Array
         (
             [line] => 26
             [file] => E:\Github\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [1021] => Array
+    [1026] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [1022] => Array
+    [1027] => Array
         (
             [line] => 20
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [1023] => Array
+    [1028] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [1024] => Array
+    [1029] => Array
         (
             [line] => 21
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
             [message] => No short description for element '$js'
         )
 
-    [1025] => Array
+    [1030] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [1026] => Array
+    [1031] => Array
         (
             [line] => 24
             [file] => E:\Github\yii2\framework\widgets\PjaxAsset.php
