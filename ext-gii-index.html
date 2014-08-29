@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/3cee6123/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/bc007c57/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/3cee6123/js/bootstrap.js"></script>
+<script src="./assets/bc007c57/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -65,7 +65,28 @@
 <a class="list-group-item" href="#navigation-13958" data-toggle="collapse" data-parent="#navigation">yii\gii\generators\model <b class="caret"></b></a><div id="navigation-13958" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-gii-generators-model-generator.html">Generator</a></div>
 <a class="list-group-item" href="#navigation-13959" data-toggle="collapse" data-parent="#navigation">yii\gii\generators\module <b class="caret"></b></a><div id="navigation-13959" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-gii-generators-module-generator.html">Generator</a></div></div>    </div>
     <div class="col-md-9 api-content" role="main">
-        <h1>Class Reference</h1>
+        <h1>Gii Extension for Yii 2 <a href="#gii-extension-for-yii-2" name="gii-extension-for-yii-2" class="hashlink">&para;</a></h1>
+<p>This extension provides a Web-based code generator, called Gii, for Yii 2 applications.
+You can use Gii to quickly generate models, forms, modules, CRUD, etc.</p>
+<h2>Installation <a href="#installation" name="installation" class="hashlink">&para;</a></h2>
+<p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
+<p>Either run</p>
+<pre><code>php composer.phar require --prefer-dist yiisoft/yii2-gii "*"
+</code></pre>
+<p>or add</p>
+<pre><code>"yiisoft/yii2-gii": "*"
+</code></pre>
+<p>to the require section of your <code>composer.json</code> file.</p>
+<h2>Usage <a href="#usage" name="usage" class="hashlink">&para;</a></h2>
+<p>Once the extension is installed, simply modify your application configuration as follows:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'bootstrap'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'gii'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'modules'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'gii'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\gii\Module'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;...<br /></span><span style="color: #007700">];</span></code></pre>
+<p>You can then access Gii through the following URL:</p>
+<pre><code>http://localhost/path/to/index.php?r=gii
+</code></pre>
+<p>or if you have enabled pretty URLs, you may use the following URL:</p>
+<pre><code>http://localhost/path/to/index.php/gii
+</code></pre>
+<h1>Class Reference</h1>
 
 <table class="summaryTable docIndex table table-bordered table-striped table-hover">
     <colgroup>
@@ -168,7 +189,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 28 Aug 2014 09:45:17 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 29 Aug 2014 06:33:32 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
