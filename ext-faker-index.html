@@ -81,40 +81,42 @@ In this script, you can use the following two predefined variables:</p>
 <li><code>$index</code>: the current fixture index. For example if user need to generate 3 fixtures for user table, it will be 0..2.</li>
 </ul>
 <p>With such a template file, you can generate your fixtures using the commands like the following:</p>
-<pre><code># generate fixtures for the users table based on users fixture template
-php yii fixture/generate users
+<pre><code># generate fixtures from user fixture template
+php yii fixture/generate user
 
-# also a short version of this command ("generate" action is default)
-php yii fixture users
-
-# to generate several fixtures data files, use "," as a separator, for example:
-php yii fixture users,profile,some_other_name
+# to generate several fixture data files
+php yii fixture/generate user profile team
 </code></pre>
-<p>In the code above "users" is template name, after this command run, new file named same as template
-will be created under the fixtures path (by default <code>`</code>@tests/unit/fixtures<code>`</code>) folder.
-You can generate fixtures for all templates by specifying keyword <code>`</code>all<code>`</code>. You dont need to worry about if data file
-directory already created or not, if not - it will be created by these command.</p>
-<pre><code>php yii fixture/generate all
+<p>In the code above <code>users</code> is template name. After running this command, a new file with the same template name
+will be created under the fixture path in the <code>@tests/unit/fixtures</code>) folder.</p>
+<pre><code>php yii fixture/generate-all
 </code></pre>
 <p>This command will generate fixtures for all template files that are stored under template path and 
 store fixtures under fixtures path with file names same as templates names.
-You can specify how many fixtures per file you need by the second parameter. In the code below we generate
+You can specify how many fixtures per file you need by the <code>--count</code> option. In the code below we generate
 all fixtures and in each file there will be 3 rows (fixtures).</p>
-<pre><code>php yii fixture/generate all 3
+<pre><code>php yii fixture/generate-all --count=3
 </code></pre>
 <p>You can specify different options of this command:</p>
 <pre><code># generate fixtures in russian language
-php yii fixture/generate users 5 --language='ru_RU'
+php yii fixture/generate User --count=5 --language='ru_RU'
 
 # read templates from the other path
-php yii fixture/generate all --templatePath='@app/path/to/my/custom/templates'
+php yii fixture/generate-all --templatePath='@app/path/to/my/custom/templates'
 
 # generate fixtures into other directory.
-php yii fixture/generate all --fixtureDataPath='@tests/acceptance/fixtures/data'
+php yii fixture/generate-all --fixtureDataPath='@tests/acceptance/fixtures/data'
+</code></pre>
+<p>You can see all available templates by running command:</p>
+<pre><code># list all templates under default template path (i.e. '@tests/unit/templates/fixtures')
+php yii fixture/templates
+
+# list all templates under specified template path
+php yii fixture/templates --templatePath='@app/path/to/my/custom/templates'
 </code></pre>
 <p>You also can create your own data providers for custom tables fields, see <a href="https://github.com/fzaninotto/Faker">Faker</a> library guide for more info;
 After you created custom provider, for example:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">Book&nbsp;</span><span style="color: #007700">extends&nbsp;\</span><span style="color: #0000BB">Faker</span><span style="color: #007700">\</span><span style="color: #0000BB">Provider</span><span style="color: #007700">\</span><span style="color: #0000BB">Base<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">title</span><span style="color: #007700">(</span><span style="color: #0000BB">$nbWords&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">5</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sentence&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">generator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sentence</span><span style="color: #007700">(</span><span style="color: #0000BB">$nbWords</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">mb_substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$sentence</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">mb_strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$sentence</span><span style="color: #007700">)&nbsp;-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">ISBN</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">generator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">randomNumber</span><span style="color: #007700">(</span><span style="color: #0000BB">13</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;}</span></code></pre>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">class&nbsp;</span><span style="color: #0000BB">Book&nbsp;</span><span style="color: #007700">extends&nbsp;\</span><span style="color: #0000BB">Faker</span><span style="color: #007700">\</span><span style="color: #0000BB">Provider</span><span style="color: #007700">\</span><span style="color: #0000BB">Base<br /></span><span style="color: #007700">{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">title</span><span style="color: #007700">(</span><span style="color: #0000BB">$nbWords&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">5</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$sentence&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">generator</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">sentence</span><span style="color: #007700">(</span><span style="color: #0000BB">$nbWords</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">mb_substr</span><span style="color: #007700">(</span><span style="color: #0000BB">$sentence</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">mb_strlen</span><span style="color: #007700">(</span><span style="color: #0000BB">$sentence</span><span style="color: #007700">)&nbsp;-&nbsp;</span><span style="color: #0000BB">1</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;}</span></code></pre>
 <p>You can use it by adding it to the <code>$providers</code> property of the current command. In your console.php config:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #DD0000">'controllerMap'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'fixture'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\faker\FixtureController'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'providers'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'app\tests\unit\faker\providers\Book'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]</span></code></pre>
 <h1>Class Reference</h1>
@@ -172,7 +174,7 @@ After you created custom provider, for example:</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 30 Aug 2014 20:14:51 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 01 Sep 2014 16:59:22 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
