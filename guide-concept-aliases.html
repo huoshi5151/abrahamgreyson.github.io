@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/2c325315/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/12ac5c2d/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/2c325315/js/bootstrap.js"></script>
+<script src="./assets/12ac5c2d/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -160,7 +160,7 @@
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">//&nbsp;文件路径的别名<br /></span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">setAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'@foo'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'/path/to/foo'</span><span style="color: #007700">);<br /><br /></span><span style="color: #FF8000">//&nbsp;URL&nbsp;的别名<br /></span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">setAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'@bar'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'http://www.example.com'</span><span style="color: #007700">);</span></code></pre>
 <blockquote><p>注意：别名所指向的文件路径或 URL 不一定是真实存在的文件或资源。</p>
 </blockquote>
-<p>可以通过在一个别名后面加斜杠 <code>/</code> 和一至多个路径分段生成新别名（无需调用 <a href="./yii-baseyii.html#setAlias()-detail">Yii::setAlias()</a>）。我们把通过 <a href="./yii-baseyii.html#setAlias()-detail">Yii::setAlias()</a> 定义的别名称为<strong>根别名</strong>，而用他们衍生出去的别名成为<strong>衍生别名</strong>。例如，<code>@foo</code> 就是跟别名，而 <code>@foo/bar/file.php</code> 是一个衍生别名。</p>
+<p>可以通过在一个别名后面加斜杠 <code>/</code> 和一至多个路径分段生成新别名（无需调用 <a href="./yii-baseyii.html#setAlias()-detail">Yii::setAlias()</a>）。我们把通过 <a href="./yii-baseyii.html#setAlias()-detail">Yii::setAlias()</a> 定义的别名称为<strong>根别名</strong>，而用他们衍生出去的别名成为<strong>衍生别名</strong>。例如，<code>@foo</code> 就是根别名，而 <code>@foo/bar/file.php</code> 是一个衍生别名。</p>
 <p>你还可以用别名去定义新别名（根别名与衍生别名均可）：</p>
 <pre><code class="language-php"><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">setAlias</span><span style="color: #007700">(</span><span style="color: #DD0000">'@foobar'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'@foo/bar'</span><span style="color: #007700">);</span></code></pre>
 <p>根别名通常在<a href="guide-runtime-bootstrapping.html">引导</a>阶段定义。比如你可以在<a href="guide-structure-entry-scripts.html">入口脚本</a>里调用 <a href="./yii-baseyii.html#setAlias()-detail">Yii::setAlias()</a>。为了方便起见，<a href="guide-structure-applications.html">应用</a>提供了一个名为 <code>aliases</code> 的可写属性，你可以在应用<a href="guide-concept-configurations.html">配置</a>中设置它，就像这样：</p>
@@ -200,7 +200,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 13 Sep 2014 20:39:06 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 14 Sep 2014 18:34:34 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
