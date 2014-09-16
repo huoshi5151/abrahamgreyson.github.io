@@ -4,10 +4,10 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/12ac5c2d/css/bootstrap.css" rel="stylesheet">
+        <link href="./assets/7ad99c2d/css/bootstrap.css" rel="stylesheet">
 <link href="./assets/d607947b/style.css" rel="stylesheet">
 <script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/12ac5c2d/js/bootstrap.js"></script>
+<script src="./assets/7ad99c2d/js/bootstrap.js"></script>
 <script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
@@ -85,6 +85,20 @@ You can use Gii to quickly generate models, forms, modules, CRUD, etc.</p>
 </code></pre>
 <p>or if you have enabled pretty URLs, you may use the following URL:</p>
 <pre><code>http://localhost/path/to/index.php/gii
+</code></pre>
+<p>Using the same configuration for your console application, you will also be able to access Gii via
+command line as follows,</p>
+<pre><code># change path to your application's base path
+cd path/to/AppBasePath
+
+# show help information about Gii
+yii help gii
+
+# show help information about the model generator in Gii
+yii help gii/model
+
+# generate City model from city table
+yii gii/model --tableName=city --modelClass=City
 </code></pre>
 <h1>Class Reference</h1>
 
@@ -189,7 +203,7 @@ You can use Gii to quickly generate models, forms, modules, CRUD, etc.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 15 Sep 2014 19:19:57 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 16 Sep 2014 19:17:22 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
