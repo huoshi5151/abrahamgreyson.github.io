@@ -90,18 +90,14 @@
 <a class="list-group-item" href="./yii-jui-widget.html">Widget</a></div></div>    </div>
     <div class="col-md-9 api-content" role="main">
         <h1>JUI Extension for Yii 2 <a href="#jui-extension-for-yii-2" name="jui-extension-for-yii-2" class="hashlink">&para;</a></h1>
-<p>This is the JQuery UI extension for Yii 2. It encapsulates JQuery UI widgets as Yii widgets,
+<p>This is the JQuery UI extension for Yii 2. It encapsulates <a href="http://jqueryui.com/">JQuery UI widgets</a> as Yii widgets,
 and makes using JQuery UI widgets in Yii applications extremely easy. For example, the following
-single line of code in a view file would render a JQuery UI DatePicker widget:</p>
+single line of code in a view file would render a <a href="http://api.jqueryui.com/datepicker/">JQuery UI DatePicker</a> widget:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;?=&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">jui</span><span style="color: #007700">\</span><span style="color: #0000BB">DatePicker</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([</span><span style="color: #DD0000">'name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'attributeName'</span><span style="color: #007700">])&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>Configuring the Jquery UI options should be done using the clientOptions attribute:
-<code>`</code>php
-&lt;?= yii\jui\DatePicker::widget(['name' =&gt; 'attributeName', 'clientOptions' =&gt; ['dateFormat' =&gt; 'yy-mm-dd']]) ?&gt;
-<code>`</code></p>
-<p>If you want to use the JUI widget in an ActiveRecord form, it can be done like this:
-<code>`</code>php
-&lt;?= $form-&gt;field($model,'attributeName')-&gt;widget(DatePicker::className(),['clientOptions' =&gt; ['dateFormat' =&gt; 'yy-mm-dd']]) ?&gt;
-<code>`</code></p>
+<p>Configuring the Jquery UI options should be done using the clientOptions attribute:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;?=&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">jui</span><span style="color: #007700">\</span><span style="color: #0000BB">DatePicker</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([</span><span style="color: #DD0000">'name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'attributeName'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'clientOptions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'defaultDate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'2014-01-01'</span><span style="color: #007700">]])&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
+<p>If you want to use the JUI widget in an ActiveForm, it can be done like this:</p>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;?=&nbsp;</span><span style="color: #0000BB">$form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">field</span><span style="color: #007700">(</span><span style="color: #0000BB">$model</span><span style="color: #007700">,</span><span style="color: #DD0000">'attributeName'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">widget</span><span style="color: #007700">(</span><span style="color: #0000BB">DatePicker</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),[</span><span style="color: #DD0000">'clientOptions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'defaultDate'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'2014-01-01'</span><span style="color: #007700">]])&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
 <h2>Installation <a href="#installation" name="installation" class="hashlink">&para;</a></h2>
 <p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
 <p>Either run</p>
@@ -310,7 +306,7 @@ single line of code in a view file would render a JQuery UI DatePicker widget:</
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 23 Sep 2014 18:59:25 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 24 Sep 2014 19:23:02 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
