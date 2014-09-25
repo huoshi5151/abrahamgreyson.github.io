@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/5f3a9aeb/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/d607947b/style.css" rel="stylesheet">
-<script src="./assets/ff75f2d2/jquery.js"></script>
-<script src="./assets/5f3a9aeb/js/bootstrap.js"></script>
-<script src="./assets/ee9fb928/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/b73ac8f6/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/91e115a8/style.css" rel="stylesheet">
+<script src="./assets/a77c877b/jquery.js"></script>
+<script src="./assets/b73ac8f6/js/bootstrap.js"></script>
+<script src="./assets/f11d4626/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
 <div class="wrap">
-    <nav id="w1472" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button class="navbar-toggle" data-toggle="collapse" data-target="#w1472-collapse"><span class="sr-only">Toggle navigation</span>
+    <nav id="w1356" class="navbar-inverse navbar-fixed-top navbar" role="navigation"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w1356-collapse"><span class="sr-only">Toggle navigation</span>
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
-<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii 2.0 API 文档</a></div><div id="w1472-collapse" class="collapse navbar-collapse"><ul id="w1473" class="navbar-nav nav"><li><a href="./index.html">类参考</a></li>
-<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">扩展 <b class="caret"></b></a><ul id="w1474" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">Yii Framework 2.0 API Documentation</a></div><div id="w1356-collapse" class="collapse navbar-collapse"><ul id="w1357" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <b class="caret"></b></a><ul id="w1358" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
 <li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
 <li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
 <li><a href="./ext-codeception-index.html" tabindex="-1">codeception</a></li>
@@ -34,10 +34,7 @@
 <li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
 <li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
 <li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
-<li><a href="./guide-README.html">权威指南</a></li>
-<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Github <b class="caret"></b></a><ul id="w1475" class="dropdown-menu"><li><a href="https://github.com/yiisoft/yii2" tabindex="-1">Yii 2.0</a></li>
-<li><a href="https://github.com/yii2-chinesization/yii2-zh-cn" tabindex="-1">Yii 2.0 中文化项目</a></li>
-<li><a href="https://github.com/AbrahamGreyson/abrahamgreyson.github.io" tabindex="-1">docwithcn.com</a></li></ul></li></ul><div class="navbar-form navbar-left" role="search">
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
   <div class="form-group">
     <input id="searchbox" type="text" class="form-control" placeholder="Search">
   </div>
@@ -51,7 +48,7 @@
     
 <div class="row">
     <div class="col-md-3">
-                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-1471" data-toggle="collapse" data-parent="#navigation">yii\elasticsearch <b class="caret"></b></a><div id="navigation-1471" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./yii-elasticsearch-activequery.html">ActiveQuery</a>
+                <div id="navigation" class="list-group"><a class="list-group-item active" href="#navigation-1355" data-toggle="collapse" data-parent="#navigation">yii\elasticsearch <b class="caret"></b></a><div id="navigation-1355" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./yii-elasticsearch-activequery.html">ActiveQuery</a>
 <a class="list-group-item" href="./yii-elasticsearch-activerecord.html">ActiveRecord</a>
 <a class="list-group-item" href="./yii-elasticsearch-command.html">Command</a>
 <a class="list-group-item" href="./yii-elasticsearch-connection.html">Connection</a>
@@ -150,7 +147,13 @@ the relations records can also not be more than 10.</p>
 <tr>
   <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
 </tr>
-        <tr class="inherited" id="$asArray">
+        <tr class="inherited" id="$aggregations">
+        <td><a href="yii-elasticsearch-query.html#$aggregations-detail">$aggregations</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>List of aggregations to add to this query.</td>
+        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
+    </tr>
+            <tr class="inherited" id="$asArray">
         <td><a href="yii-db-activequerytrait.html#$asArray-detail">$asArray</a></td>
         <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
         <td>Whether to return each record as an array.</td>
@@ -161,12 +164,6 @@ the relations records can also not be more than 10.</p>
         <td><a href="yii-base-behavior.html">yii\base\Behavior</a>[]</td>
         <td>List of behaviors attached to this component</td>
         <td><a href="yii-elasticsearch-activequery.html">yii\elasticsearch\ActiveQuery</a></td>
-    </tr>
-            <tr class="inherited" id="$facets">
-        <td><a href="yii-elasticsearch-query.html#$facets-detail">$facets</a></td>
-        <td></td>
-        <td></td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
     </tr>
             <tr class="inherited" id="$fields">
         <td><a href="yii-elasticsearch-query.html#$fields-detail">$fields</a></td>
@@ -258,6 +255,18 @@ the relations records can also not be more than 10.</p>
         <td>This option controls how the <code>_source</code> field is returned from the documents.</td>
         <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
     </tr>
+            <tr class="inherited" id="$stats">
+        <td><a href="yii-elasticsearch-query.html#$stats-detail">$stats</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>The 'stats' part of the query.</td>
+        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
+    </tr>
+            <tr class="inherited" id="$suggest">
+        <td><a href="yii-elasticsearch-query.html#$suggest-detail">$suggest</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>List of suggesters to add to this query.</td>
+        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
+    </tr>
             <tr class="inherited" id="$timeout">
         <td><a href="yii-elasticsearch-query.html#$timeout-detail">$timeout</a></td>
         <td><a href="http://www.php.net/language.types.integer">integer</a></td>
@@ -343,30 +352,14 @@ and bail with the hits accumulated up to that point when expired.</td>
         <td>Sets a component property to be null.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
-            <tr class="inherited" id="addDateHistogramFacet()">
-        <td><a href="yii-elasticsearch-query.html#addDateHistogramFacet()-detail">addDateHistogramFacet()</a></td>
-        <td>A specific histogram facet that can work with date field types enhancing it over the regular histogram facet.</td>
+            <tr class="inherited" id="addAgg()">
+        <td><a href="yii-elasticsearch-query.html#addAgg()-detail">addAgg()</a></td>
+        <td>Adds an aggregation to this query.</td>
         <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
     </tr>
-            <tr class="inherited" id="addFacet()">
-        <td><a href="yii-elasticsearch-query.html#addFacet()-detail">addFacet()</a></td>
-        <td>Adds a facet search to this query.</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addFilterFacet()">
-        <td><a href="yii-elasticsearch-query.html#addFilterFacet()-detail">addFilterFacet()</a></td>
-        <td>A filter facet (not to be confused with a facet filter) allows you to return a count of the hits matching the filter.</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addGeoDistanceFacet()">
-        <td><a href="yii-elasticsearch-query.html#addGeoDistanceFacet()-detail">addGeoDistanceFacet()</a></td>
-        <td>The <code>geo_distance</code> facet is a facet providing information for ranges of distances from a provided <code>geo_point</code>
-including count of the number of hits that fall within each range, and aggregation information (like <code>total</code>).</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addHistogramFacet()">
-        <td><a href="yii-elasticsearch-query.html#addHistogramFacet()-detail">addHistogramFacet()</a></td>
-        <td>The histogram facet works with numeric data by building a histogram across intervals of the field values.</td>
+            <tr class="inherited" id="addAggregation()">
+        <td><a href="yii-elasticsearch-query.html#addAggregation()-detail">addAggregation()</a></td>
+        <td>Adds an aggregation to this query.</td>
         <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
     </tr>
             <tr class="inherited" id="addOrderBy()">
@@ -374,32 +367,9 @@ including count of the number of hits that fall within each range, and aggregati
         <td>Adds additional ORDER BY columns to the query.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
-            <tr class="inherited" id="addQueryFacet()">
-        <td><a href="yii-elasticsearch-query.html#addQueryFacet()-detail">addQueryFacet()</a></td>
-        <td>A facet query allows to return a count of the hits matching the facet query.</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addRangeFacet()">
-        <td><a href="yii-elasticsearch-query.html#addRangeFacet()-detail">addRangeFacet()</a></td>
-        <td>Range facet allows to specify a set of ranges and get both the number of docs (count) that fall
-within each range, and aggregated data either based on the field, or using another field.</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addStatisticalFacet()">
-        <td><a href="yii-elasticsearch-query.html#addStatisticalFacet()-detail">addStatisticalFacet()</a></td>
-        <td>Statistical facet allows to compute statistical data on a numeric fields. The statistical data include count,
-total, sum of squares, mean (average), minimum, maximum, variance, and standard deviation.</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addTermFacet()">
-        <td><a href="yii-elasticsearch-query.html#addTermFacet()-detail">addTermFacet()</a></td>
-        <td>The <code>terms facet</code> allow to specify field facets that return the N most frequent terms.</td>
-        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
-    </tr>
-            <tr class="inherited" id="addTermsStatsFacet()">
-        <td><a href="yii-elasticsearch-query.html#addTermsStatsFacet()-detail">addTermsStatsFacet()</a></td>
-        <td>The <code>terms_stats</code> facet combines both the terms and statistical allowing to compute stats computed on a field,
-per term value driven by another field.</td>
+            <tr class="inherited" id="addSuggester()">
+        <td><a href="yii-elasticsearch-query.html#addSuggester()-detail">addSuggester()</a></td>
+        <td>Adds a suggester to this query.</td>
         <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
     </tr>
             <tr id="all()">
@@ -632,6 +602,11 @@ per term value driven by another field.</td>
         <td>Sets the source filtering, specifying how the <code>_source</code> field of the document should be returned.</td>
         <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
     </tr>
+            <tr class="inherited" id="stats()">
+        <td><a href="yii-elasticsearch-query.html#stats()-detail">stats()</a></td>
+        <td>Adds a 'stats' part to the query.</td>
+        <td><a href="yii-elasticsearch-query.html">yii\elasticsearch\Query</a></td>
+    </tr>
             <tr class="inherited" id="timeout()">
         <td><a href="yii-elasticsearch-query.html#timeout()-detail">timeout()</a></td>
         <td>Sets the search timeout.</td>
@@ -674,7 +649,7 @@ per term value driven by another field.</td>
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                                                                                                                                                                <tr class="inherited" id="filterCondition()">
+                                                                                                                                    <tr class="inherited" id="filterCondition()">
         <td><a href="yii-db-querytrait.html#filterCondition()-detail">filterCondition()</a></td>
         <td>Removes <a href="yii-db-querytrait.html#isEmpty()-detail">empty operands</a> from the given query condition.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
@@ -689,7 +664,7 @@ per term value driven by another field.</td>
         <td>Normalizes format of ORDER BY data</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
-                                                                        </table>
+                                                                            </table>
 </div>
 
 <a name="events"></a>
@@ -1069,7 +1044,7 @@ If this parameter is not given, the <code>elasticsearch</code> application compo
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 24 Sep 2014 19:21:44 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 25 Sep 2014 22:04:18 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
@@ -1081,9 +1056,6 @@ element.src = "./jssearch.index.js";
 document.body.appendChild(element);
 
 var searchBox = $('#searchbox');
-
-// focus the search field
-searchBox.focus();
 
 // search when typing in search field
 searchBox.on("keyup", function(event) {
