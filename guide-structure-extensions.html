@@ -284,10 +284,27 @@ be recognized as a Yii extension when being installed.</p>
 will be automatically updated to include the information about the new extension. From this file, Yii applications
 can know which extensions are installed (the information can be accessed via <a href="./yii-base-application.html#$extensions-detail">yii\base\Application::$extensions</a>.</p>
 <h4>Dependencies <a name="dependencies"></a> <a href="#dependencies" name="dependencies" class="hashlink">&para;</a></h4>
-<p>Your extension depends on Yii (of course). So you should list it in the <code>require</code> entry in <code>composer.json</code>.
+<p>Your extension depends on Yii (of course). So you should list it (<code>yiisoft/yii2</code>) in the <code>require</code> entry in <code>composer.json</code>.
 If your extension also depends on other extensions or third-party libraries, you should list them as well.
-Make sure you also list appropriate version constraints (e.g. <code>1.*</code>, <code>@stable</code>) for each dependency. Use stable
+Make sure you also list appropriate version constraints (e.g. <code>1.*</code>, <code>@stable</code>) for each dependent package. Use stable
 dependencies when your extension is released in a stable version.</p>
+<p>Most JavaScript/CSS packages are managed using <a href="http://bower.io/">Bower</a> and/or <a href="https://www.npmjs.org/">NPM</a>,
+instead of Composer. Yii uses the <a href="https://github.com/francoispluchino/composer-asset-plugin">Composer asset plugin</a>
+to enable managing these kinds of packages through Composer. If your extension depends on a Bower package, you can
+simply list the dependency in <code>composer.json</code> like the following:</p>
+<pre><code class="language-json">{
+    // package dependencies
+    "require": {
+        "bower-asset/jquery": "&gt;=1.11.*"
+    }
+}
+</code></pre>
+<p>The above code states that the extension depends on the <code>jquery</code> Bower package. In general, you can use
+<code>bower-asset/PackageName</code> to refer to a Bower package in <code>composer.json</code>, and use <code>npm-asset/PackageName</code>
+to refer to a NPM package. When Composer installs a Bower or NPM package, by default the package content will be
+installed under the <code>@vendor/bower/PackageName</code> and <code>@vendor/npm/Packages</code> directories, respectively.
+These two directories can also be referred to using the shorter aliases <code>@bower/PackageName</code> and <code>@npm/PackageName</code>.</p>
+<p>For more details about asset management, please refer to the <a href="guide-structure-assets.html#bower-npm-assets">Assets</a> section.</p>
 <h4>Class Autoloading <a name="class-autoloading"></a> <a href="#class-autoloading" name="class-autoloading" class="hashlink">&para;</a></h4>
 <p>In order for your classes to be autoloaded by the Yii class autoloader or the Composer class autoloader,
 you should specify the <code>autoload</code> entry in the <code>composer.json</code> file, like shown below:</p>
@@ -357,8 +374,9 @@ two choices to make the asset files directly accessible via Web:</p>
 <li>declare an <a href="guide-structure-assets.html">asset bundle</a> and rely on the asset publishing mechanism to automatically
 copy the files listed in the asset bundle to a Web-accessible folder.</li>
 </ul>
-<p>We recommend you use the second approach so that your extension can be more easily used by other people.</p>
-<h3>Internationalization and Localization <a name="i18n-l10n"></a> <a href="#internationalization-and-localization" name="internationalization-and-localization" class="hashlink">&para;</a></h3>
+<p>We recommend you use the second approach so that your extension can be more easily used by other people.
+Please refer to the [Assets] section for more details about how to work with assets in general.</p>
+<h4>Internationalization and Localization <a name="i18n-l10n"></a> <a href="#internationalization-and-localization" name="internationalization-and-localization" class="hashlink">&para;</a></h4>
 <p>Your extension may be used by applications supporting different languages! Therefore, if your extension displays
 content to end users, you should try to <a href="guide-tutorial-i18n.html">internationalize and localize</a> it. In particular,</p>
 <ul>
@@ -462,7 +480,7 @@ provides a template engine based on <a href="http://twig.sensiolabs.org/">Twig</
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 11:18:41 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 18:36:26 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

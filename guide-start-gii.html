@@ -172,6 +172,15 @@
 <p>代码设置应用处于开发模式下，按照上面的配置会打开 Gii 模块。你可以直接通过 URL 访问 Gii：</p>
 <pre><code>http://hostname/index.php?r=gii
 </code></pre>
+<blockquote><p>提示：如果不是通过localhost而是通过IP地址访问Gii，出于安全考虑系统默认禁止，按照如下在配置文件的gii部分添加允许IP地址访问。
+<code>`</code>php
+'gii' =&gt; [</p>
+<pre><code>'class' =&gt; 'yii\gii\Module',
+'allowedIPs' =&gt; ['127.0.0.1', '::1', '192.168.0.*', '192.168.178.20'] // 根据你自己的需要调整
+</code></pre>
+<p>],
+<code>`</code></p>
+</blockquote>
 <p><img src="images/start-gii.png" alt="Gii" /></p>
 <h2>生成活动记录类 <a name="generating-ar"></a> <a href="#sheng-cheng-huo-dong-ji-lu-lei" name="sheng-cheng-huo-dong-ji-lu-lei" class="hashlink">&para;</a></h2>
 <p>选择 “Model Generator” （点击 Gii 首页的链接）去生成活动记录类。并像这样填写表单：</p>
@@ -194,7 +203,7 @@
 </ul>
 <p><img src="images/start-gii-crud.png" alt="CRUD 生成器" /></p>
 <p>然后点击 “Preview” 按钮。你会看到下述将要生成的文件列表。</p>
-<p>[[NEED THE IMAGE HERE / 等待官方补充图片]]</p>
+<p><img src="images/start-gii-crud-preview.png" alt="CRUD 生成器预览" /></p>
 <p>如果你之前创建过 <code>controllers/CountryController.php</code> 和 <code>views/country/index.php</code> 文件（在指南的使用数据库小节），选中 “overwrite” 下的复选框覆写它们（之前的文件没能全部支持 CRUD）。</p>
 <h2>尝试下<a name="trying-it-out"></a> <a href="#chang-shi-xia" name="chang-shi-xia" class="hashlink">&para;</a></h2>
 <p>用浏览器访问下面的 URL 查看生成代码的运行：</p>
@@ -222,7 +231,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 11:18:41 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 18:36:25 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

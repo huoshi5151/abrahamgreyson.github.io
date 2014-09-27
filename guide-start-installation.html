@@ -166,9 +166,11 @@ mv composer.phar /usr/local/bin/composer
 <p>在 Windows 中，你需要下载并运行 <a href="https://getcomposer.org/Composer-Setup.exe">Composer-Setup.exe</a>。</p>
 <p>如果遇到任何问题或者想更深入地学习 Composer，请参考 <a href="https://getcomposer.org/doc/">Composer 文档（英文）</a>，<a href="https://github.com/5-say/composer-doc-cn">Composer 中文</a>。</p>
 <p>Composer 安装后，切换到一个可通过 Web 访问的目录，执行如下命令即可安装 Yii ：</p>
-<pre><code>composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+<pre><code>composer global require "fxp/composer-asset-plugin:1.0.0-beta1"
+composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 </code></pre>
-<p>如上命令会将 Yii 安装在名为 <code>basic</code> 的目录中。</p>
+<p>第一条命令安装 <a href="https://github.com/francoispluchino/composer-asset-plugin/">composer asset plugin</a>，它是通过 Composer 管理 bower 和 npm 包所必须的，此命令全局应用，只需执行一次即可。
+第二条命令会将 Yii 安装在名为 <code>basic</code> 的目录中。</p>
 <blockquote><p>技巧：如果你想安装 Yii 的最新开发版本，可以使用如下命令，它添加了一个 <a href="https://getcomposer.org/doc/04-schema.md#minimum-stability">stability 选项</a>（<a href="https://github.com/5-say/composer-doc-cn/blob/master/cn-introduction/04-schema.md#minimum-stability">中文版</a>）:</p>
 <pre><code>composer create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
 </code></pre>
@@ -208,7 +210,7 @@ php requirements.php
 <p>你需要配置好 PHP 安装环境，使其符合 Yii 的最小需求。主要是需要 PHP 5.4 以上版本。如果应用需要用到数据库，那还要安装 <a href="http://www.php.net/manual/zh/pdo.installation.php">PDO PHP 扩展</a> 和相应的数据库驱动（例如访问 MySQL 数据库所需的 <code>pdo_mysql</code>）。</p>
 <h2>配置 Web 服务器 <a name="configuring-web-servers"></a> <a href="#pei-zhi-web-fu-wu-qi" name="pei-zhi-web-fu-wu-qi" class="hashlink">&para;</a></h2>
 <p>&gt;补充：如果你现在只是要试用 Yii 而不是将其部署到生产环境中，本小节可以跳过。</p>
-<p>通过上述方法安装的应用程序在 Windows，Max OS X，Linux 中的 <a href="http://httpd.apache.org/">Apache HTTP 服务器</a>或 <a href="http://nginx.org/">Nginx HTTP 服务器</a> 上都可以直接运行。</p>
+<p>通过上述方法安装的应用程序在 Windows，Max OS X，Linux 中的 <a href="http://httpd.apache.org/">Apache HTTP 服务器</a>或 <a href="http://nginx.org/">Nginx HTTP 服务器</a> 且PHP版本为5.4或更高都可以直接运行。Yii 2.0 也兼容 Facebook 公司的 <a href="http://hhvm.com/">HHVM</a>，由于 HHVM 和标准 PHP 在边界案例上有些地方略有不同，在使用 HHVM 时需稍作处理。</p>
 <p>在生产环境的服务器上，你可能会想配置服务器让应用程序可以通过 URL <code>http://www.example.com/index.php</code> 访问而不是 <code>http://www.example.com/basic/web/index.php</code>。这种配置需要将 Web 服务器的文档根目录指向 <code>basic/web</code> 目录。可能你还会想隐藏掉 URL 中的 <code>index.php</code>，具体细节在 <a href="guide-runtime-url-handling.html">URL 解析和生成</a> 一章中有介绍，你将学到如何配置 Apache 或 Nginx 服务器实现这些目标。</p>
 <p>&gt;补充：将 <code>basic/web</code> 设置为文档根目录，可以防止终端用户访问 <code>basic/web</code> 相邻目录中的私有应用代码和敏感数据文件。禁止对其他目录的访问是一个不错的安全改进。</p>
 <p>&gt;补充：如果你的应用程序将来要运行在共享虚拟主机环境中，没有修改其 Web 服务器配置的权限，你依然可以通过调整应用的结构来提升安全性。详情请参考<a href="guide-tutorial-shared-hosting.html">共享主机环境</a> 一章。</p>
@@ -260,6 +262,7 @@ DocumentRoot "path/to/basic/web"
         include fastcgi.conf;
         fastcgi_pass   127.0.0.1:9000;
         #fastcgi_pass unix:/var/run/php5-fpm.sock;
+        try_files $uri =404;
     }
 
     location ~ /\.(ht|svn|git) {
@@ -277,7 +280,7 @@ DocumentRoot "path/to/basic/web"
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 11:18:41 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 18:36:26 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

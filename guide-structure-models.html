@@ -266,7 +266,7 @@ an <em>active rule</em> if it can be applied in the current <a href="./yii-base-
 is associated with one or multiple active rules declared in <code>rules()</code>.</p>
 <h2>Massive Assignment <a name="massive-assignment"></a> <a href="#massive-assignment" name="massive-assignment" class="hashlink">&para;</a></h2>
 <p>Massive assignment is a convenient way of populating a model with user inputs using a single line of code.
-It populates the attributes of a model by assigning the input data directly to the <a href="./yii-base-model.html#attributes()-detail">yii\base\Model::attributes()</a>
+It populates the attributes of a model by assigning the input data directly to the <a href="./yii-base-model.html#$attributes-detail">yii\base\Model::$attributes</a>
 property. The following two pieces of code are equivalent, both trying to assign the form data submitted by end users
 to the attributes of the <code>ContactForm</code> model. Clearly, the former, which uses massive assignment, is much cleaner
 and less error prone than the latter:</p>
@@ -307,13 +307,13 @@ models into JSON or Excel format. The exporting process can be broken down into 
 In the first step, models are converted into arrays; in the second step, the arrays are converted into
 target formats. You may just focus on the first step, because the second step can be achieved by generic
 data formatters, such as <a href="./yii-web-jsonresponseformatter.html">yii\web\JsonResponseFormatter</a>.</p>
-<p>The simplest way of converting a model into an array is to use the <a href="./yii-base-model.html#attributes()-detail">yii\base\Model::attributes()</a> property.
+<p>The simplest way of converting a model into an array is to use the <a href="./yii-base-model.html#$attributes-detail">yii\base\Model::$attributes</a> property.
 For example,</p>
 <pre><code class="language-php"><span style="color: #0000BB">$post&nbsp;</span><span style="color: #007700">=&nbsp;\</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">models</span><span style="color: #007700">\</span><span style="color: #0000BB">Post</span><span style="color: #007700">::</span><span style="color: #0000BB">findOne</span><span style="color: #007700">(</span><span style="color: #0000BB">100</span><span style="color: #007700">);<br /></span><span style="color: #0000BB">$array&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$post</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">attributes</span><span style="color: #007700">;</span></code></pre>
-<p>By default, the <a href="./yii-base-model.html#attributes()-detail">yii\base\Model::attributes()</a> property will return the values of <em>all</em> attributes
+<p>By default, the <a href="./yii-base-model.html#$attributes-detail">yii\base\Model::$attributes</a> property will return the values of <em>all</em> attributes
 declared in <a href="./yii-base-model.html#attributes()-detail">yii\base\Model::attributes()</a>.</p>
 <p>A more flexible and powerful way of converting a model into an array is to use the <a href="./yii-base-arrayabletrait.html#toArray()-detail">yii\base\Model::toArray()</a>
-method. Its default behavior is the same as that of <a href="./yii-base-model.html#attributes()-detail">yii\base\Model::attributes()</a>. However, it allows you
+method. Its default behavior is the same as that of <a href="./yii-base-model.html#$attributes-detail">yii\base\Model::$attributes</a>. However, it allows you
 to choose which data items, called <em>fields</em>, to be put in the resulting array and how they should be formatted.
 In fact, it is the default way of exporting models in RESTful Web service development, as described in
 the <a href="guide-rest-response-formatting.html">Response Formatting</a>.</p>
@@ -380,7 +380,7 @@ the change may break the back end application.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 11:18:41 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 18:36:26 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
