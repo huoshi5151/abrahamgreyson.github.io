@@ -328,7 +328,7 @@
     </tr>
             <tr id="findSubject()">
         <td><a href="yii-apidoc-models-typedoc.html#findSubject()-detail">findSubject()</a></td>
-        <td></td>
+        <td>Finds subject (method or property) by name</td>
         <td><a href="yii-apidoc-models-typedoc.html">yii\apidoc\models\TypeDoc</a></td>
     </tr>
             <tr id="getNativeMethods()">
@@ -564,8 +564,8 @@
     <div class="detail-header h3" id="__construct()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#__construct()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L162" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L162" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L177" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L177" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         __construct()
         <span class="detail-header-tag small">
@@ -603,8 +603,8 @@
     <div class="detail-header h3" id="findSubject()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#findSubject()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L40" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L40" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L55" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L55" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         findSubject()
         <span class="detail-header-tag small">
@@ -613,13 +613,21 @@
     </div>
 
     <div class="doc-description">
-        <p><strong></strong></p>
+        <p><strong>Finds subject (method or property) by name</strong></p>
 
-        
+        <p>If there is a property with the same as a method, the method will be returned if the name is not stated
+explicitly by prefixing with <code>$</code>.</p>
+<p>Example for method <code>attributes()</code> and property <code>$attributes</code> which both may exist:</p>
+<ul>
+<li><code>$subjectName = '$attributes'</code> finds a property or nothing.</li>
+<li><code>$subjectName = 'attributes()'</code> finds a method or nothing.</li>
+<li><code>$subjectName = 'attributes'</code> finds the method if it exists, if not it will find the property.</li>
+</ul>
+
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">void <strong><a href="yii-apidoc-models-typedoc.html#findSubject()-detail">findSubject</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$subjectName&nbsp;</span><span style="color: #007700">)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.null">null</a>|<a href="yii-apidoc-models-methoddoc.html">yii\apidoc\models\MethodDoc</a>|<a href="yii-apidoc-models-propertydoc.html">yii\apidoc\models\PropertyDoc</a> <strong><a href="yii-apidoc-models-typedoc.html#findSubject()-detail">findSubject</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$subjectName&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$subjectName</span></td>
                   <td class="param-type-col"></td>
@@ -632,8 +640,8 @@
     <div class="detail-header h3" id="getNativeMethods()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#getNativeMethods()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L67" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L67" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L82" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L82" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getNativeMethods()
         <span class="detail-header-tag small">
@@ -656,8 +664,8 @@
     <div class="detail-header h3" id="getNativeProperties()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#getNativeProperties()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L112" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L112" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L127" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L127" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getNativeProperties()
         <span class="detail-header-tag small">
@@ -680,8 +688,8 @@
     <div class="detail-header h3" id="getProtectedMethods()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#getProtectedMethods()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L83" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L83" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L98" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L98" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getProtectedMethods()
         <span class="detail-header-tag small">
@@ -704,8 +712,8 @@
     <div class="detail-header h3" id="getProtectedProperties()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#getProtectedProperties()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L128" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L128" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L143" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L143" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getProtectedProperties()
         <span class="detail-header-tag small">
@@ -728,8 +736,8 @@
     <div class="detail-header h3" id="getPublicMethods()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#getPublicMethods()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L75" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L75" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L90" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L90" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getPublicMethods()
         <span class="detail-header-tag small">
@@ -752,8 +760,8 @@
     <div class="detail-header h3" id="getPublicProperties()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-apidoc-models-typedoc.html#getPublicProperties()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L120" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L120" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/apidoc/models/TypeDoc.php#L135" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/apidoc/models/TypeDoc.php#L135" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getPublicProperties()
         <span class="detail-header-tag small">
@@ -811,7 +819,7 @@
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 27 Sep 2014 18:33:46 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 28 Sep 2014 18:59:19 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
