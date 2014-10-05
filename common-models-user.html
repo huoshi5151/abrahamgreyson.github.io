@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/b73ac8f6/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/91e115a8/style.css" rel="stylesheet">
-<script src="./assets/a77c877b/jquery.js"></script>
-<script src="./assets/b73ac8f6/js/bootstrap.js"></script>
-<script src="./assets/f11d4626/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1aa4357f/style.css" rel="stylesheet">
+<script src="./assets/cb107027/jquery.js"></script>
+<script src="./assets/34945494/js/bootstrap.js"></script>
+<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -658,6 +658,11 @@
         <td>Returns a value indicating whether the attribute is safe for massive assignments.</td>
         <td><a href="yii-base-model.html">yii\base\Model</a></td>
     </tr>
+            <tr id="isPasswordResetTokenValid()">
+        <td><a href="common-models-user.html#isPasswordResetTokenValid()-detail">isPasswordResetTokenValid()</a></td>
+        <td>Finds out if password reset token is valid</td>
+        <td><a href="common-models-user.html">common\models\User</a></td>
+    </tr>
             <tr class="inherited" id="isPrimaryKey()">
         <td><a href="yii-db-baseactiverecord.html#isPrimaryKey()-detail">isPrimaryKey()</a></td>
         <td>Returns a value indicating whether the given set of attributes represents the primary key for this model</td>
@@ -925,7 +930,7 @@
         <td>Inserts an ActiveRecord into DB without considering transaction.</td>
         <td><a href="yii-db-activerecord.html">yii\db\ActiveRecord</a></td>
     </tr>
-                                                                                                                    <tr class="inherited" id="resolveFields()">
+                                                                                                                        <tr class="inherited" id="resolveFields()">
         <td><a href="yii-base-arrayabletrait.html#resolveFields()-detail">resolveFields()</a></td>
         <td>Determines which fields can be returned by <a href="yii-base-arrayabletrait.html#toArray()-detail">toArray()</a>.</td>
         <td><a href="yii-base-arrayabletrait.html">yii\base\ArrayableTrait</a></td>
@@ -1661,6 +1666,34 @@ so that it can be used to check the validity of the user identity.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="isPasswordResetTokenValid()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="common-models-user.html#isPasswordResetTokenValid()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+        
+        isPasswordResetTokenValid()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Finds out if password reset token is valid</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.boolean">boolean</a> <strong><a href="common-models-user.html#isPasswordResetTokenValid()-detail">isPasswordResetTokenValid</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$token&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$token</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Password reset token</p>
+</td>
+                </tr>
+                                                </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="removePasswordResetToken()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="common-models-user.html#removePasswordResetToken()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -1923,7 +1956,7 @@ if the table is not named after this convention.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 28 Sep 2014 18:59:16 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 05 Oct 2014 17:19:26 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

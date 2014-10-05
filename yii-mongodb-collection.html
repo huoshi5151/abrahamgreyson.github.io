@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/b73ac8f6/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/91e115a8/style.css" rel="stylesheet">
-<script src="./assets/a77c877b/jquery.js"></script>
-<script src="./assets/b73ac8f6/js/bootstrap.js"></script>
-<script src="./assets/f11d4626/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1aa4357f/style.css" rel="stylesheet">
+<script src="./assets/cb107027/jquery.js"></script>
+<script src="./assets/34945494/js/bootstrap.js"></script>
+<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -129,8 +129,8 @@ print_r($collection-&gt;buildCondition($condition));
 </code></pre>
 <p>]
 ~~~</p>
-<p>Note: condition values for the key '_id' will be automatically cast to <span style="background: #f00;">\MongoId</span> instance,
-even if they are plain strings. However, if you have other columns, containing <span style="background: #f00;">\MongoId</span>, you
+<p>Note: condition values for the key '_id' will be automatically cast to <a href="http://www.php.net/class.mongoid">MongoId</a> instance,
+even if they are plain strings. However, if you have other columns, containing <a href="http://www.php.net/class.mongoid">MongoId</a>, you
 should take care of possible typecast on your own.</p>
 
     </div>
@@ -166,7 +166,7 @@ should take care of possible typecast on your own.</p>
     </tr>
             <tr id="$mongoCollection">
         <td><a href="yii-mongodb-collection.html#$mongoCollection-detail">$mongoCollection</a></td>
-        <td>\MongoCollection</td>
+        <td><a href="http://www.php.net/class.mongocollection">MongoCollection</a></td>
         <td>Mongo collection instance.</td>
         <td><a href="yii-mongodb-collection.html">yii\mongodb\Collection</a></td>
     </tr>
@@ -508,7 +508,7 @@ should take care of possible typecast on your own.</p>
                     </span>
     </div>
 
-    <div class="signature">\MongoCollection <a href="yii-mongodb-collection.html#$mongoCollection-detail">$mongoCollection</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+    <div class="signature"><a href="http://www.php.net/class.mongocollection">MongoCollection</a> <a href="yii-mongodb-collection.html#$mongoCollection-detail">$mongoCollection</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
 
     <p>Mongo collection instance.</p>
 
@@ -1326,7 +1326,7 @@ For example:
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.array">array</a>|\MongoId <strong><a href="yii-mongodb-collection.html#ensureMongoId()-detail">ensureMongoId</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$rawId&nbsp;</span><span style="color: #007700">)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/class.mongoid">MongoId</a> <strong><a href="yii-mongodb-collection.html#ensureMongoId()-detail">ensureMongoId</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$rawId&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$rawId</span></td>
                   <td class="param-type-col">mixed</td>
@@ -1335,7 +1335,7 @@ For example:
                 </tr>
                                         <tr>
                   <th class="param-name-col">return</th>
-                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|\MongoId</td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/class.mongoid">MongoId</a></td>
                   <td class="param-desc-col"><p>Normalized id(s).</p>
 </td>
                 </tr>
@@ -1363,7 +1363,7 @@ For example:
         <p>See also <a href="yii-mongodb-query.html">yii\mongodb\Query</a>.</p>    </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">\MongoCursor <strong><a href="yii-mongodb-collection.html#find()-detail">find</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$condition&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/class.mongocursor">MongoCursor</a> <strong><a href="yii-mongodb-collection.html#find()-detail">find</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$condition&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;</span><span style="color: #0000BB">$fields&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
@@ -1378,7 +1378,7 @@ For example:
                 </tr>
                                         <tr>
                   <th class="param-name-col">return</th>
-                  <td class="param-type-col">\MongoCursor</td>
+                  <td class="param-type-col"><a href="http://www.php.net/class.mongocursor">MongoCursor</a></td>
                   <td class="param-desc-col"><p>Cursor for the search results</p>
 </td>
                 </tr>
@@ -1666,7 +1666,7 @@ For example:
                   <td class="param-name-col"><span style="color: #0000BB">$keys</span></td>
                   <td class="param-type-col">mixed</td>
                   <td class="param-desc-col"><p>Fields to group by. If an array or non-code object is passed,
-it will be the key used to group results. If instance of <span style="background: #f00;">\MongoCode</span> passed,
+it will be the key used to group results. If instance of <a href="http://www.php.net/class.mongocode">MongoCode</a> passed,
 it will be treated as a function that returns the key to group by.</p>
 </td>
                 </tr>
@@ -1678,10 +1678,10 @@ it will be treated as a function that returns the key to group by.</p>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$reduce</span></td>
-                  <td class="param-type-col">\MongoCode|<a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-type-col"><a href="http://www.php.net/class.mongocode">MongoCode</a>|<a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"><p>Function that takes two arguments (the current
 document and the aggregation to this point) and does the aggregation.
-Argument will be automatically cast to <span style="background: #f00;">\MongoCode</span>.</p>
+Argument will be automatically cast to <a href="http://www.php.net/class.mongocode">MongoCode</a>.</p>
 </td>
                 </tr>
                             <tr>
@@ -1727,7 +1727,7 @@ Argument will be automatically cast to <span style="background: #f00;">\MongoCod
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">\MongoId <strong><a href="yii-mongodb-collection.html#insert()-detail">insert</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/class.mongoid">MongoId</a> <strong><a href="yii-mongodb-collection.html#insert()-detail">insert</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$data</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.object">object</a></td>
@@ -1742,7 +1742,7 @@ Argument will be automatically cast to <span style="background: #f00;">\MongoCod
                 </tr>
                                         <tr>
                   <th class="param-name-col">return</th>
-                  <td class="param-type-col">\MongoId</td>
+                  <td class="param-type-col"><a href="http://www.php.net/class.mongoid">MongoId</a></td>
                   <td class="param-desc-col"><p>New record id instance.</p>
 </td>
                 </tr>
@@ -1791,17 +1791,17 @@ $results = $query-&gt;from($resultCollectionName)-&gt;all();
         <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a> <strong><a href="yii-mongodb-collection.html#mapReduce()-detail">mapReduce</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$map</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$reduce</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$out</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$condition&nbsp;</span><span style="color: #007700">=&nbsp;[],&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$map</span></td>
-                  <td class="param-type-col">\MongoCode|<a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-type-col"><a href="http://www.php.net/class.mongocode">MongoCode</a>|<a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"><p>Function, which emits map data from collection.
-Argument will be automatically cast to <span style="background: #f00;">\MongoCode</span>.</p>
+Argument will be automatically cast to <a href="http://www.php.net/class.mongocode">MongoCode</a>.</p>
 </td>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$reduce</span></td>
-                  <td class="param-type-col">\MongoCode|<a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-type-col"><a href="http://www.php.net/class.mongocode">MongoCode</a>|<a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"><p>Function that takes two arguments (the map key
 and the map values) and does the aggregation.
-Argument will be automatically cast to <span style="background: #f00;">\MongoCode</span>.</p>
+Argument will be automatically cast to <a href="http://www.php.net/class.mongocode">MongoCode</a>.</p>
 </td>
                 </tr>
                             <tr>
@@ -2021,7 +2021,7 @@ You can pass ['inline' =&gt; true] to fetch the result at once without temporary
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">\MongoId <strong><a href="yii-mongodb-collection.html#save()-detail">save</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/class.mongoid">MongoId</a> <strong><a href="yii-mongodb-collection.html#save()-detail">save</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$data</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$options&nbsp;</span><span style="color: #007700">=&nbsp;[]&nbsp;)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$data</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.object">object</a></td>
@@ -2036,7 +2036,7 @@ You can pass ['inline' =&gt; true] to fetch the result at once without temporary
                 </tr>
                                         <tr>
                   <th class="param-name-col">return</th>
-                  <td class="param-type-col">\MongoId</td>
+                  <td class="param-type-col"><a href="http://www.php.net/class.mongoid">MongoId</a></td>
                   <td class="param-desc-col"><p>Updated/new record id instance.</p>
 </td>
                 </tr>
@@ -2210,7 +2210,7 @@ to be specified for the "newData". If no strategy is passed "$set" will be used.
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 28 Sep 2014 18:59:27 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 05 Oct 2014 17:19:37 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

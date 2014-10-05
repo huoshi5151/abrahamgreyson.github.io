@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/b73ac8f6/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/91e115a8/style.css" rel="stylesheet">
-<script src="./assets/a77c877b/jquery.js"></script>
-<script src="./assets/b73ac8f6/js/bootstrap.js"></script>
-<script src="./assets/f11d4626/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1aa4357f/style.css" rel="stylesheet">
+<script src="./assets/cb107027/jquery.js"></script>
+<script src="./assets/34945494/js/bootstrap.js"></script>
+<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -125,10 +125,12 @@ of different tables; and the multiplicity of the relation is indicated by <a hre
 <p>If a relation involves a pivot table, it may be specified by <a href="yii-db-activerelationtrait.html#via()-detail">via()</a>.
 This methods may only be called in a relational context. Same is true for <a href="yii-db-activerelationtrait.html#inverseOf()-detail">inverseOf()</a>, which
 marks a relation as inverse of another relation.</p>
-<blockquote><p>NOTE: elasticsearch limits the number of records returned by any query to 10 records by default.
+<blockquote><p>Note: elasticsearch limits the number of records returned by any query to 10 records by default.
 If you expect to get more records you should specify limit explicitly in relation definition.
 This is also important for relations that use <a href="yii-db-activerelationtrait.html#via()-detail">via()</a> so that if via records are limited to 10
 the relations records can also not be more than 10.</p>
+</blockquote>
+<blockquote><p>Note: Currently <a href="yii-db-activequerytrait.html#with()-detail">with()</a> is not supported in combination with <a href="yii-db-activequerytrait.html#asArray()-detail">asArray()</a>.</p>
 </blockquote>
 
     </div>
@@ -726,8 +728,8 @@ and bail with the hits accumulated up to that point when expired.</td>
     <div class="detail-header h3" id="__construct()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#__construct()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L91" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L91" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L93" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L93" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         __construct()
         <span class="detail-header-tag small">
@@ -762,8 +764,8 @@ and bail with the hits accumulated up to that point when expired.</td>
     <div class="detail-header h3" id="all()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#all()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L161" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L161" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L163" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L163" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         all()
         <span class="detail-header-tag small">
@@ -799,8 +801,8 @@ If null, the DB connection returned by <a href="yii-db-activequerytrait.html#$mo
     <div class="detail-header h3" id="column()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#column()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L251" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L251" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L253" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L253" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         column()
         <span class="detail-header-tag small">
@@ -842,8 +844,8 @@ If this parameter is not given, the <code>elasticsearch</code> application compo
     <div class="detail-header h3" id="createCommand()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#createCommand()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L115" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L115" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L117" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L117" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createCommand()
         <span class="detail-header-tag small">
@@ -879,8 +881,8 @@ If null, the DB connection returned by <a href="yii-db-activequerytrait.html#$mo
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L103" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L103" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L105" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L105" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -906,8 +908,8 @@ to ensure triggering of the event.</p>
     <div class="detail-header h3" id="one()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#one()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L191" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L191" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L193" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L193" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         one()
         <span class="detail-header-tag small">
@@ -945,8 +947,8 @@ if the query results in nothing.</p>
     <div class="detail-header h3" id="search()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#search()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L230" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L230" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L232" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L232" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         search()
         <span class="detail-header-tag small">
@@ -995,8 +997,8 @@ If this parameter is not given, the <code>elasticsearch</code> application compo
     <div class="detail-header h3" id="EVENT_INIT-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-elasticsearch-activequery.html#EVENT_INIT-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L83" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L83" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/elasticsearch/ActiveQuery.php#L85" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/elasticsearch/ActiveQuery.php#L85" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         EVENT_INIT        <span class="detail-header-tag small">
         event
@@ -1047,7 +1049,7 @@ If this parameter is not given, the <code>elasticsearch</code> application compo
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 28 Sep 2014 18:59:23 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 05 Oct 2014 17:19:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

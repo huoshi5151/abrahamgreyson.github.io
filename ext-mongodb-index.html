@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/b73ac8f6/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/91e115a8/style.css" rel="stylesheet">
-<script src="./assets/a77c877b/jquery.js"></script>
-<script src="./assets/b73ac8f6/js/bootstrap.js"></script>
-<script src="./assets/f11d4626/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1aa4357f/style.css" rel="stylesheet">
+<script src="./assets/cb107027/jquery.js"></script>
+<script src="./assets/34945494/js/bootstrap.js"></script>
+<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -95,18 +95,18 @@ actual text of the performed queries, they contains only a “close approximatio
 composed on the values which can be extracted from PHP Mongo extension classes.
 If you need to see actual query text, you should use specific tools for that.</p>
 <h2>Notes about MongoId <a href="#notes-about-mongoid" name="notes-about-mongoid" class="hashlink">&para;</a></h2>
-<p>Remember: MongoDB document id ("_id" field) is not scalar, but an instance of <span style="background: #f00;">\MongoId</span> class.
-To get actual Mongo ID string your should typecast <span style="background: #f00;">\MongoId</span> instance to string:</p>
+<p>Remember: MongoDB document id ("_id" field) is not scalar, but an instance of <a href="http://www.php.net/class.mongoid">MongoId</a> class.
+To get actual Mongo ID string your should typecast <a href="http://www.php.net/class.mongoid">MongoId</a> instance to string:</p>
 <pre><code class="language-php"><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$row&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #DD0000">'customer'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">one</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">var_dump</span><span style="color: #007700">(</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs:&nbsp;"object(MongoId)"<br /></span><span style="color: #0000BB">var_dump</span><span style="color: #007700">((string)</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs&nbsp;"string&nbsp;'acdfgdacdhcbdafa'"</span></code></pre>
 <p>Although this fact is very useful sometimes, it often produces some problems.
 You may face them in URL composition or attempt of saving "_id" to other storage.
-In these cases, ensure you have converted <span style="background: #f00;">\MongoId</span> into the string:</p>
+In these cases, ensure you have converted <a href="http://www.php.net/class.mongoid">MongoId</a> into the string:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;yii\web\View&nbsp;*/<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createUrl</span><span style="color: #007700">([</span><span style="color: #DD0000">'item/update'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;(string)</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]]);</span></code></pre>
-<p>While building condition, values for the key '_id' will be automatically cast to <span style="background: #f00;">\MongoId</span> instance,
+<p>While building condition, values for the key '_id' will be automatically cast to <a href="http://www.php.net/class.mongoid">MongoId</a> instance,
 even if they are plain strings. So it is not necessary for you to perform back cast of string '_id'
 representation:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">web</span><span style="color: #007700">\</span><span style="color: #0000BB">Controller</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">mongodb</span><span style="color: #007700">\</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">ItemController&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Controller<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">/**<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;@param&nbsp;string&nbsp;$id&nbsp;MongoId&nbsp;string&nbsp;(not&nbsp;object)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">actionUpdate</span><span style="color: #007700">(</span><span style="color: #0000BB">$id</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$row&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #DD0000">'item'</span><span style="color: #007700">)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">where</span><span style="color: #007700">([</span><span style="color: #DD0000">'_id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$id</span><span style="color: #007700">])&nbsp;</span><span style="color: #FF8000">//&nbsp;implicit&nbsp;typecast&nbsp;to&nbsp;[[\MongoId]]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">one</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
-<p>However, if you have other columns, containing <span style="background: #f00;">\MongoId</span>, you
+<p>However, if you have other columns, containing <a href="http://www.php.net/class.mongoid">MongoId</a>, you
 should take care of possible typecast on your own.</p>
 <h2>Using the MongoDB ActiveRecord <a href="#using-the-mongodb-activerecord" name="using-the-mongodb-activerecord" class="hashlink">&para;</a></h2>
 <p>This extension provides ActiveRecord solution similar ot the <a href="yii-db-activerecord.html">yii\db\ActiveRecord</a>.
@@ -298,7 +298,7 @@ yii mongodb-migrate/down
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 28 Sep 2014 19:01:28 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 05 Oct 2014 17:21:01 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

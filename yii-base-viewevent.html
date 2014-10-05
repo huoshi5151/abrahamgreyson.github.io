@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/b73ac8f6/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/91e115a8/style.css" rel="stylesheet">
-<script src="./assets/a77c877b/jquery.js"></script>
-<script src="./assets/b73ac8f6/js/bootstrap.js"></script>
-<script src="./assets/f11d4626/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/1aa4357f/style.css" rel="stylesheet">
+<script src="./assets/cb107027/jquery.js"></script>
+<script src="./assets/34945494/js/bootstrap.js"></script>
+<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -456,11 +456,23 @@
         <td>The rendering result of <a href="yii-base-view.html#renderFile()-detail">yii\base\View::renderFile()</a>.</td>
         <td><a href="yii-base-viewevent.html">yii\base\ViewEvent</a></td>
     </tr>
+            <tr id="$params">
+        <td><a href="yii-base-viewevent.html#$params-detail">$params</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>The parameter array passed to the <a href="yii-base-view.html#render()-detail">yii\base\View::render()</a> method.</td>
+        <td><a href="yii-base-viewevent.html">yii\base\ViewEvent</a></td>
+    </tr>
             <tr class="inherited" id="$sender">
         <td><a href="yii-base-event.html#$sender-detail">$sender</a></td>
         <td><a href="http://www.php.net/language.types.object">object</a></td>
         <td>The sender of this event.</td>
         <td><a href="yii-base-event.html">yii\base\Event</a></td>
+    </tr>
+            <tr id="$viewFile">
+        <td><a href="yii-base-viewevent.html#$viewFile-detail">$viewFile</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>The view file being rendered.</td>
+        <td><a href="yii-base-viewevent.html">yii\base\ViewEvent</a></td>
     </tr>
     </table>
 </div>
@@ -575,8 +587,8 @@
     <div class="detail-header h3" id="$isValid-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-base-viewevent.html#$isValid-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/base/ViewEvent.php#L30" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/base/ViewEvent.php#L30" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/base/ViewEvent.php#L38" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/base/ViewEvent.php#L38" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $isValid        <span class="detailHeaderTag small">
             public                                    property
@@ -594,8 +606,8 @@ to continue rendering the current view file.</p>
     <div class="detail-header h3" id="$output-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-base-viewevent.html#$output-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/base/ViewEvent.php#L24" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/base/ViewEvent.php#L24" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/base/ViewEvent.php#L32" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/base/ViewEvent.php#L32" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $output        <span class="detailHeaderTag small">
             public                                    property
@@ -608,6 +620,40 @@ to continue rendering the current view file.</p>
 Event handlers may modify this property and the modified output will be
 returned by <a href="yii-base-view.html#renderFile()-detail">yii\base\View::renderFile()</a>. This property is only used
 by <a href="yii-base-view.html#EVENT_AFTER_RENDER-detail">yii\base\View::EVENT_AFTER_RENDER</a> event.</p>
+
+    
+
+    <div class="detail-header h3" id="$params-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-base-viewevent.html#$params-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/base/ViewEvent.php#L25" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/base/ViewEvent.php#L25" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $params        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-base-viewevent.html#$params-detail">$params</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The parameter array passed to the <a href="yii-base-view.html#render()-detail">yii\base\View::render()</a> method.</p>
+
+    
+
+    <div class="detail-header h3" id="$viewFile-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-base-viewevent.html#$viewFile-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/base/ViewEvent.php#L21" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/base/ViewEvent.php#L21" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $viewFile        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <a href="yii-base-viewevent.html#$viewFile-detail">$viewFile</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null</span></div>
+
+    <p>The view file being rendered.</p>
 
     
 </div>
@@ -649,7 +695,7 @@ by <a href="yii-base-view.html#EVENT_AFTER_RENDER-detail">yii\base\View::EVENT_A
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 28 Sep 2014 18:59:34 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 05 Oct 2014 17:19:44 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
