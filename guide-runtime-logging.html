@@ -251,6 +251,10 @@ is found or matches one of the patterns in this property, it will NOT be process
 <p>The following target configuration specifies that the target should only process error and warning messages
 under the categories whose names match either <code>yii\db\*</code> or <code>yii\web\HttpException:*</code>, but not <code>yii\web\HttpException:404</code>.</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yii\log\FileTarget'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'levels'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'error'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'warning'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'categories'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\db\*'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\web\HttpException:*'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'except'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'yii\web\HttpException:404'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]</span></code></pre>
+<blockquote><p>Info: When an HTTP exception is caught by the <a href="guide-runtime-handling-errors.html">error handler</a>, an error message
+  will be logged with the category name in the format of <code>yii\web\HttpException:ErrorCode</code>. For example,
+  the <a href="./yii-web-notfoundhttpexception.html">yii\web\NotFoundHttpException</a> will cause an error message of category <code>yii\web\HttpException:404</code>.</p>
+</blockquote>
 <h3>Message Formatting <a name="message-formatting"></a> <a href="#message-formatting" name="message-formatting" class="hashlink">&para;</a></h3>
 <p>Log targets export the filtered log messages in certain format. For example, if you install
 a log target of the class <a href="./yii-log-filetarget.html">yii\log\FileTarget</a>, you may find a log message similar to the following in the
@@ -339,7 +343,7 @@ a built-in performance profiling panel showing the profiling results.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sun, 05 Oct 2014 17:21:59 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:55:01 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
