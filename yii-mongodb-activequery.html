@@ -119,7 +119,7 @@ Relational queries are created by <a href="yii-db-baseactiverecord.html#hasOne()
 a getter method which calls one of the above methods and returns the created ActiveQuery object.</p>
 <p>A relation is specified by <a href="yii-db-activerelationtrait.html#$link-detail">$link</a> which represents the association between columns
 of different tables; and the multiplicity of the relation is indicated by <a href="yii-db-activerelationtrait.html#$multiple-detail">$multiple</a>.</p>
-<p>If a relation involves a pivot table, it may be specified by <a href="yii-db-activerelationtrait.html#via()-detail">via()</a>.
+<p>If a relation involves a junction table, it may be specified by <a href="yii-db-activerelationtrait.html#via()-detail">via()</a>.
 This methods may only be called in a relational context. Same is true for <a href="yii-db-activerelationtrait.html#inverseOf()-detail">inverseOf()</a>, which
 marks a relation as inverse of another relation.</p>
 
@@ -229,7 +229,7 @@ marks a relation as inverse of another relation.</p>
             <tr class="inherited" id="$via">
         <td><a href="yii-db-activerelationtrait.html#$via-detail">$via</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.object">object</a></td>
-        <td>The query associated with the pivot table.</td>
+        <td>The query associated with the junction table.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
             <tr class="inherited" id="$where">
@@ -525,7 +525,7 @@ marks a relation as inverse of another relation.</p>
     </tr>
             <tr class="inherited" id="via()">
         <td><a href="yii-db-activerelationtrait.html#via()-detail">via()</a></td>
-        <td>Specifies the relation associated with the pivot table.</td>
+        <td>Specifies the relation associated with the junction table.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
             <tr class="inherited" id="where()">
@@ -932,7 +932,7 @@ if the query results in nothing.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:52:40 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:01:53 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

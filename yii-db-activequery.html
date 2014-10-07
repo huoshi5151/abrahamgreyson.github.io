@@ -444,7 +444,7 @@ Relational queries are created by <a href="yii-db-baseactiverecord.html#hasOne()
 a getter method which calls one of the above methods and returns the created ActiveQuery object.</p>
 <p>A relation is specified by <a href="yii-db-activerelationtrait.html#$link-detail">$link</a> which represents the association between columns
 of different tables; and the multiplicity of the relation is indicated by <a href="yii-db-activerelationtrait.html#$multiple-detail">$multiple</a>.</p>
-<p>If a relation involves a pivot table, it may be specified by <a href="yii-db-activerelationtrait.html#via()-detail">via()</a> or <a href="yii-db-activequery.html#viaTable()-detail">viaTable()</a> method.
+<p>If a relation involves a junction table, it may be specified by <a href="yii-db-activerelationtrait.html#via()-detail">via()</a> or <a href="yii-db-activequery.html#viaTable()-detail">viaTable()</a> method.
 These methods may only be called in a relational context. Same is true for <a href="yii-db-activerelationtrait.html#inverseOf()-detail">inverseOf()</a>, which
 marks a relation as inverse of another relation and <a href="yii-db-activequery.html#onCondition()-detail">onCondition()</a> which adds a condition that
 is to be added to relational query join condition.</p>
@@ -609,7 +609,7 @@ is to be added to relational query join condition.</p>
             <tr class="inherited" id="$via">
         <td><a href="yii-db-activerelationtrait.html#$via-detail">$via</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.object">object</a></td>
-        <td>The query associated with the pivot table.</td>
+        <td>The query associated with the junction table.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
             <tr class="inherited" id="$where">
@@ -1030,12 +1030,12 @@ is to be added to relational query join condition.</p>
     </tr>
             <tr class="inherited" id="via()">
         <td><a href="yii-db-activerelationtrait.html#via()-detail">via()</a></td>
-        <td>Specifies the relation associated with the pivot table.</td>
+        <td>Specifies the relation associated with the junction table.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
             <tr id="viaTable()">
         <td><a href="yii-db-activequery.html#viaTable()-detail">viaTable()</a></td>
-        <td>Specifies the pivot table for a relational query.</td>
+        <td>Specifies the junction table for a relational query.</td>
         <td><a href="yii-db-activequery.html">yii\db\ActiveQuery</a></td>
     </tr>
             <tr class="inherited" id="where()">
@@ -1698,9 +1698,9 @@ You may override this method to do some final preparation work when converting a
     </div>
 
     <div class="doc-description">
-        <p><strong>Specifies the pivot table for a relational query.</strong></p>
+        <p><strong>Specifies the junction table for a relational query.</strong></p>
 
-        <p>Use this method to specify a pivot table when declaring a relation in the <a href="yii-db-activerecord.html">yii\db\ActiveRecord</a> class:</p>
+        <p>Use this method to specify a junction table when declaring a relation in the <a href="yii-db-activerecord.html">yii\db\ActiveRecord</a> class:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">getItems</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">hasMany</span><span style="color: #007700">(</span><span style="color: #0000BB">Item</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),&nbsp;[</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'item_id'</span><span style="color: #007700">])<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&gt;</span><span style="color: #0000BB">viaTable</span><span style="color: #007700">(</span><span style="color: #DD0000">'order_item'</span><span style="color: #007700">,&nbsp;[</span><span style="color: #DD0000">'order_id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'id'</span><span style="color: #007700">]);<br />}</span></code></pre>
 
         <p>See also <a href="yii-db-activerelationtrait.html#via()-detail">via()</a>.</p>    </div>
@@ -1710,21 +1710,21 @@ You may override this method to do some final preparation work when converting a
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$tableName</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
-                  <td class="param-desc-col"><p>The name of the pivot table.</p>
+                  <td class="param-desc-col"><p>The name of the junction table.</p>
 </td>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$link</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"><p>The link between the pivot table and the table associated with <a href="yii-db-activerelationtrait.html#$primaryModel-detail">$primaryModel</a>.
-The keys of the array represent the columns in the pivot table, and the values represent the columns
+                  <td class="param-desc-col"><p>The link between the junction table and the table associated with <a href="yii-db-activerelationtrait.html#$primaryModel-detail">$primaryModel</a>.
+The keys of the array represent the columns in the junction table, and the values represent the columns
 in the <a href="yii-db-activerelationtrait.html#$primaryModel-detail">$primaryModel</a> table.</p>
 </td>
                 </tr>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$callable</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.callable">callable</a></td>
-                  <td class="param-desc-col"><p>A PHP callback for customizing the relation associated with the pivot table.
+                  <td class="param-desc-col"><p>A PHP callback for customizing the relation associated with the junction table.
 Its signature should be <code>function($query)</code>, where <code>$query</code> is the query to be customized.</p>
 </td>
                 </tr>
@@ -1790,7 +1790,7 @@ Its signature should be <code>function($query)</code>, where <code>$query</code>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:52:54 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:02:07 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

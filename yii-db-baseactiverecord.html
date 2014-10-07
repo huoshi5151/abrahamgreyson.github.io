@@ -2956,8 +2956,8 @@ you may implement the so-called single-table inheritance mapping.</p>
         <p>The relationship is established by setting the foreign key value(s) in one model
 to be the corresponding primary key value(s) in the other model.
 The model with the foreign key will be saved into database without performing validation.</p>
-<p>If the relationship involves a pivot table, a new row will be inserted into the
-pivot table which contains the primary key values from both models.</p>
+<p>If the relationship involves a junction table, a new row will be inserted into the
+junction table which contains the primary key values from both models.</p>
 <p>Note that this method requires that the primary key value is not null.</p>
 
             </div>
@@ -2979,8 +2979,8 @@ pivot table which contains the primary key values from both models.</p>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$extraColumns</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"><p>Additional column values to be saved into the pivot table.
-This parameter is only meaningful for a relationship involving a pivot table
+                  <td class="param-desc-col"><p>Additional column values to be saved into the junction table.
+This parameter is only meaningful for a relationship involving a junction table
 (i.e., a relation set with <a href="yii-db-activerelationtrait.html#via()-detail">yii\db\ActiveRelationTrait::via()</a> or <code>[[ActiveQuery::viaTable()]]</code>.)</p>
 </td>
                 </tr>
@@ -4033,7 +4033,7 @@ You may set <a href="yii-base-modelevent.html#$isValid-detail">yii\base\ModelEve
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:52:54 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:02:08 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

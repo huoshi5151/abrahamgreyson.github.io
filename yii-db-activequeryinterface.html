@@ -445,7 +445,7 @@ records only.</p>
     </tr>
             <tr id="via()">
         <td><a href="yii-db-activequeryinterface.html#via()-detail">via()</a></td>
-        <td>Specifies the relation associated with the pivot table for use in relational query.</td>
+        <td>Specifies the relation associated with the junction table for use in relational query.</td>
         <td><a href="yii-db-activequeryinterface.html">yii\db\ActiveQueryInterface</a></td>
     </tr>
             <tr id="with()">
@@ -601,7 +601,7 @@ function ($model)
     </div>
 
     <div class="doc-description">
-        <p><strong>Specifies the relation associated with the pivot table for use in relational query.</strong></p>
+        <p><strong>Specifies the relation associated with the junction table for use in relational query.</strong></p>
 
         
             </div>
@@ -617,7 +617,7 @@ function ($model)
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$callable</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.callable">callable</a></td>
-                  <td class="param-desc-col"><p>A PHP callback for customizing the relation associated with the pivot table.
+                  <td class="param-desc-col"><p>A PHP callback for customizing the relation associated with the junction table.
 Its signature should be <code>function($query)</code>, where <code>$query</code> is the query to be customized.</p>
 </td>
                 </tr>
@@ -718,7 +718,7 @@ Customer::find()-&gt;with([
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:53:22 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:02:37 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

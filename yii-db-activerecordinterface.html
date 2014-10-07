@@ -1188,8 +1188,8 @@ meaning all attributes that are loaded from DB will be saved.</p>
         <p>The relationship is established by setting the foreign key value(s) in one record
 to be the corresponding primary key value(s) in the other record.
 The record with the foreign key will be saved into database without performing validation.</p>
-<p>If the relationship involves a pivot table, a new row will be inserted into the
-pivot table which contains the primary key values from both records.</p>
+<p>If the relationship involves a junction table, a new row will be inserted into the
+junction table which contains the primary key values from both records.</p>
 <p>This method requires that the primary key value is not null.</p>
 
             </div>
@@ -1211,8 +1211,8 @@ pivot table which contains the primary key values from both records.</p>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$extraColumns</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"><p>Additional column values to be saved into the pivot table.
-This parameter is only meaningful for a relationship involving a pivot table
+                  <td class="param-desc-col"><p>Additional column values to be saved into the junction table.
+This parameter is only meaningful for a relationship involving a junction table
 (i.e., a relation set with <code>[[ActiveQueryInterface::via()]]</code>.)</p>
 </td>
                 </tr>
@@ -1522,7 +1522,7 @@ An empty condition will match all records.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:53:22 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:02:38 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

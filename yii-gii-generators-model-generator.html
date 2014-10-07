@@ -800,7 +800,7 @@
 </tr>
                                                                                     <tr id="checkPivotTable()">
         <td><a href="yii-gii-generators-model-generator.html#checkPivotTable()-detail">checkPivotTable()</a></td>
-        <td>Checks if the given table is a pivot table.</td>
+        <td>Checks if the given table is a junction table.</td>
         <td><a href="yii-gii-generators-model-generator.html">yii\gii\generators\model\Generator</a></td>
     </tr>
                                                                 <tr id="generateClassName()">
@@ -1371,7 +1371,7 @@ Auto complete values can also be callable typed in order one want to make postpo
     </div>
 
     <div class="doc-description">
-        <p><strong>Checks if the given table is a pivot table.</strong></p>
+        <p><strong>Checks if the given table is a junction table.</strong></p>
 
         <p>For simplicity, this method only deals with the case where the pivot contains two PK columns,
 each referencing a column in a different table.</p>
@@ -1388,8 +1388,8 @@ each referencing a column in a different table.</p>
                                         <tr>
                   <th class="param-name-col">return</th>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.boolean">boolean</a></td>
-                  <td class="param-desc-col"><p>The relevant foreign key constraint information if the table is a pivot table,
-or false if the table is not a pivot table.</p>
+                  <td class="param-desc-col"><p>The relevant foreign key constraint information if the table is a junction table,
+or false if the table is not a junction table.</p>
 </td>
                 </tr>
                                     </table>
@@ -2169,7 +2169,7 @@ when the generator is restarted.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 06 Oct 2014 17:52:39 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:01:51 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
