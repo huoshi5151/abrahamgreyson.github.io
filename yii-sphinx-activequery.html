@@ -77,6 +77,7 @@
     </colgroup>
             <tr><th>Inheritance</th><td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a> &raquo;
 <a href="yii-sphinx-query.html">yii\sphinx\Query</a> &raquo;
+<a href="yii-db-query.html">yii\db\Query</a> &raquo;
 <a href="yii-base-component.html">yii\base\Component</a> &raquo;
 <a href="yii-base-object.html">yii\base\Object</a></td></tr>
                 <tr><th>Implements</th><td><a href="yii-db-activequeryinterface.html">yii\db\ActiveQueryInterface</a>, <a href="yii-db-queryinterface.html">yii\db\QueryInterface</a></td></tr>
@@ -174,22 +175,28 @@ marks a relation as inverse of another relation.</p>
         <td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a></td>
     </tr>
             <tr class="inherited" id="$distinct">
-        <td><a href="yii-sphinx-query.html#$distinct-detail">$distinct</a></td>
+        <td><a href="yii-db-query.html#$distinct-detail">$distinct</a></td>
         <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
         <td>Whether to select distinct rows of data only.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$from">
-        <td><a href="yii-sphinx-query.html#$from-detail">$from</a></td>
+        <td><a href="yii-db-query.html#$from-detail">$from</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
-        <td>The index(es) to be selected from.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td>The table(s) to be selected from.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$groupBy">
-        <td><a href="yii-sphinx-query.html#$groupBy-detail">$groupBy</a></td>
+        <td><a href="yii-db-query.html#$groupBy-detail">$groupBy</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
         <td>How to group the query results.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="$having">
+        <td><a href="yii-db-query.html#$having-detail">$having</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a></td>
+        <td>The condition to be applied in the GROUP BY clause.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$indexBy">
         <td><a href="yii-db-querytrait.html#$indexBy-detail">$indexBy</a></td>
@@ -202,6 +209,12 @@ marks a relation as inverse of another relation.</p>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
         <td>The name of the relation that is the inverse of this relation.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
+    </tr>
+            <tr class="inherited" id="$join">
+        <td><a href="yii-db-query.html#$join-detail">$join</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>How to join with other tables.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$limit">
         <td><a href="yii-db-querytrait.html#$limit-detail">$limit</a></td>
@@ -253,10 +266,10 @@ They will compose OPTION clause.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
             <tr class="inherited" id="$params">
-        <td><a href="yii-sphinx-query.html#$params-detail">$params</a></td>
+        <td><a href="yii-db-query.html#$params-detail">$params</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
         <td>List of query parameter values indexed by parameter placeholders.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$primaryModel">
         <td><a href="yii-db-activerelationtrait.html#$primaryModel-detail">$primaryModel</a></td>
@@ -265,16 +278,16 @@ They will compose OPTION clause.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
             <tr class="inherited" id="$select">
-        <td><a href="yii-sphinx-query.html#$select-detail">$select</a></td>
+        <td><a href="yii-db-query.html#$select-detail">$select</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
         <td>The columns being selected.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$selectOption">
-        <td><a href="yii-sphinx-query.html#$selectOption-detail">$selectOption</a></td>
+        <td><a href="yii-db-query.html#$selectOption-detail">$selectOption</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
         <td>Additional option that should be appended to the 'SELECT' keyword.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$snippetCallback">
         <td><a href="yii-sphinx-query.html#$snippetCallback-detail">$snippetCallback</a></td>
@@ -293,6 +306,12 @@ They will compose OPTION clause.</td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
         <td>The SQL statement to be executed for retrieving AR records.</td>
         <td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a></td>
+    </tr>
+            <tr class="inherited" id="$union">
+        <td><a href="yii-db-query.html#$union-detail">$union</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>This is used to construct the UNION clause(s) in a SQL statement.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="$via">
         <td><a href="yii-db-activerelationtrait.html#$via-detail">$via</a></td>
@@ -373,9 +392,9 @@ They will compose OPTION clause.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
             <tr class="inherited" id="addGroupBy()">
-        <td><a href="yii-sphinx-query.html#addGroupBy()-detail">addGroupBy()</a></td>
+        <td><a href="yii-db-query.html#addGroupBy()-detail">addGroupBy()</a></td>
         <td>Adds additional group-by columns to the existing ones.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="addOptions()">
         <td><a href="yii-sphinx-query.html#addOptions()-detail">addOptions()</a></td>
@@ -388,9 +407,14 @@ They will compose OPTION clause.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
             <tr class="inherited" id="addParams()">
-        <td><a href="yii-sphinx-query.html#addParams()-detail">addParams()</a></td>
+        <td><a href="yii-db-query.html#addParams()-detail">addParams()</a></td>
         <td>Adds additional parameters to be bound to the query.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="addSelect()">
+        <td><a href="yii-db-query.html#addSelect()-detail">addSelect()</a></td>
+        <td>Add more columns to the SELECT part of the query.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="addWithin()">
         <td><a href="yii-sphinx-query.html#addWithin()-detail">addWithin()</a></td>
@@ -406,6 +430,11 @@ They will compose OPTION clause.</td>
         <td><a href="yii-db-querytrait.html#andFilterWhere()-detail">andFilterWhere()</a></td>
         <td>Adds an additional WHERE condition to the existing one but ignores <a href="yii-db-querytrait.html#isEmpty()-detail">empty operands</a>.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
+    </tr>
+            <tr class="inherited" id="andHaving()">
+        <td><a href="yii-db-query.html#andHaving()-detail">andHaving()</a></td>
+        <td>Adds an additional HAVING condition to the existing one.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="andWhere()">
         <td><a href="yii-db-querytrait.html#andWhere()-detail">andWhere()</a></td>
@@ -428,9 +457,14 @@ They will compose OPTION clause.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
             <tr class="inherited" id="average()">
-        <td><a href="yii-sphinx-query.html#average()-detail">average()</a></td>
+        <td><a href="yii-db-query.html#average()-detail">average()</a></td>
         <td>Returns the average of the specified column values.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="batch()">
+        <td><a href="yii-db-query.html#batch()-detail">batch()</a></td>
+        <td>Starts a batch query.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="behaviors()">
         <td><a href="yii-base-component.html#behaviors()-detail">behaviors()</a></td>
@@ -453,13 +487,18 @@ They will compose OPTION clause.</td>
         <td><a href="yii-base-object.html">yii\base\Object</a></td>
     </tr>
             <tr class="inherited" id="column()">
-        <td><a href="yii-sphinx-query.html#column()-detail">column()</a></td>
+        <td><a href="yii-db-query.html#column()-detail">column()</a></td>
         <td>Executes the query and returns the first column of the result.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="count()">
-        <td><a href="yii-sphinx-query.html#count()-detail">count()</a></td>
+        <td><a href="yii-db-query.html#count()-detail">count()</a></td>
         <td>Returns the number of records.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="create()">
+        <td><a href="yii-sphinx-query.html#create()-detail">create()</a></td>
+        <td>Creates a new Query object and copies its property values from an existing one.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
             <tr id="createCommand()">
@@ -478,9 +517,14 @@ They will compose OPTION clause.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
             <tr class="inherited" id="distinct()">
-        <td><a href="yii-sphinx-query.html#distinct()-detail">distinct()</a></td>
+        <td><a href="yii-db-query.html#distinct()-detail">distinct()</a></td>
         <td>Sets the value indicating whether to SELECT DISTINCT or not.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="each()">
+        <td><a href="yii-db-query.html#each()-detail">each()</a></td>
+        <td>Starts a batch query and retrieves data row by row.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="ensureBehaviors()">
         <td><a href="yii-base-component.html#ensureBehaviors()-detail">ensureBehaviors()</a></td>
@@ -488,9 +532,9 @@ They will compose OPTION clause.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
             <tr class="inherited" id="exists()">
-        <td><a href="yii-sphinx-query.html#exists()-detail">exists()</a></td>
+        <td><a href="yii-db-query.html#exists()-detail">exists()</a></td>
         <td>Returns a value indicating whether the query result contains any row of data.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
                         <tr class="inherited" id="filterWhere()">
         <td><a href="yii-db-querytrait.html#filterWhere()-detail">filterWhere()</a></td>
@@ -508,9 +552,9 @@ They will compose OPTION clause.</td>
         <td><a href="yii-db-activequerytrait.html">yii\db\ActiveQueryTrait</a></td>
     </tr>
             <tr class="inherited" id="from()">
-        <td><a href="yii-sphinx-query.html#from()-detail">from()</a></td>
+        <td><a href="yii-db-query.html#from()-detail">from()</a></td>
         <td>Sets the FROM part of the query.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="getBehavior()">
         <td><a href="yii-base-component.html#getBehavior()-detail">getBehavior()</a></td>
@@ -528,9 +572,9 @@ They will compose OPTION clause.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
             <tr class="inherited" id="groupBy()">
-        <td><a href="yii-sphinx-query.html#groupBy()-detail">groupBy()</a></td>
+        <td><a href="yii-db-query.html#groupBy()-detail">groupBy()</a></td>
         <td>Sets the GROUP BY part of the query.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="hasEventHandlers()">
         <td><a href="yii-base-component.html#hasEventHandlers()-detail">hasEventHandlers()</a></td>
@@ -547,6 +591,11 @@ They will compose OPTION clause.</td>
         <td>Returns a value indicating whether a property is defined for this component.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
     </tr>
+            <tr class="inherited" id="having()">
+        <td><a href="yii-db-query.html#having()-detail">having()</a></td>
+        <td>Sets the HAVING part of the query.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
             <tr class="inherited" id="indexBy()">
         <td><a href="yii-db-querytrait.html#indexBy()-detail">indexBy()</a></td>
         <td>Sets the <a href="yii-db-querytrait.html#indexBy()-detail">indexBy()</a> property.</td>
@@ -557,12 +606,27 @@ They will compose OPTION clause.</td>
         <td>Initializes the object.</td>
         <td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a></td>
     </tr>
+            <tr class="inherited" id="innerJoin()">
+        <td><a href="yii-sphinx-query.html#innerJoin()-detail">innerJoin()</a></td>
+        <td>Appends an INNER JOIN part to the query.</td>
+        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+    </tr>
             <tr class="inherited" id="inverseOf()">
         <td><a href="yii-db-activerelationtrait.html#inverseOf()-detail">inverseOf()</a></td>
         <td>Sets the name of the relation that is the inverse of this relation.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
-                <tr class="inherited" id="limit()">
+                <tr class="inherited" id="join()">
+        <td><a href="yii-sphinx-query.html#join()-detail">join()</a></td>
+        <td>Appends a JOIN part to the query.</td>
+        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+    </tr>
+            <tr class="inherited" id="leftJoin()">
+        <td><a href="yii-sphinx-query.html#leftJoin()-detail">leftJoin()</a></td>
+        <td>Appends a LEFT OUTER JOIN part to the query.</td>
+        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+    </tr>
+            <tr class="inherited" id="limit()">
         <td><a href="yii-db-querytrait.html#limit()-detail">limit()</a></td>
         <td>Sets the LIMIT part of the query.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
@@ -574,14 +638,14 @@ MATCH operator inside the WHERE clause.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
             <tr class="inherited" id="max()">
-        <td><a href="yii-sphinx-query.html#max()-detail">max()</a></td>
+        <td><a href="yii-db-query.html#max()-detail">max()</a></td>
         <td>Returns the maximum of the specified column values.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="min()">
-        <td><a href="yii-sphinx-query.html#min()-detail">min()</a></td>
+        <td><a href="yii-db-query.html#min()-detail">min()</a></td>
         <td>Returns the minimum of the specified column values.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
                 <tr class="inherited" id="off()">
         <td><a href="yii-base-component.html#off()-detail">off()</a></td>
@@ -613,6 +677,11 @@ MATCH operator inside the WHERE clause.</td>
         <td>Adds an additional WHERE condition to the existing one but ignores <a href="yii-db-querytrait.html#isEmpty()-detail">empty operands</a>.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
+            <tr class="inherited" id="orHaving()">
+        <td><a href="yii-db-query.html#orHaving()-detail">orHaving()</a></td>
+        <td>Adds an additional HAVING condition to the existing one.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
             <tr class="inherited" id="orWhere()">
         <td><a href="yii-db-querytrait.html#orWhere()-detail">orWhere()</a></td>
         <td>Adds an additional WHERE condition to the existing one.</td>
@@ -624,8 +693,13 @@ MATCH operator inside the WHERE clause.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
             <tr class="inherited" id="params()">
-        <td><a href="yii-sphinx-query.html#params()-detail">params()</a></td>
+        <td><a href="yii-db-query.html#params()-detail">params()</a></td>
         <td>Sets the parameters to be bound to the query.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="populate()">
+        <td><a href="yii-sphinx-query.html#populate()-detail">populate()</a></td>
+        <td>Converts the raw query results into the format as specified by this query.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
             <tr class="inherited" id="populateRelation()">
@@ -633,15 +707,25 @@ MATCH operator inside the WHERE clause.</td>
         <td>Finds the related records and populates them into the primary models.</td>
         <td><a href="yii-db-activerelationtrait.html">yii\db\ActiveRelationTrait</a></td>
     </tr>
-            <tr class="inherited" id="scalar()">
-        <td><a href="yii-sphinx-query.html#scalar()-detail">scalar()</a></td>
-        <td>Returns the query result as a scalar value.</td>
+            <tr class="inherited" id="prepare()">
+        <td><a href="yii-db-query.html#prepare()-detail">prepare()</a></td>
+        <td>Prepares for building SQL.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
+            <tr class="inherited" id="rightJoin()">
+        <td><a href="yii-sphinx-query.html#rightJoin()-detail">rightJoin()</a></td>
+        <td>Appends a RIGHT OUTER JOIN part to the query.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
+            <tr class="inherited" id="scalar()">
+        <td><a href="yii-db-query.html#scalar()-detail">scalar()</a></td>
+        <td>Returns the query result as a scalar value.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
+    </tr>
             <tr class="inherited" id="select()">
-        <td><a href="yii-sphinx-query.html#select()-detail">select()</a></td>
+        <td><a href="yii-db-query.html#select()-detail">select()</a></td>
         <td>Sets the SELECT part of the query.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="setConnection()">
         <td><a href="yii-sphinx-query.html#setConnection()-detail">setConnection()</a></td>
@@ -667,14 +751,19 @@ for the snippets building.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
             <tr class="inherited" id="sum()">
-        <td><a href="yii-sphinx-query.html#sum()-detail">sum()</a></td>
+        <td><a href="yii-db-query.html#sum()-detail">sum()</a></td>
         <td>Returns the sum of the specified column values.</td>
-        <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="trigger()">
         <td><a href="yii-base-component.html#trigger()-detail">trigger()</a></td>
         <td>Triggers an event.</td>
         <td><a href="yii-base-component.html">yii\base\Component</a></td>
+    </tr>
+            <tr class="inherited" id="union()">
+        <td><a href="yii-db-query.html#union()-detail">union()</a></td>
+        <td>Appends a SQL statement using UNION operator.</td>
+        <td><a href="yii-db-query.html">yii\db\Query</a></td>
     </tr>
             <tr class="inherited" id="via()">
         <td><a href="yii-db-activerelationtrait.html#via()-detail">via()</a></td>
@@ -713,7 +802,7 @@ for the snippets building.</td>
 <tr>
   <th>Method</th><th>Description</th><th>Defined By</th>
 </tr>
-                                                                                        <tr id="callSnippets()">
+                                                                                                    <tr id="callSnippets()">
         <td><a href="yii-sphinx-activequery.html#callSnippets()-detail">callSnippets()</a></td>
         <td>Builds a snippets from provided source data.</td>
         <td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a></td>
@@ -723,12 +812,12 @@ for the snippets building.</td>
         <td>Builds a snippets from provided source data by the given index.</td>
         <td><a href="yii-sphinx-query.html">yii\sphinx\Query</a></td>
     </tr>
-                                    <tr id="defaultConnection()">
+                                        <tr id="defaultConnection()">
         <td><a href="yii-sphinx-activequery.html#defaultConnection()-detail">defaultConnection()</a></td>
         <td></td>
         <td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a></td>
     </tr>
-                                <tr id="fetchSnippetSourceFromModels()">
+                                    <tr id="fetchSnippetSourceFromModels()">
         <td><a href="yii-sphinx-activequery.html#fetchSnippetSourceFromModels()-detail">fetchSnippetSourceFromModels()</a></td>
         <td>Fetches the source for the snippets using <a href="yii-sphinx-activerecord.html#getSnippetSource()-detail">yii\sphinx\ActiveRecord::getSnippetSource()</a> method.</td>
         <td><a href="yii-sphinx-activequery.html">yii\sphinx\ActiveQuery</a></td>
@@ -744,17 +833,17 @@ for the snippets building.</td>
         <td>Removes <a href="yii-db-querytrait.html#isEmpty()-detail">empty operands</a> from the given query condition.</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
-                                                                    <tr class="inherited" id="isEmpty()">
+                                                                            <tr class="inherited" id="isEmpty()">
         <td><a href="yii-db-querytrait.html#isEmpty()-detail">isEmpty()</a></td>
         <td>Returns a value indicating whether the give value is "empty".</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
-                            <tr class="inherited" id="normalizeOrderBy()">
+                                    <tr class="inherited" id="normalizeOrderBy()">
         <td><a href="yii-db-querytrait.html#normalizeOrderBy()-detail">normalizeOrderBy()</a></td>
         <td>Normalizes format of ORDER BY data</td>
         <td><a href="yii-db-querytrait.html">yii\db\QueryTrait</a></td>
     </tr>
-                                                                                            </table>
+                                                                                                                </table>
 </div>
 
 <a name="events"></a>
@@ -1237,7 +1326,7 @@ $articles = Article::find()-&gt;snippetByModel()-&gt;all();
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:01:55 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:40:14 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

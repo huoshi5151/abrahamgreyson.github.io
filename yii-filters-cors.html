@@ -408,7 +408,7 @@
 <div id="classDescription">
     <p><strong>Cors filter implements <a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">Cross Origin Resource Sharing</a>.</strong></p>
     <p>Make sure to read carefully what CORS does and does not. CORS do not secure your API,
-but allow the developper to grant access to third party code (ajax calls from external domain)</p>
+but allow the developer to grant access to third party code (ajax calls from external domain)</p>
 <p>You may use CORS filter by attaching it as a behavior to a controller or module, like the following,</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">behaviors</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'corsFilter'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'class'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">filters</span><span style="color: #007700">\</span><span style="color: #0000BB">Cors</span><span style="color: #007700">::</span><span style="color: #0000BB">className</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;];<br />}</span></code></pre>
 <p>The CORS filter can be specialized to restrict parameters, like this,
@@ -583,7 +583,7 @@ You may override this method to do last-minute preparation for the action.</td>
     </tr>
             <tr id="extractHeaders()">
         <td><a href="yii-filters-cors.html#extractHeaders()-detail">extractHeaders()</a></td>
-        <td>Extract CORS headers fron the request</td>
+        <td>Extract CORS headers from the request</td>
         <td><a href="yii-filters-cors.html">yii\filters\Cors</a></td>
     </tr>
             <tr class="inherited" id="hasMethod()">
@@ -819,7 +819,7 @@ You may override this method to do last-minute preparation for the action.</stro
     </div>
 
     <div class="doc-description">
-        <p><strong>Extract CORS headers fron the request</strong></p>
+        <p><strong>Extract CORS headers from the request</strong></p>
 
         
             </div>
@@ -977,7 +977,7 @@ You may override this method to do last-minute preparation for the action.</stro
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$responseHeaders</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"><p>CORS response headers sent to the clinet</p>
+                  <td class="param-desc-col"><p>CORS response headers sent to the client</p>
 </td>
                 </tr>
                                                 </table>
@@ -1058,7 +1058,7 @@ You may override this method to do last-minute preparation for the action.</stro
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:02:14 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:40:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

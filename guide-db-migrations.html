@@ -240,7 +240,7 @@ after another, in the order of the timestamp value in the class name.</p>
 table named <code>migration</code>. This allows the tool to identify which migrations
 have been applied and which are not. If the <code>migration</code> table does not exist,
 the tool will automatically create it in the database specified by the <code>db</code>
-application component.</p>
+<a href="guide-structure-application-components.html">application component</a>.</p>
 <p>Sometimes, we may only want to apply one or a few new migrations. We can use the
 following command:</p>
 <pre><code>yii migrate/up 3
@@ -311,7 +311,7 @@ sub-directory under the application base path.</p>
 migration history information. It defaults to <code>migration</code>. The table
 structure is <code>version varchar(255) primary key, apply_time integer</code>.</p>
 </li>
-<li><p><code>db</code>: string, specifies the ID of the database application component.
+<li><p><code>db</code>: string, specifies the ID of the database <a href="guide-structure-application-components.html">application component</a>.
 Defaults to 'db'.</p>
 </li>
 <li><p><code>templateFile</code>: string, specifies the path of the file to be served as the code
@@ -340,7 +340,7 @@ the console application's configuration file like the following,</p>
 without requiring us to enter the command line options every time. Other command options
 can be also configured this way.</p>
 <h3>Migrating with Multiple Databases <a href="#migrating-with-multiple-databases" name="migrating-with-multiple-databases" class="hashlink">&para;</a></h3>
-<p>By default, migrations will be applied to the database specified by the <code>db</code> application component.
+<p>By default, migrations will be applied to the database specified by the <code>db</code> <a href="guide-structure-application-components.html">application component</a>.
 You may change it by specifying the <code>--db</code> option, for example,</p>
 <pre><code>yii migrate --db=db2
 </code></pre>
@@ -373,7 +373,7 @@ yii migrate --migrationPath=@app/migrations/db2 --db=db2
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:04:10 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:42:52 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

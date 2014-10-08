@@ -108,7 +108,7 @@ from a <a href="yii-sphinx-query.html">yii\sphinx\Query</a> object.</p>
 <tr>
   <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
 </tr>
-        <tr id="$db">
+            <tr id="$db">
         <td><a href="yii-sphinx-querybuilder.html#$db-detail">$db</a></td>
         <td><a href="yii-sphinx-connection.html">yii\sphinx\Connection</a></td>
         <td>The Sphinx connection.</td>
@@ -121,6 +121,30 @@ from a <a href="yii-sphinx-query.html">yii\sphinx\Query</a> object.</p>
         <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
     </tr>
     </table>
+</div>
+
+<div class="summary doc-property">
+<h2>Protected Properties</h2>
+
+<p><a href="#" class="toggle">Hide inherited properties</a></p>
+
+<table class="summary-table table table-striped table-bordered table-hover">
+<colgroup>
+    <col class="col-property" />
+    <col class="col-type" />
+    <col class="col-description" />
+    <col class="col-defined" />
+</colgroup>
+<tr>
+  <th>Property</th><th>Type</th><th>Description</th><th>Defined By</th>
+</tr>
+        <tr id="$conditionBuilders">
+        <td><a href="yii-sphinx-querybuilder.html#$conditionBuilders-detail">$conditionBuilders</a></td>
+        <td><a href="http://www.php.net/language.types.array">array</a></td>
+        <td>Map of query condition to builder methods.</td>
+        <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
+    </tr>
+            </table>
 </div>
 
 <a name="methods"></a>
@@ -219,6 +243,11 @@ from a <a href="yii-sphinx-query.html">yii\sphinx\Query</a> object.</p>
         <td>Creates a condition based on column-value pairs.</td>
         <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
     </tr>
+            <tr id="buildHaving()">
+        <td><a href="yii-sphinx-querybuilder.html#buildHaving()-detail">buildHaving()</a></td>
+        <td></td>
+        <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
+    </tr>
             <tr id="buildInCondition()">
         <td><a href="yii-sphinx-querybuilder.html#buildInCondition()-detail">buildInCondition()</a></td>
         <td>Creates an SQL expressions with the <code>IN</code> operator.</td>
@@ -232,6 +261,11 @@ from a <a href="yii-sphinx-query.html">yii\sphinx\Query</a> object.</p>
             <tr id="buildLimit()">
         <td><a href="yii-sphinx-querybuilder.html#buildLimit()-detail">buildLimit()</a></td>
         <td></td>
+        <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
+    </tr>
+            <tr id="buildNotCondition()">
+        <td><a href="yii-sphinx-querybuilder.html#buildNotCondition()-detail">buildNotCondition()</a></td>
+        <td>Inverts an SQL expressions with <code>NOT</code> operator.</td>
         <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
     </tr>
             <tr id="buildOption()">
@@ -357,7 +391,7 @@ optionally, keyword statistics.</td>
         <td></td>
         <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
     </tr>
-                                                                                        <tr id="composeColumnValue()">
+                                                                                                <tr id="composeColumnValue()">
         <td><a href="yii-sphinx-querybuilder.html#composeColumnValue()-detail">composeColumnValue()</a></td>
         <td>Composes column value for SQL, taking in account the column type.</td>
         <td><a href="yii-sphinx-querybuilder.html">yii\sphinx\QueryBuilder</a></td>
@@ -407,11 +441,29 @@ optionally, keyword statistics.</td>
 
 <div class="property-doc">
 
+    <div class="detail-header h3" id="$conditionBuilders-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-sphinx-querybuilder.html#$conditionBuilders-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L46" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L46" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $conditionBuilders        <span class="detailHeaderTag small">
+            protected                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.array">array</a> <a href="yii-sphinx-querybuilder.html#$conditionBuilders-detail">$conditionBuilders</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;[</span><span style="color: #DD0000">'AND'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildAndCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'OR'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildAndCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'BETWEEN'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildBetweenCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'NOT&nbsp;BETWEEN'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildBetweenCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'IN'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildInCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'NOT&nbsp;IN'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildInCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'LIKE'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildLikeCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'NOT&nbsp;LIKE'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildLikeCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'OR&nbsp;LIKE'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildLikeCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'OR&nbsp;NOT&nbsp;LIKE'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildLikeCondition'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'NOT'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'buildNotCondition'</span><span style="color: #007700">]</span></div>
+
+    <p>Map of query condition to builder methods.
+These methods are used by <a href="yii-sphinx-querybuilder.html#buildCondition()-detail">buildCondition()</a> to build SQL conditions from array syntax.</p>
+
+    
+
     <div class="detail-header h3" id="$db-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#$db-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L34" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L34" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L35" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L35" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $db        <span class="detailHeaderTag small">
             public                                    property
@@ -427,8 +479,8 @@ optionally, keyword statistics.</td>
     <div class="detail-header h3" id="$separator-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#$separator-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L39" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L39" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L40" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L40" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $separator        <span class="detailHeaderTag small">
             public                                    property
@@ -449,8 +501,8 @@ Defaults to an empty space. This is mainly used by <a href="yii-sphinx-querybuil
     <div class="detail-header h3" id="__construct()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#__construct()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L47" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L47" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L66" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L66" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         __construct()
         <span class="detail-header-tag small">
@@ -485,8 +537,8 @@ Defaults to an empty space. This is mainly used by <a href="yii-sphinx-querybuil
     <div class="detail-header h3" id="batchInsert()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#batchInsert()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L185" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L185" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L212" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L212" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         batchInsert()
         <span class="detail-header-tag small">
@@ -548,8 +600,8 @@ They should be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="batchReplace()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#batchReplace()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L211" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L211" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L238" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L238" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         batchReplace()
         <span class="detail-header-tag small">
@@ -611,8 +663,8 @@ They should be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="build()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#build()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L62" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L62" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L82" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L82" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         build()
         <span class="detail-header-tag small">
@@ -649,15 +701,21 @@ parameters to be bound to the SQL statement (the second array element). The para
 include those provided in <code>$params</code>.</p>
 </td>
                 </tr>
-                                    </table>
+                                        <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="yii-base-notsupportedexception.html">yii\base\NotSupportedException</a></td>
+                  <td class="param-desc-col"><p>if query contains 'join' option.</p>
+</td>
+                </tr>
+                        </table>
 
 <!--	-->
 
     <div class="detail-header h3" id="buildAndCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildAndCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L698" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L698" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L721" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L721" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildAndCondition()
         <span class="detail-header-tag small">
@@ -710,8 +768,8 @@ include those provided in <code>$params</code>.</p>
     <div class="detail-header h3" id="buildBetweenCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildBetweenCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L726" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L726" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L775" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L775" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildBetweenCondition()
         <span class="detail-header-tag small">
@@ -771,8 +829,8 @@ describe the interval that column value should be in.</p>
     <div class="detail-header h3" id="buildColumns()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildColumns()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L595" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L595" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L632" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L632" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildColumns()
         <span class="detail-header-tag small">
@@ -808,8 +866,8 @@ describe the interval that column value should be in.</p>
     <div class="detail-header h3" id="buildCompositeInCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildCompositeInCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L824" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L824" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L873" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L873" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildCompositeInCondition()
         <span class="detail-header-tag small">
@@ -866,8 +924,8 @@ describe the interval that column value should be in.</p>
     <div class="detail-header h3" id="buildCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L624" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L624" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L661" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L661" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildCondition()
         <span class="detail-header-tag small">
@@ -892,7 +950,7 @@ describe the interval that column value should be in.</p>
                             <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a></td>
-                  <td class="param-desc-col"><p>The condition specification. Please refer to <a href="yii-sphinx-query.html#where()-detail">yii\sphinx\Query::where()</a>
+                  <td class="param-desc-col"><p>The condition specification. Please refer to <a href="yii-db-querytrait.html#where()-detail">yii\sphinx\Query::where()</a>
 on how to specify a condition.</p>
 </td>
                 </tr>
@@ -921,8 +979,8 @@ on how to specify a condition.</p>
     <div class="detail-header h3" id="buildFrom()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildFrom()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L444" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L444" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L471" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L471" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildFrom()
         <span class="detail-header-tag small">
@@ -962,8 +1020,8 @@ on how to specify a condition.</p>
     <div class="detail-header h3" id="buildGroupBy()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildGroupBy()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L522" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L522" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L541" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L541" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildGroupBy()
         <span class="detail-header-tag small">
@@ -997,8 +1055,8 @@ on how to specify a condition.</p>
     <div class="detail-header h3" id="buildHashCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildHashCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L666" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L666" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L689" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L689" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildHashCondition()
         <span class="detail-header-tag small">
@@ -1042,11 +1100,58 @@ on how to specify a condition.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="buildHaving()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildHaving()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L552" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L552" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        buildHaving()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-sphinx-querybuilder.html#buildHaving()-detail">buildHaving</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$indexes</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$condition</span><span style="color: #007700">,&nbsp;&lt;</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;&amp;&lt;/</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$indexes</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a>[]</td>
+                  <td class="param-desc-col"><p>List of index names, which affected by query</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a>|<a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"></td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The binding parameters to be populated</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The HAVING clause built from <a href="yii-db-query.html#$having-detail">yii\sphinx\Query::$having</a>.</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="buildInCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildInCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L758" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L758" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L807" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L807" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildInCondition()
         <span class="detail-header-tag small">
@@ -1109,8 +1214,8 @@ operator is <code>IN</code> and empty if operator is <code>NOT IN</code>.</p>
     <div class="detail-header h3" id="buildLikeCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildLikeCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L868" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L868" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L917" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L917" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildLikeCondition()
         <span class="detail-header-tag small">
@@ -1182,8 +1287,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildLimit()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildLimit()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L574" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L574" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L611" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L611" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildLimit()
         <span class="detail-header-tag small">
@@ -1219,11 +1324,71 @@ the values will be automatically enclosed within a pair of percentage characters
 
 <!--	-->
 
+    <div class="detail-header h3" id="buildNotCondition()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildNotCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L748" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L748" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        buildNotCondition()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Inverts an SQL expressions with <code>NOT</code> operator.</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-sphinx-querybuilder.html#buildNotCondition()-detail">buildNotCondition</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$indexes</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$operator</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$operands</span><span style="color: #007700">,&nbsp;&lt;</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;&amp;&lt;/</span><span style="color: #0000BB">b</span><span style="color: #007700">&gt;</span><span style="color: #0000BB">$params&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$indexes</span></td>
+                  <td class="param-type-col"><a href="yii-sphinx-indexschema.html">yii\sphinx\IndexSchema</a>[]</td>
+                  <td class="param-desc-col"><p>List of indexes, which affected by query</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$operator</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The operator to use for connecting the given operands</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$operands</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The SQL expressions to connect.</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$params</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>The binding parameters to be populated</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>The generated SQL expression</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="yii-base-invalidparamexception.html">yii\base\InvalidParamException</a></td>
+                  <td class="param-desc-col"><p>if wrong number of operands have been given.</p>
+</td>
+                </tr>
+                        </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="buildOption()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildOption()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L932" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L932" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L981" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L981" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildOption()
         <span class="detail-header-tag small">
@@ -1264,8 +1429,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildOrderBy()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildOrderBy()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L552" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L552" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L589" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L589" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildOrderBy()
         <span class="detail-header-tag small">
@@ -1299,8 +1464,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildOrderByAndLimit()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildOrderByAndLimit()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L535" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L535" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L572" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L572" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildOrderByAndLimit()
         <span class="detail-header-tag small">
@@ -1353,8 +1518,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildSelect()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildSelect()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L407" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L407" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L434" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L434" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildSelect()
         <span class="detail-header-tag small">
@@ -1404,8 +1569,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildSimpleCondition()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildSimpleCondition()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L1025" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L1025" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L1074" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L1074" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildSimpleCondition()
         <span class="detail-header-tag small">
@@ -1458,8 +1623,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildWhere()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildWhere()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L482" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L482" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L509" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L509" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildWhere()
         <span class="detail-header-tag small">
@@ -1510,8 +1675,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="buildWithin()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#buildWithin()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L910" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L910" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L959" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L959" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         buildWithin()
         <span class="detail-header-tag small">
@@ -1545,8 +1710,8 @@ the values will be automatically enclosed within a pair of percentage characters
     <div class="detail-header h3" id="callKeywords()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#callKeywords()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L390" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L390" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L417" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L417" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         callKeywords()
         <span class="detail-header-tag small">
@@ -1601,8 +1766,8 @@ so that they can be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="callSnippets()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#callSnippets()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L342" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L342" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L369" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L369" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         callSnippets()
         <span class="detail-header-tag small">
@@ -1663,8 +1828,8 @@ so that they can be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="composeColumnValue()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#composeColumnValue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L979" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L979" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L1028" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L1028" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         composeColumnValue()
         <span class="detail-header-tag small">
@@ -1717,8 +1882,8 @@ so that they can be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="delete()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#delete()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L313" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L313" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L340" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L340" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         delete()
         <span class="detail-header-tag small">
@@ -1748,7 +1913,7 @@ so that they can be bound to the Sphinx command later.</p>
                   <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"><p>The condition that will be put in the WHERE part. Please
-refer to <a href="yii-sphinx-query.html#where()-detail">yii\sphinx\Query::where()</a> on how to specify condition.</p>
+refer to <a href="yii-db-querytrait.html#where()-detail">yii\sphinx\Query::where()</a> on how to specify condition.</p>
 </td>
                 </tr>
                             <tr>
@@ -1771,8 +1936,8 @@ so that they can be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="generateBatchInsertReplace()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#generateBatchInsertReplace()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L225" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L225" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L252" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L252" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         generateBatchInsertReplace()
         <span class="detail-header-tag small">
@@ -1831,8 +1996,8 @@ so that they can be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="generateInsertReplace()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#generateInsertReplace()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L145" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L145" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L172" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L172" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         generateInsertReplace()
         <span class="detail-header-tag small">
@@ -1885,8 +2050,8 @@ so that they can be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="insert()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#insert()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L107" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L107" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L134" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L134" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         insert()
         <span class="detail-header-tag small">
@@ -1942,8 +2107,8 @@ They should be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="replace()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#replace()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L132" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L132" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L159" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L159" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         replace()
         <span class="detail-header-tag small">
@@ -1999,8 +2164,8 @@ They should be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="truncateIndex()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#truncateIndex()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L326" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L326" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L353" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L353" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         truncateIndex()
         <span class="detail-header-tag small">
@@ -2035,8 +2200,8 @@ They should be bound to the Sphinx command later.</p>
     <div class="detail-header h3" id="update()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-sphinx-querybuilder.html#update()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L270" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L270" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/sphinx/QueryBuilder.php#L297" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/sphinx/QueryBuilder.php#L297" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         update()
         <span class="detail-header-tag small">
@@ -2073,7 +2238,7 @@ $sql = $queryBuilder-&gt;update('idx_user', ['status' =&gt; 1], 'age &gt; 30', $
                   <td class="param-name-col"><span style="color: #0000BB">$condition</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a>|<a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"><p>The condition that will be put in the WHERE part. Please
-refer to <a href="yii-sphinx-query.html#where()-detail">yii\sphinx\Query::where()</a> on how to specify condition.</p>
+refer to <a href="yii-db-querytrait.html#where()-detail">yii\sphinx\Query::where()</a> on how to specify condition.</p>
 </td>
                 </tr>
                             <tr>
@@ -2137,7 +2302,7 @@ so that they can be bound to the Sphinx command later.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:01:55 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:40:14 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

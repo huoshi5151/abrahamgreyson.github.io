@@ -216,6 +216,10 @@ as session storage:</p>
 <li>PostgreSQL: BYTEA</li>
 <li>MSSQL: BLOB</li>
 </ul>
+<blockquote><p>Note: According to the php.ini setting of <code>session.hash_function</code>, you may need to adjust
+  the length of the <code>id</code> column. For example, if <code>session.hash_function=sha256</code>, you should use
+  length 64 instead of 40.</p>
+</blockquote>
 <h3>Flash Data <a name="flash-data"></a> <a href="#flash-data" name="flash-data" class="hashlink">&para;</a></h3>
 <p>Flash data is a special kind of session data which, once set in one request, will only be available during
 the next request and will be automatically deleted afterwards. Flash data is most commonly used to implement
@@ -280,7 +284,7 @@ the aforementioned hash strings. You can do so by configuring the <code>request<
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:04:12 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:42:54 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

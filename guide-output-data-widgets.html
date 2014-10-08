@@ -212,11 +212,11 @@ grid columns.</p>
 <li><code>footerOptions</code></li>
 <li><code>filterOptions</code></li>
 </ul>
-<h4>Data column <a href="#data-column" name="data-column" class="hashlink">&para;</a></h4>
+<h4>Data column <a name="data-column"></a> <a href="#data-column" name="data-column" class="hashlink">&para;</a></h4>
 <p>Data column is for displaying and sorting data. It is default column type so specifying class could be omitted when
 using it.</p>
 <p>The main setting of the data column is its format. It could be specified via <code>format</code> attribute. Its values are
-corresponding to methods in <code>format</code> application component that is <a href="./yii-i18n-formatter.html">Formatter</a> by default:</p>
+corresponding to methods in <code>formatter</code> <a href="guide-structure-application-components.html">application component</a> that is <a href="./yii-i18n-formatter.html">Formatter</a> by default:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">&lt;?=&nbsp;</span><span style="color: #0000BB">GridView</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'columns'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attribute'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'name'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'format'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'text'<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attribute'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'birthday'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'format'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'date'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'Y-m-d'</span><span style="color: #007700">]<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]);&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
 <p>In the above <code>text</code> corresponds to <a href="./yii-i18n-formatter.html#asText()-detail">yii\i18n\Formatter::asText()</a>. The value of the column is passed as the first
 argument. In the second column definition <code>date</code> corresponds to <a href="./yii-i18n-formatter.html#asDate()-detail">yii\i18n\Formatter::asDate()</a>. The value of the
@@ -341,7 +341,7 @@ in <code>$userProvider</code> and <code>$postProvider</code>:</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:04:11 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:42:53 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

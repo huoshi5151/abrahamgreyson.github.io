@@ -168,7 +168,7 @@ in debug mode.</li>
 <p>The <a href="./yii-web-errorhandler.html">error handler</a> is enabled by default. You may disable it by defining the constant
 <code>YII_ENABLE_ERROR_HANDLER</code> to be false in the <a href="guide-structure-entry-scripts.html">entry script</a> of your application.</p>
 <h2>Using Error Handler <a name="using-error-handler"></a> <a href="#using-error-handler" name="using-error-handler" class="hashlink">&para;</a></h2>
-<p>The <a href="./yii-web-errorhandler.html">error handler</a> is registered as an application component named <code>errorHandler</code>.
+<p>The <a href="./yii-web-errorhandler.html">error handler</a> is registered as an <a href="guide-structure-application-components.html">application component</a> named <code>errorHandler</code>.
 You may configure it in the application configuration like the following:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">return&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'errorHandler'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'maxSourceLines'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">20</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />];</span></code></pre>
 <p>With the above configuration, the number of source code lines to be displayed in exception pages will be up to 20.</p>
@@ -270,7 +270,7 @@ Content-Type: application/json; charset=UTF-8
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 07 Oct 2014 06:04:11 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:42:54 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
