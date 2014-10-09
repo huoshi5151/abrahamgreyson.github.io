@@ -155,70 +155,58 @@
 <a class="list-group-item" href="./guide-helper-security.html">security</a></div>
 <a class="list-group-item" href="#navigation-1486" data-toggle="collapse" data-parent="#navigation">不在目录内的文件 <b class="caret"></b></a><div id="navigation-1486" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-glossary.html">glossary</a></div></div>    </div>
     <div class="col-md-9 guide-content" role="main">
-        <h1>Widgets <a href="#widgets" name="widgets" class="hashlink">&para;</a></h1>
-<p>Widgets are reusable building blocks used in <a href="guide-structure-views.html">views</a> to create complex and configurable user
-interface elements in an object-oriented fashion. For example, a date picker widget may generate a fancy date picker
-that allows users to pick a date as their input. All you need to do is just to insert the code in a view
-like the following:</p>
+        <h1>小部件 <a href="#xiao-bu-jian" name="xiao-bu-jian" class="hashlink">&para;</a></h1>
+<p>小部件是在 <a href="guide-structure-views.html">视图</a> 中使用的可重用单元，使用面向对象方式创建复杂和可配置用户界面单元。
+例如，日期选择器小部件可生成一个精致的允许用户选择日期的日期选择器，
+你只需要在视图中插入如下代码：</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">jui</span><span style="color: #007700">\</span><span style="color: #0000BB">DatePicker</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;<br />&lt;?=&nbsp;DatePicker</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([</span><span style="color: #DD0000">'name'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'date'</span><span style="color: #007700">])&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>There are a good number of widgets bundled with Yii, such as <a href="./yii-widgets-activeform.html">active form</a>,
-<a href="./yii-widgets-menu.html">menu</a>, <a href="guide-widget-jui.html">jQuery UI widgets</a>, <a href="guide-widget-bootstrap.html">Twitter Bootstrap widgets</a>.
-In the following, we will introduce the basic knowledge about widgets. Please refer to the class API documentation
-if you want to learn about the usage of a particular widget.</p>
-<h2>Using Widgets <a name="using-widgets"></a> <a href="#using-widgets" name="using-widgets" class="hashlink">&para;</a></h2>
-<p>Widgets are primarily used in <a href="guide-structure-views.html">views</a>. You can call the <a href="./yii-base-widget.html#widget()-detail">yii\base\Widget::widget()</a> method
-to use a widget in a view. The method takes a <a href="guide-concept-configurations.html">configuration</a> array for initializing
-the widget and returns the rendering result of the widget. For example, the following code inserts a date picker
-widget which is configured to use Russian language and keep the input in the <code>from_date</code> attribute of <code>$model</code>.</p>
+<p>Yii提供许多优秀的小部件，比如<a href="./yii-widgets-activeform.html">active form</a>, [yii\widgets\Menu|menu]],
+<a href="guide-widget-jui.html">jQuery UI widgets</a>, <a href="guide-widget-bootstrap.html">Twitter Bootstrap widgets</a>。
+接下来介绍小部件的基本知识，如果你想了解某个小部件请参考对应的类API文档。</p>
+<h2>使用小部件 <a name="using-widgets"></a> <a href="#shi-yong-xiao-bu-jian" name="shi-yong-xiao-bu-jian" class="hashlink">&para;</a></h2>
+<p>小部件基本上在<a href="guide-structure-views.html">views</a>中使用，在视图中可调用 <a href="./yii-base-widget.html#widget()-detail">yii\base\Widget::widget()</a> 方法使用小部件。
+该方法使用 <a href="guide-concept-configurations.html">配置</a> 数组初始化小部件并返回小部件渲染后的结果。
+例如如下代码插入一个日期选择器小部件，它配置为使用俄罗斯语，输入框内容为<code>$model</code>的<code>from_date</code>属性值。</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">jui</span><span style="color: #007700">\</span><span style="color: #0000BB">DatePicker</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;<br />&lt;?=&nbsp;DatePicker</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'model'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$model</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attribute'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'from_date'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'language'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'ru'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'clientOptions'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'dateFormat'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'yy-mm-dd'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />])&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>Some widgets can take a block of content which should be enclosed between the invocation of
-<a href="./yii-base-widget.html#begin()-detail">yii\base\Widget::begin()</a> and <a href="./yii-base-widget.html#end()-detail">yii\base\Widget::end()</a>. For example, the following code uses the
-<a href="./yii-widgets-activeform.html">yii\widgets\ActiveForm</a> widget to generate a login form. The widget will generate the opening and closing
-<code>&lt;form&gt;</code> tags at the place where <code>begin()</code> and <code>end()</code> are called, respectively. Anything in between will be
-rendered as is.</p>
+<p>一些小部件可在<a href="./yii-base-widget.html#begin()-detail">yii\base\Widget::begin()</a> 和 <a href="./yii-base-widget.html#end()-detail">yii\base\Widget::end()</a> 调用中使用数据内容。Some widgets can take a block of content which should be enclosed between the invocation of
+例如如下代码使用<a href="./yii-widgets-activeform.html">yii\widgets\ActiveForm</a>小部件生成一个登录表单，
+小部件会在<code>begin()</code> 和0 <code>end()</code>执行处分别生成<code>&lt;form&gt;</code>的开始标签和结束标签，中间的任何代码也会被渲染。</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">widgets</span><span style="color: #007700">\</span><span style="color: #0000BB">ActiveForm</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">helpers</span><span style="color: #007700">\</span><span style="color: #0000BB">Html</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;<br /></span><br /><span style="color: #0000BB">&lt;?php&nbsp;$form&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ActiveForm</span><span style="color: #007700">::</span><span style="color: #0000BB">begin</span><span style="color: #007700">([</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'login-form'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #0000BB">?&gt;<br /></span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?=&nbsp;$form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">field</span><span style="color: #007700">(</span><span style="color: #0000BB">$model</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'username'</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;<br /></span><br />&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?=&nbsp;$form</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">field</span><span style="color: #007700">(</span><span style="color: #0000BB">$model</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'password'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">passwordInput</span><span style="color: #007700">()&nbsp;</span><span style="color: #0000BB">?&gt;<br /></span><br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class="form-group"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #0000BB">&lt;?=&nbsp;Html</span><span style="color: #007700">::</span><span style="color: #0000BB">submitButton</span><span style="color: #007700">(</span><span style="color: #DD0000">'Login'</span><span style="color: #007700">)&nbsp;</span><span style="color: #0000BB">?&gt;<br /></span>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br /><br /><span style="color: #0000BB">&lt;?php&nbsp;ActiveForm</span><span style="color: #007700">::</span><span style="color: #0000BB">end</span><span style="color: #007700">();&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>Note that unlike <a href="./yii-base-widget.html#widget()-detail">yii\base\Widget::widget()</a> which returns the rendering result of a widget, the method
-<a href="./yii-base-widget.html#begin()-detail">yii\base\Widget::begin()</a> returns an instance of the widget which you can use to build the widget content.</p>
+<p>注意和调用 <a href="./yii-base-widget.html#widget()-detail">yii\base\Widget::widget()</a> 返回渲染结果不同，
+调用 <a href="./yii-base-widget.html#begin()-detail">yii\base\Widget::begin()</a> 方法返回一个可组建小部件内容的小部件实例。</p>
+<h2>创建小部件 <a name="creating-widgets"></a> <a href="#chuang-jian-xiao-bu-jian" name="chuang-jian-xiao-bu-jian" class="hashlink">&para;</a></h2>
 <h2>Creating Widgets <a name="creating-widgets"></a> <a href="#creating-widgets" name="creating-widgets" class="hashlink">&para;</a></h2>
-<p>To create a widget, extend from <a href="./yii-base-widget.html">yii\base\Widget</a> and override the <a href="./yii-base-object.html#init()-detail">yii\base\Widget::init()</a> and/or
-<a href="./yii-base-widget.html#run()-detail">yii\base\Widget::run()</a> methods. Usually, the <code>init()</code> method should contain the code that normalizes the widget
-properties, while the <code>run()</code> method should contain the code that generates the rendering result of the widget.
-The rendering result may be directly "echoed" or returned as a string by <code>run()</code>.</p>
-<p>In the following example, <code>HelloWidget</code> HTML-encodes and displays the content assigned to its <code>message</code> property.
-If the property is not set, it will display "Hello World" by default.</p>
+<p>继承 <a href="./yii-base-widget.html">yii\base\Widget</a> 类并覆盖 <a href="./yii-base-object.html#init()-detail">yii\base\Widget::init()</a> 和/或
+<a href="./yii-base-widget.html#run()-detail">yii\base\Widget::run()</a> 方法可创建小部件。通常<code>init()</code> 方法处理小部件属性，
+<code>run()</code> 方法包含小部件生成渲染结果的代码。
+渲染结果可在<code>run()</code>方法中直接"echoed"输出或以字符串返回。</p>
+<p>如下代码中<code>HelloWidget</code>编码并显示赋给<code>message</code> 属性的值，
+如果属性没有被赋值，默认会显示"Hello World"。</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">components</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">base</span><span style="color: #007700">\</span><span style="color: #0000BB">Widget</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">helpers</span><span style="color: #007700">\</span><span style="color: #0000BB">Html</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">HelloWidget&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Widget<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">;<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message&nbsp;</span><span style="color: #007700">===&nbsp;</span><span style="color: #0000BB">null</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'Hello&nbsp;World'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">run</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Html</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">message</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
-<p>To use this widget, simply insert the following code in a view:</p>
+<p>使用这个小部件只需在视图中简单使用如下代码:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">components</span><span style="color: #007700">\</span><span style="color: #0000BB">HelloWidget</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;<br />&lt;?=&nbsp;HelloWidget</span><span style="color: #007700">::</span><span style="color: #0000BB">widget</span><span style="color: #007700">([</span><span style="color: #DD0000">'message'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'Good&nbsp;morning'</span><span style="color: #007700">])&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>Below is a variant of <code>HelloWidget</code> which takes the content enclosed within the <code>begin()</code> and <code>end()</code> calls,
-HTML-encodes it and then displays it.</p>
+<p>以下是另一种可在<code>begin()</code> 和 <code>end()</code>调用中使用的<code>HelloWidget</code>，HTML编码内容然后显示。</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">namespace&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">components</span><span style="color: #007700">;<br /><br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">base</span><span style="color: #007700">\</span><span style="color: #0000BB">Widget</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">helpers</span><span style="color: #007700">\</span><span style="color: #0000BB">Html</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">HelloWidget&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">Widget<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">init</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">init</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">ob_start</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">run</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$content&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">ob_get_clean</span><span style="color: #007700">();<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">Html</span><span style="color: #007700">::</span><span style="color: #0000BB">encode</span><span style="color: #007700">(</span><span style="color: #0000BB">$content</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br />}</span></code></pre>
-<p>As you can see, PHP output buffer is started in <code>init()</code> so that any output between the calls of <code>init()</code> and <code>run()</code>
-can be captured, processed and returned in <code>run()</code>.</p>
-<blockquote><p>Info: When you call <a href="./yii-base-widget.html#begin()-detail">yii\base\Widget::begin()</a>, a new instance of the widget will be created and the <code>init()</code> method
-  will be called at the end of the widget constructor. When you call <a href="./yii-base-widget.html#end()-detail">yii\base\Widget::end()</a>, the <code>run()</code> method
-  will be called whose return result will be echoed by <code>end()</code>.</p>
+<p>如上所示，PHP输出缓冲在<code>init()</code>启动，所有在<code>init()</code> 和 <code>run()</code>方法之间的输出内容都会被获取，并在<code>run()</code>处理和返回。</p>
+<blockquote><p>补充: 当你调用 <a href="./yii-base-widget.html#begin()-detail">yii\base\Widget::begin()</a> 时会创建一个新的小部件实例并在构造结束时调用<code>init()</code>方法，
+  在<code>end()</code>时会调用<code>run()</code>方法并输出返回结果。</p>
 </blockquote>
-<p>The following code shows how to use this new variant of <code>HelloWidget</code>:</p>
+<p>如下代码显示如何使用这种 <code>HelloWidget</code>:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">app</span><span style="color: #007700">\</span><span style="color: #0000BB">components</span><span style="color: #007700">\</span><span style="color: #0000BB">HelloWidget</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">?&gt;<br />&lt;?php&nbsp;HelloWidget</span><span style="color: #007700">::</span><span style="color: #0000BB">begin</span><span style="color: #007700">();&nbsp;</span><span style="color: #0000BB">?&gt;<br /></span><br />&nbsp;&nbsp;&nbsp;&nbsp;content&nbsp;that&nbsp;may&nbsp;contain&nbsp;&lt;tag&gt;'s<br /><br /><span style="color: #0000BB">&lt;?php&nbsp;HelloWidget</span><span style="color: #007700">::</span><span style="color: #0000BB">end</span><span style="color: #007700">();&nbsp;</span><span style="color: #0000BB">?&gt;</span></code></pre>
-<p>Sometimes, a widget may need to render a big chunk of content. While you can embed the content within the <code>run()</code>
-method, a better approach is to put it in a <a href="guide-structure-views.html">view</a> and call <a href="./yii-base-widget.html#render()-detail">yii\base\Widget::render()</a> to
-render it. For example,</p>
+<p>有时小部件需要渲染很多内容，一种更好的办法是将内容放入一个<a href="guide-structure-views.html">视图</a>文件，
+然后调用<a href="./yii-base-widget.html#render()-detail">yii\base\Widget::render()</a>方法渲染该视图文件，例如：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">public&nbsp;function&nbsp;</span><span style="color: #0000BB">run</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">render</span><span style="color: #007700">(</span><span style="color: #DD0000">'hello'</span><span style="color: #007700">);<br />}</span></code></pre>
-<p>By default, views for a widget should be stored in files in the <code>WidgetPath/views</code> directory, where <code>WidgetPath</code>
-stands for the directory containing the widget class file. Therefore, the above example will render the view file
-<code>@app/components/views/hello.php</code>, assuming the widget class is located under <code>@app/components</code>. You may override
-the <a href="./yii-base-widget.html#getViewPath()-detail">yii\base\Widget::getViewPath()</a> method to customize the directory containing the widget view files.</p>
-<h2>Best Practices <a name="best-practices"></a> <a href="#best-practices" name="best-practices" class="hashlink">&para;</a></h2>
-<p>Widgets are an object-oriented way of reusing view code.</p>
-<p>When creating widgets, you should still follow the MVC pattern. In general, you should keep logic in widget
-classes and keep presentation in <a href="guide-structure-views.html">views</a>.</p>
-<p>Widgets should be designed to be self-contained. That is, when using a widget, you should be able to just drop
-it in a view without doing anything else. This could be tricky if a widget requires external resources, such as
-CSS, JavaScript, images, etc. Fortunately, Yii provides the support for <a href="guide-structure-asset-bundles.html">asset bundles</a>,
-which can be utilized to solve the problem.</p>
-<p>When a widget contains view code only, it is very similar to a <a href="guide-structure-views.html">view</a>. In fact, in this case,
-their only difference is that a widget is a redistributable class, while a view is just a plain PHP script
-that you would prefer to keep it within your application.</p>
+<p>小部件的视图文件默认存储在<code>WidgetPath/views</code>目录，<code>WidgetPath</code>代表小部件类文件所在的目录。
+假如上述示例小部件类文件在<code>@app/components</code>下，会渲染<code>@app/components/views/hello.php</code>视图文件。 You may override
+可以覆盖<a href="./yii-base-widget.html#getViewPath()-detail">yii\base\Widget::getViewPath()</a>方法自定义视图文件所在路径。</p>
+<h2>最佳实践 <a name="best-practices"></a> <a href="#zui-jia-shi-jian" name="zui-jia-shi-jian" class="hashlink">&para;</a></h2>
+<p>小部件是面向对象方式来重用视图代码。</p>
+<p>创建小部件时仍需要遵循MVC模式，通常逻辑代码在小部件类，展示内容在<a href="guide-structure-views.html">视图</a>中。</p>
+<p>小部件设计时应是独立的，也就是说使用一个小部件时候，可以直接丢弃它而不需要额外的处理。
+但是当小部件需要外部资源如CSS, JavaScript, 图片等会比较棘手，
+幸运的时候Yii提供 <a href="guide-structure-asset-bundles.html">资源包</a> 来解决这个问题。</p>
+<p>当一个小部件只包含视图代码，它和<a href="guide-structure-views.html">视图</a>很相似，
+实际上，在这种情况下，唯一的区别是小部件是可以重用类，视图只是应用中使用的普通PHP脚本。</p>
         <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
     </div>
 </div>
@@ -227,7 +215,7 @@ that you would prefer to keep it within your application.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 08 Oct 2014 14:42:55 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Thu, 09 Oct 2014 11:28:03 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
