@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/1aa4357f/style.css" rel="stylesheet">
-<script src="./assets/cb107027/jquery.js"></script>
-<script src="./assets/34945494/js/bootstrap.js"></script>
-<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/e648358b/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fe5d15f9/style.css" rel="stylesheet">
+<script src="./assets/4b4fdc1e/jquery.js"></script>
+<script src="./assets/e648358b/js/bootstrap.js"></script>
+<script src="./assets/11a5931/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -55,15 +55,13 @@
 <a class="list-group-item" href="./yii-codeception-dbtestcase.html">DbTestCase</a>
 <a class="list-group-item" href="./yii-codeception-testcase.html">TestCase</a></div></div>    </div>
     <div class="col-md-9 api-content" role="main">
-        <h1>Codeception Extension for Yii 2 <a href="#codeception-extension-for-yii-2" name="codeception-extension-for-yii-2" class="hashlink">&para;</a></h1>
-<p>This extension provides <a href="http://codeception.com/">Codeception</a> integration for the Yii Framework 2.0.</p>
+        <h1>Codeception Extension for Yii 2 <a href="#codeception-extension-for-yii-2" name="codeception-extension-for-yii-2" class="hashlink">&para;</a></h1><p>This extension provides <a href="http://codeception.com/">Codeception</a> integration for the Yii Framework 2.0.</p>
 <p>It provides classes that help with testing with codeception:</p>
 <ul>
 <li>a base class for unit-tests: <code>yii\codeception\TestCase</code>;</li>
 <li>a base class for codeception page-objects: <code>yii\codeception\BasePage</code>.</li>
 </ul>
-<h2>Installation <a href="#installation" name="installation" class="hashlink">&para;</a></h2>
-<p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
+<h2>Installation <a href="#installation" name="installation" class="hashlink">&para;</a></h2><p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
 <p>Either run</p>
 <pre><code>php composer.phar require --prefer-dist yiisoft/yii2-codeception "*"
 </code></pre>
@@ -71,26 +69,22 @@
 <pre><code class="language-json">"yiisoft/yii2-codeception": "*"
 </code></pre>
 <p>to the require section of your composer.json.</p>
-<h2>Usage <a href="#usage" name="usage" class="hashlink">&para;</a></h2>
-<p>When using codeception page-objects they have some similar code, this code was extracted and put into the <code>BasePage</code>
+<h2>Usage <a href="#usage" name="usage" class="hashlink">&para;</a></h2><p>When using codeception page-objects they have some similar code, this code was extracted and put into the <code>BasePage</code>
 class to reduce code duplication. Simply extend your page object from this class, like it is done in <code>yii2-app-basic</code> and
 <code>yii2-app-advanced</code> boilerplates.</p>
 <p>For unit testing there is a <code>TestCase</code> class which holds some common features like application creation before each test
 and application destroy after each test. You can configure a mock application using this class.
 <code>TestCase</code> is extended from <code>Codeception\TestCase\Case</code> so all methods and assertions are available.
 You may use codeception modules and fire events in your test, just use methods:</p>
-<h2>Getting Codeception modules <a href="#getting-codeception-modules" name="getting-codeception-modules" class="hashlink">&para;</a></h2>
-<p>If you want to use codeception modules and helpers in your unit tests, you can do it like this:</p>
+<h2>Getting Codeception modules <a href="#getting-codeception-modules" name="getting-codeception-modules" class="hashlink">&para;</a></h2><p>If you want to use codeception modules and helpers in your unit tests, you can do it like this:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #FF8000">#in&nbsp;your&nbsp;unit-test<br /></span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModule</span><span style="color: #007700">(</span><span style="color: #DD0000">'CodeHelper'</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">#or&nbsp;some&nbsp;other&nbsp;module</span></code></pre>
 <p>You also can use all actor methods by accessing actor instance like:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br />$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">unitTester</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">someMethodFromModule</span><span style="color: #007700">();</span></code></pre>
-<h2>Codeception events <a href="#codeception-events" name="codeception-events" class="hashlink">&para;</a></h2>
-<p>To fire event do this:</p>
+<h2>Codeception events <a href="#codeception-events" name="codeception-events" class="hashlink">&para;</a></h2><p>To fire event do this:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">Codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">Event</span><span style="color: #007700">\</span><span style="color: #0000BB">TestEvent</span><span style="color: #007700">;<br /><br />public&nbsp;function&nbsp;</span><span style="color: #0000BB">testSomething</span><span style="color: #007700">()<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">fire</span><span style="color: #007700">(</span><span style="color: #DD0000">'myevent'</span><span style="color: #007700">,&nbsp;new&nbsp;</span><span style="color: #0000BB">TestEvent</span><span style="color: #007700">(</span><span style="color: #0000BB">$this</span><span style="color: #007700">));<br />}</span></code></pre>
 <p>this event can be catched in modules and helpers. If your test is in the group, then event name will be followed by the groupname, 
 for example <code>`</code>myevent.somegroup<code>`</code>.</p>
-<h2>Special test method chaining <a href="#special-test-method-chaining" name="special-test-method-chaining" class="hashlink">&para;</a></h2>
-<p>Execution of special tests methods is (for example on <code>`</code>UserTest<code>`</code> class):</p>
+<h2>Special test method chaining <a href="#special-test-method-chaining" name="special-test-method-chaining" class="hashlink">&para;</a></h2><p>Execution of special tests methods is (for example on <code>`</code>UserTest<code>`</code> class):</p>
 <pre><code>tests\unit\models\UserTest::setUpBeforeClass();
 
     tests\unit\models\UserTest::_before();
@@ -106,8 +100,7 @@ for example <code>`</code>myevent.somegroup<code>`</code>.</p>
 tests\unit\models\UserTest::tearDownAfterClass();
 </code></pre>
 <p>If you use special methods dont forget to call its parent.</p>
-<h2>Customizing application config <a href="#customizing-application-config" name="customizing-application-config" class="hashlink">&para;</a></h2>
-<p>You may need to specify different configuration files per test cases, to do this you can make it like the following:</p>
+<h2>Customizing application config <a href="#customizing-application-config" name="customizing-application-config" class="hashlink">&para;</a></h2><p>You may need to specify different configuration files per test cases, to do this you can make it like the following:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /><br />SomeConsoleTest&nbsp;</span><span style="color: #007700">extends&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">TestCase<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;this&nbsp;is&nbsp;the&nbsp;config&nbsp;file&nbsp;to&nbsp;load&nbsp;as&nbsp;application&nbsp;config<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">public&nbsp;</span><span style="color: #0000BB">$appConfig&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@app/path/to/my/custom/config/for/test.php'</span><span style="color: #007700">;<br />}</span></code></pre>
 <p>The <code>$appConfig</code> property could be an array or a valid alias, pointing to the file that returns a config array. You can specify
 application class in the config, for example for testing console commands or features you can create <code>_console.php</code> config under
@@ -116,8 +109,7 @@ application class in the config, for example for testing console commands or fea
 <p>and then just use your <code>ConsoleTestCase</code> like the following:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">TestCase</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">ConsoleTestCase&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">TestCase<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;</span><span style="color: #0000BB">$appConfig&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #DD0000">'@tests/unit/_console.php'</span><span style="color: #007700">;<br />}</span></code></pre>
 <p>You can extend other console test cases from this basic <code>ConsoleTestCase</code>.</p>
-<h2>Reconfiguring components for testing <a href="#reconfiguring-components-for-testing" name="reconfiguring-components-for-testing" class="hashlink">&para;</a></h2>
-<p>You can reconfigure a component for testing, for this purpose in your <code>setUp</code> method of your test case 
+<h2>Reconfiguring components for testing <a href="#reconfiguring-components-for-testing" name="reconfiguring-components-for-testing" class="hashlink">&para;</a></h2><p>You can reconfigure a component for testing, for this purpose in your <code>setUp</code> method of your test case 
 you can do this for example:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /><br /></span><span style="color: #007700">use&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">TestCase</span><span style="color: #007700">;<br />use&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">MailTest&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">TestCase<br /></span><span style="color: #007700">{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;protected&nbsp;function&nbsp;</span><span style="color: #0000BB">setUp</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//&nbsp;don't&nbsp;forget&nbsp;to&nbsp;call&nbsp;parent&nbsp;method&nbsp;that&nbsp;will&nbsp;setup&nbsp;Yii&nbsp;application<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">parent</span><span style="color: #007700">::</span><span style="color: #0000BB">setUp</span><span style="color: #007700">();<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Yii</span><span style="color: #007700">::</span><span style="color: #0000BB">$app</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">mailer</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">fileTransportCallback&nbsp;</span><span style="color: #007700">=&nbsp;function&nbsp;(</span><span style="color: #0000BB">$mailer</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$message</span><span style="color: #007700">)&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return&nbsp;</span><span style="color: #DD0000">'testing_message.eml'</span><span style="color: #007700">;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />}</span></code></pre>
 <blockquote><p><strong>Tip</strong>: You also can reconfigure Yii components and properties with method <code>Yii::configure()</code>.</p>
@@ -126,8 +118,7 @@ you can do this for example:</p>
 You can mock application in a different way. For this purposes you have method <a href="https://github.com/yiisoft/yii2/blob/master/extensions/codeception/TestCase.php#L55"><code>mockApplication</code></a> available in your test case.
 This method creates new application instance and replaces old one with it and is handy when you need to create application with a config that is different from other test methods in the current test suite. For example:</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">use&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">TestCase</span><span style="color: #007700">;<br /><br />class&nbsp;</span><span style="color: #0000BB">SomeMyTest&nbsp;</span><span style="color: #007700">extends&nbsp;</span><span style="color: #0000BB">TestCase<br /></span><span style="color: #007700">{<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testOne</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testTwo</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">mockApplication</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'language'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'ru-RU'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'components'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'db'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//your&nbsp;custom&nbsp;configuration&nbsp;here<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]);<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #FF8000">//your&nbsp;expectations&nbsp;and&nbsp;assertions&nbsp;goes&nbsp;here<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #007700">}<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testThree</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />}</span></code></pre>
-<h2>Additional debug output <a href="#additional-debug-output" name="additional-debug-output" class="hashlink">&para;</a></h2>
-<p>Because of Codeception buffers all output you can't make simple <code>var_dump()</code> in the TestCase, instead you need to use
+<h2>Additional debug output <a href="#additional-debug-output" name="additional-debug-output" class="hashlink">&para;</a></h2><p>Because of Codeception buffers all output you can't make simple <code>var_dump()</code> in the TestCase, instead you need to use
 <code>Codeception\Util\Debug::debug()</code> function and then run test with <code>--debug</code> key, for example:</p>
 <pre><code class="language-php"><span style="color: #0000BB">&lt;?php<br /><br /></span><span style="color: #007700">use&nbsp;</span><span style="color: #0000BB">Codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">Util</span><span style="color: #007700">\</span><span style="color: #0000BB">Debug</span><span style="color: #007700">;<br /><br /></span><span style="color: #0000BB">SomeDebugTest&nbsp;</span><span style="color: #007700">extends&nbsp;\</span><span style="color: #0000BB">yii</span><span style="color: #007700">\</span><span style="color: #0000BB">codeception</span><span style="color: #007700">\</span><span style="color: #0000BB">TestCase<br /></span><span style="color: #007700">{<br />&nbsp;&nbsp;&nbsp;&nbsp;public&nbsp;function&nbsp;</span><span style="color: #0000BB">testSmth</span><span style="color: #007700">()<br />&nbsp;&nbsp;&nbsp;&nbsp;{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Debug</span><span style="color: #007700">::</span><span style="color: #0000BB">debug</span><span style="color: #007700">(</span><span style="color: #DD0000">'some&nbsp;string'</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Debug</span><span style="color: #007700">::</span><span style="color: #0000BB">debug</span><span style="color: #007700">(</span><span style="color: #0000BB">$someArray</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #0000BB">Debug</span><span style="color: #007700">::</span><span style="color: #0000BB">debug</span><span style="color: #007700">(</span><span style="color: #0000BB">$someObject</span><span style="color: #007700">);<br />&nbsp;&nbsp;&nbsp;&nbsp;}<br /><br />}</span></code></pre>
 <p>Then run command <code>php codecept.phar run --debug unit/SomeDebugTest</code> and you will see in output:</p>
@@ -236,7 +227,7 @@ This method creates new application instance and replaces old one with it and is
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 09 Oct 2014 20:20:47 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 11 Oct 2014 03:05:41 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

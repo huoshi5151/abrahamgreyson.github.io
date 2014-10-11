@@ -4,11 +4,11 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="language" content="en" />
-        <link href="./assets/34945494/css/bootstrap.css" rel="stylesheet">
-<link href="./assets/1aa4357f/style.css" rel="stylesheet">
-<script src="./assets/cb107027/jquery.js"></script>
-<script src="./assets/34945494/js/bootstrap.js"></script>
-<script src="./assets/133d853c/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+        <link href="./assets/e648358b/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/fe5d15f9/style.css" rel="stylesheet">
+<script src="./assets/4b4fdc1e/jquery.js"></script>
+<script src="./assets/e648358b/js/bootstrap.js"></script>
+<script src="./assets/11a5931/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
 </head>
 <body>
 
@@ -86,10 +86,8 @@
 <a class="list-group-item" href="#navigation-13986" data-toggle="collapse" data-parent="#navigation">yii\apidoc\templates\online <b class="caret"></b></a><div id="navigation-13986" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-templates-online-apirenderer.html">ApiRenderer</a></div>
 <a class="list-group-item" href="#navigation-13987" data-toggle="collapse" data-parent="#navigation">yii\apidoc\templates\pdf <b class="caret"></b></a><div id="navigation-13987" class="submenu panel-collapse collapse"><a class="list-group-item" href="./yii-apidoc-templates-pdf-guiderenderer.html">GuideRenderer</a></div></div>    </div>
     <div class="col-md-9 api-content" role="main">
-        <h1>API documentation generator for Yii 2 <a href="#api-documentation-generator-for-yii-2" name="api-documentation-generator-for-yii-2" class="hashlink">&para;</a></h1>
-<p>This extension provides an API documentation generator for the Yii framework 2.0.</p>
-<h2>Installation <a href="#installation" name="installation" class="hashlink">&para;</a></h2>
-<p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
+        <h1>API documentation generator for Yii 2 <a href="#api-documentation-generator-for-yii-2" name="api-documentation-generator-for-yii-2" class="hashlink">&para;</a></h1><p>This extension provides an API documentation generator for the Yii framework 2.0.</p>
+<h2>Installation <a href="#installation" name="installation" class="hashlink">&para;</a></h2><p>The preferred way to install this extension is through <a href="http://getcomposer.org/download/">composer</a>.</p>
 <p>Either run</p>
 <pre><code>php composer.phar require --prefer-dist yiisoft/yii2-apidoc "*"
 </code></pre>
@@ -97,8 +95,7 @@
 <pre><code class="language-json">"yiisoft/yii2-apidoc": "*"
 </code></pre>
 <p>to the require section of your composer.json.</p>
-<h2>Usage <a href="#usage" name="usage" class="hashlink">&para;</a></h2>
-<p>This extension offers two commands:</p>
+<h2>Usage <a href="#usage" name="usage" class="hashlink">&para;</a></h2><p>This extension offers two commands:</p>
 <ul>
 <li><code>api</code> to generate class API documentation.</li>
 <li><code>guide</code> to render nice HTML pages from markdown files such as the yii guide.</li>
@@ -121,20 +118,16 @@ vendor/bin/apidoc guide source/docs ./output
 Currently there is only the <code>bootstrap</code> template available.</p>
 <p>You may also add the <code>yii\apidoc\commands\RenderController</code> to your console application class map and
 run it inside of your applications console app.</p>
-<h2>Creating a PDF from the guide <a href="#creating-a-pdf-from-the-guide" name="creating-a-pdf-from-the-guide" class="hashlink">&para;</a></h2>
-<p>You need <code>pdflatex</code> and <code>make</code> for this.</p>
+<h2>Creating a PDF from the guide <a href="#creating-a-pdf-from-the-guide" name="creating-a-pdf-from-the-guide" class="hashlink">&para;</a></h2><p>You need <code>pdflatex</code> and <code>make</code> for this.</p>
 <pre><code>vendor/bin/apidoc guide source/docs ./output --template=pdf
 cd ./output
 make pdf
 </code></pre>
 <p>If all runs without errors the PDF will be <code>guide.pdf</code> in the <code>output</code> dir.</p>
-<h2>Special Markdown Syntax <a href="#special-markdown-syntax" name="special-markdown-syntax" class="hashlink">&para;</a></h2>
-<p>We have a special Syntax for linking to classes in the API documentation.
+<h2>Special Markdown Syntax <a href="#special-markdown-syntax" name="special-markdown-syntax" class="hashlink">&para;</a></h2><p>We have a special Syntax for linking to classes in the API documentation.
 See the <a href="https://github.com/yiisoft/yii2/blob/master/docs/internals/core-code-style.md#markdown">code style guide</a> for details.</p>
-<h2>Creating your own templates <a href="#creating-your-own-templates" name="creating-your-own-templates" class="hashlink">&para;</a></h2>
-<p>TDB</p>
-<h2>Using the model layer <a href="#using-the-model-layer" name="using-the-model-layer" class="hashlink">&para;</a></h2>
-<p>TDB</p>
+<h2>Creating your own templates <a href="#creating-your-own-templates" name="creating-your-own-templates" class="hashlink">&para;</a></h2><p>TDB</p>
+<h2>Using the model layer <a href="#using-the-model-layer" name="using-the-model-layer" class="hashlink">&para;</a></h2><p>TDB</p>
 <h1>Class Reference</h1>
 
 <table class="summaryTable docIndex table table-bordered table-striped table-hover">
@@ -323,7 +316,7 @@ or your own applications documentation setup.</td>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Thu, 09 Oct 2014 20:20:39 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sat, 11 Oct 2014 03:05:33 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
