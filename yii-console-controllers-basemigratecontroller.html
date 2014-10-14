@@ -1234,8 +1234,8 @@ or a file path.</p>
     <div class="detail-header h3" id="actionCreate()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#actionCreate()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L458" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L458" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L459" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L459" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         actionCreate()
         <span class="detail-header-tag small">
@@ -1324,8 +1324,8 @@ meaning the last applied migration will be reverted.</p>
     <div class="detail-header h3" id="actionHistory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#actionHistory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L369" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L369" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L370" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L370" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         actionHistory()
         <span class="detail-header-tag small">
@@ -1367,8 +1367,8 @@ If it is 0, the whole migration history will be displayed.</p>
     <div class="detail-header h3" id="actionMark()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#actionMark()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L307" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L307" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L308" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L308" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         actionMark()
         <span class="detail-header-tag small">
@@ -1387,7 +1387,7 @@ yii migrate/mark m101129_185401_create_user_table   # using full name
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">void <strong><a href="yii-console-controllers-basemigratecontroller.html#actionMark()-detail">actionMark</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$version&nbsp;</span><span style="color: #007700">)</span></td></tr>
+        <tr><td colspan="3" class="signature">int <strong><a href="yii-console-controllers-basemigratecontroller.html#actionMark()-detail">actionMark</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$version&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$version</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
@@ -1395,7 +1395,13 @@ yii migrate/mark m101129_185401_create_user_table   # using full name
 This can be either the timestamp or the full name of the migration.</p>
 </td>
                 </tr>
-                                                    <tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>CLI exit code</p>
+</td>
+                </tr>
+                                        <tr>
                   <th class="param-name-col">throws</th>
                   <td class="param-type-col"><a href="yii-console-exception.html">yii\console\Exception</a></td>
                   <td class="param-desc-col"><p>if the version argument is invalid or the version cannot be found.</p>
@@ -1408,8 +1414,8 @@ This can be either the timestamp or the full name of the migration.</p>
     <div class="detail-header h3" id="actionNew()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#actionNew()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L413" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L413" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L414" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L414" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         actionNew()
         <span class="detail-header-tag small">
@@ -1590,8 +1596,8 @@ applying all available new migrations.</p>
     <div class="detail-header h3" id="addMigrationHistory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#addMigrationHistory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L636" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L636" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L638" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L638" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         addMigrationHistory()
         <span class="detail-header-tag small">
@@ -1663,8 +1669,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="createMigration()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#createMigration()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L535" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L535" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L536" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L536" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createMigration()
         <span class="detail-header-tag small">
@@ -1699,8 +1705,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="getMigrationHistory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#getMigrationHistory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L630" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L630" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L632" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L632" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getMigrationHistory()
         <span class="detail-header-tag small">
@@ -1735,8 +1741,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="getNewMigrations()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#getNewMigrations()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L601" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L601" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L603" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L603" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getNewMigrations()
         <span class="detail-header-tag small">
@@ -1765,8 +1771,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="migrateDown()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#migrateDown()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L507" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L507" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L508" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L508" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         migrateDown()
         <span class="detail-header-tag small">
@@ -1801,8 +1807,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="migrateToTime()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#migrateToTime()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L547" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L547" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L548" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L548" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         migrateToTime()
         <span class="detail-header-tag small">
@@ -1831,8 +1837,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="migrateToVersion()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#migrateToVersion()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L566" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L566" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L568" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L568" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         migrateToVersion()
         <span class="detail-header-tag small">
@@ -1847,14 +1853,20 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">void <strong><a href="yii-console-controllers-basemigratecontroller.html#migrateToVersion()-detail">migrateToVersion</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$version&nbsp;</span><span style="color: #007700">)</span></td></tr>
+        <tr><td colspan="3" class="signature">int <strong><a href="yii-console-controllers-basemigratecontroller.html#migrateToVersion()-detail">migrateToVersion</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$version&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$version</span></td>
                   <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
                   <td class="param-desc-col"><p>Name in the full format.</p>
 </td>
                 </tr>
-                                                    <tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col">int</td>
+                  <td class="param-desc-col"><p>CLI exit code</p>
+</td>
+                </tr>
+                                        <tr>
                   <th class="param-name-col">throws</th>
                   <td class="param-type-col"><a href="yii-console-exception.html">yii\console\Exception</a></td>
                   <td class="param-desc-col"><p>if the provided version cannot be found.</p>
@@ -1867,8 +1879,8 @@ It checks the existence of the <a href="yii-console-controllers-basemigratecontr
     <div class="detail-header h3" id="migrateUp()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#migrateUp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L479" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L479" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L480" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L480" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         migrateUp()
         <span class="detail-header-tag small">
@@ -1944,8 +1956,8 @@ until <a href="yii-console-controllers-basemigratecontroller.html#beforeAction()
     <div class="detail-header h3" id="removeMigrationHistory()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-console-controllers-basemigratecontroller.html#removeMigrationHistory()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L642" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L642" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/console/controllers/BaseMigrateController.php#L644" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/console/controllers/BaseMigrateController.php#L644" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         removeMigrationHistory()
         <span class="detail-header-tag small">
@@ -2009,7 +2021,7 @@ until <a href="yii-console-controllers-basemigratecontroller.html#beforeAction()
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 13 Oct 2014 11:23:51 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 14 Oct 2014 18:28:52 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

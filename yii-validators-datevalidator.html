@@ -729,7 +729,7 @@ on the client side.</td>
 </tr>
                                                                                                                             <tr id="parseDateValue()">
         <td><a href="yii-validators-datevalidator.html#parseDateValue()-detail">parseDateValue()</a></td>
-        <td></td>
+        <td>Parses date string into UNIX timestamp</td>
         <td><a href="yii-validators-datevalidator.html">yii\validators\DateValidator</a></td>
     </tr>
                             <tr id="validateValue()">
@@ -881,8 +881,8 @@ given configuration.</p>
     <div class="detail-header h3" id="parseDateValue()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-validators-datevalidator.html#parseDateValue()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/DateValidator.php#L116" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/DateValidator.php#L116" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/validators/DateValidator.php#L122" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/validators/DateValidator.php#L122" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         parseDateValue()
         <span class="detail-header-tag small">
@@ -891,19 +891,26 @@ given configuration.</p>
     </div>
 
     <div class="doc-description">
-        <p><strong></strong></p>
+        <p><strong>Parses date string into UNIX timestamp</strong></p>
 
         
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">void <strong><a href="yii-validators-datevalidator.html#parseDateValue()-detail">parseDateValue</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">)</span></td></tr>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.boolean">boolean</a>|<a href="http://www.php.net/language.types.integer">integer</a> <strong><a href="yii-validators-datevalidator.html#parseDateValue()-detail">parseDateValue</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$value&nbsp;</span><span style="color: #007700">)</span></td></tr>
                                     <tr>
                   <td class="param-name-col"><span style="color: #0000BB">$value</span></td>
-                  <td class="param-type-col"></td>
-                  <td class="param-desc-col"></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>String representing date</p>
+</td>
                 </tr>
-                                                </table>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.boolean">boolean</a>|<a href="http://www.php.net/language.types.integer">integer</a></td>
+                  <td class="param-desc-col"><p>UNIX timestamp or false on failure</p>
+</td>
+                </tr>
+                                    </table>
 
 <!--	-->
 
@@ -1026,7 +1033,7 @@ Null should be returned if the data is valid.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 13 Oct 2014 11:24:21 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 14 Oct 2014 18:29:18 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

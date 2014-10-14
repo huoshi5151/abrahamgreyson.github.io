@@ -540,7 +540,7 @@
     </tr>
                 <tr id="rules()">
         <td><a href="yii-debug-models-search-mail.html#rules()-detail">rules()</a></td>
-        <td></td>
+        <td>Returns the validation rules for attributes.</td>
         <td><a href="yii-debug-models-search-mail.html">yii\debug\models\search\Mail</a></td>
     </tr>
             <tr class="inherited" id="safeAttributes()">
@@ -1001,8 +1001,8 @@ values are the corresponding error messages. An empty array will be returned if 
     <div class="detail-header h3" id="attributeLabels()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-models-search-mail.html#attributeLabels()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/models/search/Mail.php#L73" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/models/search/Mail.php#L73" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/models/search/Mail.php#L76" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/models/search/Mail.php#L76" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         attributeLabels()
         <span class="detail-header-tag small">
@@ -1038,8 +1038,8 @@ merge the parent labels with child labels using functions such as <code>array_me
     <div class="detail-header h3" id="rules()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-models-search-mail.html#rules()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/models/search/Mail.php#L63" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/models/search/Mail.php#L63" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/models/search/Mail.php#L66" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/models/search/Mail.php#L66" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         rules()
         <span class="detail-header-tag small">
@@ -1048,22 +1048,74 @@ merge the parent labels with child labels using functions such as <code>array_me
     </div>
 
     <div class="doc-description">
-        <p><strong></strong></p>
+        <p><strong>Returns the validation rules for attributes.</strong></p>
 
-        
+        <p>Validation rules are used by <a href="yii-base-model.html#validate()-detail">validate()</a> to check if attribute values are valid.
+Child classes may override this method to declare different validation rules.</p>
+<p>Each rule is an array with the following structure:</p>
+<pre><code>[
+    ['attribute1', 'attribute2'],
+    'validator type',
+    'on' =&gt; ['scenario1', 'scenario2'],
+    ...other parameters...
+]
+</code></pre>
+<p>where</p>
+<ul>
+<li>attribute list: required, specifies the attributes array to be validated, for single attribute you can pass string;</li>
+<li>validator type: required, specifies the validator to be used. It can be a built-in validator name,
+a method name of the model class, an anonymous function, or a validator class name.</li>
+<li>on: optional, specifies the <a href="yii-debug-models-search-mail.html#$scenario-detail">scenarios</a> array when the validation
+rule can be applied. If this option is not set, the rule will apply to all scenarios.</li>
+<li>additional name-value pairs can be specified to initialize the corresponding validator properties.
+Please refer to individual validator class API for possible properties.</li>
+</ul>
+<p>A validator can be either an object of a class extending <span style="background: #f00;">\yii\debug\models\search\Validator</span>, or a model class method
+(called <em>inline validator</em>) that has the following signature:</p>
+<pre><code>// $params refers to validation parameters given in the rule
+function validatorName($attribute, $params)
+</code></pre>
+<p>In the above <code>$attribute</code> refers to currently validated attribute name while <code>$params</code> contains an array of
+validator configuration options such as <code>max</code> in case of <code>string</code> validator. Currently validate attribute value
+can be accessed as <code>$this-&gt;[$attribute]</code>.</p>
+<p>Yii also provides a set of <span style="background: #f00;">\yii\debug\models\search\Validator::builtInValidators</span>.
+They each has an alias name which can be used when specifying a validation rule.</p>
+<p>Below are some examples:</p>
+<pre><code>[
+    // built-in "required" validator
+    [['username', 'password'], 'required'],
+    // built-in "string" validator customized with "min" and "max" properties
+    ['username', 'string', 'min' =&gt; 3, 'max' =&gt; 12],
+    // built-in "compare" validator that is used in "register" scenario only
+    ['password', 'compare', 'compareAttribute' =&gt; 'password2', 'on' =&gt; 'register'],
+    // an inline validator defined via the "authenticate()" method in the model class
+    ['password', 'authenticate', 'on' =&gt; 'login'],
+    // a validator of class "DateRangeValidator"
+    ['dateRange', 'DateRangeValidator'],
+];
+</code></pre>
+<p>Note, in order to inherit rules defined in the parent class, a child class needs to
+merge the parent rules with child rules using functions such as <code>array_merge()</code>.</p>
+
             </div>
 
     <table class="detail-table table table-striped table-bordered table-hover">
-        <tr><td colspan="3" class="signature">void <strong><a href="yii-debug-models-search-mail.html#rules()-detail">rules</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
-            </table>
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.array">array</a> <strong><a href="yii-debug-models-search-mail.html#rules()-detail">rules</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+                                                <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.array">array</a></td>
+                  <td class="param-desc-col"><p>Validation rules</p>
+</td>
+                </tr>
+                                    </table>
 
 <!--	-->
 
     <div class="detail-header h3" id="search()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-models-search-mail.html#search()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/models/search/Mail.php#L92" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/models/search/Mail.php#L92" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/models/search/Mail.php#L95" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/models/search/Mail.php#L95" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         search()
         <span class="detail-header-tag small">
@@ -1131,7 +1183,7 @@ merge the parent labels with child labels using functions such as <code>array_me
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 13 Oct 2014 11:23:25 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 14 Oct 2014 18:28:28 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {

@@ -419,19 +419,7 @@ identifies a data record or false if you do not have such a field.</p>
 <p>Compared to <a href="yii-data-activedataprovider.html">yii\data\ActiveDataProvider</a>, ArrayDataProvider could be less efficient
 because it needs to have <a href="yii-data-arraydataprovider.html#$allModels-detail">$allModels</a> ready.</p>
 <p>ArrayDataProvider may be used in the following way:</p>
-<pre><code>$query = new Query;
-$provider = new ArrayDataProvider([
-    'allModels' =&gt; $query-&gt;from('post')-&gt;all(),
-    'sort' =&gt; [
-        'attributes' =&gt; ['id', 'username', 'email'],
-    ],
-    'pagination' =&gt; [
-        'pageSize' =&gt; 10,
-    ],
-]);
-// get the posts in the current page
-$posts = $provider-&gt;getModels();
-</code></pre>
+<pre><code class="language-php"><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$provider&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">ArrayDataProvider</span><span style="color: #007700">([<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'allModels'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #DD0000">'post'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">all</span><span style="color: #007700">(),<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'sort'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'attributes'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[</span><span style="color: #DD0000">'id'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'username'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'email'</span><span style="color: #007700">],<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'pagination'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'pageSize'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #0000BB">10</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]);<br /></span><span style="color: #FF8000">//&nbsp;get&nbsp;the&nbsp;posts&nbsp;in&nbsp;the&nbsp;current&nbsp;page<br /></span><span style="color: #0000BB">$posts&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$provider</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">getModels</span><span style="color: #007700">();</span></code></pre>
 <p>Note: if you want to use the sorting feature, you must configure the <a href="yii-data-arraydataprovider.html#$sort-detail">$sort</a> property
 so that the provider knows which columns can be sorted.</p>
 
@@ -1109,7 +1097,7 @@ is uniquely identified by the corresponding key value in this array.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Mon, 13 Oct 2014 11:23:54 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Tue, 14 Oct 2014 18:28:54 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
