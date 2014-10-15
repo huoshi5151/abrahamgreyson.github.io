@@ -92,7 +92,8 @@
 <a href="yii-debug-panel.html">yii\debug\Panel</a> &raquo;
 <a href="yii-base-component.html">yii\base\Component</a> &raquo;
 <a href="yii-base-object.html">yii\base\Object</a></td></tr>
-                                    <tr><th>Available since version</th><td>2.0</td></tr>
+                        <tr><th>Subclasses</th><td><a href="yii-mongodb-debug-mongodbpanel.html">yii\mongodb\debug\MongoDbPanel</a></td></tr>
+                        <tr><th>Available since version</th><td>2.0</td></tr>
                 <tr>
           <th>Source Code</th>
           <td><a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php">https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php</a></td>
@@ -180,6 +181,12 @@ critical number of DB queries.</td>
         <td><a href="yii-debug-panels-dbpanel.html#$summary-detail">$summary</a></td>
         <td><a href="http://www.php.net/language.types.string">string</a></td>
         <td>Content that is displayed at debug toolbar</td>
+        <td><a href="yii-debug-panels-dbpanel.html">yii\debug\panels\DbPanel</a></td>
+    </tr>
+            <tr id="$summaryName">
+        <td><a href="yii-debug-panels-dbpanel.html#$summaryName-detail">$summaryName</a></td>
+        <td><a href="http://www.php.net/language.types.string">string</a></td>
+        <td>Short name of the panel, which will be use in summary.</td>
         <td><a href="yii-debug-panels-dbpanel.html">yii\debug\panels\DbPanel</a></td>
     </tr>
             <tr class="inherited" id="$tag">
@@ -324,6 +331,11 @@ critical number of DB queries.</td>
         <td></td>
         <td><a href="yii-debug-panels-dbpanel.html">yii\debug\panels\DbPanel</a></td>
     </tr>
+            <tr id="getSummaryName()">
+        <td><a href="yii-debug-panels-dbpanel.html#getSummaryName()-detail">getSummaryName()</a></td>
+        <td></td>
+        <td><a href="yii-debug-panels-dbpanel.html">yii\debug\panels\DbPanel</a></td>
+    </tr>
                 <tr class="inherited" id="getUrl()">
         <td><a href="yii-debug-panel.html#getUrl()-detail">getUrl()</a></td>
         <td></td>
@@ -411,7 +423,7 @@ critical number of DB queries.</td>
         <td>Returns database query type.</td>
         <td><a href="yii-debug-panels-dbpanel.html">yii\debug\panels\DbPanel</a></td>
     </tr>
-                <tr id="getTotalQueryTime()">
+                    <tr id="getTotalQueryTime()">
         <td><a href="yii-debug-panels-dbpanel.html#getTotalQueryTime()-detail">getTotalQueryTime()</a></td>
         <td>Returns total query time.</td>
         <td><a href="yii-debug-panels-dbpanel.html">yii\debug\panels\DbPanel</a></td>
@@ -530,6 +542,23 @@ the execution is considered taking critical number of DB queries.</p>
 
     
 
+    <div class="detail-header h3" id="$summaryName-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#$summaryName-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $summaryName        <span class="detailHeaderTag small">
+            public             <em>read-only</em>                         property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-debug-panels-dbpanel.html#getSummaryName()-detail">getSummaryName</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></div>
+
+    <p>Short name of the panel, which will be use in summary.</p>
+
+    
+
     <div class="detail-header h3" id="$url-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#$url-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -554,8 +583,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="calculateTimings()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#calculateTimings()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L87" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L87" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L95" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L95" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         calculateTimings()
         <span class="detail-header-tag small">
@@ -584,8 +613,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="getDetail()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getDetail()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L70" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L70" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L78" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L78" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getDetail()
         <span class="detail-header-tag small">
@@ -614,8 +643,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="getModels()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getModels()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L138" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L138" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L146" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L146" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getModels()
         <span class="detail-header-tag small">
@@ -675,8 +704,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="getProfileLogs()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getProfileLogs()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L109" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L109" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L117" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L117" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getProfileLogs()
         <span class="detail-header-tag small">
@@ -700,8 +729,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="getQueryType()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getQueryType()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L165" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L165" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L173" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L173" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getQueryType()
         <span class="detail-header-tag small">
@@ -736,8 +765,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="getSummary()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getSummary()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L53" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L53" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L61" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L61" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getSummary()
         <span class="detail-header-tag small">
@@ -763,11 +792,41 @@ the execution is considered taking critical number of DB queries.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="getSummaryName()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getSummaryName()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L53" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L53" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        getSummaryName()
+        <span class="detail-header-tag small">
+            public            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong></strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature"><a href="http://www.php.net/language.types.string">string</a> <strong><a href="yii-debug-panels-dbpanel.html#getSummaryName()-detail">getSummaryName</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></td></tr>
+                                                <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Short name of the panel, which will be use in summary.</p>
+</td>
+                </tr>
+                                    </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="getTotalQueryTime()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#getTotalQueryTime()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L122" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L122" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L130" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L130" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getTotalQueryTime()
         <span class="detail-header-tag small">
@@ -801,8 +860,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="isQueryCountCritical()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#isQueryCountCritical()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L179" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L179" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L187" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L187" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         isQueryCountCritical()
         <span class="detail-header-tag small">
@@ -831,8 +890,8 @@ the execution is considered taking critical number of DB queries.</p>
     <div class="detail-header h3" id="save()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-debug-panels-dbpanel.html#save()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L99" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L99" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/debug/panels/DbPanel.php#L107" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/debug/panels/DbPanel.php#L107" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         save()
         <span class="detail-header-tag small">
@@ -897,7 +956,7 @@ the execution is considered taking critical number of DB queries.</p>
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Tue, 14 Oct 2014 18:28:29 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Wed, 15 Oct 2014 20:14:19 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
