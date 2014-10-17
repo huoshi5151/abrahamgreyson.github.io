@@ -146,12 +146,6 @@ to generate an ActiveRecord model based on a DB table, you can run:</p>
 in the request.</td>
         <td><a href="yii-base-controller.html">yii\base\Controller</a></td>
     </tr>
-            <tr id="$generate">
-        <td><a href="yii-gii-console-generatecontroller.html#$generate-detail">$generate</a></td>
-        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
-        <td>Whether to generate all files and overwrite existing files</td>
-        <td><a href="yii-gii-console-generatecontroller.html">yii\gii\console\GenerateController</a></td>
-    </tr>
             <tr id="$generators">
         <td><a href="yii-gii-console-generatecontroller.html#$generators-detail">$generators</a></td>
         <td><a href="http://www.php.net/language.types.array">array</a></td>
@@ -198,6 +192,12 @@ in the request.</td>
         <td><a href="yii-gii-console-generatecontroller.html#$modules-detail">$modules</a></td>
         <td><a href="yii-base-module.html">yii\base\Module</a>[]</td>
         <td>All ancestor modules that this controller is located within.</td>
+        <td><a href="yii-gii-console-generatecontroller.html">yii\gii\console\GenerateController</a></td>
+    </tr>
+            <tr id="$overwrite">
+        <td><a href="yii-gii-console-generatecontroller.html#$overwrite-detail">$overwrite</a></td>
+        <td><a href="http://www.php.net/language.types.boolean">boolean</a></td>
+        <td>Whether to overwrite all existing code files when in non-interactive mode.</td>
         <td><a href="yii-gii-console-generatecontroller.html">yii\gii\console\GenerateController</a></td>
     </tr>
             <tr id="$route">
@@ -674,28 +674,11 @@ a list of options to choose from and their explanations.</td>
 
     
 
-    <div class="detail-header h3" id="$generate-detail">
-        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
-        <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#$generate-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L37" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L37" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
-        
-        $generate        <span class="detailHeaderTag small">
-            public                                    property
-                    </span>
-    </div>
-
-    <div class="signature"><a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-gii-console-generatecontroller.html#$generate-detail">$generate</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
-
-    <p>Whether to generate all files and overwrite existing files</p>
-
-    
-
     <div class="detail-header h3" id="$generators-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#$generators-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L41" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L41" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L43" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L43" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         $generators        <span class="detailHeaderTag small">
             public                                    property
@@ -770,6 +753,25 @@ a list of options to choose from and their explanations.</td>
     <div class="signature"><a href="yii-base-module.html">yii\base\Module</a>[] <strong><a href="yii-base-controller.html#getModules()-detail">getModules</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;)</span></div>
 
     <p>All ancestor modules that this controller is located within.</p>
+
+    
+
+    <div class="detail-header h3" id="$overwrite-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#$overwrite-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L39" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L39" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        $overwrite        <span class="detailHeaderTag small">
+            public                                    property
+                    </span>
+    </div>
+
+    <div class="signature"><a href="http://www.php.net/language.types.boolean">boolean</a> <a href="yii-gii-console-generatecontroller.html#$overwrite-detail">$overwrite</a> <span style="color: #0000BB"></span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">false</span></div>
+
+    <p>Whether to overwrite all existing code files when in non-interactive mode.
+Defaults to false, meaning none of the existing code files will be overwritten.
+This option is used only when <code>--interactive=0</code>.</p>
 
     
 
@@ -864,8 +866,8 @@ a list of options to choose from and their explanations.</td>
     <div class="detail-header h3" id="__get()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#__get()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L52" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L52" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L54" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L54" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         __get()
         <span class="detail-header-tag small">
@@ -919,8 +921,8 @@ will be implicitly called when executing <code>$value = $component-&gt;property;
     <div class="detail-header h3" id="__set()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#__set()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L60" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L60" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L62" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L62" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         __set()
         <span class="detail-header-tag small">
@@ -976,8 +978,8 @@ will be implicitly called when executing <code>$component-&gt;property = $value;
     <div class="detail-header h3" id="actionIndex()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#actionIndex()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L104" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L104" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L106" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L106" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         actionIndex()
         <span class="detail-header-tag small">
@@ -1000,8 +1002,8 @@ will be implicitly called when executing <code>$component-&gt;property = $value;
     <div class="detail-header h3" id="actions()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#actions()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L92" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L92" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L94" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L94" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         actions()
         <span class="detail-header-tag small">
@@ -1038,8 +1040,8 @@ using the configuration provided here.</p>
     <div class="detail-header h3" id="createAction()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#createAction()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L79" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L79" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L81" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L81" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         createAction()
         <span class="detail-header-tag small">
@@ -1079,8 +1081,8 @@ method will be created and returned.</p>
     <div class="detail-header h3" id="formatHint()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#formatHint()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L196" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L196" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L201" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L201" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         formatHint()
         <span class="detail-header-tag small">
@@ -1108,8 +1110,8 @@ method will be created and returned.</p>
     <div class="detail-header h3" id="getActionArgsHelp()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#getActionArgsHelp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L164" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L164" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L169" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L169" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getActionArgsHelp()
         <span class="detail-header-tag small">
@@ -1153,8 +1155,8 @@ the parameters corresponding to the action method.</p>
     <div class="detail-header h3" id="getActionHelp()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#getActionHelp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L150" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L150" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L155" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L155" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getActionHelp()
         <span class="detail-header-tag small">
@@ -1189,8 +1191,8 @@ the parameters corresponding to the action method.</p>
     <div class="detail-header h3" id="getActionHelpSummary()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#getActionHelpSummary()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L137" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L137" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L142" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L142" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getActionHelpSummary()
         <span class="detail-header-tag small">
@@ -1225,8 +1227,8 @@ the parameters corresponding to the action method.</p>
     <div class="detail-header h3" id="getActionOptionsHelp()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#getActionOptionsHelp()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L172" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L172" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L177" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L177" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getActionOptionsHelp()
         <span class="detail-header-tag small">
@@ -1269,8 +1271,8 @@ the properties corresponding to the action options.</p>
     <div class="detail-header h3" id="getUniqueID()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#getUniqueID()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L112" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L112" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L114" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L114" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         getUniqueID()
         <span class="detail-header-tag small">
@@ -1293,8 +1295,8 @@ the properties corresponding to the action options.</p>
     <div class="detail-header h3" id="init()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#init()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L68" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L68" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L70" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L70" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         init()
         <span class="detail-header-tag small">
@@ -1319,8 +1321,8 @@ given configuration.</p>
     <div class="detail-header h3" id="options()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-gii-console-generatecontroller.html#options()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
-                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L120" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
-            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L120" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/extensions/gii/console/GenerateController.php#L122" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/extensions/gii/console/GenerateController.php#L122" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
         
         options()
         <span class="detail-header-tag small">
@@ -1394,7 +1396,7 @@ until <a href="yii-base-controller.html#beforeAction()-detail">beforeAction()</a
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 15 Oct 2014 20:14:21 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 17 Oct 2014 17:55:39 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
