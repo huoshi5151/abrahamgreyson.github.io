@@ -3914,2311 +3914,2465 @@ Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
-            [message] => No short description for element '$vendorName'
+            [message] => No docblock for element '$vendorName'
         )
 
     [569] => Array
+        (
+            [line] => 25
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$vendorName'
+        )
+
+    [570] => Array
+        (
+            [line] => 25
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$vendorName'
+        )
+
+    [571] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$packageName'
         )
 
-    [570] => Array
+    [572] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$packageName'
+        )
+
+    [573] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$packageName'
         )
 
-    [571] => Array
+    [574] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$packageName'
+        )
+
+    [575] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$namespace'
         )
 
-    [572] => Array
+    [576] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$namespace'
+        )
+
+    [577] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$namespace'
         )
 
-    [573] => Array
+    [578] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$namespace'
+        )
+
+    [579] => Array
         (
             [line] => 28
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$type'
         )
 
-    [574] => Array
+    [580] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$type'
+        )
+
+    [581] => Array
         (
             [line] => 28
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$type'
         )
 
-    [575] => Array
+    [582] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$type'
+        )
+
+    [583] => Array
         (
             [line] => 29
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$keywords'
         )
 
-    [576] => Array
+    [584] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$keywords'
+        )
+
+    [585] => Array
         (
             [line] => 29
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$keywords'
         )
 
-    [577] => Array
+    [586] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$keywords'
+        )
+
+    [587] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$title'
         )
 
-    [578] => Array
+    [588] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$title'
+        )
+
+    [589] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$title'
         )
 
-    [579] => Array
+    [590] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$title'
+        )
+
+    [591] => Array
         (
             [line] => 31
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$description'
         )
 
-    [580] => Array
+    [592] => Array
+        (
+            [line] => 31
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$description'
+        )
+
+    [593] => Array
         (
             [line] => 31
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$description'
         )
 
-    [581] => Array
+    [594] => Array
+        (
+            [line] => 31
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$description'
+        )
+
+    [595] => Array
         (
             [line] => 31
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => Property $description conflicts with a defined getter getDescription in yii\gii\generators\extension\Generator.
         )
 
-    [582] => Array
+    [596] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$outputPath'
         )
 
-    [583] => Array
+    [597] => Array
+        (
+            [line] => 32
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$outputPath'
+        )
+
+    [598] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$outputPath'
         )
 
-    [584] => Array
+    [599] => Array
+        (
+            [line] => 32
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$outputPath'
+        )
+
+    [600] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => Property $outputPath conflicts with a defined getter getOutputPath in yii\gii\generators\extension\Generator.
         )
 
-    [585] => Array
+    [601] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$license'
         )
 
-    [586] => Array
+    [602] => Array
+        (
+            [line] => 33
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$license'
+        )
+
+    [603] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$license'
         )
 
-    [587] => Array
+    [604] => Array
+        (
+            [line] => 33
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$license'
+        )
+
+    [605] => Array
         (
             [line] => 34
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$authorName'
         )
 
-    [588] => Array
+    [606] => Array
+        (
+            [line] => 34
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$authorName'
+        )
+
+    [607] => Array
         (
             [line] => 34
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$authorName'
         )
 
-    [589] => Array
+    [608] => Array
+        (
+            [line] => 34
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$authorName'
+        )
+
+    [609] => Array
         (
             [line] => 35
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No docblock for element '$authorEmail'
         )
 
-    [590] => Array
+    [610] => Array
+        (
+            [line] => 35
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No docblock for element '$authorEmail'
+        )
+
+    [611] => Array
         (
             [line] => 35
             [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
             [message] => No short description for element '$authorEmail'
         )
 
-    [591] => Array
+    [612] => Array
+        (
+            [line] => 35
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\extension\Generator.php
+            [message] => No short description for element '$authorEmail'
+        )
+
+    [613] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => broken link to \yii\gii\generators\form\Validator in yii\gii\generators\form\Generator
         )
 
-    [592] => Array
+    [614] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => broken link to \yii\gii\generators\form\Validator::builtInValidators in yii\gii\generators\form\Generator
         )
 
-    [593] => Array
+    [615] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [594] => Array
+    [616] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$modelClass'
         )
 
-    [595] => Array
+    [617] => Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$viewPath'
         )
 
-    [596] => Array
+    [618] => Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$viewPath'
         )
 
-    [597] => Array
+    [619] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$viewName'
         )
 
-    [598] => Array
+    [620] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$viewName'
         )
 
-    [599] => Array
+    [621] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No docblock for element '$scenarioName'
         )
 
-    [600] => Array
+    [622] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\gii\generators\form\Generator.php
             [message] => No short description for element '$scenarioName'
         )
 
-    [601] => Array
+    [623] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => broken link to \yii\gii\generators\model\Validator in yii\gii\generators\model\Generator
         )
 
-    [602] => Array
+    [624] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => broken link to \yii\gii\generators\model\Validator::builtInValidators in yii\gii\generators\model\Generator
         )
 
-    [603] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$db'
-        )
-
-    [604] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$db'
-        )
-
-    [605] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$db'
-        )
-
-    [606] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$db'
-        )
-
-    [607] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$ns'
-        )
-
-    [608] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$ns'
-        )
-
-    [609] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$ns'
-        )
-
-    [610] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$ns'
-        )
-
-    [611] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$tableName'
-        )
-
-    [612] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$tableName'
-        )
-
-    [613] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$tableName'
-        )
-
-    [614] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$tableName'
-        )
-
-    [615] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$modelClass'
-        )
-
-    [616] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$modelClass'
-        )
-
-    [617] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$modelClass'
-        )
-
-    [618] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$modelClass'
-        )
-
-    [619] => Array
-        (
-            [line] => 30
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$baseClass'
-        )
-
-    [620] => Array
-        (
-            [line] => 30
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$baseClass'
-        )
-
-    [621] => Array
-        (
-            [line] => 30
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$baseClass'
-        )
-
-    [622] => Array
-        (
-            [line] => 30
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$baseClass'
-        )
-
-    [623] => Array
-        (
-            [line] => 31
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$generateRelations'
-        )
-
-    [624] => Array
-        (
-            [line] => 31
-            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No docblock for element '$generateRelations'
-        )
-
     [625] => Array
         (
-            [line] => 31
+            [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
-            [message] => No short description for element '$generateRelations'
+            [message] => No docblock for element '$db'
         )
 
     [626] => Array
         (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$db'
+        )
+
+    [627] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$db'
+        )
+
+    [628] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$db'
+        )
+
+    [629] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$ns'
+        )
+
+    [630] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$ns'
+        )
+
+    [631] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$ns'
+        )
+
+    [632] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$ns'
+        )
+
+    [633] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$tableName'
+        )
+
+    [634] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$tableName'
+        )
+
+    [635] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$tableName'
+        )
+
+    [636] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$tableName'
+        )
+
+    [637] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$modelClass'
+        )
+
+    [638] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$modelClass'
+        )
+
+    [639] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [640] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [641] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$baseClass'
+        )
+
+    [642] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$baseClass'
+        )
+
+    [643] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$baseClass'
+        )
+
+    [644] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$baseClass'
+        )
+
+    [645] => Array
+        (
+            [line] => 31
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$generateRelations'
+        )
+
+    [646] => Array
+        (
+            [line] => 31
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No docblock for element '$generateRelations'
+        )
+
+    [647] => Array
+        (
             [line] => 31
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$generateRelations'
         )
 
-    [627] => Array
+    [648] => Array
+        (
+            [line] => 31
+            [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
+            [message] => No short description for element '$generateRelations'
+        )
+
+    [649] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$generateLabelsFromComments'
         )
 
-    [628] => Array
+    [650] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$generateLabelsFromComments'
         )
 
-    [629] => Array
+    [651] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$generateLabelsFromComments'
         )
 
-    [630] => Array
+    [652] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$generateLabelsFromComments'
         )
 
-    [631] => Array
+    [653] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$useTablePrefix'
         )
 
-    [632] => Array
+    [654] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$useTablePrefix'
         )
 
-    [633] => Array
+    [655] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$useTablePrefix'
         )
 
-    [634] => Array
+    [656] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$useTablePrefix'
         )
 
-    [635] => Array
+    [657] => Array
         (
             [line] => 398
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => Undefined parameter documented:  in checkPivotTable().
         )
 
-    [636] => Array
+    [658] => Array
         (
             [line] => 398
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => Undefined parameter documented:  in checkPivotTable().
         )
 
-    [637] => Array
+    [659] => Array
         (
             [line] => 511
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$tableNames'
         )
 
-    [638] => Array
+    [660] => Array
         (
             [line] => 511
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$tableNames'
         )
 
-    [639] => Array
+    [661] => Array
         (
             [line] => 511
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$tableNames'
         )
 
-    [640] => Array
+    [662] => Array
         (
             [line] => 511
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$tableNames'
         )
 
-    [641] => Array
+    [663] => Array
         (
             [line] => 512
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$classNames'
         )
 
-    [642] => Array
+    [664] => Array
         (
             [line] => 512
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No docblock for element '$classNames'
         )
 
-    [643] => Array
+    [665] => Array
         (
             [line] => 512
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$classNames'
         )
 
-    [644] => Array
+    [666] => Array
         (
             [line] => 512
             [file] => E:\MyOpen\yii2\extensions\gii\generators\model\Generator.php
             [message] => No short description for element '$classNames'
         )
 
-    [645] => Array
+    [667] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\gii\generators\module\Generator.php
             [message] => broken link to \yii\gii\generators\module\Validator in yii\gii\generators\module\Generator
         )
 
-    [646] => Array
+    [668] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\gii\generators\module\Generator.php
             [message] => broken link to \yii\gii\generators\module\Validator::builtInValidators in yii\gii\generators\module\Generator
         )
 
-    [647] => Array
+    [669] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\module\Generator.php
             [message] => No docblock for element '$moduleClass'
         )
 
-    [648] => Array
+    [670] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\gii\generators\module\Generator.php
             [message] => No short description for element '$moduleClass'
         )
 
-    [649] => Array
+    [671] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\gii\generators\module\Generator.php
             [message] => No docblock for element '$moduleID'
         )
 
-    [650] => Array
+    [672] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\gii\generators\module\Generator.php
             [message] => No short description for element '$moduleID'
         )
 
-    [651] => Array
+    [673] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\jui\DatePicker.php
             [message] => broken link to \yii\jui\yii\base\Model in yii\jui\DatePicker
         )
 
-    [652] => Array
+    [674] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\extensions\jui\DatePickerLanguageAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [653] => Array
+    [675] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\extensions\jui\DatePickerLanguageAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [654] => Array
+    [676] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [655] => Array
+    [677] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [656] => Array
+    [678] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [657] => Array
+    [679] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No short description for element '$js'
         )
 
-    [658] => Array
+    [680] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No docblock for element '$css'
         )
 
-    [659] => Array
+    [681] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No short description for element '$css'
         )
 
-    [660] => Array
+    [682] => Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [661] => Array
+    [683] => Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\jui\JuiAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [662] => Array
+    [684] => Array
         (
             [line] => 32
             [file] => E:\MyOpen\yii2\extensions\jui\Slider.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [663] => Array
+    [685] => Array
         (
             [line] => 55
             [file] => E:\MyOpen\yii2\extensions\jui\SliderInput.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [664] => Array
+    [686] => Array
         (
             [line] => 75
             [file] => E:\MyOpen\yii2\extensions\jui\Sortable.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [665] => Array
+    [687] => Array
         (
             [line] => 43
             [file] => E:\MyOpen\yii2\extensions\jui\Spinner.php
             [message] => No short description for element '$clientEventMap'
         )
 
-    [666] => Array
+    [688] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveFixture.php
             [message] => broken link to \yii\mongodb\loadData() in yii\mongodb\ActiveFixture
         )
 
-    [667] => Array
+    [689] => Array
         (
             [line] => 70
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveFixture.php
             [message] => No docblock for element 'getCollection'
         )
 
-    [668] => Array
+    [690] => Array
         (
             [line] => 75
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveFixture.php
             [message] => No docblock for element 'getCollectionName'
         )
 
-    [669] => Array
+    [691] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveRecord.php
             [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
-    [670] => Array
+    [692] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveRecord.php
             [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
-    [671] => Array
+    [693] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveRecord.php
             [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
-    [672] => Array
+    [694] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\ActiveRecord.php
             [message] => broken link to \yii\mongodb\ActiveQueryInterface in yii\mongodb\ActiveRecord
         )
 
-    [673] => Array
+    [695] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\Collection.php
             [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
         )
 
-    [674] => Array
+    [696] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\Collection.php
             [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
         )
 
-    [675] => Array
+    [697] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\Collection.php
             [message] => broken link to \yii\mongodb\MongoId in yii\mongodb\Collection
         )
 
-    [676] => Array
+    [698] => Array
         (
             [line] => 91
             [file] => E:\MyOpen\yii2\extensions\mongodb\Query.php
             [message] => Undefined parameter documented:  in from().
         )
 
-    [677] => Array
+    [699] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
-    [678] => Array
+    [700] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
-    [679] => Array
+    [701] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
-    [680] => Array
+    [702] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\ActiveQueryInterface in yii\mongodb\file\ActiveRecord
         )
 
-    [681] => Array
+    [703] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\BaseActiveRecord::hasMany() in yii\mongodb\file\ActiveRecord
         )
 
-    [682] => Array
+    [704] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\BaseActiveRecord::hasOne() in yii\mongodb\file\ActiveRecord
         )
 
-    [683] => Array
+    [705] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
-    [684] => Array
+    [706] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
-    [685] => Array
+    [707] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
-    [686] => Array
+    [708] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\file in yii\mongodb\file\ActiveRecord
         )
 
-    [687] => Array
+    [709] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\newFileContent in yii\mongodb\file\ActiveRecord
         )
 
-    [688] => Array
+    [710] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\ActiveRecord.php
             [message] => broken link to \yii\mongodb\file\newFileContent in yii\mongodb\file\ActiveRecord
         )
 
-    [689] => Array
+    [711] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\Collection.php
             [message] => broken link to \yii\mongo\Collection in yii\mongodb\file\Collection
         )
 
-    [690] => Array
+    [712] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\Collection.php
             [message] => broken link to \yii\mongodb\file\Connection::getFileCollection() in yii\mongodb\file\Collection
         )
 
-    [691] => Array
+    [713] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\file\Collection.php
             [message] => broken link to \yii\mongodb\file\Database::getFileCollection() in yii\mongodb\file\Collection
         )
 
-    [692] => Array
+    [714] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => broken link to \yii\mongodb\gii\model\Validator in yii\mongodb\gii\model\Generator
         )
 
-    [693] => Array
+    [715] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => broken link to \yii\mongodb\gii\model\Validator::builtInValidators in yii\mongodb\gii\model\Generator
         )
 
-    [694] => Array
+    [716] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$db'
         )
 
-    [695] => Array
+    [717] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$db'
         )
 
-    [696] => Array
+    [718] => Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$ns'
         )
 
-    [697] => Array
+    [719] => Array
         (
             [line] => 25
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$ns'
         )
 
-    [698] => Array
+    [720] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$collectionName'
         )
 
-    [699] => Array
+    [721] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$collectionName'
         )
 
-    [700] => Array
+    [722] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$databaseName'
         )
 
-    [701] => Array
+    [723] => Array
         (
             [line] => 27
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$databaseName'
         )
 
-    [702] => Array
+    [724] => Array
         (
             [line] => 28
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$attributeList'
         )
 
-    [703] => Array
+    [725] => Array
         (
             [line] => 28
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$attributeList'
         )
 
-    [704] => Array
+    [726] => Array
         (
             [line] => 29
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$modelClass'
         )
 
-    [705] => Array
+    [727] => Array
         (
             [line] => 29
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$modelClass'
         )
 
-    [706] => Array
+    [728] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No docblock for element '$baseClass'
         )
 
-    [707] => Array
+    [729] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\extensions\mongodb\gii\model\Generator.php
             [message] => No short description for element '$baseClass'
         )
 
-    [708] => Array
+    [730] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [709] => Array
+    [731] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [710] => Array
+    [732] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [711] => Array
+    [733] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\ActiveRecord.php
             [message] => broken link to \yii\redis\ActiveQueryInterface in yii\redis\ActiveRecord
         )
 
-    [712] => Array
+    [734] => Array
         (
             [line] => 133
             [file] => E:\MyOpen\yii2\extensions\redis\Cache.php
             [message] => Method param $expire does not exist in parent method, @inheritdoc not possible in setValue in yii\redis\Cache.
         )
 
-    [713] => Array
+    [735] => Array
         (
             [line] => 147
             [file] => E:\MyOpen\yii2\extensions\redis\Cache.php
             [message] => Method param $expire does not exist in parent method, @inheritdoc not possible in setValues in yii\redis\Cache.
         )
 
-    [714] => Array
+    [736] => Array
         (
             [line] => 182
             [file] => E:\MyOpen\yii2\extensions\redis\Cache.php
             [message] => Method param $expire does not exist in parent method, @inheritdoc not possible in addValue in yii\redis\Cache.
         )
 
-    [715] => Array
+    [737] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\Connection.php
             [message] => broken link to \yii\redis\dsn in yii\redis\Connection
         )
 
-    [716] => Array
+    [738] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\Connection.php
             [message] => broken link to \yii\redis\dsn in yii\redis\Connection
         )
 
-    [717] => Array
+    [739] => Array
         (
             [line] => 377
             [file] => E:\MyOpen\yii2\extensions\redis\LuaScriptBuilder.php
             [message] => No docblock for element 'buildCompositeInCondition'
         )
 
-    [718] => Array
+    [740] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\redis\Session.php
             [message] => broken link to \yii\redis\Application::id in yii\redis\Session
         )
 
-    [719] => Array
+    [741] => Array
         (
             [line] => 28
             [file] => E:\MyOpen\yii2\extensions\smarty\Extension.php
             [message] => No short description for element '$viewRenderer'
         )
 
-    [720] => Array
+    [742] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\smarty\Extension.php
             [message] => No short description for element '$smarty'
         )
 
-    [721] => Array
+    [743] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
-    [722] => Array
+    [744] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
-    [723] => Array
+    [745] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
-    [724] => Array
+    [746] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\ActiveQueryInterface in yii\sphinx\ActiveRecord
         )
 
-    [725] => Array
+    [747] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\CActiveRecord::update() in yii\sphinx\ActiveRecord
         )
 
-    [726] => Array
+    [748] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\changedAttributes in yii\sphinx\ActiveRecord
         )
 
-    [727] => Array
+    [749] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\ActiveRecord.php
             [message] => broken link to \yii\sphinx\changedAttributes in yii\sphinx\ActiveRecord
         )
 
-    [728] => Array
+    [750] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\Command.php
             [message] => broken link to yii\sphinx\QueryBuilder::getColumnType() in yii\sphinx\Command
         )
 
-    [729] => Array
+    [751] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [730] => Array
+    [752] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [731] => Array
+    [753] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [732] => Array
+    [754] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [733] => Array
+    [755] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [734] => Array
+    [756] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [735] => Array
+    [757] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\QueryBuilder.php
             [message] => broken link to \yii\sphinx\query in yii\sphinx\QueryBuilder
         )
 
-    [736] => Array
+    [758] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\Schema.php
             [message] => broken link to \yii\sphinx\quoteSimpleTableName in yii\sphinx\Schema
         )
 
-    [737] => Array
+    [759] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\Schema.php
             [message] => broken link to yii\sphinx\Connection::indexPrefix in yii\sphinx\Schema
         )
 
-    [738] => Array
+    [760] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => broken link to \yii\sphinx\gii\model\Validator in yii\sphinx\gii\model\Generator
         )
 
-    [739] => Array
+    [761] => Array
         (
             [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => broken link to \yii\sphinx\gii\model\Validator::builtInValidators in yii\sphinx\gii\model\Generator
         )
 
-    [740] => Array
-        (
-            [line] => 25
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$db'
-        )
-
-    [741] => Array
-        (
-            [line] => 25
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$db'
-        )
-
-    [742] => Array
-        (
-            [line] => 25
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$db'
-        )
-
-    [743] => Array
-        (
-            [line] => 25
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$db'
-        )
-
-    [744] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$ns'
-        )
-
-    [745] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$ns'
-        )
-
-    [746] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$ns'
-        )
-
-    [747] => Array
-        (
-            [line] => 26
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$ns'
-        )
-
-    [748] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$indexName'
-        )
-
-    [749] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$indexName'
-        )
-
-    [750] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$indexName'
-        )
-
-    [751] => Array
-        (
-            [line] => 27
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$indexName'
-        )
-
-    [752] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$modelClass'
-        )
-
-    [753] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$modelClass'
-        )
-
-    [754] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$modelClass'
-        )
-
-    [755] => Array
-        (
-            [line] => 28
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$modelClass'
-        )
-
-    [756] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$baseClass'
-        )
-
-    [757] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$baseClass'
-        )
-
-    [758] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$baseClass'
-        )
-
-    [759] => Array
-        (
-            [line] => 29
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$baseClass'
-        )
-
-    [760] => Array
-        (
-            [line] => 30
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$useIndexPrefix'
-        )
-
-    [761] => Array
-        (
-            [line] => 30
-            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No docblock for element '$useIndexPrefix'
-        )
-
     [762] => Array
         (
-            [line] => 30
+            [line] => 25
             [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
-            [message] => No short description for element '$useIndexPrefix'
+            [message] => No docblock for element '$db'
         )
 
     [763] => Array
         (
+            [line] => 25
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$db'
+        )
+
+    [764] => Array
+        (
+            [line] => 25
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$db'
+        )
+
+    [765] => Array
+        (
+            [line] => 25
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$db'
+        )
+
+    [766] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$ns'
+        )
+
+    [767] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$ns'
+        )
+
+    [768] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$ns'
+        )
+
+    [769] => Array
+        (
+            [line] => 26
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$ns'
+        )
+
+    [770] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$indexName'
+        )
+
+    [771] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$indexName'
+        )
+
+    [772] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$indexName'
+        )
+
+    [773] => Array
+        (
+            [line] => 27
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$indexName'
+        )
+
+    [774] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$modelClass'
+        )
+
+    [775] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$modelClass'
+        )
+
+    [776] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [777] => Array
+        (
+            [line] => 28
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$modelClass'
+        )
+
+    [778] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$baseClass'
+        )
+
+    [779] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$baseClass'
+        )
+
+    [780] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$baseClass'
+        )
+
+    [781] => Array
+        (
+            [line] => 29
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$baseClass'
+        )
+
+    [782] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$useIndexPrefix'
+        )
+
+    [783] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No docblock for element '$useIndexPrefix'
+        )
+
+    [784] => Array
+        (
             [line] => 30
             [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
             [message] => No short description for element '$useIndexPrefix'
         )
 
-    [764] => Array
+    [785] => Array
+        (
+            [line] => 30
+            [file] => E:\MyOpen\yii2\extensions\sphinx\gii\model\Generator.php
+            [message] => No short description for element '$useIndexPrefix'
+        )
+
+    [786] => Array
         (
             [line] => 50
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => Method getNodeVisitors has no parent to inherit from in yii\twig\Extension.
         )
 
-    [765] => Array
+    [787] => Array
         (
             [line] => 60
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => Method getFunctions has no parent to inherit from in yii\twig\Extension.
         )
 
-    [766] => Array
+    [788] => Array
         (
             [line] => 87
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'registerAsset'
         )
 
-    [767] => Array
+    [789] => Array
         (
             [line] => 94
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'beginWidget'
         )
 
-    [768] => Array
+    [790] => Array
         (
             [line] => 103
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'endWidget'
         )
 
-    [769] => Array
+    [791] => Array
         (
             [line] => 116
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'widget'
         )
 
-    [770] => Array
+    [792] => Array
         (
             [line] => 123
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'viewHelper'
         )
 
-    [771] => Array
+    [793] => Array
         (
             [line] => 130
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'resolveAndCall'
         )
 
-    [772] => Array
+    [794] => Array
         (
             [line] => 135
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'call'
         )
 
-    [773] => Array
+    [795] => Array
         (
             [line] => 145
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'resolveClassName'
         )
 
-    [774] => Array
+    [796] => Array
         (
             [line] => 160
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'addUses'
         )
 
-    [775] => Array
+    [797] => Array
         (
             [line] => 180
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'path'
         )
 
-    [776] => Array
+    [798] => Array
         (
             [line] => 185
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'url'
         )
 
-    [777] => Array
+    [799] => Array
         (
             [line] => 190
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => No docblock for element 'setProperty'
         )
 
-    [778] => Array
+    [800] => Array
         (
             [line] => 198
             [file] => E:\MyOpen\yii2\extensions\twig\Extension.php
             [message] => Method getName has no parent to inherit from in yii\twig\Extension.
         )
 
-    [779] => Array
+    [801] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\extensions\twig\Optimizer.php
             [message] => Method enterNode has no parent to inherit from in yii\twig\Optimizer.
         )
 
-    [780] => Array
+    [802] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\extensions\twig\Optimizer.php
             [message] => Method leaveNode has no parent to inherit from in yii\twig\Optimizer.
         )
 
-    [781] => Array
+    [803] => Array
         (
             [line] => 62
             [file] => E:\MyOpen\yii2\extensions\twig\Optimizer.php
             [message] => Method getPriority has no parent to inherit from in yii\twig\Optimizer.
         )
 
-    [782] => Array
+    [804] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\extensions\twig\Template.php
             [message] => Method getAttribute has no parent to inherit from in yii\twig\Template.
         )
 
-    [783] => Array
+    [805] => Array
         (
             [line] => 73
             [file] => E:\MyOpen\yii2\extensions\twig\ViewRenderer.php
             [message] => Property $lexerOptions conflicts with a defined setter setLexerOptions in yii\twig\ViewRenderer.
         )
 
-    [784] => Array
+    [806] => Array
         (
             [line] => 94
             [file] => E:\MyOpen\yii2\extensions\twig\ViewRenderer.php
             [message] => No docblock for element 'init'
         )
 
-    [785] => Array
+    [807] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__construct'
         )
 
-    [786] => Array
+    [808] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__get'
         )
 
-    [787] => Array
+    [809] => Array
         (
             [line] => 33
             [file] => E:\MyOpen\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__set'
         )
 
-    [788] => Array
+    [810] => Array
         (
             [line] => 41
             [file] => E:\MyOpen\yii2\extensions\twig\ViewRendererStaticClassProxy.php
             [message] => No docblock for element '__call'
         )
 
-    [789] => Array
+    [811] => Array
         (
             [file] => E:\MyOpen\yii2\framework\base\Component.php
             [message] => broken link to Object in yii\base\Component
         )
 
-    [790] => Array
+    [812] => Array
         (
             [line] => 167
             [file] => E:\MyOpen\yii2\framework\base\Security.php
             [message] => No docblock for element '__destruct'
         )
 
-    [791] => Array
+    [813] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\captcha\CaptchaAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [792] => Array
+    [814] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\captcha\CaptchaAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [793] => Array
+    [815] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\captcha\CaptchaAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [794] => Array
+    [816] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\captcha\CaptchaAsset.php
             [message] => No short description for element '$js'
         )
 
-    [795] => Array
+    [817] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\captcha\CaptchaAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [796] => Array
+    [818] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\captcha\CaptchaAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [797] => Array
+    [819] => Array
         (
             [line] => 59
             [file] => E:\MyOpen\yii2\framework\console\Markdown.php
             [message] => Method renderParagraph has no parent to inherit from in yii\console\Markdown.
         )
 
-    [798] => Array
+    [820] => Array
         (
             [line] => 482
             [file] => E:\MyOpen\yii2\framework\db\Query.php
             [message] => Method param $params does not exist in parent method, @inheritdoc not possible in where in yii\db\Query.
         )
 
-    [799] => Array
+    [821] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::limit in yii\db\mssql\QueryBuilder
         )
 
-    [800] => Array
+    [822] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::limit in yii\db\mssql\QueryBuilder
         )
 
-    [801] => Array
+    [823] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::limit in yii\db\mssql\QueryBuilder
         )
 
-    [802] => Array
+    [824] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::offset in yii\db\mssql\QueryBuilder
         )
 
-    [803] => Array
+    [825] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::offset in yii\db\mssql\QueryBuilder
         )
 
-    [804] => Array
+    [826] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::offset in yii\db\mssql\QueryBuilder
         )
 
-    [805] => Array
+    [827] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::orderBy in yii\db\mssql\QueryBuilder
         )
 
-    [806] => Array
+    [828] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::orderBy in yii\db\mssql\QueryBuilder
         )
 
-    [807] => Array
+    [829] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\QueryBuilder.php
             [message] => broken link to \yii\db\mssql\Query::orderBy in yii\db\mssql\QueryBuilder
         )
 
-    [808] => Array
+    [830] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::READ_COMMITTED in yii\db\mssql\Schema
         )
 
-    [809] => Array
+    [831] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::READ_UNCOMMITTED in yii\db\mssql\Schema
         )
 
-    [810] => Array
+    [832] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::REPEATABLE_READ in yii\db\mssql\Schema
         )
 
-    [811] => Array
+    [833] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mssql\Schema.php
             [message] => broken link to \yii\db\mssql\Transaction::SERIALIZABLE in yii\db\mssql\Schema
         )
 
-    [812] => Array
+    [834] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::READ_COMMITTED in yii\db\mysql\Schema
         )
 
-    [813] => Array
+    [835] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::READ_UNCOMMITTED in yii\db\mysql\Schema
         )
 
-    [814] => Array
+    [836] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::REPEATABLE_READ in yii\db\mysql\Schema
         )
 
-    [815] => Array
+    [837] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\mysql\Schema.php
             [message] => broken link to \yii\db\mysql\Transaction::SERIALIZABLE in yii\db\mysql\Schema
         )
 
-    [816] => Array
+    [838] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\QueryBuilder.php
             [message] => broken link to \yii\db\oci\Query::limit in yii\db\oci\QueryBuilder
         )
 
-    [817] => Array
+    [839] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\QueryBuilder.php
             [message] => broken link to \yii\db\oci\Query::offset in yii\db\oci\QueryBuilder
         )
 
-    [818] => Array
+    [840] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\QueryBuilder.php
             [message] => broken link to \yii\db\oci\Query::orderBy in yii\db\oci\QueryBuilder
         )
 
-    [819] => Array
+    [841] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::READ_COMMITTED in yii\db\oci\Schema
         )
 
-    [820] => Array
+    [842] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::READ_UNCOMMITTED in yii\db\oci\Schema
         )
 
-    [821] => Array
+    [843] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::REPEATABLE_READ in yii\db\oci\Schema
         )
 
-    [822] => Array
+    [844] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\oci\Schema.php
             [message] => broken link to \yii\db\oci\Transaction::SERIALIZABLE in yii\db\oci\Schema
         )
 
-    [823] => Array
+    [845] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::READ_COMMITTED in yii\db\pgsql\Schema
         )
 
-    [824] => Array
+    [846] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::READ_UNCOMMITTED in yii\db\pgsql\Schema
         )
 
-    [825] => Array
+    [847] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::REPEATABLE_READ in yii\db\pgsql\Schema
         )
 
-    [826] => Array
+    [848] => Array
         (
             [file] => E:\MyOpen\yii2\framework\db\pgsql\Schema.php
             [message] => broken link to \yii\db\pgsql\Transaction::SERIALIZABLE in yii\db\pgsql\Schema
         )
 
-    [827] => Array
+    [849] => Array
         (
             [line] => 209
             [file] => E:\MyOpen\yii2\framework\filters\Cors.php
             [message] => Undefined parameter documented:  in addCorsHeaders().
         )
 
-    [828] => Array
+    [850] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\grid\GridViewAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [829] => Array
+    [851] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\grid\GridViewAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [830] => Array
+    [852] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\grid\GridViewAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [831] => Array
+    [853] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\grid\GridViewAsset.php
             [message] => No short description for element '$js'
         )
 
-    [832] => Array
+    [854] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\grid\GridViewAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [833] => Array
+    [855] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\grid\GridViewAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [834] => Array
+    [856] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\framework\grid\SerialColumn.php
             [message] => No docblock for element '$header'
         )
 
-    [835] => Array
+    [857] => Array
         (
             [line] => 30
             [file] => E:\MyOpen\yii2\framework\grid\SerialColumn.php
             [message] => No short description for element '$header'
         )
 
-    [836] => Array
+    [858] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseConsole.php
             [message] => broken link to \yii\helpers\FG_COLOR in yii\helpers\BaseConsole
         )
 
-    [837] => Array
+    [859] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseHtml.php
             [message] => broken link to \yii\helpers\activeCheckBoxList() in yii\helpers\BaseHtml
         )
 
-    [838] => Array
+    [860] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseInflector.php
             [message] => broken link to \yii\helpers\Transliterator in yii\helpers\BaseInflector
         )
 
-    [839] => Array
+    [861] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseInflector.php
             [message] => broken link to \yii\helpers\Transliterator in yii\helpers\BaseInflector
         )
 
-    [840] => Array
+    [862] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseInflector.php
             [message] => broken link to \yii\helpers\Transliterator in yii\helpers\BaseInflector
         )
 
-    [841] => Array
+    [863] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseInflector.php
             [message] => broken link to \yii\helpers\Transliterator in yii\helpers\BaseInflector
         )
 
-    [842] => Array
+    [864] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseInflector.php
             [message] => broken link to \yii\helpers\Transliterator in yii\helpers\BaseInflector
         )
 
-    [843] => Array
+    [865] => Array
         (
             [file] => E:\MyOpen\yii2\framework\helpers\BaseInflector.php
             [message] => broken link to \yii\helpers\Transliterator in yii\helpers\BaseInflector
         )
 
-    [844] => Array
+    [866] => Array
         (
             [file] => E:\MyOpen\yii2\framework\i18n\Formatter.php
             [message] => broken link to \yii\i18n\asDateTime() in yii\i18n\Formatter
         )
 
-    [845] => Array
+    [867] => Array
         (
             [file] => E:\MyOpen\yii2\framework\i18n\Formatter.php
             [message] => broken link to \yii\i18n\asDateTime() in yii\i18n\Formatter
         )
 
-    [846] => Array
+    [868] => Array
         (
             [file] => E:\MyOpen\yii2\framework\i18n\Formatter.php
             [message] => broken link to \yii\i18n\sizeFormat in yii\i18n\Formatter
         )
 
-    [847] => Array
+    [869] => Array
         (
             [file] => E:\MyOpen\yii2\framework\i18n\Formatter.php
             [message] => broken link to \yii\i18n\sizeFormat in yii\i18n\Formatter
         )
 
-    [848] => Array
+    [870] => Array
         (
             [line] => 37
             [file] => E:\MyOpen\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$basePath'
         )
 
-    [849] => Array
+    [871] => Array
         (
             [line] => 41
             [file] => E:\MyOpen\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$catalog'
         )
 
-    [850] => Array
+    [872] => Array
         (
             [line] => 45
             [file] => E:\MyOpen\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$useMoFile'
         )
 
-    [851] => Array
+    [873] => Array
         (
             [line] => 49
             [file] => E:\MyOpen\yii2\framework\i18n\GettextMessageSource.php
             [message] => No short description for element '$useBigEndian'
         )
 
-    [852] => Array
+    [874] => Array
         (
             [line] => 29
             [file] => E:\MyOpen\yii2\framework\rbac\Assignment.php
             [message] => No short description for element '$roleName'
         )
 
-    [853] => Array
+    [875] => Array
         (
             [line] => 65
             [file] => E:\MyOpen\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$items'
         )
 
-    [854] => Array
+    [876] => Array
         (
             [line] => 69
             [file] => E:\MyOpen\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$children'
         )
 
-    [855] => Array
+    [877] => Array
         (
             [line] => 73
             [file] => E:\MyOpen\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$assignments'
         )
 
-    [856] => Array
+    [878] => Array
         (
             [line] => 77
             [file] => E:\MyOpen\yii2\framework\rbac\PhpManager.php
             [message] => No short description for element '$rules'
         )
 
-    [857] => Array
+    [879] => Array
         (
             [line] => 77
             [file] => E:\MyOpen\yii2\framework\rbac\PhpManager.php
             [message] => Property $rules conflicts with a defined getter getRules in yii\rbac\PhpManager.
         )
 
-    [858] => Array
+    [880] => Array
         (
             [file] => E:\MyOpen\yii2\framework\rest\ActiveController.php
             [message] => broken link to \yii\rest\VerbFilter::actions in yii\rest\ActiveController
         )
 
-    [859] => Array
+    [881] => Array
         (
             [file] => E:\MyOpen\yii2\framework\rest\Controller.php
             [message] => broken link to \yii\rest\Behavior in yii\rest\Controller
         )
 
-    [860] => Array
+    [882] => Array
         (
             [line] => 116
             [file] => E:\MyOpen\yii2\framework\validators\DateValidator.php
             [message] => No docblock for element 'parseDateValue'
         )
 
-    [861] => Array
+    [883] => Array
         (
             [file] => E:\MyOpen\yii2\framework\validators\FileValidator.php
             [message] => broken link to \yii\validators\wrongType in yii\validators\FileValidator
         )
 
-    [862] => Array
+    [884] => Array
         (
             [line] => 208
             [file] => E:\MyOpen\yii2\framework\validators\FileValidator.php
             [message] => Method param $file does not exist in parent method, @inheritdoc not possible in validateValue in yii\validators\FileValidator.
         )
 
-    [863] => Array
+    [885] => Array
         (
             [line] => 275
             [file] => E:\MyOpen\yii2\framework\validators\FileValidator.php
             [message] => Method param $trim does not exist in parent method, @inheritdoc not possible in isEmpty in yii\validators\FileValidator.
         )
 
-    [864] => Array
+    [886] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\validators\PunycodeAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [865] => Array
+    [887] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\validators\PunycodeAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [866] => Array
+    [888] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\validators\PunycodeAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [867] => Array
+    [889] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\validators\PunycodeAsset.php
             [message] => No short description for element '$js'
         )
 
-    [868] => Array
+    [890] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\validators\ValidationAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [869] => Array
+    [891] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\validators\ValidationAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [870] => Array
+    [892] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\validators\ValidationAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [871] => Array
+    [893] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\validators\ValidationAsset.php
             [message] => No short description for element '$js'
         )
 
-    [872] => Array
+    [894] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\validators\ValidationAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [873] => Array
+    [895] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\validators\ValidationAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [874] => Array
+    [896] => Array
         (
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => broken link to \yii\web\css in yii\web\AssetManager
         )
 
-    [875] => Array
+    [897] => Array
         (
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => broken link to \yii\web\css in yii\web\AssetManager
         )
 
-    [876] => Array
+    [898] => Array
         (
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => broken link to \yii\web\js in yii\web\AssetManager
         )
 
-    [877] => Array
+    [899] => Array
         (
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => broken link to \yii\web\js in yii\web\AssetManager
         )
 
-    [878] => Array
+    [900] => Array
         (
             [line] => 69
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => No short description for element '$basePath'
         )
 
-    [879] => Array
+    [901] => Array
         (
             [line] => 69
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => No short description for element '$basePath'
         )
 
-    [880] => Array
+    [902] => Array
         (
             [line] => 73
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => No short description for element '$baseUrl'
         )
 
-    [881] => Array
+    [903] => Array
         (
             [line] => 73
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => No short description for element '$baseUrl'
         )
 
-    [882] => Array
+    [904] => Array
         (
             [line] => 204
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => No docblock for element 'loadBundle'
         )
 
-    [883] => Array
+    [905] => Array
         (
             [line] => 217
             [file] => E:\MyOpen\yii2\framework\web\AssetManager.php
             [message] => No docblock for element 'loadDummyBundle'
         )
 
-    [884] => Array
+    [906] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\framework\web\JqueryAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [885] => Array
+    [907] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\framework\web\JqueryAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [886] => Array
+    [908] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\framework\web\JqueryAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [887] => Array
+    [909] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\framework\web\JqueryAsset.php
             [message] => No short description for element '$js'
         )
 
-    [888] => Array
+    [910] => Array
         (
             [file] => E:\MyOpen\yii2\framework\web\Request.php
             [message] => broken link to \yii\web\rawCsrfToken in yii\web\Request
         )
 
-    [889] => Array
+    [911] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\framework\web\YiiAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [890] => Array
+    [912] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\framework\web\YiiAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [891] => Array
+    [913] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\framework\web\YiiAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [892] => Array
+    [914] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\framework\web\YiiAsset.php
             [message] => No short description for element '$js'
         )
 
-    [893] => Array
+    [915] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\framework\web\YiiAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [894] => Array
+    [916] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\framework\web\YiiAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [895] => Array
+    [917] => Array
         (
             [line] => 31
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveForm.php
             [message] => No short description for element '$action'
         )
 
-    [896] => Array
+    [918] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [897] => Array
+    [919] => Array
         (
             [line] => 18
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [898] => Array
+    [920] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [899] => Array
+    [921] => Array
         (
             [line] => 19
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No short description for element '$js'
         )
 
-    [900] => Array
+    [922] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [901] => Array
+    [923] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\framework\widgets\ActiveFormAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [902] => Array
+    [924] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [903] => Array
+    [925] => Array
         (
             [line] => 22
             [file] => E:\MyOpen\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [904] => Array
+    [926] => Array
         (
             [line] => 23
             [file] => E:\MyOpen\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [905] => Array
+    [927] => Array
         (
             [line] => 23
             [file] => E:\MyOpen\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No short description for element '$js'
         )
 
-    [906] => Array
+    [928] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [907] => Array
+    [929] => Array
         (
             [line] => 26
             [file] => E:\MyOpen\yii2\framework\widgets\MaskedInputAsset.php
             [message] => No short description for element '$depends'
         )
 
-    [908] => Array
+    [930] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$sourcePath'
         )
 
-    [909] => Array
+    [931] => Array
         (
             [line] => 20
             [file] => E:\MyOpen\yii2\framework\widgets\PjaxAsset.php
             [message] => No short description for element '$sourcePath'
         )
 
-    [910] => Array
+    [932] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$js'
         )
 
-    [911] => Array
+    [933] => Array
         (
             [line] => 21
             [file] => E:\MyOpen\yii2\framework\widgets\PjaxAsset.php
             [message] => No short description for element '$js'
         )
 
-    [912] => Array
+    [934] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\widgets\PjaxAsset.php
             [message] => No docblock for element '$depends'
         )
 
-    [913] => Array
+    [935] => Array
         (
             [line] => 24
             [file] => E:\MyOpen\yii2\framework\widgets\PjaxAsset.php
