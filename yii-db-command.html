@@ -781,7 +781,7 @@ You may also call <a href="yii-db-command.html#prepare()-detail">prepare()</a> e
         <td>Executes the SQL statement and returns the first column of the result.</td>
         <td><a href="yii-db-command.html">yii\db\Command</a></td>
     </tr>
-            <tr id="queryOne()">
+                <tr id="queryOne()">
         <td><a href="yii-db-command.html#queryOne()-detail">queryOne()</a></td>
         <td>Executes the SQL statement and returns the first row of the result.</td>
         <td><a href="yii-db-command.html">yii\db\Command</a></td>
@@ -848,7 +848,12 @@ You may also call <a href="yii-db-command.html#prepare()-detail">prepare()</a> e
         <td>Binds pending parameters that were registered via <a href="yii-db-command.html#bindValue()-detail">bindValue()</a> and <a href="yii-db-command.html#bindValues()-detail">bindValues()</a>.</td>
         <td><a href="yii-db-command.html">yii\db\Command</a></td>
     </tr>
-                                                                                                                                                                                        </table>
+                                                                                                                                                            <tr id="queryInternal()">
+        <td><a href="yii-db-command.html#queryInternal()-detail">queryInternal()</a></td>
+        <td>Performs the actual DB query of a SQL statement.</td>
+        <td><a href="yii-db-command.html">yii\db\Command</a></td>
+    </tr>
+                                        </table>
 </div>
 
 <a name="events"></a>
@@ -2312,6 +2317,55 @@ is needed for a query.</p>
 
 <!--	-->
 
+    <div class="detail-header h3" id="queryInternal()-detail">
+        <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
+        <a class="tool-link hash" href="yii-db-command.html#queryInternal()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
+                    <a href="https://github.com/yiisoft/yii2/edit/master/framework/db/Command.php#L788" class="tool-link" title="edit on github"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a href="https://github.com/yiisoft/yii2/blob/master/framework/db/Command.php#L788" class="tool-link" title="view source on github"><span class="glyphicon glyphicon-eye-open"></span></a>
+        
+        queryInternal()
+        <span class="detail-header-tag small">
+            protected            method
+                    </span>
+    </div>
+
+    <div class="doc-description">
+        <p><strong>Performs the actual DB query of a SQL statement.</strong></p>
+
+        
+            </div>
+
+    <table class="detail-table table table-striped table-bordered table-hover">
+        <tr><td colspan="3" class="signature">mixed <strong><a href="yii-db-command.html#queryInternal()-detail">queryInternal</a></strong><span style="color: #0000BB"></span><span style="color: #007700">(&nbsp;</span><span style="color: #0000BB">$method</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">$fetchMode&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">null&nbsp;</span><span style="color: #007700">)</span></td></tr>
+                                    <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$method</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.string">string</a></td>
+                  <td class="param-desc-col"><p>Method of PDOStatement to be called</p>
+</td>
+                </tr>
+                            <tr>
+                  <td class="param-name-col"><span style="color: #0000BB">$fetchMode</span></td>
+                  <td class="param-type-col"><a href="http://www.php.net/language.types.integer">integer</a></td>
+                  <td class="param-desc-col"><p>The result fetch mode. Please refer to <a href="http://www.php.net/manual/en/function.PDOStatement-setFetchMode.php">PHP manual</a>
+for valid fetch modes. If this parameter is null, the value set in <a href="yii-db-command.html#$fetchMode-detail">$fetchMode</a> will be used.</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">return</th>
+                  <td class="param-type-col">mixed</td>
+                  <td class="param-desc-col"><p>The method execution result</p>
+</td>
+                </tr>
+                                        <tr>
+                  <th class="param-name-col">throws</th>
+                  <td class="param-type-col"><a href="yii-db-exception.html">yii\db\Exception</a></td>
+                  <td class="param-desc-col"><p>if the query causes any problem</p>
+</td>
+                </tr>
+                        </table>
+
+<!--	-->
+
     <div class="detail-header h3" id="queryOne()-detail">
         <a href="#" class="tool-link" title="go to top"><span class="glyphicon glyphicon-arrow-up"></span></a>
         <a class="tool-link hash" href="yii-db-command.html#queryOne()-detail" title="direct link to this method"><span class="glyphicon icon-hash"></span></a>
@@ -2707,7 +2761,7 @@ refer to <a href="yii-db-query.html#where()-detail">yii\db\Query::where()</a> on
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Wed, 22 Oct 2014 04:10:30 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Fri, 24 Oct 2014 14:48:05 +0200</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
