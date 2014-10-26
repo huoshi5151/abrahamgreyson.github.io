@@ -9,6 +9,14 @@
 <script src="./assets/e17319cf/jquery.js"></script>
 <script src="./assets/41d5631d/js/bootstrap.js"></script>
 <script src="./assets/b52a7f0/jssearch.js"></script>    <title>Yii Framework 2.0 API Documentation</title>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-47725881-2', 'auto');
+        ga('send', 'pageview');
+</script><!--Google Analytics-->
 </head>
 <body>
 
@@ -95,11 +103,11 @@ composed on the values which can be extracted from PHP Mongo extension classes.
 If you need to see actual query text, you should use specific tools for that.</p>
 <h2>Notes about MongoId <a href="#notes-about-mongoid" name="notes-about-mongoid" class="hashlink">&para;</a></h2><p>Remember: MongoDB document id ("_id" field) is not scalar, but an instance of <span style="background: #f00;">\MongoId</span> class.
 To get actual Mongo ID string your should typecast <span style="background: #f00;">\MongoId</span> instance to string:</p>
-<pre><code class="language-php"><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$row&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #DD0000">'customer'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">one</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">var_dump</span><span style="color: #007700">(</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs:&nbsp;"object(MongoId)"<br /></span><span style="color: #0000BB">var_dump</span><span style="color: #007700">((string)</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs&nbsp;"string&nbsp;'acdfgdacdhcbdafa'"</span></code></pre>
+<pre><code class="language-php"><span style="color: #0000BB">$query&nbsp;</span><span style="color: #007700">=&nbsp;new&nbsp;</span><span style="color: #0000BB">Query</span><span style="color: #007700">;<br /></span><span style="color: #0000BB">$row&nbsp;</span><span style="color: #007700">=&nbsp;</span><span style="color: #0000BB">$query</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">from</span><span style="color: #007700">(</span><span style="color: #DD0000">'customer'</span><span style="color: #007700">)-&gt;</span><span style="color: #0000BB">one</span><span style="color: #007700">();<br /></span><span style="color: #0000BB">var_dump</span><span style="color: #007700">(</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs:&nbsp;"object(MongoId)"<br /></span><span style="color: #0000BB">var_dump</span><span style="color: #007700">((string)&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]);&nbsp;</span><span style="color: #FF8000">//&nbsp;outputs&nbsp;"string&nbsp;'acdfgdacdhcbdafa'"</span></code></pre>
 <p>Although this fact is very useful sometimes, it often produces some problems.
 You may face them in URL composition or attempt of saving "_id" to other storage.
 In these cases, ensure you have converted <span style="background: #f00;">\MongoId</span> into the string:</p>
-<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;yii\web\View&nbsp;*/<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createUrl</span><span style="color: #007700">([</span><span style="color: #DD0000">'item/update'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;(string)</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]]);</span></code></pre>
+<pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #FF8000">/*&nbsp;@var&nbsp;$this&nbsp;yii\web\View&nbsp;*/<br /></span><span style="color: #007700">echo&nbsp;</span><span style="color: #0000BB">$this</span><span style="color: #007700">-&gt;</span><span style="color: #0000BB">createUrl</span><span style="color: #007700">([</span><span style="color: #DD0000">'item/update'</span><span style="color: #007700">,&nbsp;</span><span style="color: #DD0000">'id'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;(string)&nbsp;</span><span style="color: #0000BB">$row</span><span style="color: #007700">[</span><span style="color: #DD0000">'_id'</span><span style="color: #007700">]]);</span></code></pre>
 <p>While building condition, values for the key '_id' will be automatically cast to <span style="background: #f00;">\MongoId</span> instance,
 even if they are plain strings. So it is not necessary for you to perform back cast of string '_id'
 representation:</p>
@@ -298,7 +306,7 @@ yii mongodb-migrate/down
 </div>
 
 <footer class="footer">
-        <p class="pull-right"><small>Page generated on Sat, 25 Oct 2014 15:38:05 +0200</small></p>
+        <p class="pull-right"><small>Page generated on Sun, 26 Oct 2014 20:41:52 +0100</small></p>
     Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
 
 <script type="text/javascript">jQuery(document).ready(function () {
