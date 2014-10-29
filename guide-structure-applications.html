@@ -186,7 +186,7 @@
 两种格式所对应的目录都必须存在，否则系统会抛出一个异常。 系统会使用 <code>realpath()</code> 函数规范化配置的路径.</p>
 <p><a href="./yii-base-application.html#$basePath-detail">basePath</a> 属性经常用于派生一些其他重要路径（如runtime路径），因此，系统预定义 <code>@app</code> 代表这个路径。
 派生路径可以通过这个别名组成（如<code>@app/runtime</code>代表runtime的路径）。</p>
-<h3>重要属性 <a name="important-properties"></a> <a href="#" name="" class="hashlink">&para;</a></h3><p>本小节所描述的属性通常需要设置，因为不用的应用属性不同。</p>
+<h3>重要属性 <a name="important-properties"></a> <a href="#" name="" class="hashlink">&para;</a></h3><p>本小节所描述的属性通常需要设置，因为不同的应用属性不同。</p>
 <h4><a href="./yii-base-application.html#$aliases-detail">aliases</a> <a name="aliases"></a> <a href="#aliases" name="aliases" class="hashlink">&para;</a></h4><p>该属性允许你用一个数组定义多个 <a href="guide-concept-aliases.html">别名</a>。数组的key为别名名称，值为对应的路径。例如：</p>
 <pre><code class="language-php"><span style="color: #0000BB"></span><span style="color: #007700">[<br />&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'aliases'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;[<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'@name1'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'path/to/path1'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: #DD0000">'@name2'&nbsp;</span><span style="color: #007700">=&gt;&nbsp;</span><span style="color: #DD0000">'path/to/path2'</span><span style="color: #007700">,<br />&nbsp;&nbsp;&nbsp;&nbsp;],<br />]</span></code></pre>
 <p>使用这个属性来定义别名，代替 <a href="./yii-baseyii.html#setAlias()-detail">Yii::setAlias()</a> 方法来设置。</p>
